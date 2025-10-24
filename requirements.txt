@@ -1,0 +1,18 @@
+# Web Scraping & Data Collection
+requests
+playwright
+scrapy
+lxml
+trafilatura
+beautifulsoup4
+
+# Feature Engineering & Exploratory Data Analysis 
+scikit-learn
+numpy
+scipy
+pandas
+matplotlib
+seaborn
+notebook
+jupyterlab
+IPython

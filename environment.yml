@@ -1,0 +1,24 @@
+name: ds
+
+channels:
+  - conda-forge
+
+dependencies:
+  - python >=3.8,<=3.13
+  - scikit-learn >=1.0
+  - numpy >=1.21
+  - scipy >=1.7
+  - pandas >=1.3
+  - matplotlib >=3.5
+  - seaborn >=0.13
+  - jupyterlab
+  - notebook >=6.4
+  - plotly >=5.10
+  - requests >=2.26
+  - lxml >=4.6
+  - beautifulsoup4
+  - pip
+  - pip:
+    - playwright>=1.20
+    - scrapy>=2.5
+    - trafilatura>=1.0
