@@ -1,0 +1,101 @@
+# CONFIGURATION FILE - DS_Predictor Project
+
+project:
+  name: "Used Car Price Analysis and Prediction"
+  version: "1.0.0"
+  author: "Your Name"
+  description: >
+    Analyze and predict the resale price of cars in Vietnam.
+      Objectives include:
+        1. Analyze factors affecting resale prices (kilometers, year of manufacture, vehicle type, vehicle manufacturer...).
+        2. Determine which vehicle brands/models are most often resold.
+        3. Build a resale price prediction model based on collected data.
+
+# --- Data Paths ---
+paths:
+  raw_data: "data/raw/"
+  interim_data: "data/interim/"
+  processed_data: "data/processed/"
+  link_file: "link.txt"
+  models_dir: "models/"
+  reports_dir: "reports/"
+  figures_dir: "reports/figures/"
+
+# --- Scraping Config ---
+scraping:
+  user_agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+  max_retries: 3
+  timeout: 10
+  delay_range: [1, 3]
+  target_sites:
+    - "https://xe.chotot.com/mua-ban-oto"
+    - "https://bonbanh.com"
+
+# --- Preprocessing ---
+preprocessing:
+  drop_columns: ["link", "seller_phone", "image_urls"]
+  normalize_columns: ["brand", "model", "fuel_type", "transmission"]
+  imputation_strategy: "model_based"  # mean | median | model_based
+  imputer_model_path: "models/imputer_model.pkl"
+
+# --- Feature Engineering ---
+features:
+  categorical_features: ["brand", "model", "transmission", "fuel_type"]
+  numerical_features: ["year", "mileage", "engine_size", "horsepower"]
+  derived_features:
+    - "age = 2025 - year"
+    - "price_per_km = price / mileage"
+  correlation_target: "price"   # dùng cho phân tích ảnh hưởng
+
+# --- Model Config ---
+models:
+  imputer_model:
+    type: "KNNImputer"
+    path: "models/imputer_model.pkl"
+    params:
+      n_neighbors: 5
+
+  trend_model:
+    type: "LinearRegression"
+    path: "models/trend_model.pkl"
+    description: "Phân tích xu hướng giá theo thời gian và yếu tố kỹ thuật."
+
+  price_model:
+    type: "XGBoostRegressor"
+    path: "models/price_model.pkl"
+    description: "Dự đoán giá xe dựa trên đặc trưng kỹ thuật và hành trình."
+    params:
+      n_estimators: 500
+      learning_rate: 0.05
+      max_depth: 8
+      subsample: 0.8
+      colsample_bytree: 0.8
+
+# --- Evaluation ---
+evaluation:
+  metrics: ["MAE", "RMSE", "R2"]
+  save_plots: true
+  output_report: "reports/summary_report.md"
+
+# --- Logging ---
+logging:
+  level: "INFO"
+  log_file: "logs/pipeline.log"
+  format: "%(asctime)s [%(levelname)s] %(message)s"
+
+# --- Environment Check ---
+environment:
+  python_version: ">=3.10"
+  required_packages:
+    - numpy
+    - pandas
+    - scikit-learn
+    - xgboost
+    - requests
+    - beautifulsoup4
+    - lxml
+    - matplotlib
+    - seaborn
+    - yaml
+    - jupyterlab
+    - plotly
