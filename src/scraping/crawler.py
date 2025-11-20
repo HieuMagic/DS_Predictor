@@ -32,13 +32,15 @@ class BonbanhCrawler:
         """
         self.headers = get_headers()
         self.delay = delay
+        self.current_brand = None
     
-    def crawl_car_details(self, link: str) -> Optional[Dict[str, str]]:
+    def crawl_car_details(self, link: str, brand: str = None) -> Optional[Dict[str, str]]:
         """
         Crawl details of a single car.
         
         Args:
             link: URL of the car detail page
+            brand: Brand code for proper parsing
             
         Returns:
             Dictionary containing car details or None if failed
@@ -48,7 +50,7 @@ class BonbanhCrawler:
             
             if response.status_code == 200:
                 soup = BeautifulSoup(response.content, 'lxml')
-                car_data = parse_bonbanh_car_details(soup)
+                car_data = parse_bonbanh_car_details(soup, brand=brand or self.current_brand)
                 return car_data
             else:
                 print(f"Failed to fetch {link}, status code: {response.status_code}")
@@ -76,6 +78,9 @@ class BonbanhCrawler:
         """
         if brand not in CAR_BRANDS:
             print(f"Warning: '{brand}' is not in the predefined brands list")
+        
+        # Set current brand for parsing
+        self.current_brand = brand
         
         all_cars = []
         cars_crawled = 0
@@ -127,10 +132,9 @@ class BonbanhCrawler:
                             break
                         
                         print(f"  [{cars_crawled + 1}] Crawling: {link}")
-                        car_data = self.crawl_car_details(link)
+                        car_data = self.crawl_car_details(link, brand=brand)
                         
                         if car_data:
-                            car_data['brand_crawled'] = brand
                             all_cars.append(car_data)
                             
                             # Write immediately to CSV
@@ -156,8 +160,13 @@ class BonbanhCrawler:
         print(f"Crawl completed for brand: {brand}")
         print(f"Total cars crawled: {cars_crawled}")
         if save_to_csv and csv_filepath and csv_filepath.exists():
-            total_in_file = len(pd.read_csv(csv_filepath, encoding='utf-8-sig'))
-            print(f"Total cars in bonbanh.csv: {total_in_file}")
+            try:
+                # Count lines instead of reading entire CSV to avoid column mismatch errors
+                with open(csv_filepath, 'r', encoding='utf-8-sig') as f:
+                    total_in_file = sum(1 for line in f) - 1  # Subtract header
+                print(f"Total cars in bonbanh.csv: {total_in_file}")
+            except Exception as e:
+                print(f"Could not count total cars: {e}")
         print(f"{'='*60}\n")
         
         return all_cars
@@ -174,6 +183,7 @@ class BonbanhCrawler:
             # Remove unwanted fields
             car_data.pop('url', None)
             car_data.pop('crawl_timestamp', None)
+            car_data.pop('title', None)
             
             # Convert to DataFrame
             df = pd.DataFrame([car_data])
@@ -392,8 +402,13 @@ class ChototCrawler:
         print(f"Crawl completed for Chotot.com")
         print(f"Total cars crawled: {cars_crawled}")
         if save_to_csv and csv_filepath and csv_filepath.exists():
-            total_in_file = len(pd.read_csv(csv_filepath, encoding='utf-8-sig'))
-            print(f"Total cars in chotot.csv: {total_in_file}")
+            try:
+                # Count lines instead of reading entire CSV to avoid column mismatch errors
+                with open(csv_filepath, 'r', encoding='utf-8-sig') as f:
+                    total_in_file = sum(1 for line in f) - 1  # Subtract header
+                print(f"Total cars in chotot.csv: {total_in_file}")
+            except Exception as e:
+                print(f"Could not count total cars: {e}")
         print(f"{'='*60}\n")
         
         return all_cars
@@ -410,6 +425,7 @@ class ChototCrawler:
             # Remove unwanted fields
             car_data.pop('url', None)
             car_data.pop('crawl_timestamp', None)
+            car_data.pop('title', None)
             
             # Convert to DataFrame
             df = pd.DataFrame([car_data])

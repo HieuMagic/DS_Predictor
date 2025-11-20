@@ -6,9 +6,12 @@ from .parser import (
     parse_bonbanh_car_details,
     parse_bonbanh_listing,
     parse_chotot_car_details,
-    parse_chotot_listing
+    parse_chotot_listing,
+    split_price,
+    extract_model_from_title,
+    extract_engine_info
 )
-from .utils import CAR_BRANDS, get_headers, rate_limit
+from .utils import CAR_BRANDS, BRAND_MAPPING, get_headers, rate_limit
 
 __all__ = [
     'BonbanhCrawler',
@@ -17,7 +20,11 @@ __all__ = [
     'parse_bonbanh_listing',
     'parse_chotot_car_details',
     'parse_chotot_listing',
+    'split_price',
+    'extract_model_from_title',
+    'extract_engine_info',
     'CAR_BRANDS',
+    'BRAND_MAPPING',
     'get_headers',
     'rate_limit',
 ]
