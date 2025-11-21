@@ -31,6 +31,15 @@ scraping:
     - "https://xe.chotot.com/mua-ban-oto"
     - "https://bonbanh.com"
 
+# --- Database Config ---
+database:
+  host: "localhost"
+  port: 5432
+  dbname: "car_data"
+  user: "postgres"
+  password: "your_password"
+  table_name: "car_listings"
+
 # --- Preprocessing ---
 preprocessing:
   drop_columns: ["link", "seller_phone", "image_urls"]

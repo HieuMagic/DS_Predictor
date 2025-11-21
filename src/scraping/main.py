@@ -48,7 +48,7 @@ def save_results(data: list, output_dir: str = "data", prefix: str = "cars"):
 
 
 def crawl_bonbanh(brand: str, max_cars: int = None, max_pages: int = None, 
-                  output_dir: str = "data"):
+                  output_dir: str = "data", use_db: bool = False):
     """
     Crawl cars from Bonbanh.com.
     
@@ -57,16 +57,34 @@ def crawl_bonbanh(brand: str, max_cars: int = None, max_pages: int = None,
         max_cars: Maximum number of cars to crawl
         max_pages: Maximum number of pages to crawl
         output_dir: Directory to save results
+        use_db: Whether to use PostgreSQL database
     """
-    crawler = BonbanhCrawler(delay=1.0)
-    cars = crawler.crawl_brand(brand, max_cars=max_cars, max_pages=max_pages,
-                               save_to_csv=True, output_dir=output_dir)
+    from .db_handler import CarDatabase
+    import sys
+    
+    crawler = BonbanhCrawler(delay=1.0, use_db=use_db)
+    
+    if use_db:
+        try:
+            with CarDatabase() as db:
+                crawler.db = db
+                cars = crawler.crawl_brand(brand, max_cars=max_cars, max_pages=max_pages,
+                                           save_to_csv=True, output_dir=output_dir)
+        except (ConnectionError, RuntimeError) as e:
+            print(f"\n{'='*60}")
+            print(f"DATABASE ERROR: {e}")
+            print(f"{'='*60}")
+            print("\nStopping program. Please fix database configuration and try again.")
+            sys.exit(1)
+    else:
+        cars = crawler.crawl_brand(brand, max_cars=max_cars, max_pages=max_pages,
+                                   save_to_csv=True, output_dir=output_dir)
     
     return cars
 
 
 def crawl_all_bonbanh_brands(cars_per_brand: int = 10, output_dir: str = "data",
-                              save_combined: bool = True):
+                              save_combined: bool = True, workers: int = 1, use_db: bool = False):
     """
     Crawl cars from all brands on Bonbanh.com.
     
@@ -74,20 +92,45 @@ def crawl_all_bonbanh_brands(cars_per_brand: int = 10, output_dir: str = "data",
         cars_per_brand: Number of cars to crawl per brand
         output_dir: Directory to save results
         save_combined: Whether to save a combined CSV of all brands
+        workers: Number of worker threads
+        use_db: Whether to use PostgreSQL database
     """
-    crawler = BonbanhCrawler(delay=1.0)
-    all_data = crawler.crawl_all_brands(
-        cars_per_brand=cars_per_brand,
-        save_to_csv=True,
-        output_dir=output_dir,
-        save_combined=save_combined
-    )
+    from .db_handler import CarDatabase
+    import sys
+    
+    crawler = BonbanhCrawler(delay=1.0, use_db=use_db)
+    
+    if use_db:
+        try:
+            with CarDatabase() as db:
+                crawler.db = db
+                all_data = crawler.crawl_all_brands(
+                    cars_per_brand=cars_per_brand,
+                    save_to_csv=True,
+                    output_dir=output_dir,
+                    save_combined=save_combined,
+                    workers=workers
+                )
+        except (ConnectionError, RuntimeError) as e:
+            print(f"\n{'='*60}")
+            print(f"DATABASE ERROR: {e}")
+            print(f"{'='*60}")
+            print("\nStopping program. Please fix database configuration and try again.")
+            sys.exit(1)
+    else:
+        all_data = crawler.crawl_all_brands(
+            cars_per_brand=cars_per_brand,
+            save_to_csv=True,
+            output_dir=output_dir,
+            save_combined=save_combined,
+            workers=workers
+        )
     
     return all_data
 
 
 def crawl_chotot(max_cars: int = None, max_pages: int = None, 
-                 output_dir: str = "data"):
+                 output_dir: str = "data", use_db: bool = False):
     """
     Crawl cars from Chotot.com.
     
@@ -95,10 +138,28 @@ def crawl_chotot(max_cars: int = None, max_pages: int = None,
         max_cars: Maximum number of cars to crawl
         max_pages: Maximum number of pages to crawl
         output_dir: Directory to save results
+        use_db: Whether to use PostgreSQL database
     """
-    crawler = ChototCrawler(delay=0.5)
-    cars = crawler.crawl_listings(max_cars=max_cars, max_pages=max_pages,
-                                  save_to_csv=True, output_dir=output_dir)
+    from .db_handler import CarDatabase
+    import sys
+    
+    crawler = ChototCrawler(delay=0.5, use_db=use_db)
+    
+    if use_db:
+        try:
+            with CarDatabase() as db:
+                crawler.db = db
+                cars = crawler.crawl_listings(max_cars=max_cars, max_pages=max_pages,
+                                              save_to_csv=True, output_dir=output_dir)
+        except (ConnectionError, RuntimeError) as e:
+            print(f"\n{'='*60}")
+            print(f"DATABASE ERROR: {e}")
+            print(f"{'='*60}")
+            print("\nStopping program. Please fix database configuration and try again.")
+            sys.exit(1)
+    else:
+        cars = crawler.crawl_listings(max_cars=max_cars, max_pages=max_pages,
+                                      save_to_csv=True, output_dir=output_dir)
     
     return cars
 
@@ -162,6 +223,19 @@ def main():
     )
     
     parser.add_argument(
+        '--workers',
+        type=int,
+        default=1,
+        help='Number of worker threads for parallel crawling (default: 1)'
+    )
+    
+    parser.add_argument(
+        '--use-db',
+        action='store_true',
+        help='Store data in PostgreSQL database (requires config.yaml setup)'
+    )
+    
+    parser.add_argument(
         '--list-brands',
         action='store_true',
         help='List all available car brands for Bonbanh'
@@ -192,7 +266,9 @@ def main():
         crawl_all_bonbanh_brands(
             cars_per_brand=args.cars_per_brand,
             output_dir=args.output_dir,
-            save_combined=not args.no_combined
+            save_combined=not args.no_combined,
+            workers=args.workers,
+            use_db=args.use_db
         )
         
         # Skip Chotot if source was 'both'
@@ -215,7 +291,8 @@ def main():
                 brand=args.brand,
                 max_cars=args.max_cars,
                 max_pages=args.max_pages,
-                output_dir=args.output_dir
+                output_dir=args.output_dir,
+                use_db=args.use_db
             )
     
     if args.source in ['chotot', 'both', 'skip_bonbanh']:
@@ -225,7 +302,8 @@ def main():
         crawl_chotot(
             max_cars=args.max_cars,
             max_pages=args.max_pages,
-            output_dir=args.output_dir
+            output_dir=args.output_dir,
+            use_db=args.use_db
         )
     
     print("\n" + "=" * 60)

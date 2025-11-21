@@ -8,6 +8,8 @@ import time
 import pandas as pd
 from pathlib import Path
 from datetime import datetime
+import concurrent.futures
+import threading
 
 from .utils import get_headers, rate_limit, CAR_BRANDS
 from .parser import (
@@ -16,6 +18,7 @@ from .parser import (
     parse_chotot_car_details,
     parse_chotot_listing
 )
+from .db_handler import CarDatabase
 
 
 class BonbanhCrawler:
@@ -23,16 +26,21 @@ class BonbanhCrawler:
     
     BASE_URL = "https://bonbanh.com/oto/"
     
-    def __init__(self, delay: float = 0.1):
+    def __init__(self, delay: float = 0.1, use_db: bool = False):
         """
         Initialize the Bonbanh crawler.
         
         Args:
             delay: Delay between requests in seconds (default: 1.0)
+            use_db: Whether to use PostgreSQL database (default: False)
         """
         self.headers = get_headers()
         self.delay = delay
         self.current_brand = None
+        self.csv_lock = threading.Lock()
+        self.use_db = use_db
+        self.db = None
+        self.db_lock = threading.Lock()
     
     def crawl_car_details(self, link: str, brand: str = None) -> Optional[Dict[str, str]]:
         """
@@ -51,6 +59,7 @@ class BonbanhCrawler:
             if response.status_code == 200:
                 soup = BeautifulSoup(response.content, 'lxml')
                 car_data = parse_bonbanh_car_details(soup, brand=brand or self.current_brand)
+                car_data['url'] = link
                 return car_data
             else:
                 print(f"Failed to fetch {link}, status code: {response.status_code}")
@@ -84,6 +93,7 @@ class BonbanhCrawler:
         
         all_cars = []
         cars_crawled = 0
+        skipped_count = 0
         page = 0
         
         # Setup CSV file path if saving
@@ -97,6 +107,8 @@ class BonbanhCrawler:
         print(f"Starting crawl for brand: {brand}")
         print(f"Max cars: {max_cars if max_cars else 'unlimited'}")
         print(f"Max pages: {max_pages if max_pages else 'unlimited'}")
+        if self.use_db:
+            print(f"Database: Enabled")
         print(f"{'='*60}\n")
         
         while True:
@@ -131,18 +143,34 @@ class BonbanhCrawler:
                         if max_cars and cars_crawled >= max_cars:
                             break
                         
+                        # Check if URL exists in database
+                        if self.use_db and self.db:
+                            if self.db.url_exists(link):
+                                print(f"  [SKIP] URL already in database: {link}")
+                                skipped_count += 1
+                                continue
+                        
                         print(f"  [{cars_crawled + 1}] Crawling: {link}")
                         car_data = self.crawl_car_details(link, brand=brand)
                         
                         if car_data:
                             all_cars.append(car_data)
                             
-                            # Write immediately to CSV
+                            # Insert into database if enabled
+                            if self.use_db and self.db:
+                                with self.db_lock:
+                                    inserted = self.db.insert_car(car_data)
+                                    if inserted:
+                                        print(f"  ✓ Added to database successfully")
+                                    else:
+                                        print(f"  ⚠ Already exists in database")
+                            
+                            # Write to CSV
                             if save_to_csv and csv_filepath:
                                 self._append_single_car_to_csv(car_data, csv_filepath)
                             
                             cars_crawled += 1
-                            print(f"  ✓ Successfully crawled: {car_data.get('title', 'Unknown')}")
+                            print(f"  ✓ Successfully crawled: {car_data.get('model', 'Unknown')}")
                         
                         rate_limit(self.delay)
                     
@@ -159,6 +187,10 @@ class BonbanhCrawler:
         print(f"\n{'='*60}")
         print(f"Crawl completed for brand: {brand}")
         print(f"Total cars crawled: {cars_crawled}")
+        if self.use_db:
+            print(f"Skipped (already in DB): {skipped_count}")
+            if self.db:
+                print(f"Total in database: {self.db.get_total_count()}")
         if save_to_csv and csv_filepath and csv_filepath.exists():
             try:
                 # Count lines instead of reading entire CSV to avoid column mismatch errors
@@ -181,24 +213,24 @@ class BonbanhCrawler:
         """
         try:
             # Remove unwanted fields
-            car_data.pop('url', None)
             car_data.pop('crawl_timestamp', None)
             car_data.pop('title', None)
             
             # Convert to DataFrame
             df = pd.DataFrame([car_data])
             
-            # Append to existing file or create new one
-            if filepath.exists():
-                df.to_csv(filepath, mode='a', header=False, index=False, encoding='utf-8-sig')
-            else:
-                df.to_csv(filepath, mode='w', header=True, index=False, encoding='utf-8-sig')
+            with self.csv_lock:
+                # Append to existing file or create new one
+                if filepath.exists():
+                    df.to_csv(filepath, mode='a', header=False, index=False, encoding='utf-8-sig')
+                else:
+                    df.to_csv(filepath, mode='w', header=True, index=False, encoding='utf-8-sig')
             
         except Exception as e:
             print(f"  ✗ Error writing to CSV: {e}")
     
     def crawl_all_brands(self, cars_per_brand: int = 10, save_to_csv: bool = True,
-                         output_dir: str = "data", save_combined: bool = True) -> Dict[str, List[Dict[str, str]]]:
+                         output_dir: str = "data", save_combined: bool = True, workers: int = 1) -> Dict[str, List[Dict[str, str]]]:
         """
         Crawl cars from all available brands.
         
@@ -207,6 +239,7 @@ class BonbanhCrawler:
             save_to_csv: Whether to save results to CSV files (default: True)
             output_dir: Directory to save CSV files (default: "data")
             save_combined: Whether to save a combined CSV of all brands (default: True)
+            workers: Number of worker threads for parallel crawling (default: 1)
             
         Returns:
             Dictionary with brand names as keys and lists of car data as values
@@ -221,36 +254,35 @@ class BonbanhCrawler:
         print(f"{'#'*60}")
         print(f"Total brands: {len(CAR_BRANDS)}")
         print(f"Cars per brand: {cars_per_brand}")
+        print(f"Workers: {workers}")
         print(f"{'#'*60}\n")
         
-        for idx, brand in enumerate(CAR_BRANDS, 1):
-            print(f"\n[{idx}/{len(CAR_BRANDS)}] Processing brand: {brand.upper()}")
-            print("-" * 60)
-            
-            try:
-                cars = self.crawl_brand(
-                    brand=brand,
-                    max_cars=cars_per_brand,
-                    save_to_csv=save_to_csv,
+        with concurrent.futures.ThreadPoolExecutor(max_workers=workers) as executor:
+            future_to_brand = {
+                executor.submit(
+                    self.crawl_brand, 
+                    brand=brand, 
+                    max_cars=cars_per_brand, 
+                    save_to_csv=save_to_csv, 
                     output_dir=output_dir
-                )
-                
-                if cars:
-                    all_brands_data[brand] = cars
-                    total_cars += len(cars)
-                    successful_brands += 1
-                    print(f"✓ Brand '{brand}': {len(cars)} cars crawled")
-                else:
-                    failed_brands.append(brand)
-                    print(f"⚠ Brand '{brand}': No cars found")
-                    
-            except Exception as e:
-                failed_brands.append(brand)
-                print(f"✗ Brand '{brand}': Error - {e}")
+                ): brand for brand in CAR_BRANDS
+            }
             
-            # Small delay between brands
-            if idx < len(CAR_BRANDS):
-                time.sleep(self.delay)
+            for i, future in enumerate(concurrent.futures.as_completed(future_to_brand), 1):
+                brand = future_to_brand[future]
+                try:
+                    cars = future.result()
+                    if cars:
+                        all_brands_data[brand] = cars
+                        total_cars += len(cars)
+                        successful_brands += 1
+                    else:
+                        failed_brands.append(brand)
+                except Exception as e:
+                    failed_brands.append(brand)
+                    print(f"✗ Brand '{brand}': Error - {e}")
+                
+                print(f"Progress: [{i}/{len(CAR_BRANDS)}] brands completed")
         
         # Print summary
         print(f"\n{'#'*60}")
@@ -274,15 +306,19 @@ class ChototCrawler:
     
     BASE_URL = "https://xe.chotot.com/mua-ban-oto"
     
-    def __init__(self, delay: float = 0.1):
+    def __init__(self, delay: float = 0.1, use_db: bool = False):
         """
         Initialize the Chotot crawler.
         
         Args:
             delay: Delay between requests in seconds (default: 0.5)
+            use_db: Whether to use PostgreSQL database (default: False)
         """
         self.headers = get_headers()
         self.delay = delay
+        self.use_db = use_db
+        self.db = None
+        self.db_lock = threading.Lock()
     
     def crawl_car_details(self, link: str) -> Optional[Dict[str, str]]:
         """
@@ -300,6 +336,7 @@ class ChototCrawler:
             if response.status_code == 200:
                 soup = BeautifulSoup(response.content, 'lxml')
                 car_data = parse_chotot_car_details(soup)
+                car_data['url'] = link
                 return car_data
             else:
                 print(f"Failed to fetch {link}, status code: {response.status_code}")
@@ -326,6 +363,7 @@ class ChototCrawler:
         """
         all_cars = []
         cars_crawled = 0
+        skipped_count = 0
         page = 1
         
         # Setup CSV file path if saving
@@ -339,6 +377,8 @@ class ChototCrawler:
         print(f"Starting crawl for Chotot.com")
         print(f"Max cars: {max_cars if max_cars else 'unlimited'}")
         print(f"Max pages: {max_pages if max_pages else 'unlimited'}")
+        if self.use_db:
+            print(f"Database: Enabled")
         print(f"{'='*60}\n")
         
         while True:
@@ -373,13 +413,29 @@ class ChototCrawler:
                         if max_cars and cars_crawled >= max_cars:
                             break
                         
+                        # Check if URL exists in database
+                        if self.use_db and self.db:
+                            if self.db.url_exists(link):
+                                print(f"  [SKIP] URL already in database: {link}")
+                                skipped_count += 1
+                                continue
+                        
                         print(f"  [{cars_crawled + 1}] Crawling: {link}")
                         car_data = self.crawl_car_details(link)
                         
                         if car_data:
                             all_cars.append(car_data)
                             
-                            # Write immediately to CSV
+                            # Insert into database if enabled
+                            if self.use_db and self.db:
+                                with self.db_lock:
+                                    inserted = self.db.insert_car(car_data)
+                                    if inserted:
+                                        print(f"  ✓ Added to database successfully")
+                                    else:
+                                        print(f"  ⚠ Already exists in database")
+                            
+                            # Write to CSV
                             if save_to_csv and csv_filepath:
                                 self._append_single_car_to_csv(car_data, csv_filepath)
                             
@@ -401,6 +457,10 @@ class ChototCrawler:
         print(f"\n{'='*60}")
         print(f"Crawl completed for Chotot.com")
         print(f"Total cars crawled: {cars_crawled}")
+        if self.use_db:
+            print(f"Skipped (already in DB): {skipped_count}")
+            if self.db:
+                print(f"Total in database: {self.db.get_total_count()}")
         if save_to_csv and csv_filepath and csv_filepath.exists():
             try:
                 # Count lines instead of reading entire CSV to avoid column mismatch errors
@@ -423,7 +483,6 @@ class ChototCrawler:
         """
         try:
             # Remove unwanted fields
-            car_data.pop('url', None)
             car_data.pop('crawl_timestamp', None)
             car_data.pop('title', None)
             

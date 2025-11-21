@@ -6,6 +6,9 @@ lxml
 trafilatura
 beautifulsoup4
 
+# Database
+psycopg2-binary
+
 # Feature Engineering & Exploratory Data Analysis 
 scikit-learn
 numpy

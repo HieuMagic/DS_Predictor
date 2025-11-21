@@ -34,3 +34,5 @@ doc/_build
 .idea
 *.code-workspace
 .vscode
+
+data/
