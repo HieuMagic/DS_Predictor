@@ -47,8 +47,8 @@ def save_results(data: list, output_dir: str = "data", prefix: str = "cars"):
     return json_file, csv_file
 
 
-def crawl_bonbanh(brand: str, max_cars: int = None, max_pages: int = None, 
-                  output_dir: str = "data", use_db: bool = False):
+def crawl_bonbanh(brand: str, max_cars: int = 500, max_pages: int = None, 
+                  output_dir: str = "data"):
     """
     Crawl cars from Bonbanh.com.
     
@@ -57,34 +57,16 @@ def crawl_bonbanh(brand: str, max_cars: int = None, max_pages: int = None,
         max_cars: Maximum number of cars to crawl
         max_pages: Maximum number of pages to crawl
         output_dir: Directory to save results
-        use_db: Whether to use PostgreSQL database
     """
-    from .db_handler import CarDatabase
-    import sys
-    
-    crawler = BonbanhCrawler(delay=1.0, use_db=use_db)
-    
-    if use_db:
-        try:
-            with CarDatabase() as db:
-                crawler.db = db
-                cars = crawler.crawl_brand(brand, max_cars=max_cars, max_pages=max_pages,
-                                           save_to_csv=True, output_dir=output_dir)
-        except (ConnectionError, RuntimeError) as e:
-            print(f"\n{'='*60}")
-            print(f"DATABASE ERROR: {e}")
-            print(f"{'='*60}")
-            print("\nStopping program. Please fix database configuration and try again.")
-            sys.exit(1)
-    else:
-        cars = crawler.crawl_brand(brand, max_cars=max_cars, max_pages=max_pages,
-                                   save_to_csv=True, output_dir=output_dir)
+    crawler = BonbanhCrawler(delay=1.0)
+    cars = crawler.crawl_brand(brand, max_cars=max_cars, max_pages=max_pages,
+                               save_to_csv=True, output_dir=output_dir)
     
     return cars
 
 
-def crawl_all_bonbanh_brands(cars_per_brand: int = 10, output_dir: str = "data",
-                              save_combined: bool = True, workers: int = 1, use_db: bool = False):
+def crawl_all_bonbanh_brands(cars_per_brand: int = 500, output_dir: str = "data",
+                              save_combined: bool = True, workers: int = 1):
     """
     Crawl cars from all brands on Bonbanh.com.
     
@@ -93,44 +75,21 @@ def crawl_all_bonbanh_brands(cars_per_brand: int = 10, output_dir: str = "data",
         output_dir: Directory to save results
         save_combined: Whether to save a combined CSV of all brands
         workers: Number of worker threads
-        use_db: Whether to use PostgreSQL database
     """
-    from .db_handler import CarDatabase
-    import sys
-    
-    crawler = BonbanhCrawler(delay=1.0, use_db=use_db)
-    
-    if use_db:
-        try:
-            with CarDatabase() as db:
-                crawler.db = db
-                all_data = crawler.crawl_all_brands(
-                    cars_per_brand=cars_per_brand,
-                    save_to_csv=True,
-                    output_dir=output_dir,
-                    save_combined=save_combined,
-                    workers=workers
-                )
-        except (ConnectionError, RuntimeError) as e:
-            print(f"\n{'='*60}")
-            print(f"DATABASE ERROR: {e}")
-            print(f"{'='*60}")
-            print("\nStopping program. Please fix database configuration and try again.")
-            sys.exit(1)
-    else:
-        all_data = crawler.crawl_all_brands(
-            cars_per_brand=cars_per_brand,
-            save_to_csv=True,
-            output_dir=output_dir,
-            save_combined=save_combined,
-            workers=workers
-        )
+    crawler = BonbanhCrawler(delay=1.0)
+    all_data = crawler.crawl_all_brands(
+        cars_per_brand=cars_per_brand,
+        save_to_csv=True,
+        output_dir=output_dir,
+        save_combined=save_combined,
+        workers=workers
+    )
     
     return all_data
 
 
-def crawl_chotot(max_cars: int = None, max_pages: int = None, 
-                 output_dir: str = "data", use_db: bool = False):
+def crawl_chotot(max_cars: int = 5000, max_pages: int = None, 
+                 output_dir: str = "data"):
     """
     Crawl cars from Chotot.com.
     
@@ -138,34 +97,18 @@ def crawl_chotot(max_cars: int = None, max_pages: int = None,
         max_cars: Maximum number of cars to crawl
         max_pages: Maximum number of pages to crawl
         output_dir: Directory to save results
-        use_db: Whether to use PostgreSQL database
     """
-    from .db_handler import CarDatabase
-    import sys
-    
-    crawler = ChototCrawler(delay=0.5, use_db=use_db)
-    
-    if use_db:
-        try:
-            with CarDatabase() as db:
-                crawler.db = db
-                cars = crawler.crawl_listings(max_cars=max_cars, max_pages=max_pages,
-                                              save_to_csv=True, output_dir=output_dir)
-        except (ConnectionError, RuntimeError) as e:
-            print(f"\n{'='*60}")
-            print(f"DATABASE ERROR: {e}")
-            print(f"{'='*60}")
-            print("\nStopping program. Please fix database configuration and try again.")
-            sys.exit(1)
-    else:
-        cars = crawler.crawl_listings(max_cars=max_cars, max_pages=max_pages,
-                                      save_to_csv=True, output_dir=output_dir)
+    crawler = ChototCrawler(delay=0.5)
+    cars = crawler.crawl_listings(max_cars=max_cars, max_pages=max_pages,
+                                  save_to_csv=True, output_dir=output_dir)
     
     return cars
 
 
 def main():
     """Main entry point for the scraper."""
+    from .progress_tracker import ProgressTracker
+    
     parser = argparse.ArgumentParser(
         description="Crawl car listings from Vietnamese websites"
     )
@@ -193,8 +136,8 @@ def main():
     parser.add_argument(
         '--cars-per-brand',
         type=int,
-        default=10,
-        help='Number of cars to crawl per brand when using --all-brands (default: 10)'
+        default=500,
+        help='Number of cars to crawl per brand when using --all-brands (default: 500)'
     )
     
     parser.add_argument(
@@ -206,7 +149,8 @@ def main():
     parser.add_argument(
         '--max-cars',
         type=int,
-        help='Maximum number of cars to crawl'
+        default=5000,
+        help='Maximum number of cars to crawl (default: 5000 for Chotot)'
     )
     
     parser.add_argument(
@@ -230,9 +174,15 @@ def main():
     )
     
     parser.add_argument(
-        '--use-db',
+        '--reset-progress',
         action='store_true',
-        help='Store data in PostgreSQL database (requires config.yaml setup)'
+        help='Reset crawl progress and start from beginning'
+    )
+    
+    parser.add_argument(
+        '--show-progress',
+        action='store_true',
+        help='Show current crawl progress and exit'
     )
     
     parser.add_argument(
@@ -242,6 +192,18 @@ def main():
     )
     
     args = parser.parse_args()
+    
+    # Handle progress commands
+    progress = ProgressTracker()
+    
+    if args.show_progress:
+        progress.show_progress()
+        return
+    
+    if args.reset_progress:
+        progress.reset()
+        print("All crawl progress has been reset.")
+        return
     
     # List brands if requested
     if args.list_brands:
@@ -267,8 +229,7 @@ def main():
             cars_per_brand=args.cars_per_brand,
             output_dir=args.output_dir,
             save_combined=not args.no_combined,
-            workers=args.workers,
-            use_db=args.use_db
+            workers=args.workers
         )
         
         # Skip Chotot if source was 'both'
@@ -291,8 +252,7 @@ def main():
                 brand=args.brand,
                 max_cars=args.max_cars,
                 max_pages=args.max_pages,
-                output_dir=args.output_dir,
-                use_db=args.use_db
+                output_dir=args.output_dir
             )
     
     if args.source in ['chotot', 'both', 'skip_bonbanh']:
@@ -302,8 +262,7 @@ def main():
         crawl_chotot(
             max_cars=args.max_cars,
             max_pages=args.max_pages,
-            output_dir=args.output_dir,
-            use_db=args.use_db
+            output_dir=args.output_dir
         )
     
     print("\n" + "=" * 60)

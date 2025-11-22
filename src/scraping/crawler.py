@@ -18,7 +18,7 @@ from .parser import (
     parse_chotot_car_details,
     parse_chotot_listing
 )
-from .db_handler import CarDatabase
+from .progress_tracker import ProgressTracker
 
 
 class BonbanhCrawler:
@@ -26,21 +26,18 @@ class BonbanhCrawler:
     
     BASE_URL = "https://bonbanh.com/oto/"
     
-    def __init__(self, delay: float = 0.1, use_db: bool = False):
+    def __init__(self, delay: float = 0.1):
         """
         Initialize the Bonbanh crawler.
         
         Args:
             delay: Delay between requests in seconds (default: 1.0)
-            use_db: Whether to use PostgreSQL database (default: False)
         """
         self.headers = get_headers()
         self.delay = delay
         self.current_brand = None
         self.csv_lock = threading.Lock()
-        self.use_db = use_db
-        self.db = None
-        self.db_lock = threading.Lock()
+        self.progress = ProgressTracker()
     
     def crawl_car_details(self, link: str, brand: str = None) -> Optional[Dict[str, str]]:
         """
@@ -94,7 +91,16 @@ class BonbanhCrawler:
         all_cars = []
         cars_crawled = 0
         skipped_count = 0
-        page = 0
+        
+        # Check if already completed
+        if self.progress.is_completed('bonbanh', brand):
+            print(f"⚠ Brand '{brand}' was already completed. Use --reset-progress to start over.")
+            return all_cars
+        
+        # Get last crawled page
+        page = self.progress.get_last_page('bonbanh', brand)
+        if page > 0:
+            print(f"📍 Resuming from page {page + 1} (last completed: page {page})")
         
         # Setup CSV file path if saving
         csv_filepath = None
@@ -107,8 +113,6 @@ class BonbanhCrawler:
         print(f"Starting crawl for brand: {brand}")
         print(f"Max cars: {max_cars if max_cars else 'unlimited'}")
         print(f"Max pages: {max_pages if max_pages else 'unlimited'}")
-        if self.use_db:
-            print(f"Database: Enabled")
         print(f"{'='*60}\n")
         
         while True:
@@ -143,27 +147,11 @@ class BonbanhCrawler:
                         if max_cars and cars_crawled >= max_cars:
                             break
                         
-                        # Check if URL exists in database
-                        if self.use_db and self.db:
-                            if self.db.url_exists(link):
-                                print(f"  [SKIP] URL already in database: {link}")
-                                skipped_count += 1
-                                continue
-                        
                         print(f"  [{cars_crawled + 1}] Crawling: {link}")
                         car_data = self.crawl_car_details(link, brand=brand)
                         
                         if car_data:
                             all_cars.append(car_data)
-                            
-                            # Insert into database if enabled
-                            if self.use_db and self.db:
-                                with self.db_lock:
-                                    inserted = self.db.insert_car(car_data)
-                                    if inserted:
-                                        print(f"  ✓ Added to database successfully")
-                                    else:
-                                        print(f"  ⚠ Already exists in database")
                             
                             # Write to CSV
                             if save_to_csv and csv_filepath:
@@ -173,6 +161,9 @@ class BonbanhCrawler:
                             print(f"  ✓ Successfully crawled: {car_data.get('model', 'Unknown')}")
                         
                         rate_limit(self.delay)
+                    
+                    # Save progress after completing this page
+                    self.progress.update_page('bonbanh', page, brand)
                     
                     page += 1
                     
@@ -187,10 +178,6 @@ class BonbanhCrawler:
         print(f"\n{'='*60}")
         print(f"Crawl completed for brand: {brand}")
         print(f"Total cars crawled: {cars_crawled}")
-        if self.use_db:
-            print(f"Skipped (already in DB): {skipped_count}")
-            if self.db:
-                print(f"Total in database: {self.db.get_total_count()}")
         if save_to_csv and csv_filepath and csv_filepath.exists():
             try:
                 # Count lines instead of reading entire CSV to avoid column mismatch errors
@@ -200,6 +187,10 @@ class BonbanhCrawler:
             except Exception as e:
                 print(f"Could not count total cars: {e}")
         print(f"{'='*60}\n")
+        
+        # Mark as completed if we finished naturally (not due to max limits)
+        if not ((max_cars and cars_crawled >= max_cars) or (max_pages and page >= max_pages)):
+            self.progress.mark_completed('bonbanh', brand)
         
         return all_cars
     
@@ -306,19 +297,16 @@ class ChototCrawler:
     
     BASE_URL = "https://xe.chotot.com/mua-ban-oto"
     
-    def __init__(self, delay: float = 0.1, use_db: bool = False):
+    def __init__(self, delay: float = 0.1):
         """
         Initialize the Chotot crawler.
         
         Args:
             delay: Delay between requests in seconds (default: 0.5)
-            use_db: Whether to use PostgreSQL database (default: False)
         """
         self.headers = get_headers()
         self.delay = delay
-        self.use_db = use_db
-        self.db = None
-        self.db_lock = threading.Lock()
+        self.progress = ProgressTracker()
     
     def crawl_car_details(self, link: str) -> Optional[Dict[str, str]]:
         """
@@ -364,7 +352,19 @@ class ChototCrawler:
         all_cars = []
         cars_crawled = 0
         skipped_count = 0
-        page = 1
+        
+        # Check if already completed
+        if self.progress.is_completed('chotot'):
+            print(f"⚠ Chotot was already completed. Use --reset-progress to start over.")
+            return all_cars
+        
+        # Get last crawled page
+        page = self.progress.get_last_page('chotot')
+        if page > 0:
+            page += 1  # Start from next page
+            print(f"📍 Resuming from page {page} (last completed: page {page - 1})")
+        else:
+            page = 1
         
         # Setup CSV file path if saving
         csv_filepath = None
@@ -377,8 +377,6 @@ class ChototCrawler:
         print(f"Starting crawl for Chotot.com")
         print(f"Max cars: {max_cars if max_cars else 'unlimited'}")
         print(f"Max pages: {max_pages if max_pages else 'unlimited'}")
-        if self.use_db:
-            print(f"Database: Enabled")
         print(f"{'='*60}\n")
         
         while True:
@@ -413,27 +411,11 @@ class ChototCrawler:
                         if max_cars and cars_crawled >= max_cars:
                             break
                         
-                        # Check if URL exists in database
-                        if self.use_db and self.db:
-                            if self.db.url_exists(link):
-                                print(f"  [SKIP] URL already in database: {link}")
-                                skipped_count += 1
-                                continue
-                        
                         print(f"  [{cars_crawled + 1}] Crawling: {link}")
                         car_data = self.crawl_car_details(link)
                         
                         if car_data:
                             all_cars.append(car_data)
-                            
-                            # Insert into database if enabled
-                            if self.use_db and self.db:
-                                with self.db_lock:
-                                    inserted = self.db.insert_car(car_data)
-                                    if inserted:
-                                        print(f"  ✓ Added to database successfully")
-                                    else:
-                                        print(f"  ⚠ Already exists in database")
                             
                             # Write to CSV
                             if save_to_csv and csv_filepath:
@@ -443,6 +425,9 @@ class ChototCrawler:
                             print(f"  ✓ Successfully crawled")
                         
                         rate_limit(self.delay)
+                    
+                    # Save progress after completing this page
+                    self.progress.update_page('chotot', page)
                     
                     page += 1
                     
@@ -457,10 +442,6 @@ class ChototCrawler:
         print(f"\n{'='*60}")
         print(f"Crawl completed for Chotot.com")
         print(f"Total cars crawled: {cars_crawled}")
-        if self.use_db:
-            print(f"Skipped (already in DB): {skipped_count}")
-            if self.db:
-                print(f"Total in database: {self.db.get_total_count()}")
         if save_to_csv and csv_filepath and csv_filepath.exists():
             try:
                 # Count lines instead of reading entire CSV to avoid column mismatch errors
@@ -470,6 +451,10 @@ class ChototCrawler:
             except Exception as e:
                 print(f"Could not count total cars: {e}")
         print(f"{'='*60}\n")
+        
+        # Mark as completed if we finished naturally (not due to max limits)
+        if not ((max_cars and cars_crawled >= max_cars) or (max_pages and page > max_pages)):
+            self.progress.mark_completed('chotot')
         
         return all_cars
     
