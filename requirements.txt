@@ -16,3 +16,6 @@ seaborn
 notebook
 jupyterlab
 IPython
+
+# other
+unidecode
