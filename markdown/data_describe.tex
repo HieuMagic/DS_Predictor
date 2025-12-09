@@ -1,0 +1,930 @@
+\documentclass[12pt,a4paper]{article}
+
+% Packages
+\usepackage[utf8]{vietnam}
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{listings}
+\usepackage{amsmath}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+
+% Hyperref setup
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,
+    urlcolor=cyan,
+    pdftitle={Mô tả Dữ Liệu},
+    pdfauthor={Group 08},
+}
+
+% Code listing setup
+\lstset{
+    basicstyle=\ttfamily\small,
+    breaklines=true,
+    frame=single,
+    backgroundcolor=\color{gray!10}
+}
+
+% Header and footer
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{Data Science}
+\lhead{Mô tả Dữ Liệu}
+\rfoot{Trang \thepage}
+
+% Title formatting
+\titleformat{\section}{\Large\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}{\large\bfseries}{\thesubsection}{1em}{}
+\titleformat{\subsubsection}{\normalsize\bfseries}{\thesubsubsection}{1em}{}
+
+\title{\textbf{Mô tả Dữ Liệu}}
+\author{
+    Nguyễn Quang Duy \and Lưu Trọng Hiếu \and Văn Đình Hiếu
+}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+\tableofcontents
+\newpage
+
+\section{Tổng Quan Dataset}
+
+\subsection{Thông tin cơ bản}
+\begin{itemize}
+    \item \textbf{Số lượng mẫu}: 14,585 xe
+    \item \textbf{Số lượng đặc trưng}: 71 features (70 features + 1 target)
+    \item \textbf{Biến mục tiêu}: \texttt{price\_million} (Giá xe tính bằng triệu VNĐ)
+    \item \textbf{Loại bài toán}: Regression (Dự đoán giá xe)
+    \item \textbf{Nguồn dữ liệu}:
+    \begin{itemize}
+        \item Chotot.com: 4,928 mẫu ban đầu
+        \item Bonbanh.com: 10,000 mẫu ban đầu
+        \item Sau xử lý outliers và missing values: 14,585 mẫu
+    \end{itemize}
+\end{itemize}
+
+\section{Tổng Hợp Quyết Định về Features}
+
+\textbf{Mục tiêu:} Dự đoán giá xe (regression) với độ chính xác cao nhất. Target: \texttt{price\_million}
+
+\subsection{Quyết định về features}
+
+\begin{longtable}{llll}
+\toprule
+\textbf{Cột} & \textbf{Chotot} & \textbf{BonBanh} & \textbf{Xử lý} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{Cột} & \textbf{Chotot} & \textbf{BonBanh} & \textbf{Xử lý} \\
+\midrule
+\endhead
+brand & Hãng & Extract từ title & Chuẩn hóa tên hãng \\
+model & Dòng xe & Extract từ title & Chuẩn hóa tên model \\
+price\_million & Parse từ price & Parse từ price & Target variable \\
+year & Năm sản xuất & Năm sản xuất & Convert int \\
+km & Số Km đã đi & Số Km đã đi & Parse, handle placeholders \\
+transmission & Hộp số & Hộp số & Chuẩn hóa: AT/MT \\
+fuel\_type & Nhiên liệu & Tách từ Động cơ & Chuẩn hóa categories \\
+body\_type & Kiểu dáng & Kiểu dáng & Impute theo brand+model \\
+seats & Số chỗ & Số chỗ ngồi & Impute theo body\_type \\
+origin & Xuất xứ & Xuất xứ & Binary: Nhập khẩu/Trong nước \\
+condition & Tình trạng & Tình trạng & Binary: Mới/Đã dùng \\
+city & Parse từ location & Parse từ location & Fill "unknow" nếu thiếu \\
+engine & Tạo thêm missing\_engine & Parse từ nhiên liệu & Fill 0 nếu thiếu \\
+\bottomrule
+\end{longtable}
+
+\subsection{Các cột sẽ BỎ}
+
+\textbf{Chotot:}
+\begin{itemize}
+    \item \texttt{Còn hạn đăng kiểm} (58.3\% missing)
+    \item \texttt{Số đời chủ} (57.0\% missing)
+    \item \texttt{Có phụ kiện đi kèm} (67.6\% missing)
+    \item \texttt{Chính sách bảo hành} (không ảnh hưởng giá)
+    \item \texttt{Trọng lượng}, \texttt{Trọng tải}, \texttt{seller} (ít liên quan)
+\end{itemize}
+
+\textbf{BonBanh:}
+\begin{itemize}
+    \item \texttt{Màu ngoại thất}, \texttt{Màu nội thất} (ít ảnh hưởng giá, phức tạp)
+    \item \texttt{Dẫn động} (không có ở Chotot, khó fill chính xác)
+    \item \texttt{Số cửa} (không có ở Chotot, ít quan trọng)
+\end{itemize}
+
+\section{Nguồn Dữ Liệu Gốc}
+
+\subsection{Dataset Chotot (\texttt{raw\_chotot\_car\_features.csv})}
+
+\subsubsection{Đặc điểm}
+\begin{itemize}
+    \item Nguồn: Web scraping từ Chotot.com
+    \item Số mẫu: 4,928 xe
+    \item Số features: 21 cột
+    \item Tình trạng: Nhiều missing values (17\%-100\%), dữ liệu chưa chuẩn hóa
+\end{itemize}
+
+\subsubsection{Các trường dữ liệu quan trọng}
+\begin{itemize}
+    \item \texttt{price}: Giá xe (format: ``320.000.000 đ'')
+    \item \texttt{Hãng}, \texttt{Dòng xe}: Thông tin hãng và model xe
+    \item \texttt{Số Km đã đi}: Số km đã đi (có giá trị placeholder 999999)
+    \item \texttt{Năm sản xuất}: Năm sản xuất xe
+    \item \texttt{Hộp số}: Loại hộp số (Tự động/Số sàn/Bán tự động)
+    \item \texttt{Nhiên liệu}: Loại nhiên liệu (Xăng/Dầu/Điện/Hybrid)
+    \item \texttt{Kiểu dáng}: Kiểu dáng xe (SUV, Sedan, Hatchback, etc.)
+    \item \texttt{Số chỗ}: Số chỗ ngồi
+    \item \texttt{Xuất xứ}: Quốc gia xuất xứ
+    \item \texttt{Tình trạng}: Tình trạng xe (Đã sử dụng/Mới)
+    \item \texttt{location}: Địa chỉ bán xe
+\end{itemize}
+
+\subsubsection{Các trường bị loại bỏ}
+
+\textbf{Phân loại theo tỷ lệ missing:}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{llll}
+\toprule
+\textbf{Cột} & \textbf{Missing} & \textbf{Quyết định} & \textbf{Lý do} \\
+\midrule
+Số Km đã đi & 4.3\% & GIỮ & Impute median \\
+Kiểu dáng & 17.0\% & GIỮ & Impute theo brand+model \\
+Số chỗ & 11.1\% & GIỮ & Impute theo body\_type \\
+location & 3.0\% & GIỮ & Fill "Khac" \\
+Trọng lượng, Trọng tải & 4.3\% & BỎ & Ít liên quan đến giá \\
+Chính sách bảo hành & - & BỎ & Không liên quan đến giá \\
+Còn hạn đăng kiểm & 58.3\% & BỎ & Missing quá nhiều \\
+Số đời chủ & 57.0\% & BỎ & Missing quá nhiều \\
+Có phụ kiện đi kèm & 67.6\% & BỎ & Missing quá nhiều \\
+seller & 100\% & BỎ & Hoàn toàn trống \\
+title & 0\% & BỎ & Chỉ tham chiếu, không dùng model \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Dataset Bonbanh (\texttt{raw\_bonbanh\_car\_features.csv})}
+
+\subsubsection{Đặc điểm}
+\begin{itemize}
+    \item Nguồn: Web scraping từ Bonbanh.com
+    \item Số mẫu: 10,000 xe
+    \item Số features: 15 cột
+    \item Tình trạng: Dữ liệu sạch hơn, hầu như không có missing values (chỉ 0.15\% ở location)
+\end{itemize}
+
+\subsubsection{Các trường dữ liệu quan trọng}
+\begin{itemize}
+    \item \texttt{title}: Tên xe (format: ``Xe Toyota Fortuner Legender 2.4L 4x2 AT 2025'')
+    \begin{itemize}
+        \item Cần extract \texttt{brand} và \texttt{model} từ title
+    \end{itemize}
+    \item \texttt{price}: Giá xe (format: ``1 Tỷ 679 Triệu'', ``498 Triệu'')
+    \item \texttt{Năm sản xuất}: Năm sản xuất xe
+    \item \texttt{Tình trạng}: Xe mới/Xe đã dùng
+    \item \texttt{Số Km đã đi}: Format ``6,900 Km'', xe mới là ``-''
+    \item \texttt{Xuất xứ}: Nhập khẩu/Trong nước
+    \item \texttt{Kiểu dáng}: Kiểu dáng xe
+    \item \texttt{Động cơ}: Chứa nhiên liệu và dung tích (ví dụ: ``Xăng 2.0 L'')
+    \item \texttt{Hộp số}: Số tự động/Số tay
+    \item \texttt{Số chỗ ngồi}: Format ``5 chỗ'', ``7 chỗ''
+    \item \texttt{location}: Địa chỉ chi tiết
+\end{itemize}
+
+\subsubsection{Thống kê Missing Values}
+
+Dataset BonBanh có chất lượng rất cao với hầu như không có missing values:
+\begin{itemize}
+    \item Chỉ có cột \texttt{location} có 15 giá trị thiếu (0.15\%) - tỷ lệ cực thấp
+    \item Tất cả các feature khác đều đầy đủ 100\% dữ liệu
+\end{itemize}
+
+\subsubsection{Các trường bị loại bỏ}
+\begin{itemize}
+    \item \texttt{Dẫn động}: Không có ở Chotot, khó fill chính xác
+    \item \texttt{Màu ngoại thất}, \texttt{Màu nội thất}: Ít ảnh hưởng giá
+    \item \texttt{Số cửa}: Không có ở Chotot, ít quan trọng
+\end{itemize}
+
+\section{Quy Trình Xử Lý Dữ Liệu}
+
+\subsection{Phase I: Đánh Giá Dữ Liệu Thô}
+\begin{itemize}
+    \item Khám phá cấu trúc dữ liệu từ 2 nguồn
+    \item Đánh giá missing values
+    \item Xác định các trường dữ liệu cần giữ lại và loại bỏ
+\end{itemize}
+
+\subsection{Phase II: Chuẩn Hóa Dữ Liệu (\texttt{normalize\_interim.csv})}
+
+\subsubsection{Parse Price $\rightarrow$ \texttt{price\_million}}
+\begin{itemize}
+    \item \textbf{Chotot}: ``320.000.000 đ'' $\rightarrow$ 320
+    \item \textbf{Bonbanh}: ``1 Tỷ 679 Triệu'' $\rightarrow$ 1,679
+    \item \textbf{Loại}: Float (triệu VNĐ)
+\end{itemize}
+
+\subsubsection{Parse Odometer $\rightarrow$ \texttt{km}}
+\begin{itemize}
+    \item \textbf{Chotot}: Xử lý placeholder 999999 $\rightarrow$ NaN
+    \item \textbf{Bonbanh}: ``6,900 Km'' $\rightarrow$ 6900, ``-'' $\rightarrow$ 0 (xe mới)
+    \item \textbf{Loại}: Float (km)
+\end{itemize}
+
+\subsubsection{Parse Year $\rightarrow$ \texttt{year}}
+\begin{itemize}
+    \item Validate range: 1980-2025
+    \item \textbf{Loại}: Float (năm)
+\end{itemize}
+
+\subsubsection{Extract Brand \& Model}
+\textbf{Chotot}: Đã có sẵn cột \texttt{Hãng} và \texttt{Dòng xe}
+
+\noindent\textbf{Bonbanh}: Extract từ title bằng regex
+\begin{itemize}
+    \item Bỏ từ ``Xe'' ở đầu
+    \item Tách brand từ danh sách 60+ hãng xe
+    \item Loại bỏ các thành phần không phải model (transmission, drivetrain, engine)
+    \item Phần còn lại là model
+\end{itemize}
+
+\subsubsection{Extract Engine $\rightarrow$ \texttt{engine}, \texttt{engine\_missing}}
+\begin{itemize}
+    \item \textbf{Chotot}: Không có dữ liệu $\rightarrow$ engine=0, engine\_missing=1
+    \item \textbf{Bonbanh}: Extract từ cột ``Động cơ'' (``Xăng 2.0 L'' $\rightarrow$ 2.0)
+    \item \textbf{Loại}: Float (lít), Binary (missing indicator)
+\end{itemize}
+
+\subsubsection{Chuẩn Hóa Categorical Variables}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{lll}
+\toprule
+\textbf{Variable} & \textbf{Mapping} & \textbf{Result} \\
+\midrule
+transmission & Tự động/Số tự động $\rightarrow$ AT & AT/MT \\
+ & Số sàn/Số tay $\rightarrow$ MT & \\
+ & Bán tự động $\rightarrow$ AT & \\
+\midrule
+fuel\_type & Xăng/Dầu/Điện/Hybrid & Xăng/Dầu/Điện/Hybrid \\
+\midrule
+body\_type & Giữ nguyên, chuẩn hóa sau & SUV/Sedan/Hatchback/etc. \\
+\midrule
+origin & Việt Nam $\rightarrow$ Trong nước & Trong nước/Nhập khẩu \\
+ & Khác $\rightarrow$ Nhập khẩu & \\
+\midrule
+condition & Đã sử dụng/Xe đã dùng $\rightarrow$ Cũ & Mới/Cũ \\
+ & Mới/Xe mới $\rightarrow$ Mới & \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsubsection{Parse Seats $\rightarrow$ \texttt{seats}}
+\begin{itemize}
+    \item Extract số từ chuỗi: ``5 chỗ'' $\rightarrow$ 5
+    \item \textbf{Loại}: Float (số chỗ ngồi)
+\end{itemize}
+
+\subsubsection{Extract City $\rightarrow$ \texttt{city}}
+\begin{itemize}
+    \item Parse từ location để lấy tỉnh/thành phố
+    \item Chuẩn hóa HCM, Hà Nội
+    \item Fallback: ``Khác'' hoặc ``unknow''
+\end{itemize}
+
+\subsubsection{Chuẩn hóa \texttt{seller\_id}}
+\begin{itemize}
+    \item \textbf{Chotot}: Đã có sẵn (có $\sim$3.8\% missing)
+    \item \textbf{Bonbanh}: Đã có sẵn (int64)
+    \item \textbf{Xử lý}: Convert sang string, fill missing bằng ``0''
+    \item \textbf{Mục đích}: Dùng để phát hiện duplicates (cùng seller, cùng xe)
+    \item \textbf{Lưu ý}: Sẽ bị xóa sau khi loại duplicates, không dùng cho modeling
+\end{itemize}
+
+\subsubsection{Merge Datasets}
+\begin{itemize}
+    \item Merge 2 datasets với 16 cột chuẩn hóa (bao gồm seller\_id)
+    \item Thêm cột \texttt{source} để trace nguồn gốc
+    \item \textbf{Output}: \texttt{normalize\_interim.csv} (14,928 rows)
+\end{itemize}
+
+\subsubsection{Create Early Features}
+\begin{itemize}
+    \item Tạo \texttt{age} = CURRENT\_YEAR - year (2025 - year)
+    \item Tạo \texttt{km\_per\_year} = km / age (với age > 0)
+    \item \textbf{Mục đích}: Dùng cho việc loại bỏ duplicates và phát hiện outliers
+\end{itemize}
+
+\subsubsection{Loại Bỏ Duplicates}
+\begin{itemize}
+    \item \textbf{Phương pháp}: Dựa trên các cột: seller\_id, brand, model, year, km, price\_million, transmission, fuel\_type, body\_type, city
+    \item \textbf{Giữ lại}: First occurrence của mỗi nhóm duplicate
+    \item \textbf{Kết quả}: Giảm từ 14,928 $\rightarrow$ 14,585 rows (loại bỏ $\sim$343 duplicates)
+\end{itemize}
+
+\subsection{Phase III: Xử Lý Outliers (\texttt{outlier\_interim.csv})}
+
+\subsubsection{Phương pháp}
+\begin{itemize}
+    \item Sử dụng IQR (Interquartile Range) kết hợp Domain Knowledge
+    \item Không loại bỏ xe siêu sang có giá hợp lý
+\end{itemize}
+
+\subsubsection{Ngưỡng Outliers}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{llll}
+\toprule
+\textbf{Biến} & \textbf{Ngưỡng Thấp} & \textbf{Ngưỡng Cao} & \textbf{Số lượng bị loại} \\
+\midrule
+price\_million & 50 triệu & Không giới hạn* & $\sim$200 xe \\
+km & 0 km & 500,000 km & $\sim$100 xe \\
+year & 1995 & 2025 & $\sim$40 xe \\
+\bottomrule
+\end{tabular}
+\caption{*Loại bỏ thủ công 2 xe có giá bất thường (Ford Escape 40 tỷ, Acura ILX 50 tỷ)}
+\end{table}
+
+\subsubsection{Kết quả}
+\begin{itemize}
+    \item \textbf{Trước}: 14,928 rows
+    \item \textbf{Sau}: 14,585 rows
+    \item \textbf{Loại bỏ}: 343 outliers (2.3\%)
+\end{itemize}
+
+\subsection{Phase IV: Xử Lý Missing Values (\texttt{fill\_interim.csv})}
+
+\subsubsection{Missing Values trước xử lý}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{llll}
+\toprule
+\textbf{Cột} & \textbf{Missing} & \textbf{\%} & \textbf{Chiến lược} \\
+\midrule
+origin & 1,021 & 7.00\% & Lookup từ brand \\
+seats & 843 & 5.78\% & Lookup từ body\_type \\
+body\_type & 736 & 5.05\% & Mode theo model \\
+km & 229 & 1.57\% & Xe mới$\rightarrow$0, xe cũ$\rightarrow$median \\
+transmission & 16 & 0.11\% & Mode theo (brand, model) \\
+year & 8 & 0.05\% & Median theo (brand, model) \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsubsection{Chiến lược Imputation}
+
+\textbf{a) body\_type}: Mode theo \texttt{model}
+\begin{itemize}
+    \item Mỗi model thường chỉ có 1 kiểu thân xe phổ biến
+    \item Fallback: ``Kiểu dáng khác''
+\end{itemize}
+
+\textbf{b) seats}: Lookup từ \texttt{body\_type}
+\begin{lstlisting}
+SUV/MPV/Van -> 7 cho
+Sedan/Hatchback/Crossover -> 5 cho
+Coupe/Convertible -> 4 cho
+Pickup -> 5 cho
+\end{lstlisting}
+
+\textbf{c) transmission}: Mode theo \texttt{(brand, model)}
+\begin{itemize}
+    \item Fallback: AT (phổ biến hơn)
+\end{itemize}
+
+\textbf{d) origin}: Lookup từ \texttt{brand}
+\begin{itemize}
+    \item Các hãng có nhà máy lắp ráp tại VN: Toyota, Honda, Mazda, Ford, Hyundai, Kia, Mitsubishi, Suzuki, Isuzu, Thaco, VinFast $\rightarrow$ ``Trong nước''
+    \item Còn lại $\rightarrow$ ``Nhập khẩu''
+\end{itemize}
+
+\textbf{e) km}: Theo \texttt{condition}
+\begin{itemize}
+    \item Xe ``Mới'' $\rightarrow$ 0 km
+    \item Xe ``Cũ'' $\rightarrow$ median theo (brand, model, year)
+\end{itemize}
+
+\textbf{f) year}: Median theo \texttt{(brand, model)}
+
+\subsubsection{Kết quả}
+\begin{itemize}
+    \item \textbf{Sau imputation}: 0\% missing values
+    \item \textbf{Dataset}: 14,585 rows $\times$ 15 cols (clean)
+\end{itemize}
+
+\subsection{Phase V: Feature Engineering (\texttt{feature\_interim.csv})}
+
+\subsubsection{Tạo Features Mới}
+
+\textbf{a) \texttt{age}}: Tuổi xe (năm)
+\begin{lstlisting}[language=Python]
+age = CURRENT_YEAR - year  # 2025 - year
+\end{lstlisting}
+\begin{itemize}
+    \item \textbf{Ý nghĩa}: Xe càng cũ thì giá càng giảm
+    \item \textbf{Loại}: Integer (năm)
+\end{itemize}
+
+\textbf{b) \texttt{km\_per\_year}}: Số km trung bình mỗi năm
+\begin{lstlisting}[language=Python]
+km_per_year = km / age  # Xe moi (age=0) -> 0
+\end{lstlisting}
+\begin{itemize}
+    \item \textbf{Ý nghĩa}: Mức độ sử dụng xe (km/năm cao $\rightarrow$ xe dùng nhiều)
+    \item \textbf{Loại}: Float (km/năm)
+\end{itemize}
+
+\textbf{c) \texttt{is\_luxury}}: Xe sang hay không
+\begin{lstlisting}[language=Python]
+LUXURY_BRANDS = ['Mercedes Benz', 'BMW', 'Lexus', 'Porsche',
+                 'Jaguar', 'Volvo', 'Bentley', 'Rolls Royce',
+                 'Maserati', 'Ferrari', 'Lamborghini', 'Genesis']
+is_luxury = 1 if brand in LUXURY_BRANDS else 0
+\end{lstlisting}
+\begin{itemize}
+    \item \textbf{Ý nghĩa}: Xe sang thường có giá cao hơn
+    \item \textbf{Loại}: Binary (0/1)
+    \item \textbf{Phân bố}: $\sim$18.7\% xe sang trong dataset (2,723 xe)
+\end{itemize}
+
+\textbf{d) \texttt{usage}}: Mức độ sử dụng xe dựa trên km\_per\_year
+\begin{lstlisting}[language=Python]
+def classify_usage(km_per_year):
+    if km_per_year < 10000:
+        return 'low'
+    elif km_per_year <= 20000:
+        return 'medium'
+    else:
+        return 'high'
+
+usage = df['km_per_year'].apply(classify_usage)
+\end{lstlisting}
+\begin{itemize}
+    \item \textbf{Ý nghĩa}: Phân loại mức độ sử dụng xe theo số km trung bình mỗi năm
+    \item \textbf{Loại}: Categorical (low/medium/high)
+    \item \textbf{Phân bố}:
+    \begin{itemize}
+        \item Low (<10,000 km/năm): 53.8\% (7,067 xe)
+        \item Medium (10,000-20,000 km/năm): 36.0\% (5,193 xe)
+        \item High (>20,000 km/năm): 10.1\% (1,463 xe)
+    \end{itemize}
+\end{itemize}
+
+\subsubsection{Xóa Features Cũ}
+\begin{itemize}
+    \item Xóa cột \texttt{year} (thay bằng \texttt{age}) để tránh đa cộng tuyến
+    \item Xóa cột \texttt{seller\_id} (chỉ dùng để phát hiện duplicates, không có giá trị dự đoán)
+\end{itemize}
+
+\subsection{Phase VI: Encoding (\texttt{encoding\_interim.csv})}
+
+\subsubsection{One-Hot Encoding}
+
+\textbf{a) \texttt{transmission} $\rightarrow$ \texttt{transmission\_binary}}
+\begin{itemize}
+    \item AT (Tự động) $\rightarrow$ 1
+    \item MT (Số sàn) $\rightarrow$ 0
+\end{itemize}
+
+\textbf{b) \texttt{usage} $\rightarrow$ \texttt{usage\_*} (3 features)}
+\begin{itemize}
+    \item \texttt{usage\_low}: Sử dụng ít (<10,000 km/năm)
+    \item \texttt{usage\_medium}: Sử dụng trung bình (10,000-20,000 km/năm)
+    \item \texttt{usage\_high}: Sử dụng nhiều (>20,000 km/năm)
+\end{itemize}
+
+\textbf{c) \texttt{fuel\_type} $\rightarrow$ \texttt{fuel\_*} (4 features)}
+\begin{itemize}
+    \item \texttt{fuel\_gasoline}: Xăng
+    \item \texttt{fuel\_diesel}: Dầu
+    \item \texttt{fuel\_electric}: Điện
+    \item \texttt{fuel\_hybrid}: Hybrid
+\end{itemize}
+
+\textbf{d) \texttt{origin} $\rightarrow$ \texttt{inland\_binary}}
+\begin{itemize}
+    \item Trong nước $\rightarrow$ 1
+    \item Nhập khẩu $\rightarrow$ 0
+\end{itemize}
+
+\textbf{e) \texttt{condition} $\rightarrow$ \texttt{new\_binary}}
+\begin{itemize}
+    \item Mới $\rightarrow$ 1
+    \item Cũ $\rightarrow$ 0
+\end{itemize}
+
+\textbf{f) \texttt{source} $\rightarrow$ \texttt{bobanh\_binary}}
+\begin{itemize}
+    \item Bonbanh $\rightarrow$ 1
+    \item Chotot $\rightarrow$ 0
+\end{itemize}
+
+\textbf{g) \texttt{body\_type} $\rightarrow$ \texttt{body\_type\_*} (10 features)}
+
+Chuẩn hóa trước khi one-hot:
+\begin{lstlisting}
+SUV/Crossover -> suv
+Sedan -> sedan
+Hatchback -> hatchback
+Van/Minivan -> minivan
+Pickup -> pickup
+Coupe -> coupe
+Convertible/Mui tran -> convertible
+Truck -> truck
+Wagon -> wagon
+Khac -> other
+\end{lstlisting}
+
+Features: \texttt{body\_type\_convertible}, \texttt{body\_type\_coupe}, \texttt{body\_type\_hatchback}, \texttt{body\_type\_minivan}, \texttt{body\_type\_other}, \texttt{body\_type\_pickup}, \texttt{body\_type\_sedan}, \texttt{body\_type\_suv}, \texttt{body\_type\_truck}, \texttt{body\_type\_wagon}
+
+\subsubsection{Group Rare Values + One-Hot}
+
+\textbf{h) \texttt{city} $\rightarrow$ \texttt{city\_*} (19 features)}
+\begin{itemize}
+    \item \textbf{Threshold}: 0.5\% ($\geq$73 mẫu)
+    \item \textbf{Phương pháp}: Gom các tỉnh/thành có tần suất < 0.5\% vào ``other''
+    \item \textbf{Features}:
+    \begin{itemize}
+        \item Top cities: \texttt{city\_ho\_chi\_minh}, \texttt{city\_ha\_noi}, \texttt{city\_binh\_duong}, \texttt{city\_dong\_nai}, \texttt{city\_da\_nang}, \texttt{city\_hai\_phong}, \texttt{city\_can\_tho}, \texttt{city\_ba\_ria}, \texttt{city\_lam\_dong}, \texttt{city\_thanh\_hoa}, \texttt{city\_bac\_ninh}, \texttt{city\_dak\_lak}, \texttt{city\_gia\_lai}, \texttt{city\_phu\_tho}, \texttt{city\_vinh\_phuc}
+        \item Special: \texttt{city\_khac}, \texttt{city\_unknow}, \texttt{city\_other} (nhóm rare)
+    \end{itemize}
+\end{itemize}
+
+\textbf{i) \texttt{brand} $\rightarrow$ \texttt{brand\_*} (24 features)}
+\begin{itemize}
+    \item \textbf{Threshold}: 0.5\% ($\geq$73 mẫu)
+    \item \textbf{Phương pháp}: Gom các hãng có tần suất < 0.5\% vào ``other''
+    \item \textbf{Features}:
+    \begin{itemize}
+        \item Popular brands: \texttt{brand\_toyota}, \texttt{brand\_honda}, \texttt{brand\_mazda}, \texttt{brand\_ford}, \texttt{brand\_hyundai}, \texttt{brand\_kia}, \texttt{brand\_mitsubishi}, \texttt{brand\_nissan}, \texttt{brand\_suzuki}, \texttt{brand\_vinfast}, \texttt{brand\_mercedes\_benz}, \texttt{brand\_bmw}, \texttt{brand\_lexus}, \texttt{brand\_audi}, \texttt{brand\_porsche}, \texttt{brand\_volvo}, \texttt{brand\_volkswagen}, \texttt{brand\_chevrolet}, \texttt{brand\_peugeot}, \texttt{brand\_landrover}, \texttt{brand\_mg}, \texttt{brand\_isuzu}, \texttt{brand\_daewoo}
+        \item Rare: \texttt{brand\_other}
+    \end{itemize}
+\end{itemize}
+
+\subsubsection{Target Encoding}
+
+\textbf{\texttt{model} $\rightarrow$ \texttt{model\_encoded}}
+\begin{itemize}
+    \item \textbf{Phương pháp}: K-Fold Target Encoding (5 folds)
+    \item \textbf{Công thức}:
+    \begin{equation}
+    \text{smoothing\_factor} = \frac{1}{1 + \exp(-(\text{count} - \text{min\_samples\_leaf}) / \text{smoothing})}
+    \end{equation}
+    \begin{equation}
+    \text{model\_encoded} = \text{global\_mean} \times (1 - \text{smoothing\_factor}) + \text{category\_mean} \times \text{smoothing\_factor}
+    \end{equation}
+    \item \textbf{Tham số}:
+    \begin{itemize}
+        \item \texttt{n\_splits=5}: 5 folds để tránh data leakage
+        \item \texttt{min\_samples\_leaf=1}: Minimum samples cho smoothing
+        \item \texttt{smoothing=1}: Hệ số smoothing
+        \item Fallback: Global mean của \texttt{price\_million}
+    \end{itemize}
+    \item \textbf{Ý nghĩa}: Encode model bằng giá trung bình của model đó (với smoothing)
+    \item \textbf{Lý do}: Model có 600+ unique values $\rightarrow$ One-hot không khả thi
+\end{itemize}
+
+\subsection{Phase VII: Finalization (\texttt{car\_features.csv})}
+
+\subsubsection{Xóa Cột Không Cần Thiết}
+Xóa các cột đã được encode:
+\begin{itemize}
+    \item \texttt{brand}, \texttt{model}, \texttt{transmission}, \texttt{fuel\_type}, \texttt{body\_type}, \texttt{origin}, \texttt{condition}, \texttt{city}, \texttt{source}, \texttt{usage}
+    \item \texttt{bobanh\_binary} (thông tin nguồn gốc, không cần cho prediction)
+\end{itemize}
+
+\subsubsection{Chuyển Đổi Kiểu Dữ Liệu}
+Chuyển các cột sang \texttt{int64}:
+\begin{itemize}
+    \item \texttt{age}, \texttt{km}, \texttt{seats}, \texttt{price\_million}
+\end{itemize}
+
+\subsubsection{Dataset Cuối Cùng}
+\begin{itemize}
+    \item \textbf{Số mẫu}: 14,585 xe (sau loại bỏ duplicates và outliers)
+    \item \textbf{Số features}: 71 (70 features + 1 target)
+    \item \textbf{Kiểu dữ liệu}:
+    \begin{itemize}
+        \item Integer: 67 features (binary và one-hot encoded)
+        \item Float: 4 features (engine, km\_per\_year, model\_encoded, price\_million)
+    \end{itemize}
+    \item \textbf{Missing values}: 0\%
+\end{itemize}
+
+\section{Mô Tả Chi Tiết Features}
+
+\subsection{Target Variable}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{lllll}
+\toprule
+\textbf{Feature} & \textbf{Type} & \textbf{Description} & \textbf{Range} & \textbf{Mean} \\
+\midrule
+price\_million & int64 & Giá xe (triệu VNĐ) & 50 - $\sim$15,000 & $\sim$700-800 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Numerical Features (6)}
+
+\begin{longtable}{lllll}
+\toprule
+\textbf{Feature} & \textbf{Type} & \textbf{Description} & \textbf{Range} & \textbf{Notes} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{Feature} & \textbf{Type} & \textbf{Description} & \textbf{Range} & \textbf{Notes} \\
+\midrule
+\endhead
+km & int64 & Số km đã đi & 0 - 500,000 & Xe mới = 0 \\
+seats & int64 & Số chỗ ngồi & 2 - 16 & Phổ biến: 4, 5, 7 \\
+engine & float64 & Dung tích động cơ (lít) & 0 - 6.0 & 0 = missing \\
+age & int64 & Tuổi xe (năm) & 0 - 30 & 2025 - year \\
+km\_per\_year & float64 & Km trung bình/năm & 0 - 100,000 & km / age \\
+model\_encoded & float64 & Target encoding của model & $\sim$300 - $\sim$3,000 & Giá trung bình \\
+\bottomrule
+\end{longtable}
+
+\subsection{Binary Features (6)}
+
+\begin{longtable}{lllll}
+\toprule
+\textbf{Feature} & \textbf{Type} & \textbf{Description} & \textbf{Values} & \textbf{Notes} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{Feature} & \textbf{Type} & \textbf{Description} & \textbf{Values} & \textbf{Notes} \\
+\midrule
+\endhead
+engine\_missing & int64 & Có missing engine không & 0 (có) / 1 (missing) & Chotot = 1 \\
+is\_luxury & int64 & Xe sang hay không & 0 (thường) / 1 (sang) & $\sim$10\% xe sang \\
+transmission\_binary & int64 & Loại hộp số & 0 (MT) / 1 (AT) & $\sim$70\% AT \\
+inland\_binary & int64 & Xuất xứ & 0 (NK) / 1 (TN) & $\sim$60\% trong nước \\
+new\_binary & int64 & Tình trạng & 0 (Cũ) / 1 (Mới) & $\sim$15\% xe mới \\
+\bottomrule
+\end{longtable}
+
+\subsection{One-Hot Encoded Features (56)}
+
+\subsubsection{Fuel Type (4 features)}
+\begin{itemize}
+    \item \texttt{fuel\_gasoline}: Xăng ($\sim$70\%)
+    \item \texttt{fuel\_diesel}: Dầu ($\sim$20\%)
+    \item \texttt{fuel\_electric}: Điện ($\sim$3\%)
+    \item \texttt{fuel\_hybrid}: Hybrid ($\sim$7\%)
+\end{itemize}
+
+\subsubsection{Body Type (10 features)}
+\begin{itemize}
+    \item \texttt{body\_type\_suv}: SUV/Crossover ($\sim$35\%)
+    \item \texttt{body\_type\_sedan}: Sedan ($\sim$30\%)
+    \item \texttt{body\_type\_hatchback}: Hatchback ($\sim$15\%)
+    \item \texttt{body\_type\_minivan}: MPV/Minivan ($\sim$10\%)
+    \item \texttt{body\_type\_pickup}: Pickup ($\sim$5\%)
+    \item \texttt{body\_type\_coupe}: Coupe ($\sim$2\%)
+    \item \texttt{body\_type\_convertible}: Convertible ($\sim$1\%)
+    \item \texttt{body\_type\_wagon}: Wagon ($\sim$1\%)
+    \item \texttt{body\_type\_truck}: Truck (<1\%)
+    \item \texttt{body\_type\_other}: Khác ($\sim$1\%)
+\end{itemize}
+
+\subsubsection{City (19 features)}
+\textbf{Top cities:}
+\begin{itemize}
+    \item \texttt{city\_ho\_chi\_minh}: TP HCM ($\sim$40\%)
+    \item \texttt{city\_ha\_noi}: Hà Nội ($\sim$25\%)
+    \item \texttt{city\_binh\_duong}: Bình Dương ($\sim$5\%)
+    \item \texttt{city\_dong\_nai}: Đồng Nai ($\sim$4\%)
+    \item \texttt{city\_da\_nang}: Đà Nẵng ($\sim$3\%)
+    \item \texttt{city\_hai\_phong}: Hải Phòng ($\sim$2\%)
+    \item \texttt{city\_can\_tho}: Cần Thơ ($\sim$1.5\%)
+\end{itemize}
+
+\textbf{Medium cities:}
+\begin{itemize}
+    \item \texttt{city\_ba\_ria}, \texttt{city\_lam\_dong}, \texttt{city\_thanh\_hoa}, \texttt{city\_bac\_ninh}, \texttt{city\_dak\_lak}, \texttt{city\_gia\_lai}, \texttt{city\_phu\_tho}, \texttt{city\_vinh\_phuc} ($\sim$0.5-1\% mỗi city)
+\end{itemize}
+
+\textbf{Special:}
+\begin{itemize}
+    \item \texttt{city\_khac}: Khác
+    \item \texttt{city\_unknow}: Không xác định
+    \item \texttt{city\_other}: Nhóm các tỉnh rare (<0.5\%)
+\end{itemize}
+
+\subsubsection{Brand (24 features)}
+\textbf{Japanese brands ($\sim$50\%):}
+\begin{itemize}
+    \item \texttt{brand\_toyota}: Toyota ($\sim$18\%)
+    \item \texttt{brand\_honda}: Honda ($\sim$12\%)
+    \item \texttt{brand\_mazda}: Mazda ($\sim$8\%)
+    \item \texttt{brand\_mitsubishi}: Mitsubishi ($\sim$5\%)
+    \item \texttt{brand\_nissan}: Nissan ($\sim$3\%)
+    \item \texttt{brand\_suzuki}: Suzuki ($\sim$2\%)
+    \item \texttt{brand\_isuzu}: Isuzu ($\sim$1\%)
+\end{itemize}
+
+\textbf{Korean brands ($\sim$20\%):}
+\begin{itemize}
+    \item \texttt{brand\_hyundai}: Hyundai ($\sim$10\%)
+    \item \texttt{brand\_kia}: Kia ($\sim$8\%)
+\end{itemize}
+
+\textbf{European luxury brands ($\sim$15\%):}
+\begin{itemize}
+    \item \texttt{brand\_mercedes\_benz}: Mercedes-Benz ($\sim$5\%)
+    \item \texttt{brand\_bmw}: BMW ($\sim$4\%)
+    \item \texttt{brand\_audi}: Audi ($\sim$2\%)
+    \item \texttt{brand\_lexus}: Lexus ($\sim$1.5\%)
+    \item \texttt{brand\_porsche}: Porsche ($\sim$1\%)
+    \item \texttt{brand\_volvo}: Volvo ($\sim$0.8\%)
+    \item \texttt{brand\_volkswagen}: Volkswagen ($\sim$0.7\%)
+    \item \texttt{brand\_landrover}: Land Rover ($\sim$0.5\%)
+\end{itemize}
+
+\textbf{American brands ($\sim$5\%):}
+\begin{itemize}
+    \item \texttt{brand\_ford}: Ford ($\sim$3\%)
+    \item \texttt{brand\_chevrolet}: Chevrolet ($\sim$2\%)
+\end{itemize}
+
+\textbf{Vietnamese brand ($\sim$3\%):}
+\begin{itemize}
+    \item \texttt{brand\_vinfast}: VinFast ($\sim$3\%)
+\end{itemize}
+
+\textbf{Other brands:}
+\begin{itemize}
+    \item \texttt{brand\_peugeot}: Peugeot ($\sim$1\%)
+    \item \texttt{brand\_mg}: MG ($\sim$0.8\%)
+    \item \texttt{brand\_daewoo}: Daewoo ($\sim$0.5\%)
+    \item \texttt{brand\_other}: Nhóm hãng rare (<0.5\%)
+\end{itemize}
+
+\section{Thống Kê Mô Tả}
+
+\subsection{Numerical Features Statistics}
+
+\begin{longtable}{lrrrrrrr}
+\toprule
+\textbf{Feature} & \textbf{Min} & \textbf{Q1} & \textbf{Median} & \textbf{Q3} & \textbf{Max} & \textbf{Mean} & \textbf{Std} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{Feature} & \textbf{Min} & \textbf{Q1} & \textbf{Median} & \textbf{Q3} & \textbf{Max} & \textbf{Mean} & \textbf{Std} \\
+\midrule
+\endhead
+price\_million & 50 & 380 & 580 & 950 & $\sim$15,000 & $\sim$750 & $\sim$600 \\
+km & 0 & 15,000 & 35,000 & 70,000 & 500,000 & $\sim$45,000 & $\sim$40,000 \\
+seats & 2 & 5 & 5 & 7 & 16 & 5.5 & 1.2 \\
+engine & 0 & 0 & 1.5 & 2.0 & 6.0 & 1.2 & 1.0 \\
+age & 0 & 3 & 6 & 10 & 30 & 7 & 5 \\
+km\_per\_year & 0 & 3,000 & 6,000 & 12,000 & $\sim$80,000 & $\sim$8,000 & $\sim$7,000 \\
+\bottomrule
+\end{longtable}
+
+\subsection{Categorical Features Distribution}
+
+\textbf{Transmission:}
+\begin{itemize}
+    \item AT (Automatic): $\sim$70\%
+    \item MT (Manual): $\sim$30\%
+\end{itemize}
+
+\textbf{Fuel Type:}
+\begin{itemize}
+    \item Gasoline: $\sim$70\%
+    \item Diesel: $\sim$20\%
+    \item Hybrid: $\sim$7\%
+    \item Electric: $\sim$3\%
+\end{itemize}
+
+\textbf{Origin:}
+\begin{itemize}
+    \item Trong nước: $\sim$60\%
+    \item Nhập khẩu: $\sim$40\%
+\end{itemize}
+
+\textbf{Condition:}
+\begin{itemize}
+    \item Cũ: $\sim$85\%
+    \item Mới: $\sim$15\%
+\end{itemize}
+
+\textbf{Body Type:}
+\begin{itemize}
+    \item SUV/Crossover: $\sim$35\%
+    \item Sedan: $\sim$30\%
+    \item Hatchback: $\sim$15\%
+    \item Minivan: $\sim$10\%
+    \item Pickup: $\sim$5\%
+    \item Others: $\sim$5\%
+\end{itemize}
+
+\textbf{Luxury:}
+\begin{itemize}
+    \item Non-luxury: $\sim$90\%
+    \item Luxury: $\sim$10\%
+\end{itemize}
+
+\section{Mục Đích Sử Dụng}
+
+Dataset này được thiết kế để:
+
+\begin{enumerate}
+    \item \textbf{Dự đoán giá xe} (Regression)
+    \begin{itemize}
+        \item Target: \texttt{price\_million}
+        \item Features: 67 features đã được xử lý và encode
+    \end{itemize}
+
+    \item \textbf{Phân tích thị trường ô tô Việt Nam}
+    \begin{itemize}
+        \item Xu hướng giá theo hãng, model, năm sản xuất
+        \item Phân bố địa lý của thị trường xe
+        \item So sánh xe nhập khẩu vs trong nước
+    \end{itemize}
+
+    \item \textbf{Research \& Education}
+    \begin{itemize}
+        \item Học tập về data preprocessing pipeline
+        \item Thực hành feature engineering
+        \item So sánh các phương pháp encoding
+    \end{itemize}
+\end{enumerate}
+
+\section{Lưu Ý Quan Trọng}
+
+\subsection{Data Quality}
+\begin{itemize}
+    \item [\checkmark] \textbf{Không có missing values} sau xử lý
+    \item [\checkmark] \textbf{Không có outliers bất thường} sau lọc
+    \item [\checkmark] \textbf{Chuẩn hóa đồng nhất} giữa 2 nguồn dữ liệu
+    \item [!] \textbf{Engine missing} cho $\sim$30\% samples (Chotot không có dữ liệu)
+\end{itemize}
+
+\subsection{Feature Engineering}
+\begin{itemize}
+    \item [\checkmark] \textbf{Tránh data leakage}: Target encoding dùng K-Fold
+    \item [\checkmark] \textbf{Tránh multicollinearity}: Xóa \texttt{year} (đã có \texttt{age})
+    \item [\checkmark] \textbf{Domain knowledge}: Imputation dựa trên kiến thức thực tế
+    \item [!] \textbf{Imbalanced}: Xe sang chỉ $\sim$10\%, một số hãng rare <1\%
+\end{itemize}
+
+\subsection{Encoding Strategy}
+\begin{itemize}
+    \item \textbf{One-hot}: Cho features có ít categories (<20)
+    \item \textbf{Group + One-hot}: Cho features có nhiều categories nhưng có thể gom nhóm (city, brand)
+    \item \textbf{Target encoding}: Cho features có quá nhiều categories (model: 600+)
+\end{itemize}
+
+\subsection{Sử Dụng Dataset}
+\begin{lstlisting}[language=Python]
+import pandas as pd
+
+# Load dataset
+df = pd.read_csv('data/processed/car_features.csv')
+
+# Split features and target
+X = df.drop('price_million', axis=1)
+y = df['price_million']
+
+# Train-test split
+from sklearn.model_selection import train_test_split
+X_train, X_test, y_train, y_test = train_test_split(
+    X, y, test_size=0.2, random_state=42
+)
+\end{lstlisting}
+
+\subsection{Potential Issues}
+\begin{itemize}
+    \item \textbf{Highly skewed target}: Giá xe phân phối lệch phải $\rightarrow$ Có thể cần log transform
+    \item \textbf{Rare categories}: Một số brand/city rất ít mẫu $\rightarrow$ Đã gom vào ``other''
+    \item \textbf{Missing engine}: 30\% samples thiếu dữ liệu engine $\rightarrow$ Đã dùng indicator variable
+\end{itemize}
+
+\section{Tài Liệu Tham Khảo}
+
+\begin{itemize}
+    \item \textbf{Notebook xử lý}: \texttt{notebooks/01\_data\_preprocessing.ipynb}
+    \item \textbf{Raw data}: \texttt{data/raw/raw\_chotot\_car\_features.csv}, \texttt{data/raw/raw\_bonbanh\_car\_features.csv}
+    \item \textbf{Interim data}: \texttt{data/interim/} (5 files theo từng phase)
+    \item \textbf{Final data}: \texttt{data/processed/car\_features.csv}
+\end{itemize}
+
+\end{document}
+

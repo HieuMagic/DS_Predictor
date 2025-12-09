@@ -4,7 +4,7 @@
 
 ### Thông tin cơ bản
 - **Số lượng mẫu**: 14,585 xe
-- **Số lượng đặc trưng**: 68 features
+- **Số lượng đặc trưng**: 71 features (70 features + 1 target)
 - **Biến mục tiêu**: `price_million` (Giá xe tính bằng triệu VNĐ)
 - **Loại bài toán**: Regression (Dự đoán giá xe)
 - **Nguồn dữ liệu**: 
@@ -128,10 +128,27 @@
 - Chuẩn hóa HCM, Hà Nội
 - Fallback: "Khác" hoặc "unknow"
 
-#### 2.9 Merge Datasets
-- Merge 2 datasets với 15 cột chuẩn hóa
+#### 2.9 Chuẩn hóa `seller_id`
+- **Chotot**: Đã có sẵn (có ~3.8% missing)
+- **Bonbanh**: Đã có sẵn (int64)
+- **Xử lý**: Convert sang string, fill missing bằng "0"
+- **Mục đích**: Dùng để phát hiện duplicates (cùng seller, cùng xe)
+- **Lưu ý**: Sẽ bị xóa sau khi loại duplicates, không dùng cho modeling
+
+#### 2.10 Merge Datasets
+- Merge 2 datasets với 16 cột chuẩn hóa (bao gồm seller_id)
 - Thêm cột `source` để trace nguồn gốc
 - **Output**: `normalize_interim.csv` (14,928 rows)
+
+#### 2.11 Create Early Features
+- Tạo `age` = CURRENT_YEAR - year (2025 - year)
+- Tạo `km_per_year` = km / age (với age > 0)
+- **Mục đích**: Dùng cho việc loại bỏ duplicates và phát hiện outliers
+
+#### 2.12 Loại Bỏ Duplicates
+- **Phương pháp**: Dựa trên các cột: seller_id, brand, model, year, km, price_million, transmission, fuel_type, body_type, city
+- **Giữ lại**: First occurrence của mỗi nhóm duplicate
+- **Kết quả**: Giảm từ 14,928 → 14,585 rows (loại bỏ ~343 duplicates)
 
 ### Phase III: Xử Lý Outliers (outlier_interim.csv)
 
@@ -225,10 +242,30 @@ is_luxury = 1 if brand in LUXURY_BRANDS else 0
 ```
 - **Ý nghĩa**: Xe sang thường có giá cao hơn
 - **Loại**: Binary (0/1)
-- **Phân bố**: ~8-10% xe sang trong dataset
+- **Phân bố**: ~18.7% xe sang trong dataset (2,723 xe)
+
+**d) `usage`**: Mức độ sử dụng xe dựa trên km_per_year
+```python
+def classify_usage(km_per_year):
+    if km_per_year < 10000:
+        return 'low'
+    elif km_per_year <= 20000:
+        return 'medium'
+    else:
+        return 'high'
+
+usage = df['km_per_year'].apply(classify_usage)
+```
+- **Ý nghĩa**: Phân loại mức độ sử dụng xe theo số km trung bình mỗi năm
+- **Loại**: Categorical (low/medium/high)
+- **Phân bố**: 
+  - Low (<10,000 km/năm): 53.8% (7,067 xe)
+  - Medium (10,000-20,000 km/năm): 36.0% (5,193 xe)
+  - High (>20,000 km/năm): 10.1% (1,463 xe)
 
 #### 5.2 Xóa Features Cũ
 - Xóa cột `year` (thay bằng `age`) để tránh đa cộng tuyến
+- Xóa cột `seller_id` (chỉ dùng để phát hiện duplicates, không có giá trị dự đoán)
 
 ### Phase VI: Encoding (encoding_interim.csv)
 
@@ -238,25 +275,30 @@ is_luxury = 1 if brand in LUXURY_BRANDS else 0
 - AT (Tự động) → 1
 - MT (Số sàn) → 0
 
-**b) `fuel_type` → `fuel_*` (4 features)**
+**b) `usage` → `usage_*` (3 features)**
+- `usage_low`: Sử dụng ít (<10,000 km/năm)
+- `usage_medium`: Sử dụng trung bình (10,000-20,000 km/năm)
+- `usage_high`: Sử dụng nhiều (>20,000 km/năm)
+
+**c) `fuel_type` → `fuel_*` (4 features)**
 - `fuel_gasoline`: Xăng
 - `fuel_diesel`: Dầu
 - `fuel_electric`: Điện
 - `fuel_hybrid`: Hybrid
 
-**c) `origin` → `inland_binary`**
+**d) `origin` → `inland_binary`**
 - Trong nước → 1
 - Nhập khẩu → 0
 
-**d) `condition` → `new_binary`**
+**e) `condition` → `new_binary`**
 - Mới → 1
 - Cũ → 0
 
-**e) `source` → `bobanh_binary`**
+**f) `source` → `bobanh_binary`**
 - Bonbanh → 1
 - Chotot → 0
 
-**f) `body_type` → `body_type_*` (10 features)**
+**g) `body_type` → `body_type_*` (10 features)**
 Chuẩn hóa trước khi one-hot:
 ```
 SUV/Crossover → suv
@@ -275,14 +317,14 @@ Features: `body_type_convertible`, `body_type_coupe`, `body_type_hatchback`, `bo
 
 #### 6.2 Group Rare Values + One-Hot
 
-**a) `city` → `city_*` (19 features)**
+**h) `city` → `city_*` (19 features)**
 - **Threshold**: 0.5% (≥73 mẫu)
 - **Phương pháp**: Gom các tỉnh/thành có tần suất < 0.5% vào "other"
 - **Features**: 
   - Top cities: `city_ho_chi_minh`, `city_ha_noi`, `city_binh_duong`, `city_dong_nai`, `city_da_nang`, `city_hai_phong`, `city_can_tho`, `city_ba_ria`, `city_lam_dong`, `city_thanh_hoa`, `city_bac_ninh`, `city_dak_lak`, `city_gia_lai`, `city_phu_tho`, `city_vinh_phuc`
   - Special: `city_khac`, `city_unknow`, `city_other` (nhóm rare)
 
-**b) `brand` → `brand_*` (24 features)**
+**i) `brand` → `brand_*` (24 features)**
 - **Threshold**: 0.5% (≥73 mẫu)
 - **Phương pháp**: Gom các hãng có tần suất < 0.5% vào "other"
 - **Features**:
@@ -318,11 +360,11 @@ Chuyển các cột sang `int64`:
 - `age`, `km`, `seats`, `price_million`
 
 #### 7.3 Dataset Cuối Cùng
-- **Số mẫu**: 14,585 xe
-- **Số features**: 68 (67 features + 1 target)
+- **Số mẫu**: 14,585 xe (sau loại bỏ duplicates và outliers)
+- **Số features**: 71 (70 features + 1 target)
 - **Kiểu dữ liệu**: 
-  - Integer: 65 features (binary và one-hot)
-  - Float: 3 features (engine, km_per_year, model_encoded)
+  - Integer: 67 features (binary và one-hot encoded)
+  - Float: 4 features (engine, km_per_year, model_encoded, price_million)
 - **Missing values**: 0%
 
 ---
