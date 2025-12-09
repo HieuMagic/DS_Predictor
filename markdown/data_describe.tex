@@ -522,8 +522,7 @@ usage = df['km_per_year'].apply(classify_usage)
         \item Low (<10,000 km/năm): 53.8\% (7,851 xe)
         \item Medium (10,000-20,000 km/năm): 36.0\% (5,251 xe)
         \item High (>20,000 km/năm): 10.1\% (1,483 xe)
-        \item Medium (10,000-20,000 km/năm): 36.0\% (5,193 xe)
-        \item High (>20,000 km/năm): 10.1\% (1,463 xe)
+
     \end{itemize}
 \end{itemize}
 
@@ -647,7 +646,7 @@ Features: \texttt{body\_type\_convertible}, \texttt{body\_type\_coupe}, \texttt{
 \subsubsection{Xóa Cột Không Cần Thiết}
 Xóa các cột đã được encode:
 \begin{itemize}
-    \item \texttt{brand}, \texttt{model}, \texttt{transmission}, \texttt{fuel\_type}, \texttt{body\_type}, \texttt{origin}, \texttt{condition}, \texttt{city}, \texttt{source}, \texttt{usage\_intensity}
+    \item \texttt{brand}, \texttt{model}, \texttt{transmission}, \texttt{fuel\_type}, \texttt{body\_type}, \texttt{origin}, \texttt{condition}, \texttt{city}, \texttt{source}, \texttt{usage}
     \item \texttt{seller\_id} (đã dùng để loại bỏ duplicates ở Phase II, không có giá trị dự đoán)
     \item \texttt{bobanh\_binary} (thông tin nguồn gốc, không cần cho prediction)
 \end{itemize}
@@ -884,8 +883,8 @@ km\_per\_year & 0 & 3,000 & 6,000 & 12,000 & $\sim$80,000 & $\sim$8,000 & $\sim$
 
 \textbf{Luxury:}
 \begin{itemize}
-    \item Non-luxury: $\sim$90\%
-    \item Luxury: $\sim$10\%
+    \item Non-luxury: $\sim$80\%
+    \item Luxury: $\sim$20\%
 \end{itemize}
 
 \section{Mục Đích Sử Dụng}
@@ -929,7 +928,7 @@ Dataset này được thiết kế để:
     \item [\checkmark] \textbf{Tránh data leakage}: Target encoding dùng K-Fold
     \item [\checkmark] \textbf{Tránh multicollinearity}: Xóa \texttt{year} (đã có \texttt{age})
     \item [\checkmark] \textbf{Domain knowledge}: Imputation dựa trên kiến thức thực tế
-    \item [!] \textbf{Imbalanced}: Xe sang chỉ $\sim$10\%, một số hãng rare <1\%
+    \item [!] \textbf{Imbalanced}: Xe sang chỉ $\sim$20\%, một số hãng rare <1\%
 \end{itemize}
 
 \subsection{Encoding Strategy}
@@ -969,8 +968,8 @@ X_train, X_test, y_train, y_test = train_test_split(
 \begin{itemize}
     \item \textbf{Notebook xử lý}: \texttt{notebooks/01\_data\_preprocessing.ipynb}
     \item \textbf{Raw data}: \texttt{data/raw/raw\_chotot\_car\_features.csv}, \texttt{data/raw/raw\_bonbanh\_car\_features.csv}
-    \item \textbf{Interim data}: \texttt{data/interim/} (5 files theo từng phase)
-    \item \textbf{Final data}: \texttt{data/processed/car\_features.csv}
+    \item \textbf{Interim data}: \texttt{data/interim/} (4 files theo từng phase)
+    \item \textbf{Final data}: \texttt{data/processed/preprocessing\_car\_features.csv}
 \end{itemize}
 
 \end{document}
