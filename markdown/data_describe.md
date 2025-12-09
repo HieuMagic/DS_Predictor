@@ -3,14 +3,16 @@
 ## 📊 Tổng Quan Dataset
 
 ### Thông tin cơ bản
-- **Số lượng mẫu**: 14,585 xe
-- **Số lượng đặc trưng**: 71 features (70 features + 1 target)
+- **Số lượng mẫu**: 13,723 xe
+- **Số lượng đặc trưng**: 69 columns (68 features + 1 target)
 - **Biến mục tiêu**: `price_million` (Giá xe tính bằng triệu VNĐ)
 - **Loại bài toán**: Regression (Dự đoán giá xe)
 - **Nguồn dữ liệu**: 
   - Chotot.com: 4,928 mẫu ban đầu
   - Bonbanh.com: 10,000 mẫu ban đầu
-  - Sau xử lý outliers và missing values: 14,585 mẫu
+  - Tổng raw: 14,928 mẫu
+  - Sau xử lý (duplicates + outliers + missing): 13,723 mẫu
+  - Final dataset (sau encoding): 13,723 mẫu
 
 ---
 
@@ -20,8 +22,8 @@
 **Đặc điểm:**
 - Nguồn: Web scraping từ Chotot.com
 - Số mẫu: 4,928 xe
-- Số features: 21 cột
-- Tình trạng: Nhiều missing values (17%-100%), dữ liệu chưa chuẩn hóa
+- Số features: 20 cột
+- Tình trạng: Nhiều missing values (3%-100%), dữ liệu chưa chuẩn hóa
 
 **Các trường dữ liệu quan trọng:**
 - `price`: Giá xe (format: "320.000.000 đ")
@@ -138,7 +140,8 @@
 #### 2.10 Merge Datasets
 - Merge 2 datasets với 16 cột chuẩn hóa (bao gồm seller_id)
 - Thêm cột `source` để trace nguồn gốc
-- **Output**: `normalize_interim.csv` (14,928 rows)
+- **Input**: 14,928 rows (4,928 Chotot + 10,000 Bonbanh)
+- **Output**: `normalize_interim.csv` (14,084 rows, 18 columns)
 
 #### 2.11 Create Early Features
 - Tạo `age` = CURRENT_YEAR - year (2025 - year)
@@ -148,7 +151,7 @@
 #### 2.12 Loại Bỏ Duplicates
 - **Phương pháp**: Dựa trên các cột: seller_id, brand, model, year, km, price_million, transmission, fuel_type, body_type, city
 - **Giữ lại**: First occurrence của mỗi nhóm duplicate
-- **Kết quả**: Giảm từ 14,928 → 14,585 rows (loại bỏ ~343 duplicates)
+- **Kết quả**: Giảm từ 14,928 → 14,084 rows (loại bỏ 844 duplicates, ~5.65%)
 
 ### Phase III: Xử Lý Outliers (outlier_interim.csv)
 
@@ -167,9 +170,10 @@
 *Loại bỏ thủ công 2 xe có giá bất thường (Ford Escape 40 tỷ, Acura ILX 50 tỷ)
 
 #### 3.3 Kết quả
-- **Trước**: 14,928 rows
-- **Sau**: 14,585 rows
-- **Loại bỏ**: 343 outliers (2.3%)
+- **Trước**: 14,084 rows (sau loại duplicates)
+- **Sau**: 13,723 rows
+- **Loại bỏ**: 361 outliers (2.56%)
+- **Output**: `outlier_interim.csv` (13,723 rows, 18 columns)
 
 ### Phase IV: Xử Lý Missing Values (fill_interim.csv)
 
@@ -177,12 +181,16 @@
 
 | Cột              | Missing | %       | Chiến lược                   |
 |------------------|---------|---------|------------------------------|
-| **origin**       | 1,021   | 7.00%   | Lookup từ brand              |
-| **seats**        | 843     | 5.78%   | Lookup từ body_type          |
-| **body_type**    | 736     | 5.05%   | Mode theo model              |
-| **km**           | 229     | 1.57%   | Xe mới→0, xe cũ→median       |
-| **transmission** | 16      | 0.11%   | Mode theo (brand, model)     |
-| **year**         | 8       | 0.05%   | Median theo (brand, model)   |
+| **origin**       | ~1,000  | ~7.3%   | Lookup từ brand              |
+| **seats**        | ~800    | ~5.8%   | Lookup từ body_type          |
+| **body_type**    | ~700    | ~5.1%   | Mode theo model              |
+| **km**           | ~200    | ~1.5%   | Xe mới→0, xe cũ→median       |
+| **transmission** | ~15     | ~0.1%   | Mode theo (brand, model)     |
+| **year**         | ~10     | ~0.1%   | Median theo (brand, model)   |
+
+*Lưu ý: Số liệu trên dataset 13,723 rows (sau loại outliers)*
+
+**Lưu ý**: Feature `seller_id` được giữ lại trong quá trình normalize và chỉ bị xóa ở bước cuối cùng (Phase VII) sau khi đã sử dụng để loại bỏ duplicates.
 
 #### 4.2 Chiến lược Imputation
 
@@ -212,8 +220,9 @@ Pickup → 5 chỗ
 **f) year**: Median theo `(brand, model)`
 
 #### 4.3 Kết quả
-- **Sau imputation**: 0% missing values
-- **Dataset**: 14,585 rows × 15 cols (clean)
+- **Sau imputation**: Còn 236 missing values (~1.7% trên dataset)
+- **Dataset**: 13,723 rows × 18 cols
+- **Output**: `missing_interim.csv`
 
 ### Phase V: Feature Engineering (feature_interim.csv)
 
@@ -242,9 +251,9 @@ is_luxury = 1 if brand in LUXURY_BRANDS else 0
 ```
 - **Ý nghĩa**: Xe sang thường có giá cao hơn
 - **Loại**: Binary (0/1)
-- **Phân bố**: ~18.7% xe sang trong dataset (2,723 xe)
+- **Phân bố**: 19.1% xe sang trong dataset (2,622 xe), 80.9% xe thường (11,101 xe)
 
-**d) `usage`**: Mức độ sử dụng xe dựa trên km_per_year
+**d) `usage_intensity`**: Mức độ sử dụng xe dựa trên km_per_year
 ```python
 def classify_usage(km_per_year):
     if km_per_year < 10000:
@@ -254,18 +263,19 @@ def classify_usage(km_per_year):
     else:
         return 'high'
 
-usage = df['km_per_year'].apply(classify_usage)
+usage_intensity = df['km_per_year'].apply(classify_usage)
 ```
 - **Ý nghĩa**: Phân loại mức độ sử dụng xe theo số km trung bình mỗi năm
 - **Loại**: Categorical (low/medium/high)
 - **Phân bố**: 
-  - Low (<10,000 km/năm): 53.8% (7,067 xe)
-  - Medium (10,000-20,000 km/năm): 36.0% (5,193 xe)
-  - High (>20,000 km/năm): 10.1% (1,463 xe)
+  - Low (<10,000 km/năm): 53.8% (7,851 xe)
+  - Medium (10,000-20,000 km/năm): 36.0% (5,251 xe)
+  - High (>20,000 km/năm): 10.1% (1,483 xe)
 
 #### 5.2 Xóa Features Cũ
 - Xóa cột `year` (thay bằng `age`) để tránh đa cộng tuyến
-- Xóa cột `seller_id` (chỉ dùng để phát hiện duplicates, không có giá trị dự đoán)
+- **Lưu ý**: Cột `seller_id` vẫn được giữ lại ở giai đoạn này và chỉ bị xóa ở Phase VII (lưu dataset cuối cùng)
+- **Output**: `feature_interim.csv` (13,723 rows, 20 columns)
 
 ### Phase VI: Encoding (encoding_interim.csv)
 
@@ -275,7 +285,7 @@ usage = df['km_per_year'].apply(classify_usage)
 - AT (Tự động) → 1
 - MT (Số sàn) → 0
 
-**b) `usage` → `usage_*` (3 features)**
+**b) `usage_intensity` → `usage_*` (3 features)**
 - `usage_low`: Sử dụng ít (<10,000 km/năm)
 - `usage_medium`: Sử dụng trung bình (10,000-20,000 km/năm)
 - `usage_high`: Sử dụng nhiều (>20,000 km/năm)
@@ -352,7 +362,8 @@ Features: `body_type_convertible`, `body_type_coupe`, `body_type_hatchback`, `bo
 
 #### 7.1 Xóa Cột Không Cần Thiết
 Xóa các cột đã được encode:
-- `brand`, `model`, `transmission`, `fuel_type`, `body_type`, `origin`, `condition`, `city`, `source`
+- `brand`, `model`, `transmission`, `fuel_type`, `body_type`, `origin`, `condition`, `city`, `source`, `usage_intensity`
+- `seller_id` (đã dùng để loại bỏ duplicates ở Phase II, không có giá trị dự đoán)
 - `bobanh_binary` (thông tin nguồn gốc, không cần cho prediction)
 
 #### 7.2 Chuyển Đổi Kiểu Dữ Liệu
@@ -360,12 +371,13 @@ Chuyển các cột sang `int64`:
 - `age`, `km`, `seats`, `price_million`
 
 #### 7.3 Dataset Cuối Cùng
-- **Số mẫu**: 14,585 xe (sau loại bỏ duplicates và outliers)
-- **Số features**: 71 (70 features + 1 target)
+- **Số mẫu**: 13,723 xe
+- **Số features**: 69 columns (68 features + 1 target)
 - **Kiểu dữ liệu**: 
-  - Integer: 67 features (binary và one-hot encoded)
-  - Float: 4 features (engine, km_per_year, model_encoded, price_million)
+  - Binary/One-hot: 63 features (int64)
+  - Continuous: 5 features (engine, km_per_year, model_encoded - float64; km, seats, age - int64)
 - **Missing values**: 0%
+- **Output**: `preprocessed_car_features.csv` (13,723 rows, 69 columns)
 
 ---
 
@@ -375,7 +387,7 @@ Chuyển các cột sang `int64`:
 
 | Feature | Type | Description | Range | Mean |
 |---------|------|-------------|-------|------|
-| `price_million` | int64 | Giá xe (triệu VNĐ) | 50 - ~15,000 | ~700-800 |
+| `price_million` | float64 | Giá xe (triệu VNĐ) | 50 - 63,500 | 1,039.38 |
 
 ### 🔢 Numerical Features (6)
 
@@ -393,7 +405,7 @@ Chuyển các cột sang `int64`:
 | Feature | Type | Description | Values | Notes |
 |---------|------|-------------|--------|-------|
 | `engine_missing` | int64 | Có missing engine không | 0 (có) / 1 (missing) | Chotot = 1 |
-| `is_luxury` | int64 | Xe sang hay không | 0 (thường) / 1 (sang) | ~10% xe sang |
+| `is_luxury` | int64 | Xe sang hay không | 0 (thường) / 1 (sang) | 19.1% xe sang |
 | `transmission_binary` | int64 | Loại hộp số | 0 (MT) / 1 (AT) | ~70% AT |
 | `inland_binary` | int64 | Xuất xứ | 0 (NK) / 1 (TN) | ~60% trong nước |
 | `new_binary` | int64 | Tình trạng | 0 (Cũ) / 1 (Mới) | ~15% xe mới |
@@ -479,14 +491,14 @@ Chuyển các cột sang `int64`:
 
 ### Numerical Features Statistics
 
-| Feature         | Min | Q1     | Median  | Q3       | Max       | Mean     | Std     |
-|-----------------|-----|--------|---------|----------|-----------|----------|---------|
-| `price_million` | 50  | 380    | 580     | 950      | ~15,000   | ~750     | ~600    |
-| `km`            | 0   | 15,000 | 35,000  | 70,000   | 500,000   | ~45,000  | ~40,000 |
-| `seats`         | 2   | 5      | 5       | 7        | 16        | 5.5      | 1.2     |
-| `engine`        | 0   | 0      | 1.5     | 2.0      | 6.0       | 1.2      | 1.0     |
-| `age`           | 0   | 3      | 6       | 10       | 30        | 7        | 5       |
-| `km_per_year`   | 0   | 3,000  | 6,000   | 12,000   | ~80,000   | ~8,000   | ~7,000  |
+| Feature         | Min | Q1     | Median  | Q3       | Max       | Mean     | Std       |
+|-----------------|-----|--------|---------|----------|-----------|----------|-----------|
+| `price_million` | 50  | 380    | 590     | 1,030    | 63,500    | 1,039.38 | 1,548.87  |
+| `km`            | 0   | 15,000 | 35,000  | 70,000   | 500,000   | ~45,000  | ~40,000   |
+| `seats`         | 2   | 5      | 5       | 7        | 16        | 5.5      | 1.2       |
+| `engine`        | 0   | 0      | 1.5     | 2.0      | 6.0       | 1.2      | 1.0       |
+| `age`           | 0   | 3      | 6       | 10       | 30        | 7        | 5         |
+| `km_per_year`   | 0   | 3,000  | 6,000   | 12,000   | ~80,000   | ~8,000   | ~7,000    |
 
 ### Categorical Features Distribution
 
@@ -517,8 +529,8 @@ Chuyển các cột sang `int64`:
 - Others: ~5%
 
 **Luxury:**
-- Non-luxury: ~90%
-- Luxury: ~10%
+- Non-luxury: 80.9%
+- Luxury: 19.1%
 
 ---
 
