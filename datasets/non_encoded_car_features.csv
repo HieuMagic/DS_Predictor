@@ -63,16 +63,16 @@ price_million,km,year,brand,model,transmission,fuel_type,body_type,origin,condit
 75.0,85000.0,2015.0,Chevrolet,Dòng khác,MT,Xăng,Kiểu dáng khác,Nhập khẩu,Cũ,5.0,Hồ Chí Minh,0.0,1,23014595e11203ffc92e518da2b83b70,chotot,10.0,8500.0,0,1
 395.0,110000.0,2022.0,VinFast,VFe34,AT,Điện,Sedan,Trong nước,Cũ,5.0,Hồ Chí Minh,0.0,1,d733aa6d8d7243875a0ca9abb498cb10,chotot,3.0,36666.666666666664,0,3
 2090.0,110000.0,2015.0,LandRover,Range Rover,AT,Xăng,SUV / Cross over,Nhập khẩu,Cũ,5.0,Hà Nội,0.0,1,e3f4143bd4342f828cdf48bcfeb6ea2f,chotot,10.0,11000.0,0,2
-98.0,190000.0,1997.0,Toyota,Corolla,MT,Xăng,Sedan,Trong nước,Cũ,5.0,Hồ Chí Minh,0.0,1,nan,chotot,28.0,6785.714285714285,0,1
+98.0,190000.0,1997.0,Toyota,Corolla,MT,Xăng,Sedan,Trong nước,Cũ,5.0,Hồ Chí Minh,0.0,1,,chotot,28.0,6785.714285714285,0,1
 370.0,98000.0,2019.0,Ford,Focus,AT,Xăng,Sedan,Trong nước,Cũ,5.0,Hồ Chí Minh,0.0,1,25561f303620f63955c1c22e45f8875c,chotot,6.0,16333.333333333334,0,2
-302.0,10.0,2025.0,VinFast,VF3,AT,Điện,SUV / Cross over,Trong nước,Cũ,4.0,Quảng Ninh,0.0,1,nan,chotot,0.0,0.0,0,1
+302.0,10.0,2025.0,VinFast,VF3,AT,Điện,SUV / Cross over,Trong nước,Cũ,4.0,Quảng Ninh,0.0,1,,chotot,0.0,0.0,0,1
 60.0,100000.0,2003.0,Toyota,Hiace,MT,Xăng,Van,Nhập khẩu,Cũ,6.0,Hồ Chí Minh,0.0,1,1766485dd8c6684390505ba834c982a5,chotot,22.0,4545.454545454545,0,1
 258.0,70000.0,2013.0,Suzuki,Swift,AT,Xăng,Hatchback,Nhập khẩu,Cũ,5.0,Hồ Chí Minh,0.0,1,bad9a754cfce711d22cd8251169edde6,chotot,12.0,5833.333333333333,0,1
 640.0,10000.0,2024.0,Mitsubishi,Xforce,AT,Xăng,SUV / Cross over,Nhập khẩu,Cũ,5.0,Đà Nẵng,0.0,1,ad9d91c628a05411c89b8ea5951ab6f0,chotot,1.0,10000.0,0,2
 188.0,130000.0,2015.0,Kia,Carens,MT,Xăng,Minivan (MPV),Nhập khẩu,Cũ,7.0,Đà Nẵng,0.0,1,f7e2fe2e2383a1f81060b37bb00a3d72,chotot,10.0,13000.0,0,2
 340.0,65000.0,2022.0,VinFast,Fadil,AT,Xăng,Hatchback,Trong nước,Cũ,5.0,Bình Dương,0.0,1,0c764f1276b709a10cfe1d367cab8cac,chotot,3.0,21666.666666666668,0,3
 580.0,71500.0,2022.0,Toyota,Innova,MT,Xăng,Minivan (MPV),Trong nước,Cũ,8.0,Hồ Chí Minh,0.0,1,f53856d65df321462b1da1fd1b0e4e7a,chotot,3.0,23833.333333333332,0,3
-186.0,0.0,2025.0,Chery,Jaecoo 7,AT,Hybrid,SUV / Cross over,Nhập khẩu,Mới,5.0,Hồ Chí Minh,0.0,1,nan,chotot,0.0,0.0,0,1
+186.0,0.0,2025.0,Chery,Jaecoo 7,AT,Hybrid,SUV / Cross over,Nhập khẩu,Mới,5.0,Hồ Chí Minh,0.0,1,,chotot,0.0,0.0,0,1
 186.0,160000.0,2010.0,Toyota,Innova,MT,Xăng,Minivan (MPV),Trong nước,Cũ,8.0,Hà Nội,0.0,1,25f65e8537d70de961407b7a0b822380,chotot,15.0,10666.666666666666,0,2
 890.0,99000.0,2009.0,Porsche,Panamera,AT,Xăng,Sedan,Nhập khẩu,Cũ,4.0,Hồ Chí Minh,0.0,1,b5c480033535fca90e1b6d416535ed5a,chotot,16.0,6187.5,1,1
 2450.0,100000.0,2014.0,LandRover,Range Rover,AT,Xăng,SUV / Cross over,Nhập khẩu,Cũ,4.0,Đà Nẵng,0.0,1,9869634e582c173390e2c233e6da2cff,chotot,11.0,9090.90909090909,0,1
@@ -91,7 +91,7 @@ price_million,km,year,brand,model,transmission,fuel_type,body_type,origin,condit
 495.0,90000.0,2018.0,Nissan,X Terra,MT,Dầu,SUV / Cross over,Nhập khẩu,Cũ,7.0,Hà Nội,0.0,1,44193966878e9d3142a722051b25e69f,chotot,7.0,12857.142857142857,0,2
 100.0,129480.0,2010.0,Hyundai,Getz,MT,Xăng,Hatchback,Nhập khẩu,Cũ,5.0,Lào Cai,0.0,1,cfa64e68e53981b6da45c3ac61a571ab,chotot,15.0,8632.0,0,1
 405.0,75000.0,2019.0,Toyota,Innova,MT,Xăng,Minivan (MPV),Trong nước,Cũ,8.0,Hồ Chí Minh,0.0,1,ae93c38eb85236e1b68d04668706d777,chotot,6.0,12500.0,0,2
-549.0,0.0,2024.0,MG,HS,AT,Xăng,SUV / Cross over,Nhập khẩu,Mới,5.0,Hà Nội,0.0,1,nan,chotot,1.0,0.0,0,1
+549.0,0.0,2024.0,MG,HS,AT,Xăng,SUV / Cross over,Nhập khẩu,Mới,5.0,Hà Nội,0.0,1,,chotot,1.0,0.0,0,1
 729.0,0.0,2025.0,Lynk&Co,06,AT,Xăng,SUV / Cross over,Nhập khẩu,Mới,5.0,Hồ Chí Minh,0.0,1,6abe3e3a3bba4ce91ff3dc9a5baf5369,chotot,0.0,0.0,0,1
 800.0,71000.0,2017.0,Audi,A4,AT,Xăng,Sedan,Nhập khẩu,Cũ,5.0,Hồ Chí Minh,0.0,1,8cb684f92ae97e2ea89eb904d7491257,chotot,8.0,8875.0,0,1
 550.0,35000.0,2022.0,Mitsubishi,Xpander,AT,Xăng,Minivan (MPV),Nhập khẩu,Cũ,9.0,Hồ Chí Minh,0.0,1,69b1816ef7e9a954c0334a133ad6ed67,chotot,3.0,11666.666666666666,0,2
@@ -146,7 +146,7 @@ price_million,km,year,brand,model,transmission,fuel_type,body_type,origin,condit
 320.0,35000.0,2018.0,Toyota,Vios,MT,Xăng,Sedan,Trong nước,Cũ,5.0,Hồ Chí Minh,0.0,1,32ef78ea51f43d0b38c13722a8743531,chotot,7.0,5000.0,0,1
 395.0,12000.0,2021.0,Hyundai,Grand i10,AT,Xăng,Hatchback,Trong nước,Cũ,5.0,Hồ Chí Minh,0.0,1,42d18553e0b14b1caf2575f332d9793b,chotot,4.0,3000.0,0,1
 258.0,92169.0,2014.0,Ford,Focus,AT,Xăng,Sedan,Trong nước,Cũ,5.0,Hà Nội,0.0,1,6564333b94a4bcb0f6164854907c37f4,chotot,11.0,8379.0,0,1
-2139.0,300.0,2025.0,Volvo,S90,AT,Xăng,Sedan,Nhập khẩu,Cũ,5.0,Hà Nội,0.0,1,nan,chotot,0.0,0.0,1,1
+2139.0,300.0,2025.0,Volvo,S90,AT,Xăng,Sedan,Nhập khẩu,Cũ,5.0,Hà Nội,0.0,1,,chotot,0.0,0.0,1,1
 168.0,126000.0,2005.0,Mazda,6,AT,Xăng,Sedan,Nhập khẩu,Cũ,5.0,Hồ Chí Minh,0.0,1,da912bf104dfd54b6e26fd6749f38e65,chotot,20.0,6300.0,0,1
 450.0,10000.0,2016.0,Kia,Sorento,AT,Xăng,SUV / Cross over,Trong nước,Cũ,7.0,Hà Nội,0.0,1,0eed49b519743289d213d57c3b1b74c3,chotot,9.0,1111.111111111111,0,1
 234.0,112000.0,2017.0,Hyundai,Grand i10,MT,Xăng,Sedan,Trong nước,Cũ,5.0,Đà Nẵng,0.0,1,252f10e3b97f155cd9b157b8b99160da,chotot,8.0,14000.0,0,2
@@ -155,7 +155,7 @@ price_million,km,year,brand,model,transmission,fuel_type,body_type,origin,condit
 669.0,10000.0,2024.0,MG,RX5,AT,Xăng,SUV / Cross over,Nhập khẩu,Cũ,5.0,Hà Nội,0.0,1,dd21fcbffec0d99a8323357a136f2161,chotot,1.0,10000.0,0,2
 400.0,27000.0,2019.0,Ford,EcoSport,AT,Xăng,SUV / Cross over,Trong nước,Cũ,5.0,Hồ Chí Minh,0.0,1,c1c6e673883e3c1775d473a8fb253d48,chotot,6.0,4500.0,0,1
 55.0,133460.0,2013.0,Chevrolet,Spark,MT,Xăng,Hatchback,Trong nước,Cũ,5.0,Hà Nội,0.0,1,f0d1d202c26919da1d2952b1bcc8fbdf,chotot,12.0,11121.666666666666,0,2
-760.0,28000.0,2022.0,Ford,Ranger,AT,Dầu,Pick-up (bán tải),Trong nước,Cũ,5.0,Đồng Nai,0.0,1,nan,chotot,3.0,9333.333333333334,0,1
+760.0,28000.0,2022.0,Ford,Ranger,AT,Dầu,Pick-up (bán tải),Trong nước,Cũ,5.0,Đồng Nai,0.0,1,,chotot,3.0,9333.333333333334,0,1
 330.0,137276.0,2009.0,Hyundai,Santa Fe,AT,Dầu,SUV / Cross over,Nhập khẩu,Cũ,7.0,Thanh Hóa,0.0,1,8a27a611783c1c56578edf7fe6597681,chotot,16.0,8579.75,0,1
 1069.0,70000.0,2020.0,Mercedes Benz,GLC,AT,Xăng,SUV / Cross over,Trong nước,Cũ,5.0,Hà Nội,0.0,1,319555b0acc775a290704ca2a33fe915,chotot,5.0,14000.0,1,2
 287.04,0.0,2025.0,VinFast,VF3,MT,Điện,SUV / Cross over,Trong nước,Mới,4.0,Hồ Chí Minh,0.0,1,dc19c514f9b41ea6efbb3b098cec88e4,chotot,0.0,0.0,0,1
@@ -169,7 +169,7 @@ price_million,km,year,brand,model,transmission,fuel_type,body_type,origin,condit
 415.0,38000.0,2016.0,Suzuki,Vitara,AT,Xăng,SUV,Trong nước,Cũ,7.0,Hà Nội,0.0,1,fda9a321f9d1a3792ddbf6a0e3225fe4,chotot,9.0,4222.222222222223,0,1
 420.0,75000.0,2022.0,Suzuki,XL 7,AT,Xăng,Minivan (MPV),Nhập khẩu,Cũ,7.0,Hồ Chí Minh,0.0,1,4f0d010e6db2d59f2a56d48f70c6fd6b,chotot,3.0,25000.0,0,3
 740.0,9775.0,2023.0,Toyota,Corolla Cross,AT,Xăng,SUV / Cross over,Nhập khẩu,Cũ,5.0,Hồ Chí Minh,0.0,1,fb8e9d151309692fef46474723d16f7a,chotot,2.0,4887.5,0,1
-615.0,64198.0,2023.0,Ford,Ranger,AT,Dầu,Pick-up (bán tải),Trong nước,Cũ,5.0,Bình Dương,0.0,1,nan,chotot,2.0,32099.0,0,3
+615.0,64198.0,2023.0,Ford,Ranger,AT,Dầu,Pick-up (bán tải),Trong nước,Cũ,5.0,Bình Dương,0.0,1,,chotot,2.0,32099.0,0,3
 375.0,190000.0,2011.0,Toyota,Fortuner,AT,Xăng,SUV / Cross over,Trong nước,Cũ,7.0,Hồ Chí Minh,0.0,1,f82c3737317bceb15f2ff0d608cfba9d,chotot,14.0,13571.42857142857,0,2
 65.0,394168.0,2009.0,Chevrolet,Spark,MT,Xăng,Van,Nhập khẩu,Cũ,2.0,Hồ Chí Minh,0.0,1,e6a7861b83fd9ac51f144872f6e6b311,chotot,16.0,24635.5,0,3
 410.0,70000.0,2021.0,Hyundai,Accent,AT,Xăng,Sedan,Trong nước,Cũ,5.0,Hồ Chí Minh,0.0,1,d2459834988cc7897e99bf1c64ca7dba,chotot,4.0,17500.0,0,2
@@ -215,7 +215,7 @@ price_million,km,year,brand,model,transmission,fuel_type,body_type,origin,condit
 595.0,40000.0,2023.0,Ford,Ranger,AT,Dầu,Pick-up (bán tải),Trong nước,Cũ,5.0,Hồ Chí Minh,0.0,1,19bc7269df25a93da036f8500eb541f0,chotot,2.0,20000.0,0,2
 565.0,85000.0,2017.0,Toyota,Camry,AT,Xăng,Sedan,Trong nước,Cũ,5.0,Hà Nội,0.0,1,4cb22d08bc0d2138d102ac7e0fb422be,chotot,8.0,10625.0,0,2
 275.0,35000.0,2013.0,Ford,Focus,AT,Xăng,Hatchback,Trong nước,Cũ,5.0,Hồ Chí Minh,0.0,1,2350a74492613264a88d9ce7e6084e61,chotot,12.0,2916.6666666666665,0,1
-1125.0,16000.0,2023.0,Ford,Ranger,AT,Dầu,Pick-up (bán tải),Nhập khẩu,Cũ,5.0,Hồ Chí Minh,0.0,1,nan,chotot,2.0,8000.0,0,1
+1125.0,16000.0,2023.0,Ford,Ranger,AT,Dầu,Pick-up (bán tải),Nhập khẩu,Cũ,5.0,Hồ Chí Minh,0.0,1,,chotot,2.0,8000.0,0,1
 680.0,45000.0,2023.0,Toyota,Yaris Cross,AT,Hybrid,SUV / Cross over,Nhập khẩu,Cũ,5.0,unknow,0.0,1,8a769550706ae4092830253c53610923,chotot,2.0,22500.0,0,3
 380.0,10000.0,2020.0,Honda,Brio,AT,Xăng,Hatchback,Nhập khẩu,Cũ,5.0,Đà Nẵng,0.0,1,f54310c10950fc4a1f3f557b8074f93d,chotot,5.0,2000.0,0,1
 520.0,66000.0,2016.0,Toyota,Innova,AT,Xăng,Minivan (MPV),Trong nước,Cũ,8.0,Hồ Chí Minh,0.0,1,e43f4c4f8fe13c9f0d5dfed857423546,chotot,9.0,7333.333333333333,0,1
@@ -229,14 +229,14 @@ price_million,km,year,brand,model,transmission,fuel_type,body_type,origin,condit
 330.0,138000.0,2020.0,Suzuki,Ertiga,MT,Xăng,SUV / Cross over,Nhập khẩu,Cũ,7.0,Đồng Tháp,0.0,1,4cf16e2837387f6a5212ac19fff0d90d,chotot,5.0,27600.0,0,3
 279.0,130000.0,2013.0,Chevrolet,Captiva,AT,Xăng,SUV / Cross over,Nhập khẩu,Cũ,7.0,Hồ Chí Minh,0.0,1,6d888d8001d8a6c80f80b9de7675d25c,chotot,12.0,10833.333333333334,0,2
 350.0,275000.0,2017.0,Ford,Transit,MT,Dầu,Van,Trong nước,Cũ,7.0,Cần Thơ,0.0,1,d8e876d568f79978828b8e6029ac1bac,chotot,8.0,34375.0,0,3
-808.0,70000.0,2019.0,Ford,Everest,AT,Dầu,SUV / Cross over,Nhập khẩu,Cũ,7.0,Hồ Chí Minh,0.0,1,nan,chotot,6.0,11666.666666666666,0,2
+808.0,70000.0,2019.0,Ford,Everest,AT,Dầu,SUV / Cross over,Nhập khẩu,Cũ,7.0,Hồ Chí Minh,0.0,1,,chotot,6.0,11666.666666666666,0,2
 465.0,120000.0,2021.0,Ford,Ranger,MT,Dầu,Pick-up (bán tải),Trong nước,Cũ,5.0,Đắk Lắk,0.0,1,77c97b4a50246bd40c42d6bb4174e396,chotot,4.0,30000.0,0,3
 325.0,82000.0,2013.0,Honda,Civic,AT,Xăng,Sedan,Trong nước,Cũ,4.0,Hồ Chí Minh,0.0,1,5e2e495c4d392ac7e983f97798789394,chotot,12.0,6833.333333333333,0,1
 310.0,90000.0,2017.0,Hyundai,Elantra,MT,Xăng,Sedan,Trong nước,Cũ,5.0,Đắk Lắk,0.0,1,2fdaf06062a36532663449d0e401b2d0,chotot,8.0,11250.0,0,2
-879.0,60000.0,2021.0,Ford,Everest,AT,Dầu,SUV / Cross over,Nhập khẩu,Cũ,7.0,Hồ Chí Minh,0.0,1,nan,chotot,4.0,15000.0,0,2
-495.0,70000.0,2020.0,Ford,Ranger,AT,Dầu,Pick-up (bán tải),Nhập khẩu,Cũ,5.0,Hồ Chí Minh,0.0,1,nan,chotot,5.0,14000.0,0,2
+879.0,60000.0,2021.0,Ford,Everest,AT,Dầu,SUV / Cross over,Nhập khẩu,Cũ,7.0,Hồ Chí Minh,0.0,1,,chotot,4.0,15000.0,0,2
+495.0,70000.0,2020.0,Ford,Ranger,AT,Dầu,Pick-up (bán tải),Nhập khẩu,Cũ,5.0,Hồ Chí Minh,0.0,1,,chotot,5.0,14000.0,0,2
 110.0,99300.0,2011.0,Hyundai,Grand i10,MT,Xăng,Hatchback,Nhập khẩu,Cũ,5.0,Hà Nội,0.0,1,56d5ff5f08aa1b836d98076b4e5b94b2,chotot,14.0,7092.857142857143,0,1
-97.0,250000.0,2007.0,Daewoo,Matiz,AT,Xăng,Hatchback,Nhập khẩu,Cũ,5.0,Hồ Chí Minh,0.0,1,nan,chotot,18.0,13888.888888888889,0,2
+97.0,250000.0,2007.0,Daewoo,Matiz,AT,Xăng,Hatchback,Nhập khẩu,Cũ,5.0,Hồ Chí Minh,0.0,1,,chotot,18.0,13888.888888888889,0,2
 325.0,150000.0,2011.0,Toyota,Camry,AT,Xăng,Sedan,Trong nước,Cũ,5.0,Hồ Chí Minh,0.0,1,d603a55af6f08b52c1d06ea57dc4282f,chotot,14.0,10714.285714285714,0,2
 290.0,105000.0,2007.0,Toyota,Camry,AT,Xăng,Sedan,Trong nước,Cũ,5.0,Hồ Chí Minh,0.0,1,c478db3f7201680bf6fc1aee826de0bd,chotot,18.0,5833.333333333333,0,1
 413.0,90000.0,2019.0,Toyota,Innova,MT,Xăng,Minivan (MPV),Trong nước,Cũ,8.0,Hồ Chí Minh,0.0,1,dbfb54f5ff76705e7add7c514e8c5ea5,chotot,6.0,15000.0,0,2
@@ -285,7 +285,7 @@ price_million,km,year,brand,model,transmission,fuel_type,body_type,origin,condit
 85.0,140.0,2003.0,Ford,Laser,MT,Xăng,Sedan,Trong nước,Cũ,5.0,Bà Rịa,0.0,1,d28ca091b4fa336f6000272c4c2b9f86,chotot,22.0,6.363636363636363,0,1
 169.0,200000.0,2002.0,Toyota,Camry,AT,Xăng,Sedan,Trong nước,Cũ,5.0,Hồ Chí Minh,0.0,1,e9a8c559f6f1b4f9c13eb4f6fbf05060,chotot,23.0,8695.652173913044,0,1
 330.0,85000.0,2010.0,Genesis,Dòng khác,AT,Xăng,Coupe (2 cửa),Trong nước,Cũ,4.0,Cần Thơ,0.0,1,d5607f07b796cf1276181d58c3b97119,chotot,15.0,5666.666666666667,1,1
-458.0,75000.0,2020.0,Toyota,Innova,MT,Xăng,Minivan (MPV),Trong nước,Cũ,8.0,Hà Nội,0.0,1,nan,chotot,5.0,15000.0,0,2
+458.0,75000.0,2020.0,Toyota,Innova,MT,Xăng,Minivan (MPV),Trong nước,Cũ,8.0,Hà Nội,0.0,1,,chotot,5.0,15000.0,0,2
 720.0,40500.0,2019.0,Mazda,CX 8,AT,Xăng,SUV / Cross over,Trong nước,Cũ,5.0,Hồ Chí Minh,0.0,1,c1382446d346650b5e1754b224fac1d6,chotot,6.0,6750.0,0,1
 495.0,130000.0,2017.0,Hyundai,Starex,MT,Dầu,Van,Nhập khẩu,Cũ,9.0,Đắk Lắk,0.0,1,285bd977ab98029ae7c9982522751174,chotot,8.0,16250.0,0,2
 855.0,19000.0,2024.0,Ford,Ranger,AT,Dầu,Pick-up (bán tải),Trong nước,Cũ,5.0,Lâm Đồng,0.0,1,cc10ae5067c434fa4500bdb431cd8414,chotot,1.0,19000.0,0,2
@@ -349,7 +349,7 @@ price_million,km,year,brand,model,transmission,fuel_type,body_type,origin,condit
 116.0,10000.0,2012.0,Kia,Morning,MT,Xăng,Hatchback,Trong nước,Cũ,5.0,Hà Nội,0.0,1,243eb055cbd56331d8e34e659803fad8,chotot,13.0,769.2307692307693,0,1
 480.0,110.0,2012.0,LandRover,Range Rover,AT,Xăng,SUV / Cross over,Nhập khẩu,Cũ,5.0,Đồng Nai,0.0,1,85fc8b4cbde72aa203f91e96bd50ec63,chotot,13.0,8.461538461538462,0,1
 1360.0,23000.0,2023.0,Ford,Everest,AT,Dầu,SUV / Cross over,Nhập khẩu,Cũ,7.0,Hồ Chí Minh,0.0,1,0894aee1f6b57b2b3db1b151026a6936,chotot,2.0,11500.0,0,2
-208.0,20000.0,2010.0,BMW,X6,AT,Xăng,SUV / Cross over,Nhập khẩu,Cũ,5.0,Hà Nội,0.0,1,nan,chotot,15.0,1333.3333333333333,1,1
+208.0,20000.0,2010.0,BMW,X6,AT,Xăng,SUV / Cross over,Nhập khẩu,Cũ,5.0,Hà Nội,0.0,1,,chotot,15.0,1333.3333333333333,1,1
 295.0,126903.0,2014.0,Ford,Focus,AT,Xăng,Hatchback,Trong nước,Cũ,5.0,Đà Nẵng,0.0,1,7d50908c82c7e0451a99cf99f310d444,chotot,11.0,11536.636363636364,0,2
 115.0,116666.0,2009.0,Hyundai,Getz,MT,Xăng,Hatchback,Nhập khẩu,Cũ,5.0,Thừa Thiên Huế,0.0,1,05afdb5459c717d1ed50cb86e0655735,chotot,16.0,7291.625,0,1
 285.0,138000.0,2011.0,Honda,CR V,AT,Xăng,SUV / Cross over,Trong nước,Cũ,5.0,Bà Rịa,0.0,1,cca925091955c3292e343cbd2aa1035a,chotot,14.0,9857.142857142857,0,1
@@ -375,7 +375,7 @@ price_million,km,year,brand,model,transmission,fuel_type,body_type,origin,condit
 325.0,237000.0,2018.0,Ford,Transit,MT,Dầu,Van,Trong nước,Cũ,16.0,Hồ Chí Minh,0.0,1,427180375ebd4327351e229b4231c870,chotot,7.0,33857.142857142855,0,3
 65.0,10000.0,2009.0,Dongfeng,Dòng khác,MT,Xăng,Kiểu dáng khác,Nhập khẩu,Cũ,5.0,Đồng Nai,0.0,1,fd5581f12f372566efac80abd0a6aa03,chotot,16.0,625.0,0,1
 350.0,156800.0,2015.0,Kia,Sorento,AT,Xăng,SUV / Cross over,Trong nước,Cũ,7.0,Hải Phòng,0.0,1,ea09668c27db3bbde2046d22a91d9cd5,chotot,10.0,15680.0,0,2
-95.0,33979.0,2004.0,Ford,Mondeo,AT,Xăng,Sedan,Nhập khẩu,Cũ,5.0,Bình Định,0.0,1,nan,chotot,21.0,1618.047619047619,0,1
+95.0,33979.0,2004.0,Ford,Mondeo,AT,Xăng,Sedan,Nhập khẩu,Cũ,5.0,Bình Định,0.0,1,,chotot,21.0,1618.047619047619,0,1
 396.0,170.0,2020.0,Mitsubishi,Xpander,MT,Xăng,SUV / Cross over,Trong nước,Cũ,7.0,Quảng Ngãi,0.0,1,70e2b62ad7a22786bae8ad9e3a7dde4a,chotot,5.0,34.0,0,1
 279.0,80000.0,2018.0,Toyota,Vios,MT,Xăng,Sedan,Trong nước,Cũ,5.0,Hồ Chí Minh,0.0,1,203311231a0e5e39ddb923b599144361,chotot,7.0,11428.57142857143,0,2
 555.0,100000.0,2019.0,Toyota,Hilux,AT,Dầu,Pick-up (bán tải),Nhập khẩu,Cũ,5.0,Nghệ An,0.0,1,2affbc6b22e7ca8d9144919882588102,chotot,6.0,16666.666666666668,0,2
@@ -390,7 +390,7 @@ price_million,km,year,brand,model,transmission,fuel_type,body_type,origin,condit
 430.0,188000.0,2019.0,Ford,Ranger,MT,Dầu,Pick-up (bán tải),Trong nước,Cũ,5.0,Hồ Chí Minh,0.0,1,eb73500bae256457be2a06408ed1f96a,chotot,6.0,31333.333333333332,0,3
 319.0,123000.0,2011.0,Mazda,CX 5,AT,Xăng,SUV / Cross over,Trong nước,Cũ,7.0,Hồ Chí Minh,0.0,1,ec82b804b5d90191e7e2d1f6553b8dd4,chotot,14.0,8785.714285714286,0,1
 300.0,200000.0,2014.0,Toyota,Innova,AT,Xăng,Minivan (MPV),Trong nước,Cũ,7.0,Đồng Nai,0.0,1,2f9c0566e9780996fb56ff6b97aa17d5,chotot,11.0,18181.81818181818,0,2
-368.0,90000.0,2021.0,Toyota,Vios,AT,Xăng,Sedan,Trong nước,Cũ,5.0,Hồ Chí Minh,0.0,1,nan,chotot,4.0,22500.0,0,3
+368.0,90000.0,2021.0,Toyota,Vios,AT,Xăng,Sedan,Trong nước,Cũ,5.0,Hồ Chí Minh,0.0,1,,chotot,4.0,22500.0,0,3
 799.0,1700.0,2025.0,Kia,Sportage,AT,Xăng,SUV / Cross over,Trong nước,Cũ,7.0,Hồ Chí Minh,0.0,1,d196865e48cfe7863dbe61e96dbe53ca,chotot,0.0,0.0,0,1
 180.0,80000.0,2009.0,Kia,Carens,AT,Xăng,Minivan (MPV),Nhập khẩu,Cũ,7.0,Đà Nẵng,0.0,1,0f2b8b1b23a0aa33de29431fbf31375b,chotot,16.0,5000.0,0,1
 395.0,170000.0,2016.0,Mitsubishi,Pajero Sport,MT,Dầu,SUV / Cross over,Trong nước,Cũ,7.0,Hồ Chí Minh,0.0,1,feff24ab0fb5bc15d08da39f30f3c6a4,chotot,9.0,18888.88888888889,0,2
@@ -474,7 +474,7 @@ price_million,km,year,brand,model,transmission,fuel_type,body_type,origin,condit
 630.0,350.0,2017.0,Hyundai,Solati,MT,Dầu,SUV / Cross over,Nhập khẩu,Cũ,7.0,Đồng Nai,0.0,1,f1c35fcca3566c099fc61d522bb8c882,chotot,8.0,43.75,0,1
 695.0,30000.0,2025.0,BYD,M6,AT,Điện,Minivan (MPV),Nhập khẩu,Cũ,7.0,Hồ Chí Minh,0.0,1,71d521f1e41a242ae3dc9b956c4a433c,chotot,0.0,0.0,0,1
 468.0,65000.0,2021.0,MG,MG4,AT,Xăng,Kiểu dáng khác,Nhập khẩu,Cũ,5.0,Hưng Yên,0.0,1,212fabba17ac3cf8e9f1f31ee905a267,chotot,4.0,16250.0,0,2
-1099.0,0.0,2025.0,Ford,Everest,AT,Dầu,SUV / Cross over,Nhập khẩu,Mới,7.0,Hồ Chí Minh,0.0,1,nan,chotot,0.0,0.0,0,1
+1099.0,0.0,2025.0,Ford,Everest,AT,Dầu,SUV / Cross over,Nhập khẩu,Mới,7.0,Hồ Chí Minh,0.0,1,,chotot,0.0,0.0,0,1
 90.0,56000.0,2008.0,Hyundai,Elantra,MT,Xăng,Sedan,Trong nước,Cũ,5.0,Hà Nội,0.0,1,2567e9fae3a815318ad3aa10fbd52e63,chotot,17.0,3294.1176470588234,0,1
 95.0,278000.0,2002.0,Mazda,626,MT,Xăng,Sedan,Nhập khẩu,Cũ,5.0,Thanh Hóa,0.0,1,814981c49d02563afc4412f2394e6f12,chotot,23.0,12086.95652173913,0,2
 540.0,47700.0,2020.0,MG,HS,AT,Xăng,SUV / Cross over,Nhập khẩu,Cũ,5.0,Hồ Chí Minh,0.0,1,adad536ec1d69fb284432a6fb2990bf4,chotot,5.0,9540.0,0,1
@@ -483,7 +483,7 @@ price_million,km,year,brand,model,transmission,fuel_type,body_type,origin,condit
 550.0,52975.0,2024.0,Mitsubishi,Xpander,AT,Xăng,Minivan (MPV),Nhập khẩu,Cũ,7.0,Hồ Chí Minh,0.0,1,90e3d19f3b5de4550a826bba2bb4cdd2,chotot,1.0,52975.0,0,3
 50.0,99999.0,1999.0,Nissan,Dòng khác,AT,Xăng,Kiểu dáng khác,Nhập khẩu,Cũ,5.0,Vĩnh Long,0.0,1,c37b7790a4ed746327abaaf7ddd4ef1a,chotot,26.0,3846.1153846153848,0,1
 285.0,100000.0,2014.0,Ford,Ranger,AT,Dầu,Pick-up (bán tải),Nhập khẩu,Cũ,5.0,Gia Lai,0.0,1,3e14313fd0d549eb22f0953d0ce60f54,chotot,11.0,9090.90909090909,0,1
-119.0,230000.0,2004.0,Mitsubishi,Lancer,AT,Xăng,Sedan,Trong nước,Cũ,5.0,Hồ Chí Minh,0.0,1,nan,chotot,21.0,10952.380952380952,0,2
+119.0,230000.0,2004.0,Mitsubishi,Lancer,AT,Xăng,Sedan,Trong nước,Cũ,5.0,Hồ Chí Minh,0.0,1,,chotot,21.0,10952.380952380952,0,2
 410.0,89000.0,2019.0,Toyota,Innova,MT,Xăng,Minivan (MPV),Trong nước,Cũ,8.0,Hà Nội,0.0,1,a81e94ee6e77a84f1ff83647af2aae44,chotot,6.0,14833.333333333334,0,2
 355.0,68000.0,2023.0,Toyota,Vios,MT,Xăng,Sedan,Trong nước,Cũ,5.0,Cần Thơ,0.0,1,0ea1f14b6faaead216f58b6086d44012,chotot,2.0,34000.0,0,3
 405.0,140000.0,2019.0,Mitsubishi,Xpander,AT,Xăng,Minivan (MPV),Nhập khẩu,Cũ,5.0,Hà Nội,0.0,1,1bc17283242a1ca0fd67693734c884bf,chotot,6.0,23333.333333333332,0,3
@@ -505,7 +505,7 @@ price_million,km,year,brand,model,transmission,fuel_type,body_type,origin,condit
 2800.0,4128.0,2023.0,BMW,Z4,AT,Xăng,Coupe (2 cửa),Nhập khẩu,Cũ,5.0,Cần Thơ,0.0,1,2e4a181a40df62a49d7f2395355f3223,chotot,2.0,2064.0,1,1
 265.0,110000.0,2018.0,Hyundai,Grand i10,AT,Xăng,Sedan,Trong nước,Cũ,5.0,Hồ Chí Minh,0.0,1,78cadd1af4d4ca7fcf27df710b64a62e,chotot,7.0,15714.285714285714,0,2
 285.0,195026.0,2013.0,Toyota,Innova,MT,Xăng,Minivan (MPV),Nhập khẩu,Cũ,8.0,Hồ Chí Minh,0.0,1,71e955d99a87f5a3f28a264a89aa6836,chotot,12.0,16252.166666666666,0,2
-720.0,52000.0,2018.0,Mercedes Benz,C Class,AT,Xăng,Sedan,Trong nước,Cũ,5.0,Hồ Chí Minh,0.0,1,nan,chotot,7.0,7428.571428571428,1,1
+720.0,52000.0,2018.0,Mercedes Benz,C Class,AT,Xăng,Sedan,Trong nước,Cũ,5.0,Hồ Chí Minh,0.0,1,,chotot,7.0,7428.571428571428,1,1
 450.0,120000.0,2020.0,Toyota,Innova,MT,Xăng,Minivan (MPV),Trong nước,Cũ,8.0,Đà Nẵng,0.0,1,2fb6d1d26a3c676f5c3b30718ce34655,chotot,5.0,24000.0,0,3
 135.0,2500.0,2007.0,Mercedes Benz,Dòng khác,MT,Dầu,Kiểu dáng khác,Trong nước,Cũ,6.0,Hồ Chí Minh,0.0,1,1631af41f0a2d065f4e9a1f0f51dbb95,chotot,18.0,138.88888888888889,1,1
 195.0,200000.0,2005.0,Toyota,Camry,MT,Xăng,Sedan,Nhập khẩu,Cũ,4.0,Bình Dương,0.0,1,87f4b07d522c058caed5f7aaade48d11,chotot,20.0,10000.0,0,2
@@ -524,7 +524,7 @@ price_million,km,year,brand,model,transmission,fuel_type,body_type,origin,condit
 235.0,100000.0,2011.0,Hyundai,Avante,AT,Xăng,Sedan,Trong nước,Cũ,5.0,Đà Nẵng,0.0,1,d5746279e75a9b3343ef1d183ec2a05e,chotot,14.0,7142.857142857143,0,1
 2800.0,4128.0,2023.0,BMW,Z4,AT,Xăng,Coupe (2 cửa),Nhập khẩu,Cũ,2.0,Cần Thơ,0.0,1,c8813a1b00943644edc28724537a976e,chotot,2.0,2064.0,1,1
 368.0,100997.0,2016.0,Kia,Cerato,AT,Xăng,Sedan,Nhập khẩu,Cũ,5.0,Hồ Chí Minh,0.0,1,ee50eafc082553126b67ce4f12d1f6be,chotot,9.0,11221.888888888889,0,2
-2800.0,4128.0,2023.0,BMW,Z4,AT,Xăng,Coupe (2 cửa),Nhập khẩu,Cũ,5.0,Cần Thơ,0.0,1,nan,chotot,2.0,2064.0,1,1
+2800.0,4128.0,2023.0,BMW,Z4,AT,Xăng,Coupe (2 cửa),Nhập khẩu,Cũ,5.0,Cần Thơ,0.0,1,,chotot,2.0,2064.0,1,1
 267.0,120000.0,2014.0,Ford,EcoSport,AT,Xăng,SUV / Cross over,Trong nước,Cũ,5.0,Đắk Lắk,0.0,1,91d5506ede699ac1ac6fe2cfa9512340,chotot,11.0,10909.09090909091,0,2
 350.0,180000.0,2005.0,Toyota,Land Cruiser,MT,Xăng,SUV / Cross over,Trong nước,Cũ,8.0,Hồ Chí Minh,0.0,1,e0d0f4e209a8c52c9d90a6b02bbcebdb,chotot,20.0,9000.0,0,1
 115.0,21121.0,2001.0,Toyota,Camry,MT,Xăng,Sedan,Nhập khẩu,Cũ,5.0,Hồ Chí Minh,0.0,1,ae985255a3e707fb42d7b954828f0c1f,chotot,24.0,880.0416666666666,0,1
@@ -534,7 +534,7 @@ price_million,km,year,brand,model,transmission,fuel_type,body_type,origin,condit
 120.0,90000.0,2011.0,Chevrolet,Spark,MT,Xăng,Hatchback,Nhập khẩu,Cũ,5.0,Đà Nẵng,0.0,1,c4f370976fdfde366cb848c22c9a38cc,chotot,14.0,6428.571428571428,0,1
 105.0,7000.0,2019.0,Changan,Dòng khác,MT,Xăng,Kiểu dáng khác,Nhập khẩu,Cũ,2.0,Đà Nẵng,0.0,1,f30aa9f1e420faef847584564ef4629b,chotot,6.0,1166.6666666666667,0,1
 430.0,20000.0,2025.0,VinFast,VF5 Plus,AT,Điện,SUV,Trong nước,Cũ,5.0,Bình Dương,0.0,1,02fa0c7bc302678e73434a4093eb3c83,chotot,0.0,0.0,0,1
-869.0,0.0,2025.0,Ford,Transit,MT,Dầu,Van,Trong nước,Mới,16.0,Hồ Chí Minh,0.0,1,nan,chotot,0.0,0.0,0,1
+869.0,0.0,2025.0,Ford,Transit,MT,Dầu,Van,Trong nước,Mới,16.0,Hồ Chí Minh,0.0,1,,chotot,0.0,0.0,0,1
 575.0,14000.0,2025.0,Toyota,Veloz Cross,AT,Xăng,SUV,Trong nước,Cũ,7.0,Hồ Chí Minh,0.0,1,56cad1b4f2afae4a74b13a48ff544b8c,chotot,0.0,0.0,0,1
 420.0,102000.0,2015.0,Toyota,Fortuner,AT,Xăng,SUV / Cross over,Trong nước,Cũ,7.0,Hà Nội,0.0,1,53c71c692bf532e1d07276addd4a431f,chotot,10.0,10200.0,0,2
 756.0,0.0,2025.0,BYD,M6,AT,Điện,Minivan (MPV),Nhập khẩu,Mới,7.0,Hồ Chí Minh,0.0,1,75159b16d432502027272c4e5fab9779,chotot,0.0,0.0,0,1
@@ -632,7 +632,7 @@ price_million,km,year,brand,model,transmission,fuel_type,body_type,origin,condit
 315.0,46000.0,2019.0,Honda,Brio,AT,Xăng,Hatchback,Nhập khẩu,Cũ,5.0,Bình Dương,0.0,1,e6fd34b3ac1ce080b6a2120c4e19f61f,chotot,6.0,7666.666666666667,0,1
 355.0,68000.0,2015.0,Mazda,3,AT,Xăng,Sedan,Trong nước,Cũ,5.0,Hồ Chí Minh,0.0,1,aa890d0381f73b71eb9249f34568b4e4,chotot,10.0,6800.0,0,1
 360.0,99000.0,2012.0,Toyota,Fortuner,AT,Xăng,SUV / Cross over,Trong nước,Cũ,8.0,Hồ Chí Minh,0.0,1,4eb106ff7cc74e3dee4bdd8e3fb44db4,chotot,13.0,7615.384615384615,0,1
-136.0,10000.0,2007.0,Toyota,Innova,MT,Xăng,Minivan (MPV),Trong nước,Cũ,8.0,Vĩnh Phúc,0.0,1,nan,chotot,18.0,555.5555555555555,0,1
+136.0,10000.0,2007.0,Toyota,Innova,MT,Xăng,Minivan (MPV),Trong nước,Cũ,8.0,Vĩnh Phúc,0.0,1,,chotot,18.0,555.5555555555555,0,1
 175.0,11111.0,2010.0,BMW,Dòng khác,AT,Xăng,Kiểu dáng khác,Nhập khẩu,Cũ,5.0,Bình Dương,0.0,1,544d8bb7e5628b2b274439cad2dc35f6,chotot,15.0,740.7333333333333,1,1
 385.0,47000.0,2019.0,Kia,Rondo,AT,Xăng,SUV / Cross over,Trong nước,Cũ,7.0,Hồ Chí Minh,0.0,1,69675892cb80ebe14c08b8441aa08add,chotot,6.0,7833.333333333333,0,1
 420.0,31000.0,2025.0,VinFast,VF5 Plus,AT,Điện,SUV,Trong nước,Cũ,7.0,Hồ Chí Minh,0.0,1,63f60678988bd0e44454652c8ff47359,chotot,0.0,0.0,0,1
@@ -687,10 +687,10 @@ price_million,km,year,brand,model,transmission,fuel_type,body_type,origin,condit
 266.0,0.0,2025.0,VinFast,VF3,AT,Điện,SUV / Cross over,Trong nước,Mới,4.0,Hà Nội,0.0,1,c0e5a457e55161f31ea463ec1d9ee34e,chotot,0.0,0.0,0,1
 455.0,83145.0,2020.0,Mitsubishi,Xpander,AT,Xăng,SUV / Cross over,Nhập khẩu,Cũ,7.0,Hà Nội,0.0,1,54cff19dc15a4f6dd6ce224bba7fddab,chotot,5.0,16629.0,0,2
 275.0,1.0,2016.0,Ford,Transit,MT,Dầu,Van,Nhập khẩu,Cũ,6.0,Cần Thơ,0.0,1,0ea1f14b6faaead216f58b6086d44012,chotot,9.0,0.1111111111111111,0,1
-165.0,25555.0,2008.0,Toyota,Innova,MT,Xăng,Minivan (MPV),Trong nước,Cũ,8.0,Tây Ninh,0.0,1,nan,chotot,17.0,1503.235294117647,0,1
+165.0,25555.0,2008.0,Toyota,Innova,MT,Xăng,Minivan (MPV),Trong nước,Cũ,8.0,Tây Ninh,0.0,1,,chotot,17.0,1503.235294117647,0,1
 220.0,190000.0,2010.0,Kia,Carens,AT,Xăng,Minivan (MPV),Trong nước,Cũ,5.0,Hà Nội,0.0,1,7faa5abc92433656e82cdb03074414a0,chotot,15.0,12666.666666666666,0,2
 650.0,4217.0,2025.0,Mitsubishi,Xpander Cross,AT,Xăng,SUV,Trong nước,Cũ,7.0,Bình Dương,0.0,1,62daae29bc761f06d743ac9150ce148e,chotot,0.0,0.0,0,1
-155.0,123546.0,2006.0,Toyota,Innova,MT,Xăng,Minivan (MPV),Trong nước,Cũ,8.0,Tây Ninh,0.0,1,nan,chotot,19.0,6502.421052631579,0,1
+155.0,123546.0,2006.0,Toyota,Innova,MT,Xăng,Minivan (MPV),Trong nước,Cũ,8.0,Tây Ninh,0.0,1,,chotot,19.0,6502.421052631579,0,1
 720.0,0.0,2018.0,Mercedes Benz,C Class,AT,Xăng,Sedan,Trong nước,Cũ,5.0,Hồ Chí Minh,0.0,1,534bc35df6c79e4eae7e4ec5af9187c9,chotot,7.0,0.0,1,1
 445.0,24000.0,2024.0,Hyundai,Stargazer,AT,Xăng,Minivan (MPV),Nhập khẩu,Cũ,7.0,Hồ Chí Minh,0.0,1,6362dfd40f0697a21e2974461ccc99e0,chotot,1.0,24000.0,0,3
 430.0,120000.0,2013.0,Honda,CR V,AT,Xăng,SUV / Cross over,Trong nước,Cũ,5.0,Hà Nội,0.0,1,1d0a44d14f0553be75df8ebcb4ab099d,chotot,12.0,10000.0,0,2
@@ -715,12 +715,12 @@ price_million,km,year,brand,model,transmission,fuel_type,body_type,origin,condit
 389.4,48000.0,2022.0,Honda,City,AT,Xăng,Sedan,Trong nước,Cũ,5.0,Hồ Chí Minh,0.0,1,4c634faa3bbc0467f785b625cc92241b,chotot,3.0,16000.0,0,2
 280.0,0.0,2025.0,VinFast,VF3,AT,Điện,Coupe (2 cửa),Trong nước,Mới,4.0,Hồ Chí Minh,0.0,1,0b64ba25bc0a841cd8f43939abdee491,chotot,0.0,0.0,0,1
 265.0,60726.0,2017.0,Kia,Morning,AT,Xăng,Hatchback,Trong nước,Cũ,5.0,Đồng Nai,0.0,1,8b888878f9ffea39b381346b94509e68,chotot,8.0,7590.75,0,1
-195.0,147998.0,2007.0,Toyota,Innova,MT,Xăng,SUV / Cross over,Trong nước,Cũ,8.0,Cần Thơ,0.0,1,nan,chotot,18.0,8222.111111111111,0,1
+195.0,147998.0,2007.0,Toyota,Innova,MT,Xăng,SUV / Cross over,Trong nước,Cũ,8.0,Cần Thơ,0.0,1,,chotot,18.0,8222.111111111111,0,1
 256.0,5.0,2025.0,VinFast,VF3,AT,Điện,Sedan,Trong nước,Cũ,2.0,Gia Lai,0.0,1,ce53bad8ee520ccb632caa5c975917bd,chotot,0.0,0.0,0,1
 75.0,130000.0,2014.0,Chevrolet,Spark,MT,Xăng,Hatchback,Trong nước,Cũ,2.0,Hồ Chí Minh,0.0,1,532be64df67e5ab973707b72df35abdf,chotot,11.0,11818.181818181818,0,2
 265.0,140000.0,2009.0,Honda,Accord,AT,Xăng,Sedan,Nhập khẩu,Cũ,5.0,Tây Ninh,0.0,1,18b8f81adefffe16aa263c542b55bdcf,chotot,16.0,8750.0,0,1
 280.0,90000.0,2021.0,Hyundai,Accent,MT,Xăng,Sedan,Trong nước,Cũ,5.0,Thừa Thiên Huế,0.0,1,ffbf2b98b61eae508883cea0f351f79c,chotot,4.0,22500.0,0,3
-265.0,128999.0,2010.0,BMW,3 Series,AT,Xăng,Sedan,Nhập khẩu,Cũ,5.0,Cần Thơ,0.0,1,nan,chotot,15.0,8599.933333333332,1,1
+265.0,128999.0,2010.0,BMW,3 Series,AT,Xăng,Sedan,Nhập khẩu,Cũ,5.0,Cần Thơ,0.0,1,,chotot,15.0,8599.933333333332,1,1
 680.0,29000.0,2016.0,BMW,3 Series,AT,Xăng,Sedan,Nhập khẩu,Cũ,4.0,Hồ Chí Minh,0.0,1,821ae80c8cb6d097137d5deb051c55a8,chotot,9.0,3222.222222222222,1,1
 449.0,21000.0,2019.0,Kia,Cerato,AT,Xăng,Sedan,Trong nước,Cũ,5.0,Hồ Chí Minh,0.0,1,a38c6d927f660a6bf43aba7c9aeab80f,chotot,6.0,3500.0,0,1
 355.0,24000.0,2022.0,Mitsubishi,Attrage,AT,Xăng,Sedan,Nhập khẩu,Cũ,5.0,Đà Nẵng,0.0,1,39637900d64f26beced951b9845edad3,chotot,3.0,8000.0,0,1
@@ -729,9 +729,9 @@ price_million,km,year,brand,model,transmission,fuel_type,body_type,origin,condit
 289.0,64000.0,2018.0,Mazda,2,AT,Xăng,Sedan,Trong nước,Cũ,5.0,Hồ Chí Minh,0.0,1,fca2e1c06482251d9aad5b9d48674fd7,chotot,7.0,9142.857142857143,0,1
 145.0,150000.0,2011.0,Kia,Morning,AT,Xăng,Van,Nhập khẩu,Cũ,2.0,Nghệ An,0.0,1,abece12a354b0881b8aead46b25bb999,chotot,14.0,10714.285714285714,0,2
 350.0,91000.0,2016.0,Kia,Rondo,AT,Xăng,Minivan (MPV),Nhập khẩu,Cũ,7.0,Hồ Chí Minh,0.0,1,a902cbbd108f2b8c5ac00c21157f56c8,chotot,9.0,10111.111111111111,0,2
-767.0,0.0,2025.0,VinFast,VF7,AT,Điện,Hatchback,Trong nước,Mới,5.0,Hồ Chí Minh,0.0,1,nan,chotot,0.0,0.0,0,1
+767.0,0.0,2025.0,VinFast,VF7,AT,Điện,Hatchback,Trong nước,Mới,5.0,Hồ Chí Minh,0.0,1,,chotot,0.0,0.0,0,1
 338.0,112388.0,2016.0,Toyota,Innova,MT,Xăng,Minivan (MPV),Trong nước,Cũ,8.0,Hồ Chí Minh,0.0,1,62548f2bcecba1cf5477e0af8fb342a7,chotot,9.0,12487.555555555555,0,2
-375.0,86000.0,2019.0,Hyundai,Elantra,MT,Xăng,Sedan,Trong nước,Cũ,5.0,Cần Thơ,0.0,1,nan,chotot,6.0,14333.333333333334,0,2
+375.0,86000.0,2019.0,Hyundai,Elantra,MT,Xăng,Sedan,Trong nước,Cũ,5.0,Cần Thơ,0.0,1,,chotot,6.0,14333.333333333334,0,2
 900.0,40000.0,2022.0,Kia,Sorento,AT,Dầu,SUV / Cross over,Trong nước,Cũ,7.0,Hồ Chí Minh,0.0,1,4abde3277b94ebe81b3f8b956f9ba49c,chotot,3.0,13333.333333333334,0,2
 743.0,120000.0,2021.0,Kia,Sorento,AT,Dầu,SUV / Cross over,Trong nước,Cũ,7.0,Hồ Chí Minh,0.0,1,912c250b587007ca1ea60025936357bf,chotot,4.0,30000.0,0,3
 360.0,170000.0,2016.0,Mazda,6,AT,Xăng,Sedan,Trong nước,Cũ,5.0,Hồ Chí Minh,0.0,1,89c7211cb16d0f53cc7b0ef20c918a1b,chotot,9.0,18888.88888888889,0,2
@@ -775,7 +775,7 @@ price_million,km,year,brand,model,transmission,fuel_type,body_type,origin,condit
 320.0,55161.0,2022.0,Mitsubishi,Attrage,AT,Xăng,Sedan,Nhập khẩu,Cũ,5.0,Bình Dương,0.0,1,9b930bd5278f478c892604fbdc40efe0,chotot,3.0,18387.0,0,2
 428.0,68000.0,2022.0,Suzuki,Ertiga,AT,Hybrid,SUV / Cross over,Nhập khẩu,Cũ,7.0,Hồ Chí Minh,0.0,1,4df6b3cc17a43fc0a894a36eb01bc403,chotot,3.0,22666.666666666668,0,3
 158.0,20000.0,2008.0,Mercedes Benz,E Class,AT,Xăng,Sedan,Trong nước,Cũ,5.0,Hà Nội,0.0,1,be94dac4ffcfd830d517e5e9d0d0aa47,chotot,17.0,1176.4705882352941,1,1
-245.0,110000.0,2009.0,Mercedes Benz,C Class,AT,Xăng,Sedan,Trong nước,Cũ,5.0,Hồ Chí Minh,0.0,1,nan,chotot,16.0,6875.0,1,1
+245.0,110000.0,2009.0,Mercedes Benz,C Class,AT,Xăng,Sedan,Trong nước,Cũ,5.0,Hồ Chí Minh,0.0,1,,chotot,16.0,6875.0,1,1
 190.0,122000.0,2014.0,Chevrolet,Cruze,MT,Xăng,Hatchback,Nhập khẩu,Cũ,5.0,Đắk Lắk,0.0,1,643ea4272e23469322741ef4a77c94fb,chotot,11.0,11090.90909090909,0,2
 540.0,27000.0,2022.0,Mitsubishi,Xpander,AT,Xăng,SUV / Cross over,Trong nước,Cũ,7.0,Hồ Chí Minh,0.0,1,14b214084c5f307edac2a4232439c3cb,chotot,3.0,9000.0,0,1
 550.0,128000.0,2023.0,Ford,Transit,MT,Dầu,Van,Trong nước,Cũ,16.0,An Giang,0.0,1,7d6268d50dd64917fde3ffc3b636e800,chotot,2.0,64000.0,0,3
@@ -783,7 +783,7 @@ price_million,km,year,brand,model,transmission,fuel_type,body_type,origin,condit
 63.0,20000.0,2006.0,Kia,Morning,MT,Xăng,Hatchback,Nhập khẩu,Cũ,2.0,Hà Nội,0.0,1,e58b02db9761ab0798de8e5fb2eab97f,chotot,19.0,1052.6315789473683,0,1
 58.0,123.0,2004.0,Fiat,Albea,MT,Xăng,Sedan,Nhập khẩu,Cũ,5.0,Đồng Nai,0.0,1,c5e39abf7747088eb7a1e69317f2d72d,chotot,21.0,5.857142857142857,0,1
 285.0,99997.0,2015.0,Kia,Rio,AT,Xăng,Sedan,Nhập khẩu,Cũ,5.0,Hồ Chí Minh,0.0,1,c3d8ae198da3aaaf23d2c66cf3cbe97b,chotot,10.0,9999.7,0,1
-260.0,100000.0,2011.0,Toyota,Innova,MT,Xăng,Minivan (MPV),Trong nước,Cũ,8.0,Sơn La,0.0,1,nan,chotot,14.0,7142.857142857143,0,1
+260.0,100000.0,2011.0,Toyota,Innova,MT,Xăng,Minivan (MPV),Trong nước,Cũ,8.0,Sơn La,0.0,1,,chotot,14.0,7142.857142857143,0,1
 660.0,115000.0,2019.0,Honda,CR V,AT,Xăng,SUV / Cross over,Nhập khẩu,Cũ,5.0,Hồ Chí Minh,0.0,1,9cb74c1f2563084eed096eb56ae42c4e,chotot,6.0,19166.666666666668,0,2
 315.0,80000.0,2017.0,Suzuki,Ertiga,AT,Xăng,SUV / Cross over,Nhập khẩu,Cũ,7.0,Thừa Thiên Huế,0.0,1,0f64131266b6ba522980effa2701899d,chotot,8.0,10000.0,0,2
 450.0,70000.0,2019.0,Hyundai,Elantra,AT,Xăng,Sedan,Trong nước,Cũ,5.0,Đà Nẵng,0.0,1,c84dc328573e027ce18fa3deae9664be,chotot,6.0,11666.666666666666,0,2
@@ -791,7 +791,7 @@ price_million,km,year,brand,model,transmission,fuel_type,body_type,origin,condit
 475.0,55000.0,2021.0,VinFast,Lux A2.0,AT,Xăng,Sedan,Trong nước,Cũ,5.0,Hà Nội,0.0,1,47e71945ecb8a02b0e88493ce5d772f1,chotot,4.0,13750.0,0,2
 65.0,100000.0,2005.0,Daewoo,Lanos,MT,Xăng,Sedan,Nhập khẩu,Cũ,5.0,Bình Dương,0.0,1,3a3e975ad9c69a6f15fd0d6d74491630,chotot,20.0,5000.0,0,1
 460.0,80000.0,2020.0,Mitsubishi,Xpander,AT,Xăng,Minivan (MPV),Trong nước,Cũ,5.0,Hồ Chí Minh,0.0,1,8f3d9f82e9678d745469748fd2a3de73,chotot,5.0,16000.0,0,2
-395.0,70000.0,2017.0,Hyundai,Elantra,AT,Xăng,Sedan,Trong nước,Cũ,5.0,Hồ Chí Minh,0.0,1,nan,chotot,8.0,8750.0,0,1
+395.0,70000.0,2017.0,Hyundai,Elantra,AT,Xăng,Sedan,Trong nước,Cũ,5.0,Hồ Chí Minh,0.0,1,,chotot,8.0,8750.0,0,1
 545.0,70000.0,2023.0,Kia,Sonet,AT,Xăng,SUV / Cross over,Trong nước,Cũ,5.0,Hồ Chí Minh,0.0,1,e37df969c4a26f1b7cfbbf0692eed616,chotot,2.0,35000.0,0,3
 360.0,90000.0,2019.0,Toyota,Vios,AT,Xăng,Sedan,Trong nước,Cũ,5.0,Gia Lai,0.0,1,b2e1d069f9b0f2a6aec7c799debdddfc,chotot,6.0,15000.0,0,2
 445.0,10000.0,2018.0,Honda,Civic,AT,Xăng,Sedan,Nhập khẩu,Cũ,5.0,Đắk Lắk,0.0,1,f2c976c130fe2a4cdc03e401330e6cb9,chotot,7.0,1428.5714285714287,0,1
@@ -826,7 +826,7 @@ price_million,km,year,brand,model,transmission,fuel_type,body_type,origin,condit
 600.0,18000.0,2023.0,Mitsubishi,Xpander Cross,AT,Xăng,SUV,Nhập khẩu,Cũ,7.0,Hưng Yên,0.0,1,ee75e3f9b60da24f34b2ad74f6a91753,chotot,2.0,9000.0,0,1
 440.0,95000.0,2020.0,Suzuki,XL 7,AT,Xăng,SUV / Cross over,Trong nước,Cũ,7.0,Hồ Chí Minh,0.0,1,e680237da97977ef6cb8dc42b422e5c0,chotot,5.0,19000.0,0,2
 490.0,32000.0,2023.0,Kia,Sonet,AT,Xăng,SUV / Cross over,Trong nước,Cũ,5.0,Hà Nội,0.0,1,e394665a313d071ab857fba1bbfb4c8d,chotot,2.0,16000.0,0,2
-661.0,0.0,2025.0,VinFast,VF6,AT,Điện,Hatchback,Trong nước,Mới,5.0,Hồ Chí Minh,0.0,1,nan,chotot,0.0,0.0,0,1
+661.0,0.0,2025.0,VinFast,VF6,AT,Điện,Hatchback,Trong nước,Mới,5.0,Hồ Chí Minh,0.0,1,,chotot,0.0,0.0,0,1
 390.0,67200.0,2022.0,Hyundai,Stargazer,AT,Xăng,Minivan (MPV),Nhập khẩu,Cũ,7.0,Hồ Chí Minh,0.0,1,0d606fe7150b5e3706dec0ba8f4671c5,chotot,3.0,22400.0,0,3
 210.0,120000.0,2010.0,Toyota,Innova,MT,Xăng,Minivan (MPV),Trong nước,Cũ,8.0,Hồ Chí Minh,0.0,1,acb32a351746ae9a7b2b10f50ff03a7c,chotot,15.0,8000.0,0,1
 490.0,60000.0,2024.0,Hyundai,Accent,AT,Xăng,Sedan,Trong nước,Cũ,5.0,Hà Nội,0.0,1,b24cd423ef711ca5588e9669d787b2e5,chotot,1.0,60000.0,0,3
@@ -907,7 +907,7 @@ price_million,km,year,brand,model,transmission,fuel_type,body_type,origin,condit
 275.0,12500.0,2019.0,Kia,Soluto,MT,Xăng,Sedan,Trong nước,Cũ,5.0,Đà Nẵng,0.0,1,1a9652c3d6d9a387cfb80333155f034c,chotot,6.0,2083.3333333333335,0,1
 570.0,180000.0,2016.0,Kia,Sedona,AT,Dầu,Minivan (MPV),Trong nước,Cũ,7.0,Hồ Chí Minh,0.0,1,6e5b7e911cde308616dd4ab2ce525adf,chotot,9.0,20000.0,0,2
 740.0,100000.0,2010.0,Lexus,RX,AT,Xăng,SUV / Cross over,Nhập khẩu,Cũ,5.0,Hồ Chí Minh,0.0,1,dbf34bde904301ae25ec1205df5492ab,chotot,15.0,6666.666666666667,1,1
-179.0,100000.0,2012.0,Ford,Fiesta,AT,Xăng,Sedan,Trong nước,Cũ,5.0,Hồ Chí Minh,0.0,1,nan,chotot,13.0,7692.307692307692,0,1
+179.0,100000.0,2012.0,Ford,Fiesta,AT,Xăng,Sedan,Trong nước,Cũ,5.0,Hồ Chí Minh,0.0,1,,chotot,13.0,7692.307692307692,0,1
 168.0,215688.0,2008.0,Mercedes Benz,E Class,AT,Xăng,Sedan,Nhập khẩu,Cũ,5.0,Hà Nội,0.0,1,3086246a9f088cdd52a47619ec35e9e3,chotot,17.0,12687.529411764706,1,2
 102.0,250000.0,2005.0,Kia,Carnival,MT,Xăng,Minivan (MPV),Nhập khẩu,Cũ,7.0,Đồng Nai,0.0,1,ea2f8b03eb6bd60b23a023a20f5b7ae6,chotot,20.0,12500.0,0,2
 510.0,0.0,2025.0,Toyota,Raize,AT,Xăng,SUV / Cross over,Nhập khẩu,Mới,5.0,Đà Nẵng,0.0,1,50abd709cff9909d9b54873851797893,chotot,0.0,0.0,0,1
@@ -922,13 +922,13 @@ price_million,km,year,brand,model,transmission,fuel_type,body_type,origin,condit
 320.0,135000.0,2013.0,Hyundai,Grand Starex,MT,Xăng,Pick-up (bán tải),Nhập khẩu,Cũ,6.0,Hồ Chí Minh,0.0,1,8f239beedb8d31fdac2fea7c9459d873,chotot,12.0,11250.0,0,2
 719.0,0.0,2025.0,VinFast,VF6,AT,Điện,SUV / Cross over,Trong nước,Mới,5.0,Hồ Chí Minh,0.0,1,9cd9e77e61b468e7d67b6046034c67e4,chotot,0.0,0.0,0,1
 200.0,110000.0,2017.0,Hyundai,Grand i10,MT,Xăng,Hatchback,Trong nước,Cũ,5.0,Nghệ An,0.0,1,f1ead20367f07ae43ae3fad4d48251a0,chotot,8.0,13750.0,0,2
-1190.0,30000.0,2024.0,Honda,CR V,AT,Hybrid,SUV / Cross over,Nhập khẩu,Cũ,5.0,Hồ Chí Minh,0.0,1,nan,chotot,1.0,30000.0,0,3
+1190.0,30000.0,2024.0,Honda,CR V,AT,Hybrid,SUV / Cross over,Nhập khẩu,Cũ,5.0,Hồ Chí Minh,0.0,1,,chotot,1.0,30000.0,0,3
 300.0,46000.0,2021.0,VinFast,Fadil,AT,Xăng,Hatchback,Trong nước,Cũ,5.0,Hồ Chí Minh,0.0,1,76133225e5ea9ef55020eeb4ac0f7110,chotot,4.0,11500.0,0,2
 395.0,90000.0,2021.0,Hyundai,Accent,AT,Xăng,Sedan,Trong nước,Cũ,5.0,Đồng Nai,0.0,1,ec36f14393a88c4b51478ddd6b9a8dce,chotot,4.0,22500.0,0,3
 450.0,56000.0,2021.0,Honda,City,AT,Xăng,Sedan,Trong nước,Cũ,2.0,Bình Dương,0.0,1,ea1ad8ec62ef8cd311af1bbb01904fb9,chotot,4.0,14000.0,0,2
 230.0,100000.0,2009.0,Mazda,3,AT,Xăng,Hatchback,Trong nước,Cũ,5.0,Hồ Chí Minh,0.0,1,af3f7105f3ca4d3361e684fa91ddb1b6,chotot,16.0,6250.0,0,1
 236.0,100000.0,2011.0,BMW,3 Series,AT,Xăng,Sedan,Nhập khẩu,Cũ,5.0,Hồ Chí Minh,0.0,1,ff41c229a9706c095a4104b7f5ed576c,chotot,14.0,7142.857142857143,1,1
-235.0,123456.0,2007.0,Toyota,Camry,AT,Xăng,Sedan,Trong nước,Cũ,5.0,Hồ Chí Minh,0.0,1,nan,chotot,18.0,6858.666666666667,0,1
+235.0,123456.0,2007.0,Toyota,Camry,AT,Xăng,Sedan,Trong nước,Cũ,5.0,Hồ Chí Minh,0.0,1,,chotot,18.0,6858.666666666667,0,1
 900.0,76000.0,2019.0,Mercedes Benz,C Class,AT,Xăng,Sedan,Trong nước,Cũ,5.0,Hà Nội,0.0,1,2cbf989297099e3503d1067969a9bfca,chotot,6.0,12666.666666666666,1,2
 320.0,270000.0,2018.0,Toyota,Vios,MT,Xăng,Sedan,Nhập khẩu,Cũ,4.0,Hà Nội,0.0,1,4a272ae0b29b84d237562137d584f45e,chotot,7.0,38571.42857142857,0,3
 222.222222,55555.0,2018.0,Hyundai,Accent,MT,Xăng,Sedan,Trong nước,Cũ,5.0,Đà Nẵng,0.0,1,7f534f057450be102fe83ca045d456ef,chotot,7.0,7936.428571428572,0,1
@@ -971,7 +971,7 @@ price_million,km,year,brand,model,transmission,fuel_type,body_type,origin,condit
 515.0,290000.0,2021.0,Toyota,Rush,AT,Xăng,SUV / Cross over,Trong nước,Cũ,7.0,Bà Rịa,0.0,1,8b7a350190aaf43819aec07bdf4e89eb,chotot,4.0,72500.0,0,3
 275.0,123000.0,2015.0,Toyota,Innova,AT,Xăng,SUV / Cross over,Trong nước,Cũ,8.0,Phú Yên,0.0,1,53a716f929b6da913404cb2b3f94092d,chotot,10.0,12300.0,0,2
 379.0,135000.0,2015.0,Hyundai,Creta,AT,Xăng,SUV / Cross over,Nhập khẩu,Cũ,5.0,Đà Nẵng,0.0,1,c8667f0bb582e0ec79fd5b9bf998355e,chotot,10.0,13500.0,0,2
-458.0,0.0,2025.0,Toyota,Vios,AT,Xăng,Sedan,Trong nước,Mới,5.0,Hồ Chí Minh,0.0,1,nan,chotot,0.0,0.0,0,1
+458.0,0.0,2025.0,Toyota,Vios,AT,Xăng,Sedan,Trong nước,Mới,5.0,Hồ Chí Minh,0.0,1,,chotot,0.0,0.0,0,1
 395.0,39000.0,2020.0,Mitsubishi,Xpander,AT,Xăng,SUV / Cross over,Nhập khẩu,Cũ,7.0,Hồ Chí Minh,0.0,1,0bcc06a37ffe1ae481b7f960fa31088c,chotot,5.0,7800.0,0,1
 182.0,20000.0,2008.0,Toyota,Yaris,AT,Xăng,Sedan,Nhập khẩu,Cũ,5.0,Hà Nội,0.0,1,d0daf31c0416e6a76584d92111d91b3c,chotot,17.0,1176.4705882352941,0,1
 790.0,200000.0,2019.0,Toyota,Camry,AT,Xăng,Sedan,Nhập khẩu,Cũ,5.0,Hồ Chí Minh,0.0,1,b5c480033535fca90e1b6d416535ed5a,chotot,6.0,33333.333333333336,0,3
@@ -979,7 +979,7 @@ price_million,km,year,brand,model,transmission,fuel_type,body_type,origin,condit
 300.0,200000.0,2015.0,Toyota,Innova,MT,Xăng,Minivan (MPV),Trong nước,Cũ,8.0,Long An,0.0,1,1120e349aa0ddefd08eece4737effab8,chotot,10.0,20000.0,0,2
 195.0,180000.0,2010.0,Toyota,Hiace,MT,Xăng,Van,Trong nước,Cũ,7.0,Hồ Chí Minh,0.0,1,5d9cd9af628ce1f368f5ea97d47522c6,chotot,15.0,12000.0,0,2
 215.0,123456.0,2009.0,Toyota,Yaris,AT,Xăng,Sedan,Nhập khẩu,Cũ,5.0,Hồ Chí Minh,0.0,1,42c9f997c8ddb4b17a9c2769b606d02d,chotot,16.0,7716.0,0,1
-350.0,300000.0,2016.0,Ford,Ranger,MT,Dầu,Pick-up (bán tải),Nhập khẩu,Cũ,5.0,Quảng Ngãi,0.0,1,nan,chotot,9.0,33333.333333333336,0,3
+350.0,300000.0,2016.0,Ford,Ranger,MT,Dầu,Pick-up (bán tải),Nhập khẩu,Cũ,5.0,Quảng Ngãi,0.0,1,,chotot,9.0,33333.333333333336,0,3
 210.0,101000.0,2011.0,Luxgen,U7,AT,Xăng,SUV / Cross over,Nhập khẩu,Cũ,7.0,Bình Dương,0.0,1,03a9656a70a4e5d7b174ee33ea290b1c,chotot,14.0,7214.285714285715,0,1
 505.0,83000.0,2021.0,Mitsubishi,Xpander,AT,Xăng,Minivan (MPV),Nhập khẩu,Cũ,7.0,Đắk Lắk,0.0,1,d32029d05d378d0d2ec205dddbce250c,chotot,4.0,20750.0,0,3
 247.0,86000.0,2016.0,Kia,Morning,AT,Xăng,Hatchback,Trong nước,Cũ,5.0,Bình Dương,0.0,1,610af3d00f13a680ea033840c8ea9ed3,chotot,9.0,9555.555555555555,0,1
@@ -987,17 +987,17 @@ price_million,km,year,brand,model,transmission,fuel_type,body_type,origin,condit
 259.0,14.0,2012.0,Mazda,3,AT,Xăng,Sedan,Trong nước,Cũ,5.0,Bà Rịa,0.0,1,d4e1d2a037f5a19d27d55ff7105eafb2,chotot,13.0,1.0769230769230769,0,1
 655.0,43000.0,2018.0,Toyota,Camry,AT,Xăng,Sedan,Trong nước,Cũ,5.0,Đồng Nai,0.0,1,fc72bff555022394837c1af789c06798,chotot,7.0,6142.857142857143,0,1
 500.0,30000.0,2019.0,Honda,BR-V,AT,Xăng,Sedan,Nhập khẩu,Cũ,5.0,Hồ Chí Minh,0.0,1,966d96606546de12e64df4dca754e915,chotot,6.0,5000.0,0,1
-490.0,161413.0,2019.0,Ford,Ranger,AT,Dầu,Pick-up (bán tải),Nhập khẩu,Cũ,5.0,Long An,0.0,1,nan,chotot,6.0,26902.166666666668,0,3
-1545.0,0.0,2025.0,Ford,Everest,AT,Dầu,SUV / Cross over,Nhập khẩu,Mới,7.0,Cần Thơ,0.0,1,nan,chotot,0.0,0.0,0,1
+490.0,161413.0,2019.0,Ford,Ranger,AT,Dầu,Pick-up (bán tải),Nhập khẩu,Cũ,5.0,Long An,0.0,1,,chotot,6.0,26902.166666666668,0,3
+1545.0,0.0,2025.0,Ford,Everest,AT,Dầu,SUV / Cross over,Nhập khẩu,Mới,7.0,Cần Thơ,0.0,1,,chotot,0.0,0.0,0,1
 785.0,90000.0,2019.0,Ford,Everest,AT,Dầu,SUV / Cross over,Nhập khẩu,Cũ,7.0,Hồ Chí Minh,0.0,1,da87ba3d77c333b2cef1b8049cf5d80a,chotot,6.0,15000.0,0,2
 300.0,300.0,2019.0,Hyundai,Accent,MT,Xăng,Sedan,Trong nước,Cũ,5.0,Hồ Chí Minh,0.0,1,1f7b57588242c333bbf7c99af57573b4,chotot,6.0,50.0,0,1
 65.0,267000.0,2001.0,Ford,Transit,MT,Xăng,Sedan,Trong nước,Cũ,4.0,Hồ Chí Minh,0.0,1,158ac61533b5bebaca94f141da1f20ee,chotot,24.0,11125.0,0,2
 400.0,120000.0,2018.0,Toyota,Innova,MT,Xăng,Minivan (MPV),Nhập khẩu,Cũ,8.0,Hồ Chí Minh,0.0,1,4ae1b1f23c9b985b21d98880839002d4,chotot,7.0,17142.85714285714,0,2
 56.0,21800.0,2006.0,Mitsubishi,L300,MT,Xăng,Sedan,Nhập khẩu,Cũ,9.0,Hà Nội,0.0,1,90240d5e46956a856749b1314eee3eaf,chotot,19.0,1147.3684210526317,0,1
 345.0,200000.0,2017.0,Ford,Transit,MT,Dầu,Van,Trong nước,Cũ,16.0,Thừa Thiên Huế,0.0,1,5ac117f81ea1dbb9edbc976f8bbfeeea,chotot,8.0,25000.0,0,3
-258.0,80000.0,2018.0,Chevrolet,Cruze,MT,Xăng,Sedan,Trong nước,Cũ,5.0,Bình Định,0.0,1,nan,chotot,7.0,11428.57142857143,0,2
+258.0,80000.0,2018.0,Chevrolet,Cruze,MT,Xăng,Sedan,Trong nước,Cũ,5.0,Bình Định,0.0,1,,chotot,7.0,11428.57142857143,0,2
 280.0,115000.0,2006.0,Toyota,Camry,AT,Xăng,Sedan,Nhập khẩu,Cũ,5.0,Đồng Nai,0.0,1,154117a670021e8db8cd9ae7b4cf5c2d,chotot,19.0,6052.631578947368,0,1
-950.0,67000.0,2018.0,Mercedes Benz,C Class,AT,Xăng,Sedan,Trong nước,Cũ,5.0,Hồ Chí Minh,0.0,1,nan,chotot,7.0,9571.42857142857,1,1
+950.0,67000.0,2018.0,Mercedes Benz,C Class,AT,Xăng,Sedan,Trong nước,Cũ,5.0,Hồ Chí Minh,0.0,1,,chotot,7.0,9571.42857142857,1,1
 800.0,95000.0,2020.0,Ford,Everest,AT,Dầu,SUV / Cross over,Nhập khẩu,Cũ,7.0,Đà Nẵng,0.0,1,d4eb5c24c36da2f21e038542ee585e6c,chotot,5.0,19000.0,0,2
 200.0,180000.0,2011.0,Ford,Focus,AT,Xăng,Hatchback,Trong nước,Cũ,5.0,Hà Nội,0.0,1,cfb85b65bee0aea5a8139009ecbd90c4,chotot,14.0,12857.142857142857,0,2
 1298.0,39000.0,2022.0,Volkswagen,Tiguan,AT,Xăng,SUV / Cross over,Nhập khẩu,Cũ,7.0,Đồng Nai,0.0,1,d05d83e8350b33cca085bebed75e0695,chotot,3.0,13000.0,0,2
@@ -1006,7 +1006,7 @@ price_million,km,year,brand,model,transmission,fuel_type,body_type,origin,condit
 265.0,60000.0,2009.0,Mercedes Benz,GLK Class,AT,Xăng,SUV / Cross over,Nhập khẩu,Cũ,7.0,Hồ Chí Minh,0.0,1,6f20edca70265323b3121719fbce099e,chotot,16.0,3750.0,1,1
 430.0,70000.0,2021.0,MG,HS,AT,Xăng,SUV / Cross over,Nhập khẩu,Cũ,5.0,Hồ Chí Minh,0.0,1,81e97654622f6baf750a7abb2f70549a,chotot,4.0,17500.0,0,2
 145.0,90000.0,2009.0,Toyota,Aygo,AT,Xăng,Hatchback,Nhập khẩu,Cũ,5.0,Hồ Chí Minh,0.0,1,4b39da9e4b8968b98da19a9e8bbfaf51,chotot,16.0,5625.0,0,1
-939.0,40000.0,2021.0,Kia,Sorento,AT,Dầu,SUV / Cross over,Trong nước,Cũ,7.0,Hồ Chí Minh,0.0,1,nan,chotot,4.0,10000.0,0,2
+939.0,40000.0,2021.0,Kia,Sorento,AT,Dầu,SUV / Cross over,Trong nước,Cũ,7.0,Hồ Chí Minh,0.0,1,,chotot,4.0,10000.0,0,2
 440.0,80000.0,2020.0,Hyundai,Elantra,AT,Xăng,Sedan,Trong nước,Cũ,5.0,Bà Rịa,0.0,1,d0bdbfe7d2f70973f9aa3a31ff5d1ce2,chotot,5.0,16000.0,0,2
 660.0,0.0,2025.0,Toyota,Avanza Premio,AT,Xăng,SUV,Nhập khẩu,Mới,7.0,Lâm Đồng,0.0,1,b71605b6a4f9fbc364f1eb675d52856c,chotot,0.0,0.0,0,1
 265.0,245000.0,2009.0,Hyundai,Starex,MT,Xăng,Van,Trong nước,Cũ,7.0,Hồ Chí Minh,0.0,1,fd54cc1b028c4bfb08aa889c988aeae9,chotot,16.0,15312.5,0,2
@@ -1014,17 +1014,17 @@ price_million,km,year,brand,model,transmission,fuel_type,body_type,origin,condit
 335.0,120000.0,2022.0,Toyota,Vios,MT,Xăng,Sedan,Trong nước,Cũ,5.0,Phú Thọ,0.0,1,936e26e84a6808acb00a09853990539e,chotot,3.0,40000.0,0,3
 1290.0,3000.0,2025.0,BYD,Han,AT,Điện,Sedan,Trong nước,Cũ,5.0,Hồ Chí Minh,0.0,1,57c593694ab124fc8e1634550097c895,chotot,0.0,0.0,0,1
 360.0,226724.0,2014.0,Ford,Transit,MT,Dầu,Van,Trong nước,Cũ,6.0,Hồ Chí Minh,0.0,1,79bd5a6cc5ad0b94c074f1db00c63164,chotot,11.0,20611.272727272728,0,3
-70.0,2222.0,2000.0,Toyota,Camry,MT,Xăng,Sedan,Trong nước,Cũ,5.0,Hà Nội,0.0,1,nan,chotot,25.0,88.88,0,1
+70.0,2222.0,2000.0,Toyota,Camry,MT,Xăng,Sedan,Trong nước,Cũ,5.0,Hà Nội,0.0,1,,chotot,25.0,88.88,0,1
 410.0,50000.0,2022.0,Hyundai,Accent,AT,Xăng,Sedan,Trong nước,Cũ,5.0,Hà Nội,0.0,1,0ac9ac9e8991ca77f3d885de03be2640,chotot,3.0,16666.666666666668,0,2
 118.0,6886.0,2003.0,Toyota,Corolla Altis,AT,Xăng,Sedan,Trong nước,Cũ,5.0,Thanh Hóa,0.0,1,cec085277ad0d4dbfca301846d671296,chotot,22.0,313.0,0,1
 515.0,19.0,2015.0,Kia,Sedona,AT,Dầu,SUV / Cross over,Trong nước,Cũ,8.0,Vĩnh Phúc,0.0,1,0a91e2f558c025b08084e4efc0b5ebcf,chotot,10.0,1.9,0,1
 115.0,165000.0,2013.0,Hyundai,Grand i10,MT,Xăng,Sedan,Nhập khẩu,Cũ,5.0,unknow,0.0,1,1426416fd402b4b07d36afc0bf744fac,chotot,12.0,13750.0,0,2
 275.0,110000.0,2015.0,Toyota,Innova,MT,Xăng,Minivan (MPV),Trong nước,Cũ,8.0,Đắk Lắk,0.0,1,5379ddf13c4665af1237345b97d836d7,chotot,10.0,11000.0,0,2
-65.0,100000.0,2004.0,Toyota,Vios,MT,Xăng,Sedan,Trong nước,Cũ,5.0,Hòa Bình,0.0,1,nan,chotot,21.0,4761.9047619047615,0,1
-180.0,100000.0,2011.0,Toyota,Innova,MT,Xăng,Minivan (MPV),Trong nước,Cũ,8.0,Hòa Bình,0.0,1,nan,chotot,14.0,7142.857142857143,0,1
-60.0,100000.0,2008.0,Daewoo,Gentra,MT,Xăng,Sedan,Trong nước,Cũ,5.0,Hòa Bình,0.0,1,nan,chotot,17.0,5882.35294117647,0,1
+65.0,100000.0,2004.0,Toyota,Vios,MT,Xăng,Sedan,Trong nước,Cũ,5.0,Hòa Bình,0.0,1,,chotot,21.0,4761.9047619047615,0,1
+180.0,100000.0,2011.0,Toyota,Innova,MT,Xăng,Minivan (MPV),Trong nước,Cũ,8.0,Hòa Bình,0.0,1,,chotot,14.0,7142.857142857143,0,1
+60.0,100000.0,2008.0,Daewoo,Gentra,MT,Xăng,Sedan,Trong nước,Cũ,5.0,Hòa Bình,0.0,1,,chotot,17.0,5882.35294117647,0,1
 545.0,30000.0,2020.0,Kia,Sorento,AT,Xăng,SUV / Cross over,Trong nước,Cũ,7.0,Đồng Nai,0.0,1,dc9f85bf5d1ee68cc073ae5244b09022,chotot,5.0,6000.0,0,1
-50.0,323000.0,2002.0,Mazda,323,MT,Xăng,Sedan,Nhập khẩu,Cũ,5.0,Hồ Chí Minh,0.0,1,nan,chotot,23.0,14043.478260869566,0,2
+50.0,323000.0,2002.0,Mazda,323,MT,Xăng,Sedan,Nhập khẩu,Cũ,5.0,Hồ Chí Minh,0.0,1,,chotot,23.0,14043.478260869566,0,2
 847.0,210000.0,2019.0,Toyota,Camry,AT,Xăng,Sedan,Nhập khẩu,Cũ,5.0,Hà Nội,0.0,1,e035f7ef8291758689333788dfd5dbc2,chotot,6.0,35000.0,0,3
 430.0,130000.0,2021.0,Mitsubishi,Xpander,AT,Xăng,Minivan (MPV),Nhập khẩu,Cũ,5.0,Hà Nội,0.0,1,b117cd0574fa86042ffc4abc806ecb8f,chotot,4.0,32500.0,0,3
 260.0,0.0,2025.0,VinFast,VF3,AT,Điện,SUV / Cross over,Trong nước,Mới,4.0,Hồ Chí Minh,0.0,1,a1b8035f6fa45d8e0db215ad06f7fbe3,chotot,0.0,0.0,0,1
@@ -1046,20 +1046,20 @@ price_million,km,year,brand,model,transmission,fuel_type,body_type,origin,condit
 550.0,33000.0,2021.0,Mazda,Dòng khác,AT,Xăng,Sedan,Trong nước,Cũ,5.0,unknow,0.0,1,d293dea37b8aeb8b0e0b26b1f730dc31,chotot,4.0,8250.0,0,1
 678.0,29000.0,2022.0,Toyota,Corolla Cross,AT,Xăng,SUV / Cross over,Trong nước,Cũ,7.0,Hà Nội,0.0,1,d4fb5ca78b25006106a8f5a8d051c48b,chotot,3.0,9666.666666666666,0,1
 199.0,250000.0,2004.0,Toyota,Camry,MT,Xăng,Sedan,Nhập khẩu,Cũ,5.0,Hà Nội,0.0,1,7dd445c8c34e9f23fa63fa14917979eb,chotot,21.0,11904.761904761905,0,2
-265.0,150112.0,2009.0,Mercedes Benz,GLK Class,AT,Xăng,SUV / Cross over,Nhập khẩu,Cũ,5.0,Hồ Chí Minh,0.0,1,nan,chotot,16.0,9382.0,1,1
+265.0,150112.0,2009.0,Mercedes Benz,GLK Class,AT,Xăng,SUV / Cross over,Nhập khẩu,Cũ,5.0,Hồ Chí Minh,0.0,1,,chotot,16.0,9382.0,1,1
 475.0,0.0,2025.0,Skoda,Slavia,AT,Xăng,Sedan,Nhập khẩu,Mới,5.0,Đà Nẵng,0.0,1,5cb485bf25716bc3aca04e1e214e62ae,chotot,0.0,0.0,0,1
 539.0,0.0,2025.0,Skoda,Kushaq,AT,Xăng,SUV / Cross over,Nhập khẩu,Mới,5.0,Đà Nẵng,0.0,1,5cb485bf25716bc3aca04e1e214e62ae,chotot,0.0,0.0,0,1
 530.0,63000.0,2019.0,Toyota,Corolla Altis,AT,Xăng,Sedan,Trong nước,Cũ,5.0,Hà Nội,0.0,1,eeb60426469ca29c71c4604d35e6e51d,chotot,6.0,10500.0,0,2
 370.0,86666.0,2022.0,Toyota,Avanza Premio,AT,Xăng,SUV,Trong nước,Cũ,7.0,Hà Nội,0.0,1,7b7ee1d820291b2383e076cb83bc1696,chotot,3.0,28888.666666666668,0,3
 1058.0,4200.0,2025.0,Honda,CR V,AT,Xăng,SUV / Cross over,Trong nước,Cũ,7.0,Bình Dương,0.0,1,914dca84dd7384d00bc7ca069de4318c,chotot,0.0,0.0,0,1
-160.0,79167.0,2016.0,Kia,Morning,MT,Xăng,Hatchback,Trong nước,Cũ,5.0,Hồ Chí Minh,0.0,1,nan,chotot,9.0,8796.333333333334,0,1
+160.0,79167.0,2016.0,Kia,Morning,MT,Xăng,Hatchback,Trong nước,Cũ,5.0,Hồ Chí Minh,0.0,1,,chotot,9.0,8796.333333333334,0,1
 245.0,83000.0,2018.0,Hyundai,Grand i10,MT,Xăng,Hatchback,Trong nước,Cũ,5.0,Đắk Lắk,0.0,1,67b6cc5c46499c08cd940268502c8caa,chotot,7.0,11857.142857142857,0,2
 158.0,79897.0,2015.0,Chevrolet,Aveo,MT,Xăng,Sedan,Nhập khẩu,Cũ,5.0,unknow,0.0,1,3b9f61e7c3fff8032bd34667a65b516c,chotot,10.0,7989.7,0,1
-1600.0,2375.0,2022.0,Mercedes Benz,Dòng khác,AT,Xăng,Sedan,Trong nước,Cũ,5.0,Hà Nội,0.0,1,nan,chotot,3.0,791.6666666666666,1,1
+1600.0,2375.0,2022.0,Mercedes Benz,Dòng khác,AT,Xăng,Sedan,Trong nước,Cũ,5.0,Hà Nội,0.0,1,,chotot,3.0,791.6666666666666,1,1
 580.0,29000.0,2018.0,Mazda,6,AT,Xăng,Sedan,Trong nước,Cũ,5.0,Hồ Chí Minh,0.0,1,e7403e4e3b890d1ee067c2a14daeb49c,chotot,7.0,4142.857142857143,0,1
 268.50505,98000.0,2015.0,Honda,City,AT,Xăng,Sedan,Trong nước,Cũ,5.0,Bình Dương,0.0,1,768a242ff93b11ab4b0441de650e2b79,chotot,10.0,9800.0,0,1
 120.0,270000.0,2003.0,Mitsubishi,Pajero,MT,Xăng,SUV / Cross over,Nhập khẩu,Cũ,7.0,Lâm Đồng,0.0,1,ea6bfbc03e0cd6e7f95357da9589e13f,chotot,22.0,12272.727272727272,0,2
-674.16,90000.0,2022.0,Mazda,6,AT,Xăng,Sedan,Trong nước,Cũ,5.0,Hồ Chí Minh,0.0,1,nan,chotot,3.0,30000.0,0,3
+674.16,90000.0,2022.0,Mazda,6,AT,Xăng,Sedan,Trong nước,Cũ,5.0,Hồ Chí Minh,0.0,1,,chotot,3.0,30000.0,0,3
 869.0,0.0,2025.0,Ford,Ranger,AT,Dầu,Pick-up (bán tải),Trong nước,Mới,5.0,Đắk Lắk,0.0,1,29138cb1ed8b83f49df10670dd56528a,chotot,0.0,0.0,0,1
 760.0,70000.0,2010.0,Lexus,IS,AT,Xăng,Coupe (2 cửa),Nhập khẩu,Cũ,5.0,Hồ Chí Minh,0.0,1,366f2068fb0fb1bc307fd28279e00bc9,chotot,15.0,4666.666666666667,1,1
 999.999999,999.0,2025.0,Kia,Carnival,AT,Dầu,Kiểu dáng khác,Nhập khẩu,Cũ,8.0,Hồ Chí Minh,0.0,1,cdf5c09642dff2769805d0a4656549a1,chotot,0.0,0.0,0,1
@@ -1075,9 +1075,9 @@ price_million,km,year,brand,model,transmission,fuel_type,body_type,origin,condit
 95.0,89000.0,2004.0,Ford,Escape,MT,Xăng,SUV / Cross over,Trong nước,Cũ,7.0,Bình Dương,0.0,1,c27f7ca9fea4e42e67f4b57db48735d9,chotot,21.0,4238.0952380952385,0,1
 69.0,156886.0,2011.0,Chevrolet,Spark,MT,Xăng,Hatchback,Nhập khẩu,Cũ,5.0,Đồng Nai,0.0,1,115f7c1f8e69c34a562da6590d779925,chotot,14.0,11206.142857142857,0,2
 950.0,61700.0,2021.0,Ford,Everest,AT,Dầu,SUV / Cross over,Trong nước,Cũ,7.0,Hồ Chí Minh,0.0,1,88e34d2f7c5f41185fedb334483f5703,chotot,4.0,15425.0,0,2
-235.0,10000.0,2022.0,VinFast,VF3,AT,Điện,SUV / Cross over,Trong nước,Cũ,7.0,Hồ Chí Minh,0.0,1,nan,chotot,3.0,3333.3333333333335,0,1
+235.0,10000.0,2022.0,VinFast,VF3,AT,Điện,SUV / Cross over,Trong nước,Cũ,7.0,Hồ Chí Minh,0.0,1,,chotot,3.0,3333.3333333333335,0,1
 710.0,35000.0,2020.0,Mitsubishi,Outlander,AT,Xăng,SUV / Cross over,Trong nước,Cũ,7.0,Hồ Chí Minh,0.0,1,025960082ec370df54a6d8cde5474a92,chotot,5.0,7000.0,0,1
-358.0,100000.0,2022.0,Toyota,Vios,MT,Xăng,Sedan,Trong nước,Cũ,5.0,Đồng Nai,0.0,1,nan,chotot,3.0,33333.333333333336,0,3
+358.0,100000.0,2022.0,Toyota,Vios,MT,Xăng,Sedan,Trong nước,Cũ,5.0,Đồng Nai,0.0,1,,chotot,3.0,33333.333333333336,0,3
 95.0,181820.0,2010.0,Daewoo,Lacetti,MT,Xăng,Sedan,Nhập khẩu,Cũ,5.0,Trà Vinh,0.0,1,db41780f11e5707473b0deb00f276ed0,chotot,15.0,12121.333333333334,0,2
 230.0,440000.0,2014.0,Ford,Transit,MT,Dầu,Van,Trong nước,Cũ,7.0,Hồ Chí Minh,0.0,1,ffd5707f0b5337cd45b3ca1e77808183,chotot,11.0,40000.0,0,3
 145.0,200000.0,2010.0,Ford,Focus,MT,Xăng,Sedan,Trong nước,Cũ,5.0,Hà Nội,0.0,1,87f8ff6933c837c1b264c00a6558e2da,chotot,15.0,13333.333333333334,0,2
@@ -1122,7 +1122,7 @@ price_million,km,year,brand,model,transmission,fuel_type,body_type,origin,condit
 720.0,70000.0,2023.0,Mazda,CX 5,AT,Xăng,SUV / Cross over,Trong nước,Cũ,5.0,Hồ Chí Minh,0.0,1,77932b72e57ffa630a58ece075c93f74,chotot,2.0,35000.0,0,3
 620.0,120000.0,2017.0,Kia,Sedona,AT,Dầu,Minivan (MPV),Trong nước,Cũ,7.0,Đà Nẵng,0.0,1,7ab0bd4a9c5014f46eb238c7c2519f9d,chotot,8.0,15000.0,0,2
 165.0,24000.0,2007.0,Toyota,Innova,MT,Xăng,Minivan (MPV),Trong nước,Cũ,7.0,Hà Nội,0.0,1,6b51acbedfb851e58d6c574f94e01fd5,chotot,18.0,1333.3333333333333,0,1
-1785.0,33000.0,2024.0,GAC,M8,AT,Xăng,Minivan (MPV),Nhập khẩu,Cũ,7.0,Lâm Đồng,0.0,1,nan,chotot,1.0,33000.0,0,3
+1785.0,33000.0,2024.0,GAC,M8,AT,Xăng,Minivan (MPV),Nhập khẩu,Cũ,7.0,Lâm Đồng,0.0,1,,chotot,1.0,33000.0,0,3
 550.0,110000.0,2018.0,Mazda,CX 5,AT,Xăng,SUV / Cross over,Trong nước,Cũ,5.0,Đà Nẵng,0.0,1,8770aa3c231bf7fa8f70ac8632c64cab,chotot,7.0,15714.285714285714,0,2
 158.0,116000.0,2009.0,Chevrolet,Captiva,MT,Xăng,SUV / Cross over,Nhập khẩu,Cũ,7.0,Hồ Chí Minh,0.0,1,6668839ad17dd94eac6480cb0af01a70,chotot,16.0,7250.0,0,1
 198.0,160000.0,2007.0,Mitsubishi,Pajero,MT,Xăng,SUV / Cross over,Nhập khẩu,Cũ,5.0,Hồ Chí Minh,0.0,1,86e852dae667fe5e6d97e4c22303f66a,chotot,18.0,8888.888888888889,0,1
@@ -1171,17 +1171,17 @@ price_million,km,year,brand,model,transmission,fuel_type,body_type,origin,condit
 62.0,120000.0,2012.0,Chevrolet,Spark,MT,Xăng,Hatchback,Nhập khẩu,Cũ,2.0,Đắk Lắk,0.0,1,bee28a70e8e9025a7c7165b7a34f6280,chotot,13.0,9230.76923076923,0,1
 78.999999,280000.0,1996.0,Toyota,Cressida,MT,Xăng,Sedan,Nhập khẩu,Cũ,5.0,unknow,0.0,1,0f2a65b66c96ceb4b9763b96f4dde793,chotot,29.0,9655.172413793103,0,1
 185.0,90000.0,2018.0,Suzuki,Celerio,MT,Xăng,Hatchback,Nhập khẩu,Cũ,5.0,Hồ Chí Minh,0.0,1,782ef1d8e381b8472e689aae1815fb8e,chotot,7.0,12857.142857142857,0,2
-1799.0,0.0,2025.0,Kia,Carnival,AT,Hybrid,Minivan (MPV),Trong nước,Mới,7.0,Hồ Chí Minh,0.0,1,nan,chotot,0.0,0.0,0,1
+1799.0,0.0,2025.0,Kia,Carnival,AT,Hybrid,Minivan (MPV),Trong nước,Mới,7.0,Hồ Chí Minh,0.0,1,,chotot,0.0,0.0,0,1
 205.0,26.0,2009.0,Kia,Soul,AT,Xăng,SUV / Cross over,Nhập khẩu,Cũ,5.0,Hà Nội,0.0,1,2b0b2d34d43102c2e74d029b2c585880,chotot,16.0,1.625,0,1
 345.0,245000.0,2010.0,Toyota,Fortuner,MT,Dầu,SUV / Cross over,Trong nước,Cũ,7.0,Hồ Chí Minh,0.0,1,2e013a54df5d564ea29ab14583fec4ff,chotot,15.0,16333.333333333334,0,2
 540.0,2700.0,2025.0,Mitsubishi,Xpander,AT,Xăng,Minivan (MPV),Nhập khẩu,Cũ,5.0,Hồ Chí Minh,0.0,1,d435eb7a6b701a923c430111019984cf,chotot,0.0,0.0,0,1
 365.0,100000.0,2016.0,Toyota,Corolla Altis,AT,Xăng,Sedan,Trong nước,Cũ,5.0,Cần Thơ,0.0,1,cb11c9172b0a68fdb7a4f60ece121875,chotot,9.0,11111.111111111111,0,2
 540.0,2700.0,2025.0,Mitsubishi,Xpander,AT,Xăng,SUV / Cross over,Nhập khẩu,Cũ,7.0,Hồ Chí Minh,0.0,1,da63d12dc1a43d5047a6488ee412b988,chotot,0.0,0.0,0,1
-1247.0,0.0,2025.0,Peugeot,408,AT,Xăng,Hatchback,Trong nước,Mới,5.0,Hồ Chí Minh,0.0,1,nan,chotot,0.0,0.0,0,1
+1247.0,0.0,2025.0,Peugeot,408,AT,Xăng,Hatchback,Trong nước,Mới,5.0,Hồ Chí Minh,0.0,1,,chotot,0.0,0.0,0,1
 170.0,100000.0,2003.0,Toyota,Camry,AT,Xăng,Sedan,Nhập khẩu,Cũ,5.0,Hồ Chí Minh,0.0,1,c31a7214743873f044925d4f552a73b0,chotot,22.0,4545.454545454545,0,1
 290.0,62100.0,2019.0,VinFast,Fadil,AT,Xăng,Hatchback,Trong nước,Cũ,4.0,Đà Nẵng,0.0,1,83edb2628fa40500ffce388a2312df64,chotot,6.0,10350.0,0,2
 725.0,17000.0,2023.0,Mitsubishi,Outlander,AT,Xăng,SUV / Cross over,Trong nước,Cũ,7.0,Hà Nội,0.0,1,2a6ea36721d7d19e184d7e391da9a2a5,chotot,2.0,8500.0,0,1
-460.0,0.0,2025.0,MG,MGZS,AT,Xăng,SUV / Cross over,Nhập khẩu,Mới,7.0,Hà Nội,0.0,1,nan,chotot,0.0,0.0,0,1
+460.0,0.0,2025.0,MG,MGZS,AT,Xăng,SUV / Cross over,Nhập khẩu,Mới,7.0,Hà Nội,0.0,1,,chotot,0.0,0.0,0,1
 7200.0,8000.0,2022.0,Mercedes Benz,Maybach,AT,Xăng,Sedan,Nhập khẩu,Cũ,4.0,Hồ Chí Minh,0.0,1,d363604f7a18949936f4be6bfaa1f7d9,chotot,3.0,2666.6666666666665,1,1
 260.0,63000.0,2013.0,Kia,Forte,AT,Xăng,Sedan,Trong nước,Cũ,5.0,Hồ Chí Minh,0.0,1,96ce31526d43d3bfd1d806ada3d82080,chotot,12.0,5250.0,0,1
 540.0,2713.0,2025.0,Mitsubishi,Xpander,AT,Xăng,Minivan (MPV),Trong nước,Cũ,7.0,Hồ Chí Minh,0.0,1,d435eb7a6b701a923c430111019984cf,chotot,0.0,0.0,0,1
@@ -1278,7 +1278,7 @@ price_million,km,year,brand,model,transmission,fuel_type,body_type,origin,condit
 1900.0,23000.0,2019.0,Lexus,ES,AT,Xăng,Sedan,Nhập khẩu,Cũ,5.0,Hồ Chí Minh,0.0,1,ecebabd2ad6ca59fb42f6347ff551cff,chotot,6.0,3833.3333333333335,1,1
 275.0,113.0,2014.0,Ford,Fiesta,AT,Xăng,Hatchback,Trong nước,Cũ,5.0,Đắk Lắk,0.0,1,54ad2d378b97883e31209da2d49ddc3c,chotot,11.0,10.272727272727273,0,1
 275.0,70000.0,2018.0,Hyundai,Grand i10,MT,Xăng,Hatchback,Trong nước,Cũ,5.0,Lâm Đồng,0.0,1,24bcbfab4d6ac44a5d798d3fc4e5c8f6,chotot,7.0,10000.0,0,2
-936.0,0.0,2025.0,BYD,Sealion 6,AT,Hybrid,SUV / Cross over,Nhập khẩu,Mới,5.0,Gia Lai,0.0,1,nan,chotot,0.0,0.0,0,1
+936.0,0.0,2025.0,BYD,Sealion 6,AT,Hybrid,SUV / Cross over,Nhập khẩu,Mới,5.0,Gia Lai,0.0,1,,chotot,0.0,0.0,0,1
 145.0,200000.0,2016.0,Kia,Morning,MT,Xăng,Hatchback,Trong nước,Cũ,5.0,Đồng Nai,0.0,1,8749bd01c65faede6d33b7e0350d5fa5,chotot,9.0,22222.222222222223,0,3
 163.0,150000.0,2006.0,Toyota,Innova,MT,Xăng,Minivan (MPV),Trong nước,Cũ,8.0,Hồ Chí Minh,0.0,1,4a855ea1065fb12cd831bac36b080086,chotot,19.0,7894.736842105263,0,1
 250.0,147000.0,2010.0,Toyota,Vios,AT,Xăng,Sedan,Trong nước,Cũ,5.0,Đà Nẵng,0.0,1,79912152b00603735e07a6ca625e8cc2,chotot,15.0,9800.0,0,1
@@ -1343,7 +1343,7 @@ price_million,km,year,brand,model,transmission,fuel_type,body_type,origin,condit
 430.0,0.0,2024.0,Toyota,Vios,MT,Xăng,Sedan,Trong nước,Mới,5.0,Hồ Chí Minh,0.0,1,ae2beac6aedac2b93e5f3b6058afb24a,chotot,1.0,0.0,0,1
 420.0,87000.0,2008.0,Lexus,RX,AT,Xăng,SUV / Cross over,Nhập khẩu,Cũ,8.0,Đà Nẵng,0.0,1,1e9f29e9a3eafb9192cc746378e5625d,chotot,17.0,5117.64705882353,1,1
 555.0,10000.0,2016.0,Hyundai,Tucson,AT,Xăng,SUV / Cross over,Trong nước,Cũ,5.0,Hà Nội,0.0,1,ae231bf0af4bb0b992a19fb849fdfde7,chotot,9.0,1111.111111111111,0,1
-310.0,0.0,2024.0,MG,NewMG5,MT,Xăng,Sedan,Nhập khẩu,Mới,5.0,Hà Nội,0.0,1,nan,chotot,1.0,0.0,0,1
+310.0,0.0,2024.0,MG,NewMG5,MT,Xăng,Sedan,Nhập khẩu,Mới,5.0,Hà Nội,0.0,1,,chotot,1.0,0.0,0,1
 500.0,112425.0,2021.0,Mitsubishi,Xpander,AT,Xăng,SUV / Cross over,Trong nước,Cũ,7.0,Hồ Chí Minh,0.0,1,b5240e0659043553d582454314d4f5fd,chotot,4.0,28106.25,0,3
 150.0,123456.0,2008.0,Daewoo,GentraX,AT,Xăng,Hatchback,Nhập khẩu,Cũ,5.0,Bình Dương,0.0,1,57d9bbf47226c8f4e8a01227ca9389d1,chotot,17.0,7262.117647058823,0,1
 250.0,160000.0,2012.0,Ford,Focus,AT,Xăng,Hatchback,Trong nước,Cũ,5.0,Đà Nẵng,0.0,1,16d89b076de6aafecdda359e1c2591c9,chotot,13.0,12307.692307692309,0,2
@@ -1385,7 +1385,7 @@ price_million,km,year,brand,model,transmission,fuel_type,body_type,origin,condit
 92.0,113400.0,2004.0,Ford,Mondeo,AT,Xăng,Sedan,Trong nước,Cũ,5.0,Đà Nẵng,0.0,1,ddc91f4d9c04ef4a33500f24d6d1fea1,chotot,21.0,5400.0,0,1
 300.0,100000.0,2016.0,Mazda,2,AT,Xăng,Sedan,Trong nước,Cũ,5.0,Quảng Ngãi,0.0,1,704b6e30146db2e6c023c016096dca7f,chotot,9.0,11111.111111111111,0,2
 170.000001,100000.0,2017.0,Hãng khác,Dòng khác,AT,Dầu,Kiểu dáng khác,Nhập khẩu,Cũ,5.0,Hồ Chí Minh,0.0,1,844e94e32601ff3f0c72dda9137360e0,chotot,8.0,12500.0,0,2
-279.0,185000.0,2010.0,Hyundai,Starex,AT,Xăng,Van,Nhập khẩu,Cũ,6.0,Hồ Chí Minh,0.0,1,nan,chotot,15.0,12333.333333333334,0,2
+279.0,185000.0,2010.0,Hyundai,Starex,AT,Xăng,Van,Nhập khẩu,Cũ,6.0,Hồ Chí Minh,0.0,1,,chotot,15.0,12333.333333333334,0,2
 120.0,123456.0,2004.0,Ford,Laser,AT,Xăng,Sedan,Trong nước,Cũ,5.0,Hồ Chí Minh,0.0,1,c2aa2a9535c6509eefef8958ea364068,chotot,21.0,5878.857142857143,0,1
 68.0,25000.0,2007.0,Fiat,Albea,MT,Xăng,Sedan,Nhập khẩu,Cũ,5.0,Hồ Chí Minh,0.0,1,d0f55d051c24f83ae5e106091017297c,chotot,18.0,1388.888888888889,0,1
 320.0,178000.0,2012.0,Toyota,Corolla Altis,AT,Xăng,Sedan,Trong nước,Cũ,5.0,Hồ Chí Minh,0.0,1,d30efff43abb7518ce5ef518cd2f3dcb,chotot,13.0,13692.307692307691,0,2
@@ -1413,7 +1413,7 @@ price_million,km,year,brand,model,transmission,fuel_type,body_type,origin,condit
 139.999999,22000.0,2006.0,Toyota,Corolla Altis,MT,Xăng,Sedan,Trong nước,Cũ,5.0,Hà Nội,0.0,1,99a0018618369fd9e4f1f656ad8a2430,chotot,19.0,1157.8947368421052,0,1
 573.0,42000.0,2022.0,Ford,Ranger,AT,Dầu,Pick-up (bán tải),Trong nước,Cũ,5.0,Hồ Chí Minh,0.0,1,c9b53dbb72ecf72ca661b77c6827f1f4,chotot,3.0,14000.0,0,2
 85.0,145000.0,2011.0,Kia,Morning,MT,Xăng,Hatchback,Nhập khẩu,Cũ,5.0,Sóc Trăng,0.0,1,4778d30ac44b3a0f6fd80e0314ef58ba,chotot,14.0,10357.142857142857,0,2
-275.0,114000.0,2016.0,Nissan,Navara,MT,Dầu,Pick-up (bán tải),Nhập khẩu,Cũ,5.0,Hồ Chí Minh,0.0,1,nan,chotot,9.0,12666.666666666666,0,2
+275.0,114000.0,2016.0,Nissan,Navara,MT,Dầu,Pick-up (bán tải),Nhập khẩu,Cũ,5.0,Hồ Chí Minh,0.0,1,,chotot,9.0,12666.666666666666,0,2
 400.0,15000.0,2023.0,Mitsubishi,Attrage,AT,Xăng,Sedan,Nhập khẩu,Cũ,5.0,Đồng Nai,0.0,1,9426e034780806128ec27c0aafd31215,chotot,2.0,7500.0,0,1
 279.0,100000.0,2009.0,Mitsubishi,Lancer,AT,Xăng,Sedan,Nhập khẩu,Cũ,5.0,Hồ Chí Minh,0.0,1,44a7c98bd7756b28682c360d4fef2103,chotot,16.0,6250.0,0,1
 600.0,63270.0,2023.0,Mitsubishi,Xpander Cross,AT,Xăng,Kiểu dáng khác,Nhập khẩu,Cũ,7.0,Đắk Lắk,0.0,1,658d23e51916f9051e760cf70b217a8e,chotot,2.0,31635.0,0,3
@@ -1423,7 +1423,7 @@ price_million,km,year,brand,model,transmission,fuel_type,body_type,origin,condit
 350.0,60000.0,2018.0,Mazda,2,AT,Xăng,Hatchback,Nhập khẩu,Cũ,5.0,Hà Nội,0.0,1,2ff4cc98e932b14baa536053e793ce51,chotot,7.0,8571.42857142857,0,1
 680.0,39000.0,2022.0,Toyota,Corolla Cross,AT,Xăng,SUV / Cross over,Nhập khẩu,Cũ,5.0,Bình Dương,0.0,1,bc9d4d5219d74e25c88c2e6e7b862e17,chotot,3.0,13000.0,0,2
 507.0,0.0,2025.0,VinFast,VF5 Plus,AT,Điện,Sedan,Trong nước,Mới,5.0,Hồ Chí Minh,0.0,1,24fdc9ba78da6268230ac3ad817ce429,chotot,0.0,0.0,0,1
-322.0,275000.0,2014.0,Toyota,Innova,AT,Xăng,SUV / Cross over,Trong nước,Cũ,8.0,Long An,0.0,1,nan,chotot,11.0,25000.0,0,3
+322.0,275000.0,2014.0,Toyota,Innova,AT,Xăng,SUV / Cross over,Trong nước,Cũ,8.0,Long An,0.0,1,,chotot,11.0,25000.0,0,3
 305.0,123000.0,2016.0,Toyota,Innova,MT,Xăng,Minivan (MPV),Trong nước,Cũ,8.0,Đắk Nông,0.0,1,54cbfbe14b07cdb1465afbf812705a8f,chotot,9.0,13666.666666666666,0,2
 599.0,100000.0,2018.0,Honda,Accord,AT,Xăng,Sedan,Nhập khẩu,Cũ,5.0,Hồ Chí Minh,0.0,1,89b35a134e4d2cffb93f7d5957015d90,chotot,7.0,14285.714285714286,0,2
 350.0,40000.0,2021.0,Mitsubishi,Attrage,MT,Xăng,Sedan,Nhập khẩu,Cũ,5.0,Hồ Chí Minh,0.0,1,0b65a6547d99fd6314449f819ead3917,chotot,4.0,10000.0,0,2
@@ -1455,7 +1455,7 @@ price_million,km,year,brand,model,transmission,fuel_type,body_type,origin,condit
 69.0,500000.0,1995.0,Honda,Accord,MT,Xăng,Sedan,Nhập khẩu,Cũ,5.0,Lâm Đồng,0.0,1,21f27f6818039694dd7e45ee1dc8b872,chotot,30.0,16666.666666666668,0,2
 835.0,100000.0,2019.0,Hyundai,Santa Fe,AT,Dầu,SUV / Cross over,Trong nước,Cũ,7.0,Hồ Chí Minh,0.0,1,62a6b06aa4f94d8b1a0d3ed3051585f6,chotot,6.0,16666.666666666668,0,2
 500.0,18000.0,2021.0,Mitsubishi,Xpander,AT,Xăng,Minivan (MPV),Nhập khẩu,Cũ,7.0,Hồ Chí Minh,0.0,1,08a2d0099d2c7e945744129d5aca8253,chotot,4.0,4500.0,0,1
-265.0,73526.0,2019.0,Toyota,Vios,MT,Xăng,Sedan,Trong nước,Cũ,5.0,Bình Dương,0.0,1,nan,chotot,6.0,12254.333333333334,0,2
+265.0,73526.0,2019.0,Toyota,Vios,MT,Xăng,Sedan,Trong nước,Cũ,5.0,Bình Dương,0.0,1,,chotot,6.0,12254.333333333334,0,2
 145.0,103456.0,2014.0,Chevrolet,Aveo,MT,Xăng,Sedan,Nhập khẩu,Cũ,5.0,Bình Thuận,0.0,1,20d9a655a6ed2d0762595ff4c26af1bc,chotot,11.0,9405.09090909091,0,1
 58.0,38000.0,2007.0,Daewoo,Lacetti,MT,Xăng,Sedan,Nhập khẩu,Cũ,5.0,Thái Bình,0.0,1,e4151efd738855c7c7acc5bd99947ac8,chotot,18.0,2111.1111111111113,0,1
 1000.0,66000.0,2022.0,Hyundai,Santa Fe,AT,Xăng,SUV / Cross over,Trong nước,Cũ,7.0,Hòa Bình,0.0,1,6be93b16a756fbe1449d9abb0cb0a7aa,chotot,3.0,22000.0,0,3
@@ -1503,7 +1503,7 @@ price_million,km,year,brand,model,transmission,fuel_type,body_type,origin,condit
 338.0,28800.0,2020.0,Kia,Soluto,AT,Xăng,Sedan,Trong nước,Cũ,5.0,Hồ Chí Minh,0.0,1,1291ccb415f9b113ba663d513e60fc10,chotot,5.0,5760.0,0,1
 348.0,82000.0,2012.0,Toyota,Corolla Altis,AT,Xăng,Sedan,Trong nước,Cũ,5.0,Hồ Chí Minh,0.0,1,a0502cc1b08ef9486684eaba05ba5ca8,chotot,13.0,6307.692307692308,0,1
 1350.0,80000.0,2015.0,Ford,Mustang,AT,Xăng,Coupe (2 cửa),Nhập khẩu,Cũ,4.0,Đồng Nai,0.0,1,a0986629292fc1eb36f04862baaa7a34,chotot,10.0,8000.0,0,1
-505.0,159000.0,2015.0,Toyota,Fortuner,MT,Dầu,SUV / Cross over,Trong nước,Cũ,7.0,Quảng Nam,0.0,1,nan,chotot,10.0,15900.0,0,2
+505.0,159000.0,2015.0,Toyota,Fortuner,MT,Dầu,SUV / Cross over,Trong nước,Cũ,7.0,Quảng Nam,0.0,1,,chotot,10.0,15900.0,0,2
 130.0,50000.0,1998.0,Toyota,Land Cruiser,MT,Xăng,SUV / Cross over,Nhập khẩu,Cũ,5.0,Lâm Đồng,0.0,1,fb9963fe4e59284e3a4b839415954aab,chotot,27.0,1851.851851851852,0,1
 53.0,10000.0,2002.0,Kia,CD5,MT,Xăng,Hatchback,Nhập khẩu,Cũ,5.0,Bà Rịa,0.0,1,ae98b11168a271f0025d85d24ef9ce65,chotot,23.0,434.7826086956522,0,1
 138.0,190000.0,2011.0,Chevrolet,Cruze,MT,Xăng,Sedan,Trong nước,Cũ,5.0,Hà Tĩnh,0.0,1,63df0dccc06c1c3f900024714d8a7353,chotot,14.0,13571.42857142857,0,2
@@ -1524,7 +1524,7 @@ price_million,km,year,brand,model,transmission,fuel_type,body_type,origin,condit
 415.0,91000.0,2018.0,Toyota,Innova,MT,Xăng,Minivan (MPV),Trong nước,Cũ,8.0,Hồ Chí Minh,0.0,1,94d0dbd22a0afb8243bf5a23cd62b8ff,chotot,7.0,13000.0,0,2
 450.0,80000.0,2020.0,Hyundai,Elantra,AT,Xăng,Sedan,Nhập khẩu,Cũ,5.0,Bà Rịa,0.0,1,b0f696317bb7ff0ec5974b3a5129cc0a,chotot,5.0,16000.0,0,2
 98.0,210000.0,2004.0,Toyota,Zace,MT,Xăng,SUV / Cross over,Trong nước,Cũ,7.0,Hà Nội,0.0,1,84eacf4ca70773a43a41ec956b357615,chotot,21.0,10000.0,0,2
-395.0,73158.0,2019.0,Ford,EcoSport,AT,Xăng,SUV / Cross over,Trong nước,Cũ,5.0,Bình Dương,0.0,1,nan,chotot,6.0,12193.0,0,2
+395.0,73158.0,2019.0,Ford,EcoSport,AT,Xăng,SUV / Cross over,Trong nước,Cũ,5.0,Bình Dương,0.0,1,,chotot,6.0,12193.0,0,2
 159.0,69000.0,2011.0,Chevrolet,Cruze,MT,Xăng,Sedan,Nhập khẩu,Cũ,5.0,Hồ Chí Minh,0.0,1,d105a4e380b3421406fa466bd3d171d0,chotot,14.0,4928.571428571428,0,1
 315.0,116988.0,2009.0,Mercedes Benz,GLK Class,AT,Xăng,SUV / Cross over,Trong nước,Cũ,5.0,Hà Nội,0.0,1,b9c6f5dff9aee7cf962cbb2571cdd684,chotot,16.0,7311.75,1,1
 969.0,0.0,2025.0,Peugeot,5008,AT,Xăng,SUV / Cross over,Trong nước,Mới,7.0,Hồ Chí Minh,0.0,1,92ab18561d150ec61f564609603340ee,chotot,0.0,0.0,0,1
@@ -1600,7 +1600,7 @@ price_million,km,year,brand,model,transmission,fuel_type,body_type,origin,condit
 560.0,80000.0,2019.0,Mitsubishi,Outlander,AT,Xăng,SUV / Cross over,Trong nước,Cũ,7.0,Đà Nẵng,0.0,1,ef3408c8032ecde767d65aeb3e6ceffb,chotot,6.0,13333.333333333334,0,2
 279.0,90000.0,2007.0,Acura,MDX,AT,Xăng,SUV / Cross over,Nhập khẩu,Cũ,8.0,Hồ Chí Minh,0.0,1,89b35a134e4d2cffb93f7d5957015d90,chotot,18.0,5000.0,0,1
 168.0,105000.0,2011.0,Kia,Morning,AT,Xăng,Hatchback,Trong nước,Cũ,5.0,Đắk Lắk,0.0,1,d2c6adfebcad2dacfef7611135b7258c,chotot,14.0,7500.0,0,1
-480.0,39000.0,2020.0,Hyundai,Kona,AT,Xăng,SUV / Cross over,Trong nước,Cũ,7.0,Hồ Chí Minh,0.0,1,nan,chotot,5.0,7800.0,0,1
+480.0,39000.0,2020.0,Hyundai,Kona,AT,Xăng,SUV / Cross over,Trong nước,Cũ,7.0,Hồ Chí Minh,0.0,1,,chotot,5.0,7800.0,0,1
 200.0,13.0,2012.0,Hyundai,Accent,MT,Xăng,Sedan,Nhập khẩu,Cũ,5.0,Gia Lai,0.0,1,24e8f391340612a423aa040e42a3602d,chotot,13.0,1.0,0,1
 620.0,30000.0,2016.0,Mercedes Benz,CLA Class,AT,Xăng,Sedan,Nhập khẩu,Cũ,5.0,Hồ Chí Minh,0.0,1,60dbe834aa7fc8558b73accc233cfee6,chotot,9.0,3333.3333333333335,1,1
 3900.0,6000.0,2025.0,Mercedes Benz,GLC,AT,Hybrid,SUV / Cross over,Nhập khẩu,Cũ,5.0,Khánh Hòa,0.0,1,443c773e4e0d11b1bfe20fb0882eeeb4,chotot,0.0,0.0,1,1
@@ -1665,7 +1665,7 @@ price_million,km,year,brand,model,transmission,fuel_type,body_type,origin,condit
 400.0,157000.0,2018.0,Ford,Transit,MT,Dầu,Van,Trong nước,Cũ,7.0,Hồ Chí Minh,0.0,1,0d3c57def962dd60458b6c8dbe739671,chotot,7.0,22428.571428571428,0,3
 60.0,12345.0,2001.0,Mazda,626,AT,Xăng,Sedan,Nhập khẩu,Cũ,5.0,Khác,0.0,1,602a386ea7daff05cd355c3aa9346c05,chotot,24.0,514.375,0,1
 600.0,189274.0,2019.0,Ford,Tourneo,AT,Xăng,Kiểu dáng khác,Nhập khẩu,Cũ,7.0,Hồ Chí Minh,0.0,1,cafec244792ebc7a46ee0a168d875165,chotot,6.0,31545.666666666668,0,3
-185.0,11000.0,2011.0,Ford,Fiesta,AT,Xăng,Sedan,Trong nước,Cũ,5.0,Bình Dương,0.0,1,nan,chotot,14.0,785.7142857142857,0,1
+185.0,11000.0,2011.0,Ford,Fiesta,AT,Xăng,Sedan,Trong nước,Cũ,5.0,Bình Dương,0.0,1,,chotot,14.0,785.7142857142857,0,1
 348.0,135000.0,2017.0,Toyota,Innova,MT,Xăng,Minivan (MPV),Trong nước,Cũ,8.0,Đồng Nai,0.0,1,6b2dfc342a8d75a0778d399f2f69d5f4,chotot,8.0,16875.0,0,2
 439.0,16000.0,2024.0,Toyota,Avanza Premio,MT,Xăng,Minivan (MPV),Nhập khẩu,Cũ,7.0,unknow,0.0,1,85b2f37f16b1aaab9d94f84f98b57632,chotot,1.0,16000.0,0,2
 318.0,14000.0,2017.0,Ford,Transit,MT,Dầu,Minivan (MPV),Trong nước,Cũ,16.0,Hồ Chí Minh,0.0,1,4a0e44b077e5fef625cc17a15a274e59,chotot,8.0,1750.0,0,1
@@ -1721,10 +1721,10 @@ price_million,km,year,brand,model,transmission,fuel_type,body_type,origin,condit
 529.0,1.0,2018.0,Peugeot,3008,AT,Xăng,SUV / Cross over,Trong nước,Cũ,5.0,Hồ Chí Minh,0.0,1,156758776ef24af17d4d0e102076afab,chotot,7.0,0.14285714285714285,0,1
 350.0,100000.0,2020.0,Kia,Soluto,AT,Xăng,Sedan,Trong nước,Cũ,5.0,Đắk Lắk,0.0,1,60ab7b5555ade91adb1172aacb90785e,chotot,5.0,20000.0,0,2
 175.0,190.0,2011.0,Chevrolet,Cruze,MT,Xăng,Sedan,Nhập khẩu,Cũ,5.0,Hồ Chí Minh,0.0,1,77adb9be445b79daf0c27129080dae4b,chotot,14.0,13.571428571428571,0,1
-730.0,57000.0,2023.0,VinFast,VF8,AT,Điện,SUV / Cross over,Trong nước,Cũ,7.0,Hà Nội,0.0,1,nan,chotot,2.0,28500.0,0,3
+730.0,57000.0,2023.0,VinFast,VF8,AT,Điện,SUV / Cross over,Trong nước,Cũ,7.0,Hà Nội,0.0,1,,chotot,2.0,28500.0,0,3
 465.0,82000.0,2015.0,Toyota,Fortuner,AT,Xăng,SUV / Cross over,Trong nước,Cũ,7.0,Hồ Chí Minh,0.0,1,4974582b1943bf4f01fd7f1767d4dc90,chotot,10.0,8200.0,0,1
 295.0,52000.0,2010.0,Audi,A6,AT,Xăng,Sedan,Nhập khẩu,Cũ,5.0,Hồ Chí Minh,0.0,1,bc836a5ef60bbfeefd5b9b0b437ce0d2,chotot,15.0,3466.6666666666665,0,1
-700.0,60000.0,2023.0,VinFast,VF8,AT,Điện,SUV / Cross over,Trong nước,Cũ,7.0,Hà Nội,0.0,1,nan,chotot,2.0,30000.0,0,3
+700.0,60000.0,2023.0,VinFast,VF8,AT,Điện,SUV / Cross over,Trong nước,Cũ,7.0,Hà Nội,0.0,1,,chotot,2.0,30000.0,0,3
 800.0,65000.0,2010.0,Porsche,Cayenne,AT,Xăng,SUV / Cross over,Nhập khẩu,Cũ,5.0,Hồ Chí Minh,0.0,1,851a97cd3d510e2d6afef4c599d755b4,chotot,15.0,4333.333333333333,1,1
 240.0,140000.0,2015.0,Kia,Morning,AT,Xăng,Hatchback,Trong nước,Cũ,5.0,Đà Nẵng,0.0,1,e827036d641f5a5555ed53522e347937,chotot,10.0,14000.0,0,2
 240.0,97000.0,2013.0,Hyundai,Avante,MT,Xăng,Sedan,Trong nước,Cũ,5.0,Lâm Đồng,0.0,1,acdaff943196d17f7eb3374c13b5bd39,chotot,12.0,8083.333333333333,0,1
@@ -1766,7 +1766,7 @@ price_million,km,year,brand,model,transmission,fuel_type,body_type,origin,condit
 582.0,68000.0,2016.0,BMW,3 Series,AT,Xăng,Hatchback,Nhập khẩu,Cũ,5.0,Hồ Chí Minh,0.0,1,cf8b0c1416c6a7a17904ba42cd046eb4,chotot,9.0,7555.555555555556,1,1
 598.0,16000.0,2024.0,Kia,K3,AT,Xăng,Sedan,Trong nước,Cũ,5.0,Hồ Chí Minh,0.0,1,042ba3893365448e8d49b8329a88ca7b,chotot,1.0,16000.0,0,2
 390.0,150000.0,2009.0,Mercedes Benz,GL Class,AT,Xăng,SUV / Cross over,Nhập khẩu,Cũ,7.0,Hà Nội,0.0,1,7ddccc801bc6a1787568dd53bed2b7ee,chotot,16.0,9375.0,1,1
-545.0,60000.0,2022.0,VinFast,VF8,AT,Điện,SUV / Cross over,Trong nước,Cũ,7.0,Hà Nội,0.0,1,nan,chotot,3.0,20000.0,0,2
+545.0,60000.0,2022.0,VinFast,VF8,AT,Điện,SUV / Cross over,Trong nước,Cũ,7.0,Hà Nội,0.0,1,,chotot,3.0,20000.0,0,2
 555.0,110000.0,2016.0,Kia,Sedona,AT,Xăng,Minivan (MPV),Trong nước,Cũ,7.0,Hồ Chí Minh,0.0,1,2833512ba45272a4fcb48f3ab9b38a7f,chotot,9.0,12222.222222222223,0,2
 119.0,230000.0,2014.0,Chevrolet,Spark,MT,Xăng,Hatchback,Nhập khẩu,Cũ,5.0,Hà Nội,0.0,1,d102c3ee4e40c07ee3cad43868deb0b9,chotot,11.0,20909.090909090908,0,3
 770.0,5500.0,2025.0,Peugeot,2008,AT,Xăng,SUV / Cross over,Nhập khẩu,Cũ,7.0,Hồ Chí Minh,0.0,1,4f4a65fc31a447a2397a0cd97d892052,chotot,0.0,0.0,0,1
@@ -1828,7 +1828,7 @@ price_million,km,year,brand,model,transmission,fuel_type,body_type,origin,condit
 160.0,77062.0,2016.0,Chevrolet,Spark,AT,Xăng,Van,Nhập khẩu,Cũ,2.0,Hà Nội,0.0,1,07c8217273089ee1070d7126d5fa3f30,chotot,9.0,8562.444444444445,0,1
 630.0,47000.0,2017.0,Mercedes Benz,C Class,AT,Xăng,Sedan,Trong nước,Cũ,5.0,Hồ Chí Minh,0.0,1,df004e21353ca4cc9f9f9a0b1382e977,chotot,8.0,5875.0,1,1
 625.0,18000.0,2025.0,Mitsubishi,Xpander Cross,AT,Xăng,Minivan (MPV),Nhập khẩu,Cũ,7.0,Hồ Chí Minh,0.0,1,30e0b4fb21abd4569d9c09295e8672a4,chotot,0.0,0.0,0,1
-287.04,0.0,2025.0,VinFast,VF3,AT,Điện,Hatchback,Trong nước,Mới,4.0,Sóc Trăng,0.0,1,nan,chotot,0.0,0.0,0,1
+287.04,0.0,2025.0,VinFast,VF3,AT,Điện,Hatchback,Trong nước,Mới,4.0,Sóc Trăng,0.0,1,,chotot,0.0,0.0,0,1
 415.0,82000.0,2021.0,Mitsubishi,Xpander,MT,Xăng,Minivan (MPV),Nhập khẩu,Cũ,7.0,Vĩnh Long,0.0,1,8cce1b7d3384640e15c60570cbadb227,chotot,4.0,20500.0,0,3
 275.0,130000.0,2011.0,Nissan,Teana,AT,Xăng,Sedan,Nhập khẩu,Cũ,5.0,Hà Nội,0.0,1,812180941c9a5e6c2e524990f75ca55b,chotot,14.0,9285.714285714286,0,1
 880.0,0.0,2023.0,Isuzu,Mu X,AT,Dầu,SUV / Cross over,Nhập khẩu,Mới,7.0,Hồ Chí Minh,0.0,1,0613f20b09014c8a9d3ab7a19c1c1317,chotot,2.0,0.0,0,1
@@ -1922,7 +1922,7 @@ price_million,km,year,brand,model,transmission,fuel_type,body_type,origin,condit
 285.0,85000.0,2020.0,Hyundai,Accent,AT,Xăng,Sedan,Trong nước,Cũ,5.0,Lâm Đồng,0.0,1,64a27c2baa66c815a97e6bbeb5980d7b,chotot,5.0,17000.0,0,2
 432.1,160000.0,2009.0,Porsche,Cayenne,MT,Xăng,SUV / Cross over,Nhập khẩu,Cũ,8.0,Hồ Chí Minh,0.0,1,bba49ed118d901dfe041552102297f1a,chotot,16.0,10000.0,1,2
 359.0,110000.0,2012.0,Mercedes Benz,C Class,AT,Xăng,Sedan,Nhập khẩu,Cũ,5.0,Hồ Chí Minh,0.0,1,3115585ee39c4aa599370029a4e2bd4a,chotot,13.0,8461.538461538461,1,1
-1190.0,53000.0,2021.0,Volkswagen,Tiguan,AT,Xăng,SUV / Cross over,Nhập khẩu,Cũ,7.0,Hồ Chí Minh,0.0,1,nan,chotot,4.0,13250.0,0,2
+1190.0,53000.0,2021.0,Volkswagen,Tiguan,AT,Xăng,SUV / Cross over,Nhập khẩu,Cũ,7.0,Hồ Chí Minh,0.0,1,,chotot,4.0,13250.0,0,2
 420.0,66000.0,2019.0,Mitsubishi,Xpander,AT,Xăng,Minivan (MPV),Trong nước,Cũ,5.0,Hà Nội,0.0,1,6265b491710b099d95f3db4073e538c8,chotot,6.0,11000.0,0,2
 285.0,1.0,2015.0,Toyota,Innova,MT,Xăng,Minivan (MPV),Trong nước,Cũ,8.0,Bắc Giang,0.0,1,2932cef91a3bcdcb1daf3ab6c6909a31,chotot,10.0,0.1,0,1
 550.0,10000.0,2019.0,Ford,Transit,MT,Dầu,Van,Trong nước,Cũ,9.0,Đà Nẵng,0.0,1,29acae25464dc34279ac1307db701936,chotot,6.0,1666.6666666666667,0,1
@@ -1955,7 +1955,7 @@ price_million,km,year,brand,model,transmission,fuel_type,body_type,origin,condit
 2950.0,478.0,2023.0,BMW,Z4,AT,Xăng,Coupe (2 cửa),Nhập khẩu,Cũ,5.0,Bình Dương,0.0,1,c3ce3da92d06c51bd7ffa9642d77dd6f,chotot,2.0,239.0,1,1
 199.0,160000.0,2010.0,Suzuki,APV,AT,Xăng,Minivan (MPV),Trong nước,Cũ,5.0,Hồ Chí Minh,0.0,1,c17c41e474194eb67ba1979cabc0dd69,chotot,15.0,10666.666666666666,0,2
 455.0,50000.0,2022.0,Honda,City,AT,Xăng,Sedan,Trong nước,Cũ,5.0,Đồng Nai,0.0,1,c75263a2ac69e1932d16d8a7831a0660,chotot,3.0,16666.666666666668,0,2
-649.0,0.0,2025.0,Skoda,Kushaq,AT,Xăng,SUV / Cross over,Nhập khẩu,Mới,5.0,Hồ Chí Minh,0.0,1,nan,chotot,0.0,0.0,0,1
+649.0,0.0,2025.0,Skoda,Kushaq,AT,Xăng,SUV / Cross over,Nhập khẩu,Mới,5.0,Hồ Chí Minh,0.0,1,,chotot,0.0,0.0,0,1
 470.0,6700.0,2025.0,Chery,Omoda C5,AT,Xăng,SUV / Cross over,Nhập khẩu,Cũ,5.0,Đà Nẵng,0.0,1,f64f4a68d44937786b7698fe9bc82070,chotot,0.0,0.0,0,1
 168.0,96000.0,2019.0,Suzuki,Celerio,MT,Xăng,Hatchback,Nhập khẩu,Cũ,5.0,Hồ Chí Minh,0.0,1,e3fcac65c6f7f38fa110c35a5db29e7d,chotot,6.0,16000.0,0,2
 599.0,0.0,2025.0,Kia,Carens,AT,Xăng,SUV / Cross over,Trong nước,Mới,7.0,Hồ Chí Minh,0.0,1,39300afbd07b64d2dee34573f6ecb94e,chotot,0.0,0.0,0,1
@@ -1979,7 +1979,7 @@ price_million,km,year,brand,model,transmission,fuel_type,body_type,origin,condit
 709.0,0.0,2025.0,VinFast,VF6,AT,Điện,SUV / Cross over,Trong nước,Mới,5.0,Hồ Chí Minh,0.0,1,94d136b2d4da977b196b356a2111546f,chotot,0.0,0.0,0,1
 520.0,61500.0,2019.0,Kia,Cerato,AT,Xăng,Sedan,Trong nước,Cũ,5.0,Đà Nẵng,0.0,1,e684d33830b4d4b006d52b3ab3b45591,chotot,6.0,10250.0,0,2
 580.0,60000.0,2023.0,Mitsubishi,Xpander Cross,AT,Xăng,Kiểu dáng khác,Nhập khẩu,Cũ,7.0,Long An,0.0,1,77025474a9a31931cc6e7a5306687bdb,chotot,2.0,30000.0,0,3
-1060.0,42687.0,2019.0,Mercedes Benz,E Class,AT,Xăng,Sedan,Nhập khẩu,Cũ,5.0,Hồ Chí Minh,0.0,1,nan,chotot,6.0,7114.5,1,1
+1060.0,42687.0,2019.0,Mercedes Benz,E Class,AT,Xăng,Sedan,Nhập khẩu,Cũ,5.0,Hồ Chí Minh,0.0,1,,chotot,6.0,7114.5,1,1
 730.0,62000.0,2020.0,Toyota,Fortuner,AT,Xăng,SUV / Cross over,Trong nước,Cũ,7.0,Tây Ninh,0.0,1,5d2e3b7dad55e5086f6da7e68f08bf5d,chotot,5.0,12400.0,0,2
 830.0,45000.0,2018.0,Volkswagen,Tiguan,AT,Xăng,SUV,Nhập khẩu,Cũ,7.0,Hồ Chí Minh,0.0,1,be1a53a2c3a4c8a4396350dd63570442,chotot,7.0,6428.571428571428,0,1
 950.0,108000.0,2017.0,Mercedes Benz,AMG,AT,Xăng,Sedan,Nhập khẩu,Cũ,5.0,Hà Nội,0.0,1,401d42e5ed9d0bf379bbac73ec53733b,chotot,8.0,13500.0,1,2
@@ -1992,7 +1992,7 @@ price_million,km,year,brand,model,transmission,fuel_type,body_type,origin,condit
 230.0,180000.0,2016.0,Kia,Morning,AT,Xăng,Hatchback,Trong nước,Cũ,5.0,Hà Nội,0.0,1,6d3ff36bee7792869382da0a9eeff41a,chotot,9.0,20000.0,0,2
 295.0,41000.0,2020.0,VinFast,Fadil,AT,Xăng,Hatchback,Trong nước,Cũ,5.0,Hồ Chí Minh,0.0,1,15a553a11fd06b56a2241bd5404e912c,chotot,5.0,8200.0,0,1
 260.0,62000.0,2019.0,VinFast,Fadil,AT,Xăng,Hatchback,Trong nước,Cũ,5.0,Hà Nội,0.0,1,2d2b982c27a3d08ed7630c22d819cb14,chotot,6.0,10333.333333333334,0,2
-412.2,0.0,2025.0,Toyota,Vios,MT,Xăng,Sedan,Trong nước,Mới,5.0,Hồ Chí Minh,0.0,1,nan,chotot,0.0,0.0,0,1
+412.2,0.0,2025.0,Toyota,Vios,MT,Xăng,Sedan,Trong nước,Mới,5.0,Hồ Chí Minh,0.0,1,,chotot,0.0,0.0,0,1
 515.0,20000.0,2024.0,Suzuki,XL 7,AT,Xăng,SUV / Cross over,Nhập khẩu,Cũ,7.0,Hồ Chí Minh,0.0,1,c8861d108a54007a722e0067937b08c6,chotot,1.0,20000.0,0,2
 70.0,10000.0,2005.0,Daewoo,Matiz,MT,Xăng,Hatchback,Nhập khẩu,Cũ,5.0,Quảng Ngãi,0.0,1,036cd9e614ec436345e3c0bccecefc68,chotot,20.0,500.0,0,1
 512.0,6100.0,2024.0,Toyota,Vios,AT,Xăng,Sedan,Trong nước,Cũ,5.0,Bình Dương,0.0,1,22e24ec5b5764f61cce0ea082a2758da,chotot,1.0,6100.0,0,1
@@ -2000,7 +2000,7 @@ price_million,km,year,brand,model,transmission,fuel_type,body_type,origin,condit
 589.0,37000.0,2024.0,Mitsubishi,Xpander,AT,Xăng,SUV / Cross over,Nhập khẩu,Cũ,7.0,Hồ Chí Minh,0.0,1,30e0b4fb21abd4569d9c09295e8672a4,chotot,1.0,37000.0,0,3
 807.0,0.0,2025.0,Mazda,CX 5,AT,Xăng,SUV / Cross over,Trong nước,Mới,5.0,Hồ Chí Minh,0.0,1,39300afbd07b64d2dee34573f6ecb94e,chotot,0.0,0.0,0,1
 600.0,96000.0,2021.0,Mitsubishi,Outlander,AT,Xăng,SUV / Cross over,Trong nước,Cũ,7.0,Hồ Chí Minh,0.0,1,30e0b4fb21abd4569d9c09295e8672a4,chotot,4.0,24000.0,0,3
-800.0,33000.0,2024.0,Ford,Territory,AT,Xăng,SUV / Cross over,Trong nước,Cũ,5.0,Bình Dương,0.0,1,nan,chotot,1.0,33000.0,0,3
+800.0,33000.0,2024.0,Ford,Territory,AT,Xăng,SUV / Cross over,Trong nước,Cũ,5.0,Bình Dương,0.0,1,,chotot,1.0,33000.0,0,3
 130.0,300000.0,2015.0,Kia,Morning,MT,Xăng,Hatchback,Nhập khẩu,Cũ,5.0,Bình Dương,0.0,1,491a42531fe1575d222e6b76a5349314,chotot,10.0,30000.0,0,3
 95.0,123456.0,2004.0,Kia,Morning,AT,Xăng,Hatchback,Nhập khẩu,Cũ,5.0,Bình Dương,0.0,1,5ddaa2f6145493f6c4fe0bfb80df6bf3,chotot,21.0,5878.857142857143,0,1
 90.0,12000.0,2009.0,Chevrolet,Spark,MT,Xăng,Hatchback,Nhập khẩu,Cũ,5.0,Tây Ninh,0.0,1,d4de00376c68c1306264bd57e0cc9642,chotot,16.0,750.0,0,1
@@ -2022,13 +2022,13 @@ price_million,km,year,brand,model,transmission,fuel_type,body_type,origin,condit
 525.0,10000.0,2016.0,Isuzu,Dòng khác,MT,Dầu,Kiểu dáng khác,Trong nước,Cũ,5.0,Hồ Chí Minh,0.0,1,7a116319ee98ee4b24c81244464facd6,chotot,9.0,1111.111111111111,0,1
 205.0,130000.0,2011.0,Nissan,Grand livina,AT,Xăng,Minivan (MPV),Nhập khẩu,Cũ,5.0,Đồng Nai,0.0,1,c6f5e1e0d328a4c51243c3821c77b6ab,chotot,14.0,9285.714285714286,0,1
 149.0,136000.0,2017.0,Hyundai,Grand i10,MT,Xăng,Hatchback,Trong nước,Cũ,5.0,Hồ Chí Minh,0.0,1,765a5bbc9bd4391b1ccb14c6ca1734ec,chotot,8.0,17000.0,0,2
-767.0,0.0,2025.0,VinFast,VF7,AT,Điện,SUV / Cross over,Trong nước,Mới,5.0,Thừa Thiên Huế,0.0,1,nan,chotot,0.0,0.0,0,1
-719.0,0.0,2025.0,VinFast,Limo Green,AT,Điện,Minivan (MPV),Trong nước,Mới,7.0,Thừa Thiên Huế,0.0,1,nan,chotot,0.0,0.0,0,1
-520.0,0.0,2025.0,VinFast,VF5 Plus,AT,Điện,SUV,Trong nước,Mới,5.0,Thừa Thiên Huế,0.0,1,nan,chotot,0.0,0.0,0,1
+767.0,0.0,2025.0,VinFast,VF7,AT,Điện,SUV / Cross over,Trong nước,Mới,5.0,Thừa Thiên Huế,0.0,1,,chotot,0.0,0.0,0,1
+719.0,0.0,2025.0,VinFast,Limo Green,AT,Điện,Minivan (MPV),Trong nước,Mới,7.0,Thừa Thiên Huế,0.0,1,,chotot,0.0,0.0,0,1
+520.0,0.0,2025.0,VinFast,VF5 Plus,AT,Điện,SUV,Trong nước,Mới,5.0,Thừa Thiên Huế,0.0,1,,chotot,0.0,0.0,0,1
 1090.0,150000.0,2016.0,Audi,Q7,AT,Xăng,SUV / Cross over,Nhập khẩu,Cũ,7.0,Hồ Chí Minh,0.0,1,a334796333931262866362422cec1641,chotot,9.0,16666.666666666668,0,2
-675.0,0.0,2025.0,VinFast,VF6,AT,Điện,SUV / Cross over,Trong nước,Cũ,5.0,Thừa Thiên Huế,0.0,1,nan,chotot,0.0,0.0,0,1
+675.0,0.0,2025.0,VinFast,VF6,AT,Điện,SUV / Cross over,Trong nước,Cũ,5.0,Thừa Thiên Huế,0.0,1,,chotot,0.0,0.0,0,1
 850.0,75000.0,2020.0,Toyota,Fortuner,AT,Xăng,SUV / Cross over,Nhập khẩu,Cũ,5.0,Hồ Chí Minh,0.0,1,d98bbe4c37e0ec2333df56f8d1059c50,chotot,5.0,15000.0,0,2
-299.0,0.0,2025.0,VinFast,VF3,AT,Điện,SUV / Cross over,Trong nước,Mới,4.0,Thừa Thiên Huế,0.0,1,nan,chotot,0.0,0.0,0,1
+299.0,0.0,2025.0,VinFast,VF3,AT,Điện,SUV / Cross over,Trong nước,Mới,4.0,Thừa Thiên Huế,0.0,1,,chotot,0.0,0.0,0,1
 90.0,5678.0,2020.0,Jeep,CJ,MT,Xăng,Kiểu dáng khác,Nhập khẩu,Cũ,5.0,Hồ Chí Minh,0.0,1,4df4f549afb2e85d4df5e702063bbade,chotot,5.0,1135.6,0,1
 650.0,130.0,2017.0,Toyota,Fortuner,MT,Dầu,SUV / Cross over,Trong nước,Cũ,7.0,Hồ Chí Minh,0.0,1,f68f1efe1c02cd69b61a29565c7ce0e5,chotot,8.0,16.25,0,1
 558.0,77000.0,2015.0,Ford,Ranger,AT,Dầu,Pick-up (bán tải),Nhập khẩu,Cũ,5.0,Đồng Nai,0.0,1,ba4df09a5cc3ed2450b565507c8c0abd,chotot,10.0,7700.0,0,1
@@ -2042,8 +2042,8 @@ price_million,km,year,brand,model,transmission,fuel_type,body_type,origin,condit
 430.0,18000.0,2021.0,MG,MGZS,AT,Xăng,SUV / Cross over,Nhập khẩu,Cũ,7.0,Hồ Chí Minh,0.0,1,b60f6726357ba029a4f04e86250447ac,chotot,4.0,4500.0,0,1
 170.0,0.0,2018.0,Chevrolet,Aveo,MT,Xăng,Sedan,Trong nước,Cũ,5.0,Bình Dương,0.0,1,725eb1b14efbffbab1d4852941f9e05f,chotot,7.0,0.0,0,1
 1790.0,40000.0,2023.0,Mercedes Benz,GLC Class,AT,Xăng,SUV / Cross over,Nhập khẩu,Cũ,5.0,Hồ Chí Minh,0.0,1,d55c4125b6296ccc569b542f6ab33849,chotot,2.0,20000.0,1,2
-299.0,0.0,2025.0,Hãng khác,Dòng khác,MT,Xăng,Kiểu dáng khác,Trong nước,Mới,2.0,Hồ Chí Minh,0.0,1,nan,chotot,0.0,0.0,0,1
-485.0,98000.0,2020.0,MG,HS,AT,Xăng,SUV / Cross over,Nhập khẩu,Cũ,5.0,Hà Tĩnh,0.0,1,nan,chotot,5.0,19600.0,0,2
+299.0,0.0,2025.0,Hãng khác,Dòng khác,MT,Xăng,Kiểu dáng khác,Trong nước,Mới,2.0,Hồ Chí Minh,0.0,1,,chotot,0.0,0.0,0,1
+485.0,98000.0,2020.0,MG,HS,AT,Xăng,SUV / Cross over,Nhập khẩu,Cũ,5.0,Hà Tĩnh,0.0,1,,chotot,5.0,19600.0,0,2
 3750.0,85444.0,2020.0,Porsche,Cayenne,AT,Xăng,SUV / Cross over,Nhập khẩu,Cũ,5.0,Hồ Chí Minh,0.0,1,9447af1f61fef1e647751b6706c0eaf2,chotot,5.0,17088.8,1,2
 565.0,60000.0,2022.0,VinFast,Lux A2.0,AT,Xăng,Sedan,Trong nước,Cũ,5.0,Hà Nội,0.0,1,002cc27082b82f9d34792d549c52a3e9,chotot,3.0,20000.0,0,2
 695.0,50000.0,2021.0,Toyota,Corolla Cross,AT,Xăng,SUV / Cross over,Nhập khẩu,Cũ,5.0,Bà Rịa,0.0,1,8af9203bc8f178ac186c83ea51f3621c,chotot,4.0,12500.0,0,2
@@ -2054,7 +2054,7 @@ price_million,km,year,brand,model,transmission,fuel_type,body_type,origin,condit
 315.68,88000.0,2009.0,Hyundai,Genesis,AT,Xăng,Coupe (2 cửa),Nhập khẩu,Cũ,5.0,Đồng Tháp,0.0,1,8687202b826e7e73b66b4829596dfcd3,chotot,16.0,5500.0,0,1
 320.0,120000.0,2015.0,Hyundai,i20,AT,Xăng,SUV / Cross over,Nhập khẩu,Cũ,5.0,Đồng Nai,0.0,1,1e20ad7c449b41c5805cd0c89cd1dc4d,chotot,10.0,12000.0,0,2
 610.0,0.0,2024.0,MG,RX5,AT,Xăng,SUV / Cross over,Nhập khẩu,Mới,5.0,Hà Nội,0.0,1,d,chotot,1.0,0.0,0,1
-148.0,12345.0,2006.0,Ford,Everest,MT,Dầu,SUV / Cross over,Nhập khẩu,Cũ,7.0,Hồ Chí Minh,0.0,1,nan,chotot,19.0,649.7368421052631,0,1
+148.0,12345.0,2006.0,Ford,Everest,MT,Dầu,SUV / Cross over,Nhập khẩu,Cũ,7.0,Hồ Chí Minh,0.0,1,,chotot,19.0,649.7368421052631,0,1
 317.0,200000.0,2017.0,Toyota,Innova,MT,Xăng,Minivan (MPV),Trong nước,Cũ,8.0,Hà Nội,0.0,1,4f7fa27851e39a4f53a47f8449d3857b,chotot,8.0,25000.0,0,3
 275.0,20000.0,2010.0,Toyota,Fortuner,AT,Xăng,Hatchback,Nhập khẩu,Cũ,7.0,Bình Dương,0.0,1,85aef3105a98d71379f59b9389dec5b2,chotot,15.0,1333.3333333333333,0,1
 198.0,127819.0,2011.0,Kia,Morning,AT,Xăng,Hatchback,Nhập khẩu,Cũ,5.0,Hồ Chí Minh,0.0,1,4754aba180792801ccb98437411e48cf,chotot,14.0,9129.92857142857,0,1
@@ -2111,7 +2111,7 @@ price_million,km,year,brand,model,transmission,fuel_type,body_type,origin,condit
 550.0,88000.0,2019.0,Hyundai,Tucson,AT,Xăng,SUV / Cross over,Trong nước,Cũ,5.0,Hải Phòng,0.0,1,da1d6d09d747d89c1eccb81ba92bdac6,chotot,6.0,14666.666666666666,0,2
 675.0,110000.0,2016.0,Mercedes Benz,C Class,AT,Xăng,Sedan,Nhập khẩu,Cũ,5.0,Hà Nội,0.0,1,b27e8e930c735f36c5112c6c91bf2207,chotot,9.0,12222.222222222223,1,2
 228.0,190000.0,2012.0,Toyota,Innova,MT,Xăng,Minivan (MPV),Trong nước,Cũ,8.0,Thừa Thiên Huế,0.0,1,2d7b0fd7b2cd550c44cf8049dd0be887,chotot,13.0,14615.384615384615,0,2
-695.0,17000.0,2023.0,Toyota,Corolla Altis,AT,Xăng,Sedan,Nhập khẩu,Cũ,5.0,Hồ Chí Minh,0.0,1,nan,chotot,2.0,8500.0,0,1
+695.0,17000.0,2023.0,Toyota,Corolla Altis,AT,Xăng,Sedan,Nhập khẩu,Cũ,5.0,Hồ Chí Minh,0.0,1,,chotot,2.0,8500.0,0,1
 650.0,58000.0,2022.0,VinFast,VF8,AT,Điện,SUV / Cross over,Trong nước,Cũ,5.0,Hồ Chí Minh,0.0,1,7e102ad0b86e4ad9a690f162aa4b256d,chotot,3.0,19333.333333333332,0,2
 110.0,20000.0,2006.0,Toyota,Innova,MT,Xăng,Minivan (MPV),Trong nước,Cũ,8.0,Sóc Trăng,0.0,1,c0aa3db05e7b700192b86e01ad3dd8f8,chotot,19.0,1052.6315789473683,0,1
 4200.0,14537.0,2022.0,Mercedes Benz,GLS Class,AT,Xăng,SUV / Cross over,Nhập khẩu,Cũ,7.0,Hà Nội,0.0,1,cf999cabaa5c4c30c96a60726208e448,chotot,3.0,4845.666666666667,1,1
@@ -2170,7 +2170,7 @@ price_million,km,year,brand,model,transmission,fuel_type,body_type,origin,condit
 137.0,250.0,2008.0,Toyota,Innova,MT,Xăng,Minivan (MPV),Nhập khẩu,Cũ,8.0,Thừa Thiên Huế,0.0,1,fa4fd0eb46a9aa0d9351dda22c66b4da,chotot,17.0,14.705882352941176,0,1
 520.0,11000.0,2021.0,Mitsubishi,Xpander,AT,Xăng,Minivan (MPV),Nhập khẩu,Cũ,7.0,Hồ Chí Minh,0.0,1,a7495145caef8abfa851624b68d8f927,chotot,4.0,2750.0,0,1
 220.0,120000.0,2009.0,Toyota,Corolla Altis,MT,Xăng,Sedan,Trong nước,Cũ,5.0,Đà Nẵng,0.0,1,3558eeadbd5934888d834b2f68c7fe21,chotot,16.0,7500.0,0,1
-558.0,77.0,2021.0,Ford,Ranger,AT,Dầu,Pick-up (bán tải),Nhập khẩu,Cũ,5.0,Hồ Chí Minh,0.0,1,nan,chotot,4.0,19.25,0,1
+558.0,77.0,2021.0,Ford,Ranger,AT,Dầu,Pick-up (bán tải),Nhập khẩu,Cũ,5.0,Hồ Chí Minh,0.0,1,,chotot,4.0,19.25,0,1
 148.0,31533.0,2018.0,Suzuki,Dòng khác,MT,Xăng,Kiểu dáng khác,Trong nước,Cũ,2.0,Hà Nội,0.0,1,48f702c07a4052b87b11fd41dfea5cdf,chotot,7.0,4504.714285714285,0,1
 380.0,56000.0,2020.0,Suzuki,Ertiga,AT,Xăng,Minivan (MPV),Nhập khẩu,Cũ,5.0,Hồ Chí Minh,0.0,1,52dd17192f7901cdbab63399c74d3929,chotot,5.0,11200.0,0,2
 410.0,75000.0,2021.0,Suzuki,XL 7,AT,Xăng,Minivan (MPV),Trong nước,Cũ,7.0,Hồ Chí Minh,0.0,1,29629a18036668d3040bc52bdfc0cce5,chotot,4.0,18750.0,0,2
@@ -2191,7 +2191,7 @@ price_million,km,year,brand,model,transmission,fuel_type,body_type,origin,condit
 500.0,16000.0,2024.0,Mazda,CX 3,AT,Xăng,SUV / Cross over,Nhập khẩu,Cũ,7.0,Kon Tum,0.0,1,66a1ed613206ade11b4accc60aa94714,chotot,1.0,16000.0,0,2
 320.0,123456.0,2013.0,Ford,Everest,MT,Dầu,SUV / Cross over,Trong nước,Cũ,7.0,Lâm Đồng,0.0,1,128e779010dc7b9a647eae27333bcb3b,chotot,12.0,10288.0,0,2
 445.0,292000.0,2014.0,Toyota,Fortuner,MT,Dầu,SUV / Cross over,Trong nước,Cũ,7.0,Long An,0.0,1,dc661af92df2be07ab7c44cfd2148f5d,chotot,11.0,26545.454545454544,0,3
-645.0,4500.0,2025.0,VinFast,VF6,AT,Điện,SUV / Cross over,Trong nước,Cũ,5.0,Hà Nội,0.0,1,nan,chotot,0.0,0.0,0,1
+645.0,4500.0,2025.0,VinFast,VF6,AT,Điện,SUV / Cross over,Trong nước,Cũ,5.0,Hà Nội,0.0,1,,chotot,0.0,0.0,0,1
 435.0,70500.0,2020.0,Mitsubishi,Xpander,AT,Xăng,SUV / Cross over,Nhập khẩu,Cũ,7.0,Đà Nẵng,0.0,1,66d1818793da1139553cc529abfe986c,chotot,5.0,14100.0,0,2
 618.0,29000.0,2024.0,Mitsubishi,Xforce,AT,Xăng,SUV / Cross over,Nhập khẩu,Cũ,5.0,Hồ Chí Minh,0.0,1,378ffb9972075be9ecf9bda4ce86c6d6,chotot,1.0,29000.0,0,3
 52.0,125000.0,2010.0,Chevrolet,Spark,MT,Xăng,Hatchback,Trong nước,Cũ,2.0,Đà Nẵng,0.0,1,7a608322050fc5c74578b1e9237e0ec6,chotot,15.0,8333.333333333334,0,1
@@ -2205,17 +2205,17 @@ price_million,km,year,brand,model,transmission,fuel_type,body_type,origin,condit
 150.0,20000.0,1995.0,Honda,Accord,AT,Xăng,Sedan,Nhập khẩu,Cũ,5.0,Thừa Thiên Huế,0.0,1,61725d32ed1134a04c08fa7319ccbb49,chotot,30.0,666.6666666666666,0,1
 125.0,160.0,2001.0,Toyota,Camry,MT,Xăng,Sedan,Nhập khẩu,Cũ,5.0,Đồng Nai,0.0,1,a840f2ab4e32de6d93db89b00646ebdf,chotot,24.0,6.666666666666667,0,1
 350.0,117000.0,2015.0,Mazda,BT 50,MT,Dầu,Pick-up (bán tải),Trong nước,Cũ,5.0,Thanh Hóa,0.0,1,0328a5b5004ff290005da196f3d2ecbc,chotot,10.0,11700.0,0,2
-2299.0,170.0,2020.0,Mercedes Benz,GLE Class,AT,Xăng,SUV / Cross over,Nhập khẩu,Cũ,7.0,Hà Nội,0.0,1,nan,chotot,5.0,34.0,1,1
+2299.0,170.0,2020.0,Mercedes Benz,GLE Class,AT,Xăng,SUV / Cross over,Nhập khẩu,Cũ,7.0,Hà Nội,0.0,1,,chotot,5.0,34.0,1,1
 355.0,150000.0,2009.0,Kia,Sorento,MT,Dầu,SUV / Cross over,Nhập khẩu,Cũ,7.0,Đồng Tháp,0.0,1,2e1eaecee81e2eb92fb110ce705ca159,chotot,16.0,9375.0,0,1
 1075.0,60000.0,2021.0,Kia,Carnival,AT,Dầu,Minivan (MPV),Trong nước,Cũ,7.0,Hồ Chí Minh,0.0,1,a20e26bf1ac6e41e3516b2619c7feffc,chotot,4.0,15000.0,0,2
 485.0,90000.0,2019.0,Ford,Ranger,AT,Dầu,Pick-up (bán tải),Nhập khẩu,Cũ,5.0,Bình Dương,0.0,1,46e8760a0c521d07367b26d84088cbcb,chotot,6.0,15000.0,0,2
 579.0,79.0,2018.0,Mazda,CX 5,AT,Xăng,SUV / Cross over,Trong nước,Cũ,5.0,Đắk Lắk,0.0,1,f05118adefae61c46db9cd23f7ec1c6c,chotot,7.0,11.285714285714286,0,1
 90.0,97000.0,2012.0,Kia,Morning,MT,Xăng,Hatchback,Trong nước,Cũ,5.0,Hồ Chí Minh,0.0,1,a1a9bee19f7289d38c9325f4baa0169e,chotot,13.0,7461.538461538462,0,1
-4350.0,87000.0,2014.0,Mercedes Benz,G Class,AT,Xăng,SUV / Cross over,Nhập khẩu,Cũ,5.0,Hà Nội,0.0,1,nan,chotot,11.0,7909.090909090909,1,1
+4350.0,87000.0,2014.0,Mercedes Benz,G Class,AT,Xăng,SUV / Cross over,Nhập khẩu,Cũ,5.0,Hà Nội,0.0,1,,chotot,11.0,7909.090909090909,1,1
 315.0,1300.0,2022.0,MG,MG5,MT,Xăng,Sedan,Nhập khẩu,Cũ,5.0,Hồ Chí Minh,0.0,1,2b2f5cce075580aa9e6fbd34a9e9cd61,chotot,3.0,433.3333333333333,0,1
 393.222222,76361.0,2018.0,Kia,Cerato,AT,Xăng,Sedan,Trong nước,Cũ,5.0,Thanh Hóa,0.0,1,f335712cf720c02717b1ec27b051bb30,chotot,7.0,10908.714285714286,0,2
 425.0,0.0,2025.0,VinFast,Herio Green,AT,Điện,SUV,Trong nước,Cũ,5.0,Cần Thơ,0.0,1,47019da1d614e8c9fe024023e59de82c,chotot,0.0,0.0,0,1
-80.0,123456.0,2005.0,Mitsubishi,Jolie,MT,Xăng,SUV / Cross over,Trong nước,Cũ,8.0,Sóc Trăng,0.0,1,nan,chotot,20.0,6172.8,0,1
+80.0,123456.0,2005.0,Mitsubishi,Jolie,MT,Xăng,SUV / Cross over,Trong nước,Cũ,8.0,Sóc Trăng,0.0,1,,chotot,20.0,6172.8,0,1
 170.0,82000.0,2003.0,Mitsubishi,Lancer,MT,Xăng,Sedan,Nhập khẩu,Cũ,5.0,Hồ Chí Minh,0.0,1,2da6337086af4cbec19dbdcccf8f15fb,chotot,22.0,3727.2727272727275,0,1
 630.0,3000.0,2024.0,Mitsubishi,Xforce,AT,Xăng,SUV / Cross over,Nhập khẩu,Cũ,5.0,Hồ Chí Minh,0.0,1,69fe641277e342dff133fcea8b4babad,chotot,1.0,3000.0,0,1
 600.0,22000.0,2024.0,Toyota,Veloz Cross,AT,Xăng,SUV,Trong nước,Cũ,7.0,Hồ Chí Minh,0.0,1,a7ace10621198a3dce780974426938b4,chotot,1.0,22000.0,0,3
@@ -2248,7 +2248,7 @@ price_million,km,year,brand,model,transmission,fuel_type,body_type,origin,condit
 220.0,20000.0,2010.0,Toyota,Innova,MT,Xăng,Minivan (MPV),Trong nước,Cũ,8.0,Hồ Chí Minh,0.0,1,b7f083036f6b68718b8cdb49c1144a9c,chotot,15.0,1333.3333333333333,0,1
 700.0,24000.0,2023.0,Honda,Civic,AT,Xăng,Sedan,Nhập khẩu,Cũ,5.0,Khánh Hòa,0.0,1,0bc9a2301c7ebf97548f5e509ecdf095,chotot,2.0,12000.0,0,2
 1380.0,27000.0,2015.0,Cadillac,CTS,AT,Xăng,Sedan,Nhập khẩu,Cũ,5.0,Hà Nội,0.0,1,e13aa12a361e7424741a1cb1aed81900,chotot,10.0,2700.0,0,1
-680.0,77000.0,2018.0,Mercedes Benz,C Class,AT,Xăng,Sedan,Nhập khẩu,Cũ,5.0,Lâm Đồng,0.0,1,nan,chotot,7.0,11000.0,1,2
+680.0,77000.0,2018.0,Mercedes Benz,C Class,AT,Xăng,Sedan,Nhập khẩu,Cũ,5.0,Lâm Đồng,0.0,1,,chotot,7.0,11000.0,1,2
 399.0,80.0,2016.0,Ford,Ranger,AT,Dầu,Pick-up (bán tải),Nhập khẩu,Cũ,5.0,Đắk Lắk,0.0,1,9b431fcf334f000e6e877958ac53293f,chotot,9.0,8.88888888888889,0,1
 799.0,95000.0,2019.0,Ford,Everest,AT,Dầu,SUV / Cross over,Nhập khẩu,Cũ,7.0,Hà Nội,0.0,1,970c341f886e311fabbc51df46c8dcbf,chotot,6.0,15833.333333333334,0,2
 469.0,49000.0,2020.0,Mitsubishi,Xpander,AT,Xăng,Minivan (MPV),Nhập khẩu,Cũ,7.0,Hồ Chí Minh,0.0,1,378ffb9972075be9ecf9bda4ce86c6d6,chotot,5.0,9800.0,0,1
@@ -2266,7 +2266,7 @@ price_million,km,year,brand,model,transmission,fuel_type,body_type,origin,condit
 270.0,150000.0,2009.0,Hyundai,Santa Fe,AT,Dầu,SUV / Cross over,Nhập khẩu,Cũ,7.0,Thái Nguyên,0.0,1,95c96f7949f5f605ff1148a99983c335,chotot,16.0,9375.0,0,1
 580.0,41000.0,2024.0,Mitsubishi,Xpander,AT,Xăng,SUV / Cross over,Nhập khẩu,Cũ,7.0,Hải Phòng,0.0,1,86472e7260e09c78e7c48433264d678a,chotot,1.0,41000.0,0,3
 215.0,100000.0,2015.0,Hyundai,Grand i10,AT,Xăng,Hatchback,Trong nước,Cũ,5.0,Hà Nội,0.0,1,d77168066a2234ac828e80ac4c25461d,chotot,10.0,10000.0,0,2
-58.0,200000.0,1996.0,Chrysler,Grand Voyager,AT,Xăng,Van,Nhập khẩu,Cũ,7.0,Hồ Chí Minh,0.0,1,nan,chotot,29.0,6896.551724137931,0,1
+58.0,200000.0,1996.0,Chrysler,Grand Voyager,AT,Xăng,Van,Nhập khẩu,Cũ,7.0,Hồ Chí Minh,0.0,1,,chotot,29.0,6896.551724137931,0,1
 540.0,40000.0,2020.0,Kia,Seltos,AT,Xăng,SUV / Cross over,Trong nước,Cũ,5.0,Hồ Chí Minh,0.0,1,0e7d48ebbae82a62dddc150175d0fe8e,chotot,5.0,8000.0,0,1
 380.0,61000.0,2020.0,Kia,Cerato,MT,Xăng,Sedan,Nhập khẩu,Cũ,5.0,Thái Nguyên,0.0,1,95f26c5392e92f8059483c607e7a209d,chotot,5.0,12200.0,0,2
 1365.0,0.0,2025.0,Hyundai,Santa Fe,AT,Xăng,SUV / Cross over,Nhập khẩu,Mới,6.0,Cần Thơ,0.0,1,bebfbb7894f78c85c5a7e45019890ebf,chotot,0.0,0.0,0,1
@@ -2330,7 +2330,7 @@ price_million,km,year,brand,model,transmission,fuel_type,body_type,origin,condit
 465.0,40000.0,2023.0,Hyundai,Accent,AT,Xăng,Sedan,Trong nước,Cũ,5.0,Đà Nẵng,0.0,1,6e7e303f5f9b651e2085d48cb8b87a2d,chotot,2.0,20000.0,0,2
 145.0,308000.0,2016.0,Kia,Morning,MT,Xăng,Hatchback,Trong nước,Cũ,5.0,Đà Nẵng,0.0,1,1c3c9d674bad29a94fdaab41bd6d64e4,chotot,9.0,34222.22222222222,0,3
 130.0,15000.0,2012.0,Chevrolet,Spark,AT,Xăng,Hatchback,Nhập khẩu,Cũ,5.0,Thanh Hóa,0.0,1,4a7bff47ac9a59994f44119299f99c05,chotot,13.0,1153.8461538461538,0,1
-485.0,80000.0,2009.0,Toyota,Venza,AT,Xăng,SUV / Cross over,Nhập khẩu,Cũ,5.0,Hồ Chí Minh,0.0,1,nan,chotot,16.0,5000.0,0,1
+485.0,80000.0,2009.0,Toyota,Venza,AT,Xăng,SUV / Cross over,Nhập khẩu,Cũ,5.0,Hồ Chí Minh,0.0,1,,chotot,16.0,5000.0,0,1
 175.0,73000.0,2014.0,Chevrolet,Spark,AT,Xăng,Hatchback,Nhập khẩu,Cũ,5.0,Đồng Nai,0.0,1,f0af994eb64e92bf90b4385193ffd4e9,chotot,11.0,6636.363636363636,0,1
 85.0,240000.0,2003.0,Hyundai,Terracan,MT,Xăng,SUV / Cross over,Trong nước,Cũ,7.0,Quảng Ninh,0.0,1,f4ec2b6cfacbaf63a90069068b7b5d85,chotot,22.0,10909.09090909091,0,2
 435.0,190000.0,2015.0,Mazda,CX 5,AT,Xăng,SUV / Cross over,Trong nước,Cũ,5.0,Hồ Chí Minh,0.0,1,f21db02062738571bf78b9ed1b5ac610,chotot,10.0,19000.0,0,2
@@ -2341,7 +2341,7 @@ price_million,km,year,brand,model,transmission,fuel_type,body_type,origin,condit
 600.0,18000.0,2022.0,Kia,Seltos,AT,Xăng,SUV / Cross over,Trong nước,Cũ,5.0,Hồ Chí Minh,0.0,1,c9f09bd1970a9e6db3e80953bb753f09,chotot,3.0,6000.0,0,1
 350.0,190000.0,2016.0,Toyota,Innova,MT,Xăng,Minivan (MPV),Trong nước,Cũ,8.0,Đồng Tháp,0.0,1,188d18e9c2dabed10536957c36363c23,chotot,9.0,21111.11111111111,0,3
 450.0,12000.0,2023.0,MG,MG5,AT,Xăng,Sedan,Trong nước,Cũ,5.0,Đà Nẵng,0.0,1,4bccb62ed964c550a1531276c0363ff5,chotot,2.0,6000.0,0,1
-415.0,120000.0,2012.0,BMW,5 Series,AT,Xăng,Sedan,Nhập khẩu,Cũ,5.0,Long An,0.0,1,nan,chotot,13.0,9230.76923076923,1,1
+415.0,120000.0,2012.0,BMW,5 Series,AT,Xăng,Sedan,Nhập khẩu,Cũ,5.0,Long An,0.0,1,,chotot,13.0,9230.76923076923,1,1
 350.0,190000.0,2016.0,Toyota,Innova,MT,Xăng,Minivan (MPV),Trong nước,Cũ,8.0,Đồng Tháp,0.0,1,009caa5079f89761f0bde3d044d98204,chotot,9.0,21111.11111111111,0,3
 525.0,42000.0,2022.0,Mitsubishi,Xpander,AT,Xăng,Minivan (MPV),Nhập khẩu,Cũ,7.0,Đà Nẵng,0.0,1,bc4402f7783c1846000b1e232c7fcbe2,chotot,3.0,14000.0,0,2
 430.0,130000.0,2018.0,Honda,Civic,AT,Xăng,Sedan,Nhập khẩu,Cũ,5.0,Đồng Nai,0.0,1,ce45abbe01fe4bce1febcae7a4459cf9,chotot,7.0,18571.428571428572,0,2
@@ -2365,12 +2365,12 @@ price_million,km,year,brand,model,transmission,fuel_type,body_type,origin,condit
 86.0,160000.0,2004.0,Ford,Escape,AT,Xăng,SUV / Cross over,Nhập khẩu,Cũ,5.0,Bình Dương,0.0,1,9e22b99d8dbe2945926a631f57fa691d,chotot,21.0,7619.047619047619,0,1
 95.0,123456.0,2008.0,Daewoo,Gentra,MT,Xăng,Sedan,Nhập khẩu,Cũ,5.0,Hồ Chí Minh,0.0,1,165d71bec78d20bb73070f80fd04e982,chotot,17.0,7262.117647058823,0,1
 219.0,120000.0,2013.0,Kia,Picanto,AT,Xăng,Hatchback,Trong nước,Cũ,5.0,Đồng Nai,0.0,1,ef34641cc7332c09a5576b8fc22972ea,chotot,12.0,10000.0,0,2
-1120.0,70000.0,2020.0,Mercedes Benz,GLC,AT,Xăng,SUV / Cross over,Nhập khẩu,Cũ,5.0,Hồ Chí Minh,0.0,1,nan,chotot,5.0,14000.0,1,2
+1120.0,70000.0,2020.0,Mercedes Benz,GLC,AT,Xăng,SUV / Cross over,Nhập khẩu,Cũ,5.0,Hồ Chí Minh,0.0,1,,chotot,5.0,14000.0,1,2
 50.0,100000.0,2009.0,Chevrolet,Spark,MT,Xăng,Hatchback,Nhập khẩu,Cũ,5.0,Hồ Chí Minh,0.0,1,8c67068504b73eee320ba63a37484e4b,chotot,16.0,6250.0,0,1
 670.0,17000.0,2017.0,Honda,CR V,AT,Xăng,SUV / Cross over,Trong nước,Cũ,7.0,Hà Nội,0.0,1,5cfd653af103542efa78612c862e3f01,chotot,8.0,2125.0,0,1
-650.0,68000.0,2021.0,VinFast,Lux SA2.0,AT,Xăng,SUV / Cross over,Trong nước,Cũ,7.0,Hồ Chí Minh,0.0,1,nan,chotot,4.0,17000.0,0,2
+650.0,68000.0,2021.0,VinFast,Lux SA2.0,AT,Xăng,SUV / Cross over,Trong nước,Cũ,7.0,Hồ Chí Minh,0.0,1,,chotot,4.0,17000.0,0,2
 590.0,70000.0,2015.0,Mercedes Benz,C Class,AT,Xăng,Sedan,Trong nước,Cũ,5.0,Thái Nguyên,0.0,1,4d80a4efd9bb1a8f9769f8a0ad6f039d,chotot,10.0,7000.0,1,1
-1125.0,27.0,2023.0,Ford,Ranger,AT,Dầu,Pick-up (bán tải),Nhập khẩu,Cũ,5.0,Hồ Chí Minh,0.0,1,nan,chotot,2.0,13.5,0,1
+1125.0,27.0,2023.0,Ford,Ranger,AT,Dầu,Pick-up (bán tải),Nhập khẩu,Cũ,5.0,Hồ Chí Minh,0.0,1,,chotot,2.0,13.5,0,1
 288.0,80000.0,2014.0,Honda,City,AT,Xăng,Sedan,Trong nước,Cũ,5.0,Thừa Thiên Huế,0.0,1,05afdb5459c717d1ed50cb86e0655735,chotot,11.0,7272.727272727273,0,1
 219.0,86000.0,2016.0,Mitsubishi,Mirage,AT,Xăng,Hatchback,Nhập khẩu,Cũ,5.0,Hồ Chí Minh,0.0,1,58a3fdd9b5b75e72f6e4b46adae4a47b,chotot,9.0,9555.555555555555,0,1
 280.0,85500.0,2017.0,Chevrolet,Cruze,AT,Xăng,Sedan,Trong nước,Cũ,5.0,Hồ Chí Minh,0.0,1,d79d9f5f48fe54e1db7075cd15fd1db7,chotot,8.0,10687.5,0,2
@@ -2405,7 +2405,7 @@ price_million,km,year,brand,model,transmission,fuel_type,body_type,origin,condit
 175.0,7.0,2014.0,Suzuki,APV,MT,Xăng,Minivan (MPV),Nhập khẩu,Cũ,5.0,Hà Nội,0.0,1,17b18a8f98cb6f5299eacef457de250f,chotot,11.0,0.6363636363636364,0,1
 485.0,0.0,2025.0,Hãng khác,Dòng khác,AT,Xăng,SUV / Cross over,Nhập khẩu,Cũ,7.0,Cần Thơ,0.0,1,a9293e150d17af7643b730d6a60f5dbe,chotot,0.0,0.0,0,1
 403.0,82000.0,2021.0,Mitsubishi,Xpander,MT,Xăng,Minivan (MPV),Nhập khẩu,Cũ,7.0,Hà Nội,0.0,1,d84c034840c6b9afb93a5d7050e466bc,chotot,4.0,20500.0,0,3
-289.0,71000.0,2019.0,Kia,Morning,AT,Xăng,Hatchback,Trong nước,Cũ,5.0,Gia Lai,0.0,1,nan,chotot,6.0,11833.333333333334,0,2
+289.0,71000.0,2019.0,Kia,Morning,AT,Xăng,Hatchback,Trong nước,Cũ,5.0,Gia Lai,0.0,1,,chotot,6.0,11833.333333333334,0,2
 475.0,90000.0,2015.0,Toyota,Fortuner,AT,Xăng,SUV / Cross over,Trong nước,Cũ,7.0,Hồ Chí Minh,0.0,1,86c09972044936bfa448fa5f5ba58275,chotot,10.0,9000.0,0,1
 140.0,307000.0,2016.0,Kia,Morning,MT,Xăng,Hatchback,Trong nước,Cũ,5.0,Đà Nẵng,0.0,1,faebbc2fcb530db5ca1fe696c4f40131,chotot,9.0,34111.11111111111,0,3
 220.0,153000.0,2021.0,Hyundai,Grand i10,MT,Xăng,Sedan,Trong nước,Cũ,5.0,Nghệ An,0.0,1,a441f77bd989c2cc983219aa03692d30,chotot,4.0,38250.0,0,3
@@ -2487,12 +2487,12 @@ price_million,km,year,brand,model,transmission,fuel_type,body_type,origin,condit
 450.0,320000.0,2016.0,Isuzu,Mu X,AT,Dầu,SUV / Cross over,Trong nước,Cũ,7.0,Hà Nội,0.0,1,4c1132b497c5130c150a53db429585b0,chotot,9.0,35555.555555555555,0,3
 655.0,34334.0,2022.0,VinFast,VF8,AT,Điện,SUV / Cross over,Trong nước,Cũ,7.0,Hà Nội,0.0,1,02ef8a8d28f58b9315ef5fa2e1b55486,chotot,3.0,11444.666666666666,0,2
 695.0,102000.0,2018.0,Mercedes Benz,C Class,AT,Xăng,Sedan,Trong nước,Cũ,5.0,Hồ Chí Minh,0.0,1,c6ae5c8781c0ad173c0e617758d18537,chotot,7.0,14571.42857142857,1,2
-719.0,81000.0,2022.0,Mazda,CX 5,AT,Xăng,SUV / Cross over,Trong nước,Cũ,5.0,Gia Lai,0.0,1,nan,chotot,3.0,27000.0,0,3
+719.0,81000.0,2022.0,Mazda,CX 5,AT,Xăng,SUV / Cross over,Trong nước,Cũ,5.0,Gia Lai,0.0,1,,chotot,3.0,27000.0,0,3
 570.0,23878.0,2022.0,VinFast,Lux A2.0,AT,Xăng,Sedan,Trong nước,Cũ,5.0,Hải Phòng,0.0,1,88807db0ec2c2b1d56ff3ba1f87827ba,chotot,3.0,7959.333333333333,0,1
 750.0,165000.0,2019.0,Hyundai,Solati,MT,Dầu,SUV / Cross over,Trong nước,Cũ,16.0,Hồ Chí Minh,0.0,1,18fc336bbdc7bf93a6a125cd002f0fcf,chotot,6.0,27500.0,0,3
 290.0,1234.0,2024.0,Hãng khác,Dòng khác,AT,Xăng,Kiểu dáng khác,Nhập khẩu,Cũ,5.0,Hồ Chí Minh,0.0,1,bb0dcd1b3ae05f4256c311f5cd19234b,chotot,1.0,1234.0,0,1
 320.0,76000.0,2009.0,Toyota,Camry,AT,Xăng,Sedan,Trong nước,Cũ,5.0,Đồng Nai,0.0,1,f3ab9c77c7da9bd9d92a073680d3c0cd,chotot,16.0,4750.0,0,1
-798.0,0.0,2025.0,Volkswagen,Golf,AT,Xăng,Hatchback,Nhập khẩu,Mới,5.0,Hồ Chí Minh,0.0,1,nan,chotot,0.0,0.0,0,1
+798.0,0.0,2025.0,Volkswagen,Golf,AT,Xăng,Hatchback,Nhập khẩu,Mới,5.0,Hồ Chí Minh,0.0,1,,chotot,0.0,0.0,0,1
 230.0,11000.0,2013.0,Mazda,2,AT,Xăng,Sedan,Trong nước,Cũ,5.0,Đồng Nai,0.0,1,4a9d36eb08af009f2f82d01a19042969,chotot,12.0,916.6666666666666,0,1
 1400.0,280000.0,2020.0,Mercedes Benz,E Class,AT,Xăng,Sedan,Trong nước,Cũ,5.0,Hồ Chí Minh,0.0,1,4960ff6a651a6801c74331ef4a4c8e28,chotot,5.0,56000.0,1,3
 485.0,0.0,2022.0,VinFast,VF8,AT,Xăng,SUV / Cross over,Nhập khẩu,Cũ,9.0,Hồ Chí Minh,0.0,1,09c99d163c5944302bd4924978fd45be,chotot,3.0,0.0,0,1
@@ -2518,9 +2518,9 @@ price_million,km,year,brand,model,transmission,fuel_type,body_type,origin,condit
 335.0,26000.0,2019.0,VinFast,Fadil,AT,Xăng,Hatchback,Trong nước,Cũ,5.0,Hà Nội,0.0,1,1c7c915b70401e052604abf8bc0dace8,chotot,6.0,4333.333333333333,0,1
 415.0,83000.0,2020.0,Toyota,Vios,AT,Xăng,Sedan,Trong nước,Cũ,5.0,Hà Nội,0.0,1,f868ec636226df9086ce75cbd0956807,chotot,5.0,16600.0,0,2
 610.0,35000.0,2023.0,Nissan,Kicks,AT,Hybrid,SUV / Cross over,Trong nước,Cũ,5.0,Vĩnh Long,0.0,1,c9d160f4b8f79fbf20b7f265bc3e546b,chotot,2.0,17500.0,0,2
-2104.0,0.0,2025.0,BMW,X3,AT,Xăng,SUV / Cross over,Nhập khẩu,Mới,5.0,Hà Nội,0.0,1,nan,chotot,0.0,0.0,1,1
+2104.0,0.0,2025.0,BMW,X3,AT,Xăng,SUV / Cross over,Nhập khẩu,Mới,5.0,Hà Nội,0.0,1,,chotot,0.0,0.0,1,1
 390.0,20000.0,2017.0,Toyota,Innova,MT,Xăng,Minivan (MPV),Trong nước,Cũ,8.0,Hà Nội,0.0,1,7f9299a7eb700d4c65e72a3add616854,chotot,8.0,2500.0,0,1
-442.0,0.0,2025.0,Kia,Dòng khác,AT,Xăng,Kiểu dáng khác,Nhập khẩu,Mới,2.0,Hồ Chí Minh,0.0,1,nan,chotot,0.0,0.0,0,1
+442.0,0.0,2025.0,Kia,Dòng khác,AT,Xăng,Kiểu dáng khác,Nhập khẩu,Mới,2.0,Hồ Chí Minh,0.0,1,,chotot,0.0,0.0,0,1
 630.0,900.0,2025.0,Hyundai,Elantra,AT,Xăng,Sedan,Trong nước,Cũ,5.0,Hồ Chí Minh,0.0,1,0cea369af866b6168ed0a7e390731fc6,chotot,0.0,0.0,0,1
 495.0,130000.0,2019.0,Ford,Ranger,AT,Dầu,Pick-up (bán tải),Nhập khẩu,Cũ,5.0,Bà Rịa,0.0,1,8598d25f123673b110986bc2a769e4bc,chotot,6.0,21666.666666666668,0,3
 320.0,42000.0,2022.0,VinFast,Fadil,AT,Xăng,Hatchback,Trong nước,Cũ,5.0,Đắk Lắk,0.0,1,5b2b4926ca74197cf33caf0b51f1b2c3,chotot,3.0,14000.0,0,2
@@ -2556,10 +2556,10 @@ price_million,km,year,brand,model,transmission,fuel_type,body_type,origin,condit
 499.0,0.0,2025.0,Geely,Coolray,AT,Xăng,SUV / Cross over,Nhập khẩu,Cũ,5.0,Đồng Nai,0.0,1,93559d7fcfabc7f6abcc3f0cb79fd829,chotot,0.0,0.0,0,1
 803.0,81000.0,2019.0,Hyundai,Santa Fe,AT,Dầu,SUV / Cross over,Trong nước,Cũ,7.0,Hà Nội,0.0,1,77b68475aaabb3622ff5ecd53ae27c87,chotot,6.0,13500.0,0,2
 210.0,15060.0,2019.0,Toyota,Wigo,MT,Xăng,Hatchback,Nhập khẩu,Cũ,5.0,Đồng Nai,0.0,1,7b091ceffbd2ac45b64d0f6f7959bc9a,chotot,6.0,2510.0,0,1
-600.0,120000.0,2016.0,Toyota,Camry,AT,Xăng,Sedan,Trong nước,Cũ,5.0,Đồng Nai,0.0,1,nan,chotot,9.0,13333.333333333334,0,2
+600.0,120000.0,2016.0,Toyota,Camry,AT,Xăng,Sedan,Trong nước,Cũ,5.0,Đồng Nai,0.0,1,,chotot,9.0,13333.333333333334,0,2
 806.0,80000.0,2019.0,Hyundai,Santa Fe,AT,Dầu,SUV / Cross over,Trong nước,Cũ,7.0,Hà Nội,0.0,1,d97086670abd9b2ec6220dc9df7c0092,chotot,6.0,13333.333333333334,0,2
-495.0,0.0,2025.0,Kia,Sonet,AT,Xăng,SUV / Cross over,Nhập khẩu,Mới,5.0,Hồ Chí Minh,0.0,1,nan,chotot,0.0,0.0,0,1
-589.0,0.0,2025.0,Kia,Carens,AT,Xăng,Minivan (MPV),Nhập khẩu,Mới,5.0,Hồ Chí Minh,0.0,1,nan,chotot,0.0,0.0,0,1
+495.0,0.0,2025.0,Kia,Sonet,AT,Xăng,SUV / Cross over,Nhập khẩu,Mới,5.0,Hồ Chí Minh,0.0,1,,chotot,0.0,0.0,0,1
+589.0,0.0,2025.0,Kia,Carens,AT,Xăng,Minivan (MPV),Nhập khẩu,Mới,5.0,Hồ Chí Minh,0.0,1,,chotot,0.0,0.0,0,1
 585.0,41000.0,2023.0,Kia,Carens,AT,Xăng,SUV / Cross over,Trong nước,Cũ,7.0,Đắk Lắk,0.0,1,e9b60f134439740031cbce10361da078,chotot,2.0,20500.0,0,3
 456.0,120000.0,2019.0,Chevrolet,Colorado,AT,Dầu,Pick-up (bán tải),Nhập khẩu,Cũ,5.0,Lâm Đồng,0.0,1,6ff35e63738e5cf30593b566b23d6f19,chotot,6.0,20000.0,0,2
 336.0,95.0,2018.0,Mazda,2,AT,Xăng,Sedan,Trong nước,Cũ,5.0,Gia Lai,0.0,1,abb1a0f6bfe6c21268c031f2820ea61d,chotot,7.0,13.571428571428571,0,1
@@ -2616,7 +2616,7 @@ price_million,km,year,brand,model,transmission,fuel_type,body_type,origin,condit
 405.0,100000.0,2018.0,Mazda,3,AT,Xăng,Sedan,Trong nước,Cũ,5.0,Thanh Hóa,0.0,1,03bc95f939a18f4acf070dddf456b28b,chotot,7.0,14285.714285714286,0,2
 280.0,93000.0,2016.0,Ford,EcoSport,AT,Xăng,SUV / Cross over,Trong nước,Cũ,7.0,Hà Nội,0.0,1,030d88f414db8915ab770bd972c2c77a,chotot,9.0,10333.333333333334,0,2
 1379.0,0.0,2025.0,Toyota,Camry,AT,Hybrid,Sedan,Nhập khẩu,Mới,5.0,Hồ Chí Minh,0.0,1,4444894b26d43eda83debd9535808d66,chotot,0.0,0.0,0,1
-440.0,72000.0,2022.0,Hyundai,Stargazer,AT,Xăng,Minivan (MPV),Nhập khẩu,Cũ,6.0,Long An,0.0,1,nan,chotot,3.0,24000.0,0,3
+440.0,72000.0,2022.0,Hyundai,Stargazer,AT,Xăng,Minivan (MPV),Nhập khẩu,Cũ,6.0,Long An,0.0,1,,chotot,3.0,24000.0,0,3
 400.0,35000.0,2021.0,Volkswagen,Polo,AT,Xăng,Hatchback,Nhập khẩu,Cũ,5.0,Hồ Chí Minh,0.0,1,080bb581c928dab011e7952b38413c31,chotot,4.0,8750.0,0,1
 195.0,220000.0,2007.0,Ford,Everest,MT,Dầu,SUV / Cross over,Nhập khẩu,Cũ,7.0,Lâm Đồng,0.0,1,d4c53d3cb4b59f2ee329f0ca04cc3782,chotot,18.0,12222.222222222223,0,2
 500.0,11000.0,2020.0,Mitsubishi,Xpander,AT,Xăng,Minivan (MPV),Trong nước,Cũ,7.0,Hồ Chí Minh,0.0,1,a7495145caef8abfa851624b68d8f927,chotot,5.0,2200.0,0,1
@@ -2673,7 +2673,7 @@ price_million,km,year,brand,model,transmission,fuel_type,body_type,origin,condit
 2500.0,10000.0,2021.0,Toyota,Dòng khác,AT,Xăng,Kiểu dáng khác,Nhập khẩu,Cũ,5.0,Hà Tĩnh,0.0,1,1e3d71d1cea31a1536dbaf8edc1a4cea,chotot,4.0,2500.0,0,1
 199.0,200000.0,2009.0,Hyundai,Tucson,AT,Xăng,SUV / Cross over,Nhập khẩu,Cũ,5.0,Gia Lai,0.0,1,454261b78592aa886bf8d0ca34ab15c3,chotot,16.0,12500.0,0,2
 485.0,48000.0,2023.0,Toyota,Avanza Premio,AT,Xăng,SUV,Trong nước,Cũ,7.0,Hồ Chí Minh,0.0,1,2f2f0d0e9400ea6149de0d4842f3ddd0,chotot,2.0,24000.0,0,3
-540.0,0.0,2025.0,Mitsubishi,Xpander,AT,Xăng,SUV / Cross over,Nhập khẩu,Cũ,7.0,Đà Nẵng,0.0,1,nan,chotot,0.0,0.0,0,1
+540.0,0.0,2025.0,Mitsubishi,Xpander,AT,Xăng,SUV / Cross over,Nhập khẩu,Cũ,7.0,Đà Nẵng,0.0,1,,chotot,0.0,0.0,0,1
 465.0,30000.0,2023.0,Toyota,Vios,AT,Xăng,Sedan,Trong nước,Cũ,5.0,Bắc Ninh,0.0,1,80220fc98cd3431d90c761f4bb6ad012,chotot,2.0,15000.0,0,2
 205.0,200000.0,2010.0,Honda,Civic,MT,Xăng,Sedan,Trong nước,Cũ,5.0,Đắk Nông,0.0,1,335b986f45ef25c616b911cab719e733,chotot,15.0,13333.333333333334,0,2
 345.0,200000.0,2016.0,Ford,Transit,MT,Dầu,Van,Trong nước,Cũ,16.0,Bình Dương,0.0,1,62462edde504acf91872e9a01a71ec93,chotot,9.0,22222.222222222223,0,3
@@ -2724,7 +2724,7 @@ price_million,km,year,brand,model,transmission,fuel_type,body_type,origin,condit
 290.0,80000.0,2020.0,VinFast,Fadil,AT,Xăng,Hatchback,Trong nước,Cũ,5.0,Cần Thơ,0.0,1,c6a524c587f7b65e1e41c5689dae6678,chotot,5.0,16000.0,0,2
 110.0,300000.0,2007.0,Toyota,Innova,MT,Xăng,Sedan,Trong nước,Cũ,8.0,Bắc Giang,0.0,1,01ae081e2f4e0bbf30341cdf7da19b77,chotot,18.0,16666.666666666668,0,2
 450.0,187000.0,2015.0,Toyota,Fortuner,AT,Xăng,SUV / Cross over,Trong nước,Cũ,7.0,Hà Tĩnh,0.0,1,1a3e0d951747c4bd60d126dee663d9d4,chotot,10.0,18700.0,0,2
-955.0,17.0,2024.0,Ford,Ranger,AT,Dầu,Pick-up (bán tải),Nhập khẩu,Cũ,5.0,Hồ Chí Minh,0.0,1,nan,chotot,1.0,17.0,0,1
+955.0,17.0,2024.0,Ford,Ranger,AT,Dầu,Pick-up (bán tải),Nhập khẩu,Cũ,5.0,Hồ Chí Minh,0.0,1,,chotot,1.0,17.0,0,1
 75.0,45000.0,2005.0,Kia,Dòng khác,MT,Dầu,Kiểu dáng khác,Trong nước,Cũ,5.0,Bình Dương,0.0,1,85fc39ed4ef75412a1a22da68b43d310,chotot,20.0,2250.0,0,1
 449.0,49000.0,2022.0,Suzuki,XL 7,AT,Xăng,SUV / Cross over,Nhập khẩu,Cũ,7.0,Hà Nội,0.0,1,5010185089ffe9e53f5fcaf6354e5018,chotot,3.0,16333.333333333334,0,2
 200.0,130000.0,2008.0,Chevrolet,Captiva,AT,Xăng,SUV / Cross over,Nhập khẩu,Cũ,7.0,Đồng Nai,0.0,1,7bbf01a4cc480723ba87e2b3c50a7744,chotot,17.0,7647.058823529412,0,1
@@ -2735,7 +2735,7 @@ price_million,km,year,brand,model,transmission,fuel_type,body_type,origin,condit
 750.0,200000.0,2021.0,Toyota,Fortuner,MT,Dầu,SUV / Cross over,Trong nước,Cũ,7.0,Quảng Ngãi,0.0,1,a3638f643e829b0744533f180b81f8ca,chotot,4.0,50000.0,0,3
 215.0,150000.0,2020.0,Hyundai,Grand i10,MT,Xăng,Sedan,Trong nước,Cũ,5.0,Hồ Chí Minh,0.0,1,62ecdc862371614b26a8d0b199aab8da,chotot,5.0,30000.0,0,3
 605.0,57000.0,2023.0,Mitsubishi,Xpander Cross,AT,Xăng,Minivan (MPV),Nhập khẩu,Cũ,7.0,Gia Lai,0.0,1,cf6130ee95778ca79989edd3ba145fc3,chotot,2.0,28500.0,0,3
-245.0,71300.0,2010.0,Mercedes Benz,C Class,AT,Xăng,Sedan,Trong nước,Cũ,5.0,Hồ Chí Minh,0.0,1,nan,chotot,15.0,4753.333333333333,1,1
+245.0,71300.0,2010.0,Mercedes Benz,C Class,AT,Xăng,Sedan,Trong nước,Cũ,5.0,Hồ Chí Minh,0.0,1,,chotot,15.0,4753.333333333333,1,1
 320.0,88000.0,2021.0,Kia,Morning,AT,Xăng,Hatchback,Trong nước,Cũ,5.0,Bà Rịa,0.0,1,f7053a5def49b2ae2406a6881f3e844f,chotot,4.0,22000.0,0,3
 465.0,40000.0,2019.0,Kia,Cerato,AT,Xăng,Sedan,Nhập khẩu,Cũ,5.0,Bình Thuận,0.0,1,f0e183e47b7ef358ec254b7dbba0ace9,chotot,6.0,6666.666666666667,0,1
 650.0,37000.0,2023.0,Nissan,Kicks,AT,Hybrid,SUV / Cross over,Trong nước,Cũ,5.0,Hà Nội,0.0,1,9fab69def8406026eabae20965292e49,chotot,2.0,18500.0,0,2
@@ -2763,9 +2763,9 @@ price_million,km,year,brand,model,transmission,fuel_type,body_type,origin,condit
 265.0,100000.0,2014.0,Suzuki,Swift,AT,Xăng,Hatchback,Trong nước,Cũ,5.0,Hà Nội,0.0,1,c2af29a5e9668f806085eb3b3abbfcba,chotot,11.0,9090.90909090909,0,1
 179.999999,8888.0,2009.0,Daewoo,GentraX,AT,Xăng,Hatchback,Nhập khẩu,Cũ,5.0,Hồ Chí Minh,0.0,1,b4250605656e2fd499c6e73ed42866f4,chotot,16.0,555.5,0,1
 75.0,12000.0,2009.0,Daewoo,Lacetti,AT,Xăng,Sedan,Nhập khẩu,Cũ,5.0,Khánh Hòa,0.0,1,683cde5364a410757e36f7edec530e93,chotot,16.0,750.0,0,1
-560.0,72000.0,2019.0,VinFast,Lux SA2.0,AT,Xăng,SUV / Cross over,Trong nước,Cũ,7.0,Hồ Chí Minh,0.0,1,nan,chotot,6.0,12000.0,0,2
+560.0,72000.0,2019.0,VinFast,Lux SA2.0,AT,Xăng,SUV / Cross over,Trong nước,Cũ,7.0,Hồ Chí Minh,0.0,1,,chotot,6.0,12000.0,0,2
 650.0,130000.0,2016.0,Maybach,Dòng khác,AT,Xăng,Sedan,Nhập khẩu,Cũ,5.0,Đắk Lắk,0.0,1,058dedc62e7184efc422b38017618805,chotot,9.0,14444.444444444445,0,2
-488.888888,0.0,2025.0,Honda,City,AT,Xăng,SUV / Cross over,Trong nước,Mới,4.0,Hà Nội,0.0,1,nan,chotot,0.0,0.0,0,1
+488.888888,0.0,2025.0,Honda,City,AT,Xăng,SUV / Cross over,Trong nước,Mới,4.0,Hà Nội,0.0,1,,chotot,0.0,0.0,0,1
 425.0,160000.0,2022.0,Suzuki,XL 7,AT,Xăng,SUV / Cross over,Trong nước,Cũ,7.0,Bà Rịa,0.0,1,8f430f6e8a1fb56b9521e2c884e90c8d,chotot,3.0,53333.333333333336,0,3
 580.0,180000.0,2017.0,Hyundai,Solati,MT,Dầu,SUV / Cross over,Nhập khẩu,Cũ,10.0,Hồ Chí Minh,0.0,1,1cdd77a69449a1f7f986ab3ecba6f0e8,chotot,8.0,22500.0,0,3
 710.0,62000.0,2012.0,Audi,Q7,AT,Xăng,SUV / Cross over,Nhập khẩu,Cũ,7.0,Hồ Chí Minh,0.0,1,b67d687176fc927a12acb45dc140d20b,chotot,13.0,4769.2307692307695,0,1
@@ -2815,11 +2815,11 @@ price_million,km,year,brand,model,transmission,fuel_type,body_type,origin,condit
 460.0,150000.0,2018.0,Ford,Transit,MT,Dầu,Kiểu dáng khác,Trong nước,Cũ,16.0,Hà Nội,0.0,1,d6fcd801cd20307f9d45f3b6cbce19ec,chotot,7.0,21428.571428571428,0,3
 255.0,15800.0,2016.0,Isuzu,Dmax,AT,Dầu,Pick-up (bán tải),Nhập khẩu,Cũ,5.0,Hồ Chí Minh,0.0,1,942dc54604ce53c82664112c83bf36a3,chotot,9.0,1755.5555555555557,0,1
 385.0,70000.0,2019.0,Toyota,Vios,AT,Xăng,Sedan,Trong nước,Cũ,5.0,Hồ Chí Minh,0.0,1,d3eaeaeee2f29c927e26b3ae64c5a9bb,chotot,6.0,11666.666666666666,0,2
-55.0,400000.0,2005.0,Daewoo,Matiz,MT,Xăng,Hatchback,Trong nước,Cũ,5.0,Đồng Nai,0.0,1,nan,chotot,20.0,20000.0,0,2
+55.0,400000.0,2005.0,Daewoo,Matiz,MT,Xăng,Hatchback,Trong nước,Cũ,5.0,Đồng Nai,0.0,1,,chotot,20.0,20000.0,0,2
 170.0,234567.0,2015.0,Hyundai,Grand i10,MT,Xăng,Hatchback,Trong nước,Cũ,5.0,Đắk Lắk,0.0,1,9c65c6e9c2e07caeafefc18689d2d215,chotot,10.0,23456.7,0,3
 245.0,116000.0,2011.0,BMW,X1,AT,Xăng,SUV / Cross over,Nhập khẩu,Cũ,5.0,Đà Nẵng,0.0,1,0b289480fc6b9c111383837ce2a1bfa8,chotot,14.0,8285.714285714286,1,1
 300.0,249999.0,2015.0,Ford,Transit,MT,Dầu,Van,Nhập khẩu,Cũ,16.0,Đồng Nai,0.0,1,b8d164b36a7b040272e82c3c9587cd5f,chotot,10.0,24999.9,0,3
-640.0,31000.0,2021.0,Hyundai,Tucson,AT,Xăng,SUV / Cross over,Trong nước,Cũ,5.0,Hà Nội,0.0,1,nan,chotot,4.0,7750.0,0,1
+640.0,31000.0,2021.0,Hyundai,Tucson,AT,Xăng,SUV / Cross over,Trong nước,Cũ,5.0,Hà Nội,0.0,1,,chotot,4.0,7750.0,0,1
 155.0,64000.0,2010.0,Chevrolet,Cruze,MT,Xăng,Sedan,Trong nước,Cũ,5.0,Hồ Chí Minh,0.0,1,df05bbdf395872f2f6a3081780b5bfa5,chotot,15.0,4266.666666666667,0,1
 156.0,0.0,2001.0,Toyota,Camry,MT,Xăng,Sedan,Trong nước,Cũ,5.0,Hồ Chí Minh,0.0,1,c75683499ef63faa3390cdcb84113b57,chotot,24.0,0.0,0,1
 525.0,68000.0,2019.0,Mitsubishi,Outlander,AT,Xăng,SUV / Cross over,Trong nước,Cũ,7.0,Hà Nội,0.0,1,2708ffec6c7cb37088cbc42bf628bb56,chotot,6.0,11333.333333333334,0,2
@@ -2834,7 +2834,7 @@ price_million,km,year,brand,model,transmission,fuel_type,body_type,origin,condit
 500.0,26412.0,2020.0,Mitsubishi,Xpander Cross,AT,Xăng,Minivan (MPV),Nhập khẩu,Cũ,7.0,Hồ Chí Minh,0.0,1,26bd31d9f9da9a6e5b05d94799a008d4,chotot,5.0,5282.4,0,1
 650.0,5000.0,2024.0,Mazda,3,AT,Xăng,Hatchback,Trong nước,Cũ,5.0,Hồ Chí Minh,0.0,1,6a524cad676989fff8e79e9ccb0ee24e,chotot,1.0,5000.0,0,1
 248.0,10.0,2024.0,VinFast,VF3,AT,Điện,SUV / Cross over,Trong nước,Cũ,4.0,Hà Nội,0.0,1,4e0775778777a57a916d8064d7df6e47,chotot,1.0,10.0,0,1
-300.0,0.0,2025.0,Hyundai,Solati,MT,Dầu,Kiểu dáng khác,Nhập khẩu,Mới,16.0,Hậu Giang,0.0,1,nan,chotot,0.0,0.0,0,1
+300.0,0.0,2025.0,Hyundai,Solati,MT,Dầu,Kiểu dáng khác,Nhập khẩu,Mới,16.0,Hậu Giang,0.0,1,,chotot,0.0,0.0,0,1
 1299.0,0.0,2025.0,Ford,Ranger,AT,Dầu,Pick-up (bán tải),Nhập khẩu,Mới,5.0,Lâm Đồng,0.0,1,cf9f8cd8879a93cba1066f85ce4b80e1,chotot,0.0,0.0,0,1
 225.0,100000.0,2013.0,Toyota,Innova,AT,Xăng,Minivan (MPV),Trong nước,Cũ,7.0,Hồ Chí Minh,0.0,1,e35db1642b905a9bb6ccdc688a854fb3,chotot,12.0,8333.333333333334,0,1
 760.0,83300.0,2018.0,Kia,Sedona,AT,Dầu,Minivan (MPV),Trong nước,Cũ,7.0,Tây Ninh,0.0,1,d16ca0e63154136277366918b8bf79b4,chotot,7.0,11900.0,0,2
@@ -2860,7 +2860,7 @@ price_million,km,year,brand,model,transmission,fuel_type,body_type,origin,condit
 850.0,37773.0,2021.0,Peugeot,3008,AT,Xăng,SUV / Cross over,Nhập khẩu,Cũ,5.0,Hải Phòng,0.0,1,fac34bef1529addd99495c1d8cb1d048,chotot,4.0,9443.25,0,1
 295.0,150000.0,2013.0,Mazda,3,AT,Xăng,Hatchback,Trong nước,Cũ,5.0,Đắk Lắk,0.0,1,ce941f3787534838cbb63cf9d16dbed4,chotot,12.0,12500.0,0,2
 620.0,90000.0,2020.0,Mazda,CX 5,AT,Xăng,SUV / Cross over,Trong nước,Cũ,5.0,Hồ Chí Minh,0.0,1,2591a204cdb6b5309284f9739bf1a249,chotot,5.0,18000.0,0,2
-889.0,0.0,2025.0,Chery,Jaecoo 7,AT,Hybrid,SUV / Cross over,Nhập khẩu,Mới,5.0,Hồ Chí Minh,0.0,1,nan,chotot,0.0,0.0,0,1
+889.0,0.0,2025.0,Chery,Jaecoo 7,AT,Hybrid,SUV / Cross over,Nhập khẩu,Mới,5.0,Hồ Chí Minh,0.0,1,,chotot,0.0,0.0,0,1
 195.0,130000.0,2020.0,Hyundai,Grand i10,MT,Xăng,Hatchback,Trong nước,Cũ,5.0,Hồ Chí Minh,0.0,1,da22090e974bf089f1c01e0a2594feec,chotot,5.0,26000.0,0,3
 476.0,0.0,2025.0,VinFast,VF5,AT,Điện,SUV / Cross over,Trong nước,Mới,5.0,Hồ Chí Minh,0.0,1,076b023964f54c9e727d36afca6e71b3,chotot,0.0,0.0,0,1
 130.0,30000.0,2011.0,Chevrolet,Aveo,MT,Xăng,Sedan,Nhập khẩu,Cũ,5.0,Khánh Hòa,0.0,1,6272d7b73fe7daf8ac6fcb8a6a67098c,chotot,14.0,2142.8571428571427,0,1
@@ -2879,7 +2879,7 @@ price_million,km,year,brand,model,transmission,fuel_type,body_type,origin,condit
 254.0,60000.0,2015.0,Hyundai,Grand i10,AT,Xăng,Sedan,Nhập khẩu,Cũ,5.0,Đắk Lắk,0.0,1,bae5f2e380cbd613f1e33e22717313db,chotot,10.0,6000.0,0,1
 390.0,100000.0,2017.0,Toyota,Innova,MT,Xăng,Minivan (MPV),Trong nước,Cũ,8.0,unknow,0.0,1,b1b71e990a28390817a2f0e0e83f4702,chotot,8.0,12500.0,0,2
 185.0,30000.0,2010.0,Toyota,Innova,MT,Xăng,Minivan (MPV),Trong nước,Cũ,8.0,Yên Bái,0.0,1,87c5cc4238ecf535fd53e035efd9ea74,chotot,15.0,2000.0,0,1
-4000.0,58000.0,2020.0,Mercedes Benz,S Class,AT,Xăng,Sedan,Trong nước,Cũ,4.0,Hà Nội,0.0,1,nan,chotot,5.0,11600.0,1,2
+4000.0,58000.0,2020.0,Mercedes Benz,S Class,AT,Xăng,Sedan,Trong nước,Cũ,4.0,Hà Nội,0.0,1,,chotot,5.0,11600.0,1,2
 1800.0,62000.0,2020.0,BMW,X4,AT,Xăng,SUV / Cross over,Nhập khẩu,Cũ,5.0,Hồ Chí Minh,0.0,1,0ff0c413d1673f130067eb3939898924,chotot,5.0,12400.0,1,2
 205.0,13230.0,2025.0,Dongfeng,Box,MT,Xăng,Van,Nhập khẩu,Cũ,2.0,Hồ Chí Minh,0.0,1,fcddd90fae2dc3b0493f4146a0c45ab4,chotot,0.0,0.0,0,1
 630.0,43000.0,2018.0,Nissan,Terra,AT,Xăng,SUV / Cross over,Nhập khẩu,Cũ,7.0,Hà Nội,0.0,1,1153a7f31ea5d05811e9d305d785c92f,chotot,7.0,6142.857142857143,0,1
@@ -2916,7 +2916,7 @@ price_million,km,year,brand,model,transmission,fuel_type,body_type,origin,condit
 720.0,81000.0,2019.0,Ford,Dòng khác,AT,Xăng,SUV / Cross over,Nhập khẩu,Cũ,7.0,Hồ Chí Minh,0.0,1,c7b05bc60a9a4cf99caac2c4145b24ff,chotot,6.0,13500.0,0,2
 1545.0,0.0,2025.0,Ford,Everest,AT,Dầu,SUV / Cross over,Trong nước,Cũ,7.0,Hà Nội,0.0,1,3e109ebf6dd9b53b8fcb41964122944d,chotot,0.0,0.0,0,1
 1545.0,0.0,2025.0,Ford,Everest,AT,Dầu,SUV / Cross over,Nhập khẩu,Mới,7.0,Lâm Đồng,0.0,1,e9c0c5fee789eded22f7279ba56c2e7d,chotot,0.0,0.0,0,1
-485.0,0.0,2025.0,VinFast,VF5 Plus,AT,Điện,SUV / Cross over,Trong nước,Cũ,5.0,Hà Nội,0.0,1,nan,chotot,0.0,0.0,0,1
+485.0,0.0,2025.0,VinFast,VF5 Plus,AT,Điện,SUV / Cross over,Trong nước,Cũ,5.0,Hà Nội,0.0,1,,chotot,0.0,0.0,0,1
 450.0,170000.0,2017.0,Honda,Civic,AT,Xăng,Sedan,Nhập khẩu,Cũ,5.0,Đồng Nai,0.0,1,80a2dea30b19637c2a7e4d140f18969e,chotot,8.0,21250.0,0,3
 57.0,100000.0,2005.0,Suzuki,Dòng khác,MT,Xăng,Kiểu dáng khác,Nhập khẩu,Cũ,5.0,Bến Tre,0.0,1,160276ca293d3130798d498746b6e828,chotot,20.0,5000.0,0,1
 839.0,79000.0,2019.0,Mercedes Benz,C Class,AT,Xăng,Sedan,Trong nước,Cũ,5.0,Hồ Chí Minh,0.0,1,5204c92c25cb6e62028b41702200c58e,chotot,6.0,13166.666666666666,1,2
@@ -2939,7 +2939,7 @@ price_million,km,year,brand,model,transmission,fuel_type,body_type,origin,condit
 138.0,80000.0,2015.0,Suzuki,Super Carry Van,MT,Xăng,Van,Nhập khẩu,Cũ,2.0,Khánh Hòa,0.0,1,8a12bb97be3ec94c2937748cdac816ee,chotot,10.0,8000.0,0,1
 335.0,29000.0,2019.0,Mitsubishi,Xpander,MT,Xăng,Minivan (MPV),Nhập khẩu,Cũ,5.0,Quảng Nam,0.0,1,aec8853f24704a5989a319ce1f63e9d0,chotot,6.0,4833.333333333333,0,1
 95.0,100.0,2007.0,Kia,Morning,AT,Xăng,Hatchback,Trong nước,Cũ,5.0,Đồng Nai,0.0,1,b15943f618b8010bde7fc6d4aea43336,chotot,18.0,5.555555555555555,0,1
-269.0,0.0,2025.0,Hãng khác,Dòng khác,MT,Xăng,Van,Trong nước,Mới,2.0,Hồ Chí Minh,0.0,1,nan,chotot,0.0,0.0,0,1
+269.0,0.0,2025.0,Hãng khác,Dòng khác,MT,Xăng,Van,Trong nước,Mới,2.0,Hồ Chí Minh,0.0,1,,chotot,0.0,0.0,0,1
 320.0,250000.0,2016.0,Ford,Transit,MT,Dầu,Van,Trong nước,Cũ,16.0,Đà Nẵng,0.0,1,425ea09a37d652cac73c1357da83da51,chotot,9.0,27777.777777777777,0,3
 260.0,64000.0,2010.0,Audi,A6,AT,Xăng,Sedan,Nhập khẩu,Cũ,5.0,Hồ Chí Minh,0.0,1,1518c650807dee444e2b8ba0494e984a,chotot,15.0,4266.666666666667,0,1
 220.0,142000.0,2015.0,Toyota,Vios,MT,Xăng,Sedan,Trong nước,Cũ,5.0,Hồ Chí Minh,0.0,1,4d1d9b08d05395b9ea8e56057b31a308,chotot,10.0,14200.0,0,2
@@ -2970,7 +2970,7 @@ price_million,km,year,brand,model,transmission,fuel_type,body_type,origin,condit
 700.0,145000.0,2010.0,Toyota,Sienna,AT,Xăng,Minivan (MPV),Nhập khẩu,Cũ,7.0,Hồ Chí Minh,0.0,1,d16045e885086ae34baf9831516d943d,chotot,15.0,9666.666666666666,0,1
 1140.0,0.0,2025.0,Geely,Monjaro,AT,Xăng,SUV / Cross over,Nhập khẩu,Mới,5.0,Hồ Chí Minh,0.0,1,2a34df2254909914ac4430e526e7c3d7,chotot,0.0,0.0,0,1
 190.0,100.0,2009.0,Kia,Carens,AT,Xăng,Minivan (MPV),Trong nước,Cũ,7.0,Hà Nội,0.0,1,e747889b9c03d8baade0989cd9203b23,chotot,16.0,6.25,0,1
-3250.0,44000.0,2023.0,Lexus,RX,AT,Xăng,SUV / Cross over,Nhập khẩu,Cũ,5.0,Hồ Chí Minh,0.0,1,nan,chotot,2.0,22000.0,1,3
+3250.0,44000.0,2023.0,Lexus,RX,AT,Xăng,SUV / Cross over,Nhập khẩu,Cũ,5.0,Hồ Chí Minh,0.0,1,,chotot,2.0,22000.0,1,3
 138.0,80000.0,2009.0,Chevrolet,Vivant,AT,Xăng,SUV / Cross over,Nhập khẩu,Cũ,7.0,Đà Nẵng,0.0,1,2874ce6b53a8c21687e7f5bee494504c,chotot,16.0,5000.0,0,1
 89.0,9000.0,2016.0,Hãng khác,Dòng khác,MT,Xăng,Kiểu dáng khác,Trong nước,Cũ,5.0,Bắc Giang,0.0,1,04896a71c1f37843a764ece8ad818d55,chotot,9.0,1000.0,0,1
 60.0,233878.0,2004.0,Daewoo,Lacetti,MT,Xăng,Sedan,Trong nước,Cũ,5.0,Gia Lai,0.0,1,02de893413c25e7a76cc4b3c83542352,chotot,21.0,11137.047619047618,0,2
@@ -2994,7 +2994,7 @@ price_million,km,year,brand,model,transmission,fuel_type,body_type,origin,condit
 170.0,80000.0,2011.0,Ford,Fiesta,AT,Xăng,Sedan,Trong nước,Cũ,5.0,Hồ Chí Minh,0.0,1,0dffc91561592b03a2c5ee2a7f779290,chotot,14.0,5714.285714285715,0,1
 180.0,190000.0,2008.0,Honda,Civic,MT,Xăng,Sedan,Trong nước,Cũ,5.0,Vĩnh Phúc,0.0,1,8806ce8f0500ecf4ffa03aead8542f61,chotot,17.0,11176.470588235294,0,2
 260.0,110000.0,2015.0,Hyundai,Accent,MT,Xăng,Sedan,Nhập khẩu,Cũ,5.0,Hòa Bình,0.0,1,3ae2dbdd4846586c8f160f6089b4d8c6,chotot,10.0,11000.0,0,2
-365.0,102000.0,2017.0,Honda,City,AT,Xăng,Sedan,Trong nước,Cũ,5.0,Hải Phòng,0.0,1,nan,chotot,8.0,12750.0,0,2
+365.0,102000.0,2017.0,Honda,City,AT,Xăng,Sedan,Trong nước,Cũ,5.0,Hải Phòng,0.0,1,,chotot,8.0,12750.0,0,2
 550.0,100000.0,2007.0,Toyota,Land Cruiser,MT,Xăng,SUV / Cross over,Nhập khẩu,Cũ,7.0,Hà Nội,0.0,1,5d8b9308721b4ac16598d4efe2c34c54,chotot,18.0,5555.555555555556,0,1
 575.0,33000.0,2024.0,Toyota,Veloz Cross,AT,Xăng,SUV / Cross over,Trong nước,Cũ,7.0,Hồ Chí Minh,0.0,1,68a157d27b4a39f2d872105e30107fc2,chotot,1.0,33000.0,0,3
 299.0,67000.0,2021.0,VinFast,Fadil,AT,Xăng,Hatchback,Trong nước,Cũ,5.0,Hải Phòng,0.0,1,0c43839454833b083635204db14b8986,chotot,4.0,16750.0,0,2
@@ -3008,7 +3008,7 @@ price_million,km,year,brand,model,transmission,fuel_type,body_type,origin,condit
 360.0,180000.0,2019.0,Kia,Cerato,MT,Xăng,Sedan,Nhập khẩu,Cũ,5.0,Đà Nẵng,0.0,1,7c12e31a2d407dfa5284c606aa5bd0e5,chotot,6.0,30000.0,0,3
 1040.0,49000.0,2013.0,Lexus,IS,AT,Xăng,Sedan,Nhập khẩu,Cũ,5.0,Hồ Chí Minh,0.0,1,14eb72c68e572ee303ee8c18ae8c4dab,chotot,12.0,4083.3333333333335,1,1
 225.0,100000.0,2015.0,Volkswagen,Polo,AT,Xăng,Sedan,Nhập khẩu,Cũ,5.0,Hồ Chí Minh,0.0,1,74be04c0429baa6da3a2037e9a1dfa65,chotot,10.0,10000.0,0,2
-558.0,2126.0,2022.0,Honda,Dòng khác,AT,Xăng,Kiểu dáng khác,Nhập khẩu,Cũ,5.0,Hồ Chí Minh,0.0,1,nan,chotot,3.0,708.6666666666666,0,1
+558.0,2126.0,2022.0,Honda,Dòng khác,AT,Xăng,Kiểu dáng khác,Nhập khẩu,Cũ,5.0,Hồ Chí Minh,0.0,1,,chotot,3.0,708.6666666666666,0,1
 510.0,38000.0,2021.0,Mitsubishi,Xpander Cross,AT,Xăng,Minivan (MPV),Nhập khẩu,Cũ,7.0,Đà Nẵng,0.0,1,0704208555d13a2f1476d9135269744f,chotot,4.0,9500.0,0,1
 535.0,52000.0,2017.0,Isuzu,Mu X,AT,Dầu,SUV / Cross over,Trong nước,Cũ,7.0,Hồ Chí Minh,0.0,1,d2c73b9c815bf3e97f8f17a30909d541,chotot,8.0,6500.0,0,1
 570.0,49000.0,2019.0,Honda,HR-V,AT,Xăng,SUV / Cross over,Nhập khẩu,Cũ,5.0,Hà Nội,0.0,1,2d2638e65ce42f1e6f1441b2794274a3,chotot,6.0,8166.666666666667,0,1
@@ -3046,7 +3046,7 @@ price_million,km,year,brand,model,transmission,fuel_type,body_type,origin,condit
 625.0,0.0,2025.0,Mitsubishi,Xforce,AT,Xăng,SUV / Cross over,Trong nước,Mới,5.0,Hồ Chí Minh,0.0,1,62a801005480154b85968b037efb9287,chotot,0.0,0.0,0,1
 1050.0,23000.0,2021.0,BMW,3 Series,AT,Xăng,Sedan,Nhập khẩu,Cũ,4.0,Hồ Chí Minh,0.0,1,d90ff169f1cd05e7e6d2af8d8b95b8bc,chotot,4.0,5750.0,1,1
 605.0,19000.0,2024.0,Honda,BR-V,AT,Xăng,Minivan (MPV),Nhập khẩu,Cũ,7.0,Hồ Chí Minh,0.0,1,90096857bea1b10a7d9895a79334cffb,chotot,1.0,19000.0,0,2
-680.0,2800.0,2025.0,Hyundai,Elantra,AT,Xăng,Sedan,Trong nước,Cũ,5.0,Hồ Chí Minh,0.0,1,nan,chotot,0.0,0.0,0,1
+680.0,2800.0,2025.0,Hyundai,Elantra,AT,Xăng,Sedan,Trong nước,Cũ,5.0,Hồ Chí Minh,0.0,1,,chotot,0.0,0.0,0,1
 710.0,0.0,2025.0,VinFast,VF7,AT,Điện,SUV / Cross over,Trong nước,Mới,5.0,Hồ Chí Minh,0.0,1,24943884577ff5860d552aa9ce822d02,chotot,0.0,0.0,0,1
 528.0,72000.0,2012.0,BMW,X3,AT,Xăng,SUV / Cross over,Nhập khẩu,Cũ,5.0,Hồ Chí Minh,0.0,1,efb91b2085eebc0dec66f26cf6065878,chotot,13.0,5538.461538461538,1,1
 665.0,49000.0,2020.0,Mazda,CX 5,AT,Xăng,SUV / Cross over,Nhập khẩu,Cũ,5.0,Hồ Chí Minh,0.0,1,6cfd48259fb165cd462706ee756187e3,chotot,5.0,9800.0,0,1
@@ -3054,7 +3054,7 @@ price_million,km,year,brand,model,transmission,fuel_type,body_type,origin,condit
 300.0,67000.0,2014.0,Kia,Carens,AT,Xăng,Minivan (MPV),Trong nước,Cũ,7.0,Hồ Chí Minh,0.0,1,f90abf7a2f1a0438858202354d14331e,chotot,11.0,6090.909090909091,0,1
 230.0,8200.0,2024.0,VinFast,VF3,AT,Điện,SUV / Cross over,Trong nước,Cũ,4.0,Hà Nội,0.0,1,28f2a5f36b31fe1db732ff709cda4a87,chotot,1.0,8200.0,0,1
 59.0,95000.0,2002.0,Ssangyong,Musso,MT,Dầu,SUV / Cross over,Nhập khẩu,Cũ,7.0,Bình Dương,0.0,1,425b9d46cf5d466681ed8a9842096600,chotot,23.0,4130.434782608696,0,1
-850.0,40000.0,2019.0,Audi,Q2,AT,Xăng,Kiểu dáng khác,Nhập khẩu,Cũ,4.0,Hồ Chí Minh,0.0,1,nan,chotot,6.0,6666.666666666667,0,1
+850.0,40000.0,2019.0,Audi,Q2,AT,Xăng,Kiểu dáng khác,Nhập khẩu,Cũ,4.0,Hồ Chí Minh,0.0,1,,chotot,6.0,6666.666666666667,0,1
 525.0,48000.0,2022.0,Toyota,Veloz Cross,AT,Xăng,Minivan (MPV),Trong nước,Cũ,9.0,Đồng Nai,0.0,1,eddf7b070b24d82f749061618e1d3a98,chotot,3.0,16000.0,0,2
 372.0,123456.0,2006.0,Hãng khác,Dòng khác,MT,Dầu,Kiểu dáng khác,Nhập khẩu,Cũ,2.0,Hồ Chí Minh,0.0,1,d95584442d1da87edc1c9062123ddf98,chotot,19.0,6497.684210526316,0,1
 525.0,6602.0,2019.0,Honda,HR-V,AT,Xăng,SUV / Cross over,Nhập khẩu,Cũ,5.0,Đồng Nai,0.0,1,c94dafa9d5388977b25cdc53996eea5c,chotot,6.0,1100.3333333333333,0,1
@@ -3080,7 +3080,7 @@ price_million,km,year,brand,model,transmission,fuel_type,body_type,origin,condit
 599.0,20000.0,2023.0,Hãng khác,Dòng khác,AT,Xăng,SUV / Cross over,Nhập khẩu,Cũ,5.0,Hồ Chí Minh,0.0,1,a5b466370b073925169b6660192c1597,chotot,2.0,10000.0,0,2
 560.0,80000.0,2023.0,Mitsubishi,Xpander,AT,Xăng,SUV / Cross over,Trong nước,Cũ,7.0,Đồng Nai,0.0,1,beb60d78cb2d40027efc3a52ed3a087b,chotot,2.0,40000.0,0,3
 490.0,64000.0,2019.0,Mitsubishi,Xpander,AT,Xăng,Minivan (MPV),Nhập khẩu,Cũ,7.0,Hồ Chí Minh,0.0,1,3a39493cf729bec3adfbe815c87f5a77,chotot,6.0,10666.666666666666,0,2
-450.0,170000.0,2016.0,Ford,Ranger,MT,Dầu,Pick-up (bán tải),Nhập khẩu,Cũ,5.0,Quảng Ngãi,0.0,1,nan,chotot,9.0,18888.88888888889,0,2
+450.0,170000.0,2016.0,Ford,Ranger,MT,Dầu,Pick-up (bán tải),Nhập khẩu,Cũ,5.0,Quảng Ngãi,0.0,1,,chotot,9.0,18888.88888888889,0,2
 135.0,22.0,2005.0,Mazda,6,AT,Xăng,Sedan,Nhập khẩu,Cũ,5.0,Hà Nội,0.0,1,a085a3c1fb140f6c885715e6ad899e28,chotot,20.0,1.1,0,1
 700.0,31000.0,2022.0,Nissan,Navara,AT,Dầu,Pick-up (bán tải),Nhập khẩu,Cũ,5.0,Khánh Hòa,0.0,1,3b90a003166df307587129eaa8b37685,chotot,3.0,10333.333333333334,0,2
 330.0,46000.0,2020.0,Toyota,Vios,MT,Xăng,Sedan,Trong nước,Cũ,5.0,Hồ Chí Minh,0.0,1,1c1042df5e9f81bf8334c1557b19ba5f,chotot,5.0,9200.0,0,1
@@ -3226,7 +3226,7 @@ price_million,km,year,brand,model,transmission,fuel_type,body_type,origin,condit
 200.0,166000.0,2011.0,Ford,Ranger,MT,Dầu,Pick-up (bán tải),Nhập khẩu,Cũ,5.0,Đắk Lắk,0.0,1,1d470cd909b8eb29dcc99cfeb03102c3,chotot,14.0,11857.142857142857,0,2
 392.0,60000.0,2015.0,Toyota,Innova,AT,Xăng,Minivan (MPV),Trong nước,Cũ,5.0,Quảng Ngãi,0.0,1,a404773db07c85fe7240f50dd4b23bdc,chotot,10.0,6000.0,0,1
 650.0,53000.0,2024.0,Ford,Transit,MT,Dầu,Van,Trong nước,Cũ,16.0,Đồng Nai,0.0,1,bdd23705b3998761a6d0b186b3bd733d,chotot,1.0,53000.0,0,3
-402.0,5900.0,2019.0,Ford,EcoSport,AT,Xăng,SUV / Cross over,Trong nước,Cũ,5.0,Hà Nội,0.0,1,nan,chotot,6.0,983.3333333333334,0,1
+402.0,5900.0,2019.0,Ford,EcoSport,AT,Xăng,SUV / Cross over,Trong nước,Cũ,5.0,Hà Nội,0.0,1,,chotot,6.0,983.3333333333334,0,1
 79.0,90.0,2003.0,Hyundai,Terracan,MT,Xăng,SUV / Cross over,Nhập khẩu,Cũ,7.0,Bình Dương,0.0,1,425b9d46cf5d466681ed8a9842096600,chotot,22.0,4.090909090909091,0,1
 490.0,250000.0,2018.0,Toyota,Hiace,MT,Dầu,Kiểu dáng khác,Trong nước,Cũ,16.0,Đắk Lắk,0.0,1,97800325c611dbeec2be39b24658225b,chotot,7.0,35714.28571428572,0,3
 146.0,0.0,2004.0,Toyota,Zace,MT,Xăng,SUV / Cross over,Trong nước,Cũ,8.0,Cần Thơ,0.0,1,04fb31938e49c37a7567cc6062ba78a8,chotot,21.0,0.0,0,1
@@ -3238,7 +3238,7 @@ price_million,km,year,brand,model,transmission,fuel_type,body_type,origin,condit
 180.0,240000.0,2007.0,Mercedes Benz,E Class,AT,Xăng,Sedan,Nhập khẩu,Cũ,5.0,Khác,0.0,1,ae5845f0f842b6eaa3aa7431d7169d28,chotot,18.0,13333.333333333334,1,2
 167.0,100000.0,2014.0,Toyota,Vios,MT,Xăng,Sedan,Trong nước,Cũ,5.0,Nam Định,0.0,1,bc4da387167bdbd8512c2196980b8b26,chotot,11.0,9090.90909090909,0,1
 300.0,90.0,2019.0,Mitsubishi,Attrage,AT,Xăng,Sedan,Trong nước,Cũ,5.0,Hà Nội,0.0,1,21ebb0b457da594ca730c1004293931c,chotot,6.0,15.0,0,1
-719.04,0.0,2025.0,VinFast,VF6,AT,Điện,SUV / Cross over,Trong nước,Mới,5.0,Hồ Chí Minh,0.0,1,nan,chotot,0.0,0.0,0,1
+719.04,0.0,2025.0,VinFast,VF6,AT,Điện,SUV / Cross over,Trong nước,Mới,5.0,Hồ Chí Minh,0.0,1,,chotot,0.0,0.0,0,1
 970.0,42000.0,2024.0,Honda,CR V,AT,Xăng,SUV / Cross over,Trong nước,Cũ,7.0,Hồ Chí Minh,0.0,1,d1abeb3751742805ef53620cb271224e,chotot,1.0,42000.0,0,3
 1839.0,29000.0,2022.0,Mercedes Benz,E Class,AT,Xăng,Sedan,Nhập khẩu,Cũ,5.0,Hồ Chí Minh,0.0,1,81dea01d4a02c37e3d61abb78214294e,chotot,3.0,9666.666666666666,1,1
 1545.0,0.0,2025.0,Ford,Everest,AT,Dầu,SUV / Cross over,Nhập khẩu,Mới,7.0,Lâm Đồng,0.0,1,ac3c331229473cb085ea1f972cd6323b,chotot,0.0,0.0,0,1
@@ -3257,7 +3257,7 @@ price_million,km,year,brand,model,transmission,fuel_type,body_type,origin,condit
 124.999999,5000.0,2012.0,Chevrolet,Lacetti,MT,Xăng,Sedan,Nhập khẩu,Cũ,5.0,Bình Thuận,0.0,1,008e2e69c42861ce22d60bda6b91dc01,chotot,13.0,384.61538461538464,0,1
 200.0,245000.0,2017.0,Hyundai,Grand i10,MT,Xăng,Sedan,Trong nước,Cũ,5.0,Hồ Chí Minh,0.0,1,47c033d434249a28b9ab105d22c46c8d,chotot,8.0,30625.0,0,3
 202.0,134000.0,2015.0,Toyota,Vios,MT,Xăng,Sedan,Trong nước,Cũ,5.0,Khác,0.0,1,5,chotot,10.0,13400.0,0,2
-819.0,0.0,2025.0,Mazda,CX 5,AT,Xăng,SUV / Cross over,Nhập khẩu,Mới,7.0,Hồ Chí Minh,0.0,1,nan,chotot,0.0,0.0,0,1
+819.0,0.0,2025.0,Mazda,CX 5,AT,Xăng,SUV / Cross over,Nhập khẩu,Mới,7.0,Hồ Chí Minh,0.0,1,,chotot,0.0,0.0,0,1
 400.0,267000.0,2017.0,Chevrolet,Colorado,MT,Dầu,Pick-up (bán tải),Nhập khẩu,Cũ,5.0,Cần Thơ,0.0,1,7d1696c1c56216b6094567fe52f5dfb3,chotot,8.0,33375.0,0,3
 260.0,130000.0,2015.0,Toyota,Innova,MT,Xăng,Minivan (MPV),Trong nước,Cũ,8.0,Hà Nội,0.0,1,0310b54ceb26c039c5ee8630a85666c8,chotot,10.0,13000.0,0,2
 310.0,43000.0,2021.0,Hyundai,Grand i10,AT,Xăng,Hatchback,Trong nước,Cũ,5.0,Khác,0.0,1,db191b8dc5120d91bf40830bf4c363cc,chotot,4.0,10750.0,0,2
@@ -3271,7 +3271,7 @@ price_million,km,year,brand,model,transmission,fuel_type,body_type,origin,condit
 255.0,70000.0,2008.0,Kia,Carens,AT,Dầu,Minivan (MPV),Trong nước,Cũ,7.0,Bình Dương,0.0,1,dcdde3cd66780ac962531015b44a46c7,chotot,17.0,4117.64705882353,0,1
 635.0,77000.0,2015.0,Mercedes Benz,E Class,AT,Xăng,Sedan,Trong nước,Cũ,5.0,Hồ Chí Minh,0.0,1,085acf3bc90ebca8a6b05a57c33f5221,chotot,10.0,7700.0,1,1
 190.0,150000.0,2012.0,Chevrolet,Cruze,MT,Xăng,Sedan,Nhập khẩu,Cũ,5.0,Đồng Nai,0.0,1,37bb7127af74b074d95acdc508a340f2,chotot,13.0,11538.461538461539,0,2
-650.0,8489.0,2024.0,Kia,Carens,AT,Xăng,SUV / Cross over,Trong nước,Cũ,7.0,Bình Dương,0.0,1,nan,chotot,1.0,8489.0,0,1
+650.0,8489.0,2024.0,Kia,Carens,AT,Xăng,SUV / Cross over,Trong nước,Cũ,7.0,Bình Dương,0.0,1,,chotot,1.0,8489.0,0,1
 335.0,69000.0,2017.0,Ford,EcoSport,AT,Xăng,SUV / Cross over,Nhập khẩu,Cũ,5.0,Đồng Nai,0.0,1,02057665178714714c971de61b7aaeef,chotot,8.0,8625.0,0,1
 599.0,45000.0,2022.0,VinFast,Lux A2.0,AT,Xăng,Sedan,Trong nước,Cũ,5.0,Hà Nội,0.0,1,71c0469ce3f105c52937517e3ef899bc,chotot,3.0,15000.0,0,2
 535.0,10000.0,2022.0,Kia,Sonet,AT,Xăng,SUV / Cross over,Trong nước,Cũ,5.0,Hà Nội,0.0,1,dd27c47b1eb8bb3e38d6f2430ddf6927,chotot,3.0,3333.3333333333335,0,1
@@ -3344,7 +3344,7 @@ price_million,km,year,brand,model,transmission,fuel_type,body_type,origin,condit
 835.0,34000.0,2024.0,Ford,Territory,AT,Xăng,SUV / Cross over,Trong nước,Cũ,5.0,Lâm Đồng,0.0,1,e9c0c5fee789eded22f7279ba56c2e7d,chotot,1.0,34000.0,0,3
 255.0,100000.0,2022.0,Mitsubishi,Attrage,MT,Xăng,Sedan,Trong nước,Cũ,5.0,Đà Nẵng,0.0,1,588d415254b94fc835370af432c24934,chotot,3.0,33333.333333333336,0,3
 235.0,145000.0,2016.0,Toyota,Innova,MT,Xăng,Minivan (MPV),Trong nước,Cũ,8.0,Hồ Chí Minh,0.0,1,6dcc242c7c46ac4780c2e088f1d6b268,chotot,9.0,16111.111111111111,0,2
-495.0,0.0,2025.0,VinFast,VF5 Plus,AT,Điện,SUV / Cross over,Trong nước,Mới,5.0,Cần Thơ,0.0,1,nan,chotot,0.0,0.0,0,1
+495.0,0.0,2025.0,VinFast,VF5 Plus,AT,Điện,SUV / Cross over,Trong nước,Mới,5.0,Cần Thơ,0.0,1,,chotot,0.0,0.0,0,1
 209.0,103626.0,2012.0,Ford,Escape,AT,Xăng,SUV / Cross over,Trong nước,Cũ,5.0,Hồ Chí Minh,0.0,1,5982c4525707aab4829914d596a56e37,chotot,13.0,7971.2307692307695,0,1
 320.0,190000.0,2020.0,Toyota,Vios,MT,Xăng,Sedan,Trong nước,Cũ,5.0,Bình Dương,0.0,1,eccd1deb03e3aa0fcdef9b14c99c3fa3,chotot,5.0,38000.0,0,3
 255.0,190000.0,2018.0,Toyota,Vios,MT,Xăng,Sedan,Trong nước,Cũ,5.0,Hồ Chí Minh,0.0,1,c552194af5bfb66cc1716ce2ba27398d,chotot,7.0,27142.85714285714,0,3
@@ -3365,14 +3365,14 @@ price_million,km,year,brand,model,transmission,fuel_type,body_type,origin,condit
 250.0,90000.0,2016.0,Toyota,Innova,MT,Xăng,Minivan (MPV),Trong nước,Cũ,8.0,Hà Nội,0.0,1,d46a6d2014fe0c2582286a908bc96639,chotot,9.0,10000.0,0,2
 287.0,0.0,2025.0,VinFast,VF3,AT,Điện,Kiểu dáng khác,Trong nước,Mới,4.0,Vĩnh Long,0.0,1,d76aaa78c00977e00e45489e54401fe2,chotot,0.0,0.0,0,1
 1750.0,26000.0,2023.0,Ford,Explorer,AT,Xăng,SUV / Cross over,Nhập khẩu,Cũ,7.0,Nam Định,0.0,1,533e871ef7774bc3e59964c9ee2e20f8,chotot,2.0,13000.0,0,2
-570.0,0.0,2025.0,Mitsubishi,Xforce,AT,Xăng,SUV / Cross over,Nhập khẩu,Mới,5.0,Hồ Chí Minh,0.0,1,nan,chotot,0.0,0.0,0,1
+570.0,0.0,2025.0,Mitsubishi,Xforce,AT,Xăng,SUV / Cross over,Nhập khẩu,Mới,5.0,Hồ Chí Minh,0.0,1,,chotot,0.0,0.0,0,1
 290.0,10000.0,2016.0,Ford,Transit,MT,Dầu,Van,Trong nước,Cũ,7.0,Cần Thơ,0.0,1,9039f14d786fbe71882732e57271f0d6,chotot,9.0,1111.111111111111,0,1
 50.0,10000.0,2008.0,Daewoo,Matiz,MT,Xăng,Hatchback,Nhập khẩu,Cũ,5.0,Thái Bình,0.0,1,b1f12807723dc441144aa741c56d9b98,chotot,17.0,588.2352941176471,0,1
 640.0,85000.0,2019.0,Ford,Ranger,AT,Dầu,Pick-up (bán tải),Nhập khẩu,Cũ,5.0,Đắk Lắk,0.0,1,301f8ffe0382d1e81898d9bcaf2c7ba3,chotot,6.0,14166.666666666666,0,2
 139.0,225000.0,2000.0,Mitsubishi,Pajero,AT,Xăng,SUV / Cross over,Nhập khẩu,Cũ,7.0,Tây Ninh,0.0,1,c12ea9feea93a1a3c5cfda0ac3a388fe,chotot,25.0,9000.0,0,1
 340.0,0.0,2009.0,Audi,Q7,AT,Xăng,Sedan,Trong nước,Cũ,7.0,Hà Nội,0.0,1,49f6f17503e5c7210fa48aa5539d2d2b,chotot,16.0,0.0,0,1
 110.0,190000.0,2008.0,Chevrolet,Captiva,AT,Xăng,SUV / Cross over,Trong nước,Cũ,7.0,Hà Nội,0.0,1,ef15d92bab576ebbf9944a1daa0fa4f0,chotot,17.0,11176.470588235294,0,2
-65.0,100000.0,2010.0,Kia,Morning,MT,Xăng,Hatchback,Trong nước,Cũ,5.0,Hòa Bình,0.0,1,nan,chotot,15.0,6666.666666666667,0,1
+65.0,100000.0,2010.0,Kia,Morning,MT,Xăng,Hatchback,Trong nước,Cũ,5.0,Hòa Bình,0.0,1,,chotot,15.0,6666.666666666667,0,1
 385.0,147095.0,2016.0,Mazda,BT 50,AT,Dầu,Pick-up (bán tải),Nhập khẩu,Cũ,5.0,Bắc Ninh,0.0,1,f39948ec443768a85b92150841cbb0b6,chotot,9.0,16343.888888888889,0,2
 1250.0,0.0,2025.0,Honda,CR V,AT,Hybrid,SUV / Cross over,Trong nước,Mới,7.0,Bình Dương,0.0,1,43ae86327e16d0a227047b6b99ef768c,chotot,0.0,0.0,0,1
 515.0,95000.0,2016.0,Toyota,Fortuner,AT,Xăng,SUV / Cross over,Trong nước,Cũ,7.0,Hà Nội,0.0,1,8b15014b39e8d2d1c42bf05c60af839b,chotot,9.0,10555.555555555555,0,2
@@ -3437,7 +3437,7 @@ price_million,km,year,brand,model,transmission,fuel_type,body_type,origin,condit
 320.0,48800.0,2020.0,Mitsubishi,Attrage,AT,Xăng,Sedan,Nhập khẩu,Cũ,5.0,Hà Nội,0.0,1,cb591662d07c6152f51dbf64dfac0e0d,chotot,5.0,9760.0,0,1
 580.0,90000.0,2020.0,Toyota,Corolla Cross,AT,Xăng,SUV / Cross over,Trong nước,Cũ,5.0,Hồ Chí Minh,0.0,1,6446461b6b52942e496e6c34103db7ea,chotot,5.0,18000.0,0,2
 180.0,230000.0,2008.0,Honda,Civic,AT,Xăng,Sedan,Trong nước,Cũ,4.0,Hồ Chí Minh,0.0,1,a4046d1db5fe712131c06cd2d43a6ab1,chotot,17.0,13529.411764705883,0,2
-861.04,0.0,2025.0,VinFast,VF7,AT,Điện,SUV / Cross over,Trong nước,Mới,5.0,Cần Thơ,0.0,1,nan,chotot,0.0,0.0,0,1
+861.04,0.0,2025.0,VinFast,VF7,AT,Điện,SUV / Cross over,Trong nước,Mới,5.0,Cần Thơ,0.0,1,,chotot,0.0,0.0,0,1
 550.0,60000.0,2022.0,Kia,K3,AT,Xăng,Sedan,Trong nước,Cũ,5.0,Hà Nội,0.0,1,67becb71057c002c9a00a90368994258,chotot,3.0,20000.0,0,2
 620.0,15000.0,2024.0,Mitsubishi,Xpander,AT,Xăng,Minivan (MPV),Nhập khẩu,Cũ,7.0,Đồng Nai,0.0,1,c991b47fafe383c03c2ec6a3ebb3beea,chotot,1.0,15000.0,0,2
 90.0,270000.0,2003.0,Ford,Laser,MT,Xăng,Sedan,Trong nước,Cũ,5.0,Hồ Chí Minh,0.0,1,738d4469ed777c568619c7267f24d126,chotot,22.0,12272.727272727272,0,2
@@ -3448,7 +3448,7 @@ price_million,km,year,brand,model,transmission,fuel_type,body_type,origin,condit
 520.0,65000.0,2023.0,Gaz,Gazele,MT,Dầu,Van,Nhập khẩu,Cũ,7.0,Hồ Chí Minh,0.0,1,e61058e464e8583a8420e9c24ba7122f,chotot,2.0,32500.0,0,3
 1080.0,7000.0,2025.0,Honda,CR V,AT,Xăng,SUV / Cross over,Nhập khẩu,Cũ,7.0,Đà Nẵng,0.0,1,9ad79df1ef9f60654ffcd4d5d17c2588,chotot,0.0,0.0,0,1
 819.0,34000.0,2022.0,Peugeot,3008,AT,Xăng,SUV / Cross over,Trong nước,Cũ,7.0,Hồ Chí Minh,0.0,1,5e1c92d845ae3118bc7ce2a5ed259576,chotot,3.0,11333.333333333334,0,2
-415.0,40000.0,2022.0,Toyota,Vios,AT,Xăng,Sedan,Trong nước,Cũ,5.0,Hà Nội,0.0,1,nan,chotot,3.0,13333.333333333334,0,2
+415.0,40000.0,2022.0,Toyota,Vios,AT,Xăng,Sedan,Trong nước,Cũ,5.0,Hà Nội,0.0,1,,chotot,3.0,13333.333333333334,0,2
 305.0,5400.0,2025.0,Hãng khác,Dòng khác,MT,Xăng,Van,Trong nước,Cũ,2.0,Bình Dương,0.0,1,aeb3e2ff5abdb7353e6ae705a96bbe6e,chotot,0.0,0.0,0,1
 605.0,24000.0,2023.0,Ford,Ranger,AT,Dầu,Pick-up (bán tải),Trong nước,Cũ,5.0,Hồ Chí Minh,0.0,1,c001571facfb558163af35722f059082,chotot,2.0,12000.0,0,2
 1080.0,7000.0,2025.0,Honda,BR-V,AT,Xăng,Minivan (MPV),Nhập khẩu,Cũ,7.0,Đà Nẵng,0.0,1,9ad79df1ef9f60654ffcd4d5d17c2588,chotot,0.0,0.0,0,1
@@ -3508,7 +3508,7 @@ price_million,km,year,brand,model,transmission,fuel_type,body_type,origin,condit
 655.0,42000.0,2022.0,Honda,Civic,AT,Xăng,Sedan,Nhập khẩu,Cũ,4.0,Hồ Chí Minh,0.0,1,9edd4f5219146c48a4bcd3426cd6f189,chotot,3.0,14000.0,0,2
 210.0,110000.0,2010.0,Kia,Forte,AT,Xăng,Sedan,Trong nước,Cũ,5.0,Bắc Ninh,0.0,1,4caaffa10f15b7581e88589e919aba3c,chotot,15.0,7333.333333333333,0,1
 828.0,1.0,2018.0,Audi,Q2,AT,Xăng,SUV / Cross over,Nhập khẩu,Cũ,5.0,Hồ Chí Minh,0.0,1,7de8afcfa7e4ae78f64ed7ba669a6bc4,chotot,7.0,0.14285714285714285,0,1
-355.0,91000.0,2019.0,Toyota,Vios,AT,Xăng,Sedan,Trong nước,Cũ,5.0,Bình Dương,0.0,1,nan,chotot,6.0,15166.666666666666,0,2
+355.0,91000.0,2019.0,Toyota,Vios,AT,Xăng,Sedan,Trong nước,Cũ,5.0,Bình Dương,0.0,1,,chotot,6.0,15166.666666666666,0,2
 250.0,129000.0,2012.0,Kia,Morning,AT,Xăng,Hatchback,Nhập khẩu,Cũ,5.0,Hà Nội,0.0,1,c7298802e733e1d8565c1a2212f24d82,chotot,13.0,9923.076923076924,0,1
 153.0,100000.0,2011.0,Chevrolet,Cruze,MT,Xăng,Sedan,Nhập khẩu,Cũ,5.0,Bình Dương,0.0,1,6fbe18628fff9aa6817cee3d72a1f7df,chotot,14.0,7142.857142857143,0,1
 309.0,98000.0,2019.0,Toyota,Vios,MT,Xăng,Sedan,Trong nước,Cũ,5.0,Hồ Chí Minh,0.0,1,e76154bfa55cff0d7a74ab566f1d90e9,chotot,6.0,16333.333333333334,0,2
@@ -3611,13 +3611,13 @@ price_million,km,year,brand,model,transmission,fuel_type,body_type,origin,condit
 330.0,142000.0,2019.0,Toyota,Vios,AT,Xăng,Sedan,Nhập khẩu,Cũ,5.0,Hồ Chí Minh,0.0,1,9809bbdd2bb6cd4f8a7c65e61401619b,chotot,6.0,23666.666666666668,0,3
 385.0,178000.0,2015.0,Mazda,6,AT,Xăng,Sedan,Nhập khẩu,Cũ,5.0,Hồ Chí Minh,0.0,1,e814ec2f48776947cee3b7090cfe8ece,chotot,10.0,17800.0,0,2
 890.0,26000.0,2020.0,Hyundai,Santa Fe,AT,Xăng,SUV / Cross over,Trong nước,Cũ,7.0,Hà Nội,0.0,1,ba6c231d4fc23e45b23bb21b9f8eb5b6,chotot,5.0,5200.0,0,1
-650.0,60000.0,2020.0,Toyota,Corolla Cross,AT,Xăng,SUV / Cross over,Nhập khẩu,Cũ,5.0,Hồ Chí Minh,0.0,1,nan,chotot,5.0,12000.0,0,2
+650.0,60000.0,2020.0,Toyota,Corolla Cross,AT,Xăng,SUV / Cross over,Nhập khẩu,Cũ,5.0,Hồ Chí Minh,0.0,1,,chotot,5.0,12000.0,0,2
 350.0,0.0,2019.0,Toyota,Vios,AT,Xăng,Sedan,Nhập khẩu,Mới,5.0,Hồ Chí Minh,0.0,1,3cc0f8deff52f10fd34a583eabbcff82,chotot,6.0,0.0,0,1
 348.0,95.0,2016.0,Kia,Cerato,AT,Xăng,Sedan,Trong nước,Cũ,5.0,Đắk Nông,0.0,1,da13a328b21f6462919f5c8d2b23199c,chotot,9.0,10.555555555555555,0,1
 88.0,168047.0,2011.0,Kia,Morning,MT,Xăng,Hatchback,Trong nước,Cũ,5.0,Hồ Chí Minh,0.0,1,cac39f993160646777dc90d5a85f424e,chotot,14.0,12003.357142857143,0,2
 315.0,150000.0,2013.0,Mazda,3,AT,Xăng,Sedan,Trong nước,Cũ,5.0,Đắk Lắk,0.0,1,ea249ab3cc4bc0890da66ab0f22fe12d,chotot,12.0,12500.0,0,2
 175.0,300000.0,2015.0,Chevrolet,Cruze,MT,Xăng,Sedan,Trong nước,Cũ,5.0,Hồ Chí Minh,0.0,1,f18584424978a76a3c9e42abcc510274,chotot,10.0,30000.0,0,3
-570.0,67000.0,2023.0,Toyota,1116,AT,Xăng,SUV / Cross over,Nhập khẩu,Cũ,7.0,Hồ Chí Minh,0.0,1,nan,chotot,2.0,33500.0,0,3
+570.0,67000.0,2023.0,Toyota,1116,AT,Xăng,SUV / Cross over,Nhập khẩu,Cũ,7.0,Hồ Chí Minh,0.0,1,,chotot,2.0,33500.0,0,3
 150.0,0.0,2023.0,Haval,H6,AT,Hybrid,SUV / Cross over,Nhập khẩu,Mới,5.0,Hồ Chí Minh,0.0,1,f6305066f496359008cb4b292b0085cc,chotot,2.0,0.0,0,1
 425.0,65000.0,2018.0,Toyota,Innova,MT,Xăng,Sedan,Trong nước,Cũ,7.0,Hà Nội,0.0,1,d646dcf90e063ce249b5e10ece132104,chotot,7.0,9285.714285714286,0,1
 405.0,11000.0,2015.0,Mazda,6,AT,Xăng,Sedan,Trong nước,Cũ,5.0,Hà Nội,0.0,1,b9cb14257fa77b78e898824635fa463e,chotot,10.0,1100.0,0,1
@@ -3640,7 +3640,7 @@ price_million,km,year,brand,model,transmission,fuel_type,body_type,origin,condit
 890.0,19000.0,2023.0,Ford,Ranger,AT,Dầu,Pick-up (bán tải),Trong nước,Cũ,5.0,Hồ Chí Minh,0.0,1,dbf0c702c0983fcbe0d5d7a8c4f4fd70,chotot,2.0,9500.0,0,1
 225.0,110000.0,2015.0,Ford,Fiesta,AT,Xăng,Hatchback,Trong nước,Cũ,5.0,Hà Nội,0.0,1,69c0cbc9abc65767bfd642d31597e31c,chotot,10.0,11000.0,0,2
 510.0,51200.0,2019.0,Chevrolet,Colorado,AT,Dầu,Pick-up (bán tải),Nhập khẩu,Cũ,5.0,Hồ Chí Minh,0.0,1,04176fdb25eea7ea23e586e8d68af768,chotot,6.0,8533.333333333334,0,1
-403.0,1.0,2025.0,Mazda,2,AT,Xăng,Sedan,Nhập khẩu,Cũ,5.0,Thanh Hóa,0.0,1,nan,chotot,0.0,0.0,0,1
+403.0,1.0,2025.0,Mazda,2,AT,Xăng,Sedan,Nhập khẩu,Cũ,5.0,Thanh Hóa,0.0,1,,chotot,0.0,0.0,0,1
 150.0,103487.0,2016.0,Mitsubishi,Mirage,MT,Xăng,Hatchback,Trong nước,Cũ,5.0,unknow,0.0,1,ab9feba6d5453c339b17812a520e251d,chotot,9.0,11498.555555555555,0,2
 85.0,150000.0,2001.0,BMW,5 Series,AT,Xăng,Sedan,Nhập khẩu,Cũ,5.0,Hà Nội,0.0,1,46bcfb54c51a21fd7006b02c31c359a5,chotot,24.0,6250.0,1,1
 1650.0,26000.0,2022.0,Mercedes Benz,E Class,AT,Xăng,Sedan,Trong nước,Cũ,5.0,Hồ Chí Minh,0.0,1,719e91ed3bec3c34e97bc135af352099,chotot,3.0,8666.666666666666,1,1
@@ -3651,7 +3651,7 @@ price_million,km,year,brand,model,transmission,fuel_type,body_type,origin,condit
 55.0,200000.0,2004.0,Mitsubishi,Jolie,MT,Xăng,Minivan (MPV),Trong nước,Cũ,7.0,Hà Nội,0.0,1,4c6bd0680af5d20a91e0ffa6b8214286,chotot,21.0,9523.809523809523,0,1
 95.0,0.0,2010.0,Daewoo,Gentra,MT,Xăng,Sedan,Trong nước,Cũ,5.0,Hồ Chí Minh,0.0,1,a95380692e1a295a997b2ae1b846ca0f,chotot,15.0,0.0,0,1
 105.0,171000.0,2005.0,Ford,Escape,AT,Xăng,SUV / Cross over,Trong nước,Cũ,5.0,Hồ Chí Minh,0.0,1,deed6a559fd1aab4041d914ecee987cd,chotot,20.0,8550.0,0,1
-272.0,123456.0,2020.0,Toyota,Wigo,AT,Xăng,Coupe (2 cửa),Nhập khẩu,Cũ,5.0,Hồ Chí Minh,0.0,1,nan,chotot,5.0,24691.2,0,3
+272.0,123456.0,2020.0,Toyota,Wigo,AT,Xăng,Coupe (2 cửa),Nhập khẩu,Cũ,5.0,Hồ Chí Minh,0.0,1,,chotot,5.0,24691.2,0,3
 125.0,12346.0,2010.0,Daewoo,Lacetti,MT,Xăng,Sedan,Nhập khẩu,Cũ,5.0,Đà Nẵng,0.0,1,9971d0a9d600360505273cdafbc491f1,chotot,15.0,823.0666666666667,0,1
 380.0,83000.0,2018.0,Toyota,Vios,AT,Xăng,Sedan,Trong nước,Cũ,5.0,Hà Nội,0.0,1,c42b761ddb0a5057e83b85e252a77d6d,chotot,7.0,11857.142857142857,0,2
 405.0,100000.0,2018.0,Mazda,3,AT,Xăng,Sedan,Trong nước,Cũ,5.0,Hà Nội,0.0,1,7ec51f0302c9b9cc7231ceb11a4fc367,chotot,7.0,14285.714285714286,0,2
@@ -3671,7 +3671,7 @@ price_million,km,year,brand,model,transmission,fuel_type,body_type,origin,condit
 890.0,30000.0,2018.0,Mercedes Benz,GLC Class,AT,Xăng,SUV / Cross over,Nhập khẩu,Cũ,7.0,Hà Nội,0.0,1,8f79e0757c7e7cb4cdb37781480ce63d,chotot,7.0,4285.714285714285,1,1
 700.0,0.0,2025.0,Isuzu,Dòng khác,MT,Dầu,Kiểu dáng khác,Nhập khẩu,Mới,7.0,Thanh Hóa,0.0,1,1b216e350e390735b12b08738d4d593d,chotot,0.0,0.0,0,1
 635.0,7900.0,2021.0,Mitsubishi,Outlander,AT,Xăng,SUV / Cross over,Trong nước,Cũ,7.0,Quảng Ngãi,0.0,1,fa82042415f57f93f35aaad5b584b34f,chotot,4.0,1975.0,0,1
-599.0,0.0,2025.0,Mitsubishi,Xforce,AT,Xăng,SUV / Cross over,Nhập khẩu,Cũ,5.0,Đà Nẵng,0.0,1,nan,chotot,0.0,0.0,0,1
+599.0,0.0,2025.0,Mitsubishi,Xforce,AT,Xăng,SUV / Cross over,Nhập khẩu,Cũ,5.0,Đà Nẵng,0.0,1,,chotot,0.0,0.0,0,1
 220.0,120000.0,2011.0,Kia,Forte,AT,Xăng,Sedan,Trong nước,Cũ,5.0,Hà Nội,0.0,1,aaadd558f3f95f6bc63a65be1cb6938e,chotot,14.0,8571.42857142857,0,1
 170.0,89266.0,2017.0,Suzuki,Super Carry Van,MT,Xăng,Van,Nhập khẩu,Cũ,2.0,Bình Dương,0.0,1,85e20c23b76c8c97dfcdf8647c272b0e,chotot,8.0,11158.25,0,2
 550.0,53000.0,2018.0,Mazda,CX 5,AT,Xăng,SUV / Cross over,Trong nước,Cũ,5.0,Hồ Chí Minh,0.0,1,671e6ac70cfcbbf28bd10151bbeecd1b,chotot,7.0,7571.428571428572,0,1
@@ -3685,7 +3685,7 @@ price_million,km,year,brand,model,transmission,fuel_type,body_type,origin,condit
 50.0,300000.0,2011.0,BYD,Dòng khác,MT,Xăng,Kiểu dáng khác,Nhập khẩu,Cũ,5.0,Yên Bái,0.0,1,5f4e00fa4b55e4c30e2ab833eb96603f,chotot,14.0,21428.571428571428,0,3
 425.0,61.0,2018.0,Chevrolet,Trailblazer,MT,Dầu,SUV / Cross over,Nhập khẩu,Cũ,7.0,Hồ Chí Minh,0.0,1,7320d8e5eab17d11946b56502195b8e1,chotot,7.0,8.714285714285714,0,1
 350.0,40000.0,2018.0,Toyota,Vios,AT,Xăng,Sedan,Trong nước,Cũ,5.0,Hồ Chí Minh,0.0,1,3cdafa832c63e71bc1cf6148c4719e68,chotot,7.0,5714.285714285715,0,1
-950.0,11000.0,2011.0,Porsche,Cayenne,AT,Xăng,SUV / Cross over,Nhập khẩu,Cũ,5.0,Hà Nội,0.0,1,nan,chotot,14.0,785.7142857142857,1,1
+950.0,11000.0,2011.0,Porsche,Cayenne,AT,Xăng,SUV / Cross over,Nhập khẩu,Cũ,5.0,Hà Nội,0.0,1,,chotot,14.0,785.7142857142857,1,1
 335.0,73000.0,2018.0,Honda,City,AT,Xăng,Sedan,Trong nước,Cũ,5.0,Bình Dương,0.0,1,b7aa36bfd09e6814858527095e2e5552,chotot,7.0,10428.57142857143,0,2
 745.0,30000.0,2023.0,Toyota,Corolla Cross,AT,Xăng,SUV / Cross over,Nhập khẩu,Cũ,5.0,Hồ Chí Minh,0.0,1,6807312bc155b7f3cd14f456b0aea48c,chotot,2.0,15000.0,0,2
 250.0,102000.0,2015.0,Mitsubishi,Mirage,AT,Xăng,Hatchback,Nhập khẩu,Cũ,5.0,Hồ Chí Minh,0.0,1,9a4e1d2e800397517d20098ec9145590,chotot,10.0,10200.0,0,2
@@ -3735,7 +3735,7 @@ price_million,km,year,brand,model,transmission,fuel_type,body_type,origin,condit
 458.0,70000.0,2022.0,Suzuki,XL 7,AT,Xăng,Minivan (MPV),Nhập khẩu,Cũ,7.0,Hồ Chí Minh,0.0,1,a441fb9a1e9ea23e2718abddd182ed32,chotot,3.0,23333.333333333332,0,3
 275.0,2700.0,2025.0,VinFast,VF3,AT,Điện,SUV / Cross over,Trong nước,Cũ,4.0,Đắk Lắk,0.0,1,a2bbd3e5045b3645529e3ba8950ea97c,chotot,0.0,0.0,0,1
 272.0,0.0,2025.0,VinFast,VF3,AT,Điện,SUV / Cross over,Trong nước,Mới,4.0,Đồng Nai,0.0,1,42a231532c90e2cad335088d76a57981,chotot,0.0,0.0,0,1
-594.0,0.0,2025.0,Kia,Carens,AT,Xăng,Kiểu dáng khác,Nhập khẩu,Mới,7.0,Hồ Chí Minh,0.0,1,nan,chotot,0.0,0.0,0,1
+594.0,0.0,2025.0,Kia,Carens,AT,Xăng,Kiểu dáng khác,Nhập khẩu,Mới,7.0,Hồ Chí Minh,0.0,1,,chotot,0.0,0.0,0,1
 340.0,443000.0,2015.0,Ford,Ranger,AT,Dầu,Pick-up (bán tải),Nhập khẩu,Cũ,5.0,Bình Dương,0.0,1,5f55e06a73a21178339186b2f3b0c668,chotot,10.0,44300.0,0,3
 580.0,18000.0,2024.0,Suzuki,XL 7,AT,Xăng,Minivan (MPV),Trong nước,Cũ,7.0,Hà Nội,0.0,1,7abc2b734f5cf5915a18e75431022930,chotot,1.0,18000.0,0,2
 299.0,1.0,2025.0,MG,NewMG5,MT,Xăng,Sedan,Nhập khẩu,Cũ,4.0,Hồ Chí Minh,0.0,1,79abc5456ac9bcdd336e23c691d47085,chotot,0.0,0.0,0,1
@@ -3772,7 +3772,7 @@ price_million,km,year,brand,model,transmission,fuel_type,body_type,origin,condit
 80.0,300000.0,1996.0,Toyota,Corolla,MT,Xăng,Sedan,Nhập khẩu,Cũ,5.0,Bắc Giang,0.0,1,3824eaa2622f19cc5354e13c79d7a730,chotot,29.0,10344.827586206897,0,2
 890.0,70000.0,2018.0,Mercedes Benz,GLC Class,AT,Xăng,SUV / Cross over,Nhập khẩu,Cũ,5.0,Hà Nội,0.0,1,8f79e0757c7e7cb4cdb37781480ce63d,chotot,7.0,10000.0,1,2
 85.0,220000.0,2005.0,Daewoo,Magnus,AT,Xăng,Sedan,Nhập khẩu,Cũ,5.0,Đồng Nai,0.0,1,0b5cd6d51cf9cac2e30a2a5ffcfd0ccf,chotot,20.0,11000.0,0,2
-325.0,112395.0,2015.0,Toyota,Yaris,AT,Xăng,Hatchback,Nhập khẩu,Cũ,5.0,Hà Nội,0.0,1,nan,chotot,10.0,11239.5,0,2
+325.0,112395.0,2015.0,Toyota,Yaris,AT,Xăng,Hatchback,Nhập khẩu,Cũ,5.0,Hà Nội,0.0,1,,chotot,10.0,11239.5,0,2
 575.0,0.0,2023.0,Mazda,3,AT,Xăng,Sedan,Nhập khẩu,Mới,5.0,Đà Nẵng,0.0,1,c18184cef40db6aff6a0faee0fac27c8,chotot,2.0,0.0,0,1
 215.0,20.0,2004.0,Mitsubishi,Pajero,MT,Xăng,SUV / Cross over,Trong nước,Cũ,7.0,Hà Nội,0.0,1,3023067580b73ede8922d8abdef910ae,chotot,21.0,0.9523809523809523,0,1
 375.0,150000.0,2010.0,Hyundai,Santa Fe,AT,Dầu,SUV / Cross over,Nhập khẩu,Cũ,5.0,Hồ Chí Minh,0.0,1,c3ec3aa27298468af584aef10d39d2a0,chotot,15.0,10000.0,0,2
@@ -3781,7 +3781,7 @@ price_million,km,year,brand,model,transmission,fuel_type,body_type,origin,condit
 170.0,133000.0,2010.0,Chevrolet,Cruze,AT,Xăng,Sedan,Trong nước,Cũ,4.0,Hồ Chí Minh,0.0,1,0d0f33c00e08c229d966431a5ede980d,chotot,15.0,8866.666666666666,0,1
 990.0,76000.0,2017.0,BMW,X4,AT,Xăng,SUV / Cross over,Nhập khẩu,Cũ,5.0,Hà Nội,0.0,1,49fa9ff0013d9f74906a34cc477fd29f,chotot,8.0,9500.0,1,1
 245.0,86999.0,2010.0,Hyundai,i30,AT,Xăng,Hatchback,Nhập khẩu,Cũ,5.0,Hà Nội,0.0,1,c2eb882716a10b6cc518fbec60721ea5,chotot,15.0,5799.933333333333,0,1
-530.0,69000.0,2020.0,Ford,Ranger,AT,Dầu,Pick-up (bán tải),Nhập khẩu,Cũ,5.0,Hà Nội,0.0,1,nan,chotot,5.0,13800.0,0,2
+530.0,69000.0,2020.0,Ford,Ranger,AT,Dầu,Pick-up (bán tải),Nhập khẩu,Cũ,5.0,Hà Nội,0.0,1,,chotot,5.0,13800.0,0,2
 270.0,15000.0,2007.0,Toyota,Camry,AT,Xăng,Sedan,Nhập khẩu,Cũ,5.0,Hồ Chí Minh,0.0,1,a299f3aaeee343e9bd587b467ef54e33,chotot,18.0,833.3333333333334,0,1
 750.0,1.0,2016.0,Hyundai,County,AT,Dầu,Kiểu dáng khác,Trong nước,Cũ,5.0,Hà Nội,0.0,1,d1547493c0ffc3168e5619d75170ec5d,chotot,9.0,0.1111111111111111,0,1
 200.0,26024.0,2007.0,Toyota,Corolla Altis,MT,Xăng,Sedan,Nhập khẩu,Cũ,5.0,Hồ Chí Minh,0.0,1,84141c4b30635e4a70dfd70133c761e7,chotot,18.0,1445.7777777777778,0,1
@@ -3796,14 +3796,14 @@ price_million,km,year,brand,model,transmission,fuel_type,body_type,origin,condit
 230.0,128865.0,2015.0,Toyota,Vios,MT,Xăng,Sedan,Nhập khẩu,Cũ,5.0,Hà Nội,0.0,1,3f20478a18dc7fd84d5ad49f7acfc095,chotot,10.0,12886.5,0,2
 60.0,290000.0,1997.0,Mazda,626,MT,Xăng,Sedan,Trong nước,Cũ,5.0,Phú Yên,0.0,1,11623df96644424cffde3c10f5b2d302,chotot,28.0,10357.142857142857,0,2
 598.0,62000.0,2021.0,Honda,Civic,AT,Xăng,Sedan,Nhập khẩu,Cũ,5.0,Bình Dương,0.0,1,882048edfc941029eba7032940eded1e,chotot,4.0,15500.0,0,2
-785.0,15.0,2024.0,VinFast,VF8,AT,Điện,SUV / Cross over,Trong nước,Cũ,5.0,Hồ Chí Minh,0.0,1,nan,chotot,1.0,15.0,0,1
+785.0,15.0,2024.0,VinFast,VF8,AT,Điện,SUV / Cross over,Trong nước,Cũ,5.0,Hồ Chí Minh,0.0,1,,chotot,1.0,15.0,0,1
 730.0,69000.0,2019.0,Mercedes Benz,C Class,AT,Xăng,Sedan,Trong nước,Cũ,5.0,Hà Nội,0.0,1,fd4d5116a11eff6fc8122dafd9d94884,chotot,6.0,11500.0,1,2
 615.0,96438.0,2015.0,Toyota,Fortuner,MT,Dầu,SUV / Cross over,Trong nước,Cũ,7.0,Đồng Nai,0.0,1,1f53076c2d03f435a6d8940c8dc85a55,chotot,10.0,9643.8,0,1
 155.0,220000.0,2010.0,Ford,Ranger,MT,Dầu,Pick-up (bán tải),Nhập khẩu,Cũ,5.0,Hồ Chí Minh,0.0,1,b23711a586e2c5f7fbeffa03d57a8810,chotot,15.0,14666.666666666666,0,2
 80.0,40000.0,2009.0,Hyundai,Accent,MT,Xăng,Sedan,Trong nước,Cũ,5.0,Gia Lai,0.0,1,b3dc72c220c1d3d11292259c6987fc77,chotot,16.0,2500.0,0,1
 136.0,99999.0,2016.0,Suzuki,Dòng khác,MT,Xăng,Kiểu dáng khác,Nhập khẩu,Cũ,5.0,Hồ Chí Minh,0.0,1,f49e19aab3c88f9ca256c39d0961cbe6,chotot,9.0,11111.0,0,2
 1025.0,1.0,2018.0,Hyundai,County,AT,Xăng,Kiểu dáng khác,Trong nước,Cũ,5.0,Hà Nội,0.0,1,ea2329c8906d7bb041e1f7fe3d1db95c,chotot,7.0,0.14285714285714285,0,1
-170.0,89000.0,2015.0,Mercedes Benz,Dòng khác,AT,Xăng,Minivan (MPV),Nhập khẩu,Cũ,7.0,Hồ Chí Minh,0.0,1,nan,chotot,10.0,8900.0,1,1
+170.0,89000.0,2015.0,Mercedes Benz,Dòng khác,AT,Xăng,Minivan (MPV),Nhập khẩu,Cũ,7.0,Hồ Chí Minh,0.0,1,,chotot,10.0,8900.0,1,1
 739.0,0.0,2025.0,Chery,Jaecoo 7,AT,Xăng,SUV / Cross over,Nhập khẩu,Mới,5.0,Hồ Chí Minh,0.0,1,fcab59bc738d63983f53c8727dc17697,chotot,0.0,0.0,0,1
 640.0,42000.0,2023.0,Kia,Seltos,AT,Xăng,Kiểu dáng khác,Trong nước,Cũ,5.0,Đắk Nông,0.0,1,4d6d46b46d22fc4491155910cb56bc66,chotot,2.0,21000.0,0,3
 450.0,11000.0,2022.0,VinFast,VFe34,AT,Điện,SUV / Cross over,Trong nước,Cũ,5.0,Hồ Chí Minh,0.0,1,a956e4d9cfb546ef67756adfdd31fc75,chotot,3.0,3666.6666666666665,0,1
@@ -3870,7 +3870,7 @@ price_million,km,year,brand,model,transmission,fuel_type,body_type,origin,condit
 2739.0,65000.0,2022.0,Toyota,Land Cruiser Prado,AT,Xăng,SUV / Cross over,Nhập khẩu,Cũ,7.0,Hồ Chí Minh,0.0,1,0aa576977f8ebc5f718ee3eaa322987e,chotot,3.0,21666.666666666668,0,3
 150.0,100000.0,2012.0,Hyundai,Grand i10,MT,Xăng,Hatchback,Nhập khẩu,Cũ,5.0,Lâm Đồng,0.0,1,6da786ebe8658287ebf1c12bd133bb87,chotot,13.0,7692.307692307692,0,1
 560.0,35.0,2022.0,Mitsubishi,Triton,AT,Dầu,Pick-up (bán tải),Trong nước,Cũ,5.0,Đồng Tháp,0.0,1,d863047aabb56939baf796d7d6e7bd02,chotot,3.0,11.666666666666666,0,1
-850.0,34000.0,2022.0,Peugeot,3008,AT,Xăng,SUV / Cross over,Trong nước,Cũ,7.0,Hồ Chí Minh,0.0,1,nan,chotot,3.0,11333.333333333334,0,2
+850.0,34000.0,2022.0,Peugeot,3008,AT,Xăng,SUV / Cross over,Trong nước,Cũ,7.0,Hồ Chí Minh,0.0,1,,chotot,3.0,11333.333333333334,0,2
 400.0,230000.0,2021.0,Mitsubishi,Xpander,MT,Xăng,Minivan (MPV),Nhập khẩu,Cũ,7.0,Đồng Nai,0.0,1,15cd1d4d324d6859c4548304417f7fc3,chotot,4.0,57500.0,0,3
 970.0,96000.0,2019.0,Mercedes Benz,E Class,AT,Xăng,Sedan,Trong nước,Cũ,5.0,Hồ Chí Minh,0.0,1,68cbaa3c00e437167c869802750f552a,chotot,6.0,16000.0,1,2
 300.0,110000.0,2008.0,Honda,Civic,AT,Xăng,Sedan,Trong nước,Cũ,5.0,Hồ Chí Minh,0.0,1,2c340d400b6f659f893c6eda397bcd52,chotot,17.0,6470.588235294118,0,1
@@ -3897,7 +3897,7 @@ price_million,km,year,brand,model,transmission,fuel_type,body_type,origin,condit
 415.0,17890.0,2020.0,Mitsubishi,Xpander,MT,Xăng,Minivan (MPV),Nhập khẩu,Cũ,7.0,Cần Thơ,0.0,1,d,chotot,5.0,3578.0,0,1
 210.0,170000.0,2015.0,Mitsubishi,Attrage,MT,Xăng,Sedan,Nhập khẩu,Cũ,5.0,Lâm Đồng,0.0,1,fbb8afa76b384eeb55cea1e1191b3abc,chotot,10.0,17000.0,0,2
 380.0,215000.0,2017.0,Ford,Transit,MT,Dầu,Van,Trong nước,Cũ,9.0,Hồ Chí Minh,0.0,1,939fee6dcdcaa3d0bc22470de1cf982e,chotot,8.0,26875.0,0,3
-510.0,50000.0,2019.0,Ford,Ranger,MT,Dầu,Pick-up (bán tải),Nhập khẩu,Cũ,5.0,Hồ Chí Minh,0.0,1,nan,chotot,6.0,8333.333333333334,0,1
+510.0,50000.0,2019.0,Ford,Ranger,MT,Dầu,Pick-up (bán tải),Nhập khẩu,Cũ,5.0,Hồ Chí Minh,0.0,1,,chotot,6.0,8333.333333333334,0,1
 95.0,55000.0,2009.0,Daewoo,Gentra,MT,Xăng,Sedan,Trong nước,Cũ,5.0,Đắk Nông,0.0,1,ab70ca3ac049e7412ef4c2e100e2f32d,chotot,16.0,3437.5,0,1
 199.0,147000.0,2008.0,Toyota,Innova,MT,Xăng,Minivan (MPV),Trong nước,Cũ,8.0,Tây Ninh,0.0,1,87e150fc19cdda3e051784b21ba6e7a2,chotot,17.0,8647.058823529413,0,1
 800.0,60000.0,2018.0,Audi,Q2,AT,Xăng,SUV / Cross over,Nhập khẩu,Cũ,5.0,Hồ Chí Minh,0.0,1,e2fb50b1ea831fb054950e70839444dd,chotot,7.0,8571.42857142857,0,1
@@ -3924,7 +3924,7 @@ price_million,km,year,brand,model,transmission,fuel_type,body_type,origin,condit
 450.0,140000.0,2016.0,Ford,Ranger,AT,Dầu,Pick-up (bán tải),Nhập khẩu,Cũ,5.0,Đắk Lắk,0.0,1,cab12e8f0c270d7ae5fcb1938f385098,chotot,9.0,15555.555555555555,0,2
 885.0,50000.0,2022.0,Aion,ES,AT,Xăng,Hatchback,Nhập khẩu,Cũ,6.0,Hồ Chí Minh,0.0,1,b671dfb6511dc9887febd69009674a93,chotot,3.0,16666.666666666668,0,2
 113.0,210000.0,2014.0,Hyundai,Grand i10,MT,Xăng,Hatchback,Nhập khẩu,Cũ,5.0,Hà Nội,0.0,1,c7a54fa820a0f1d3fb8245c3219b588f,chotot,11.0,19090.909090909092,0,2
-51.0,0.0,2025.0,VinFast,VF5 Plus,AT,Điện,SUV / Cross over,Trong nước,Mới,5.0,Cần Thơ,0.0,1,nan,chotot,0.0,0.0,0,1
+51.0,0.0,2025.0,VinFast,VF5 Plus,AT,Điện,SUV / Cross over,Trong nước,Mới,5.0,Cần Thơ,0.0,1,,chotot,0.0,0.0,0,1
 520.0,52000.0,2022.0,Toyota,Veloz Cross,AT,Xăng,SUV / Cross over,Nhập khẩu,Cũ,9.0,Hồ Chí Minh,0.0,1,6cfa5b7a4d7546c609a125c5b7ceb00e,chotot,3.0,17333.333333333332,0,2
 2800.0,33000.0,2022.0,Audi,Q7,AT,Xăng,SUV / Cross over,Nhập khẩu,Cũ,7.0,Hồ Chí Minh,0.0,1,4a466ebf2488cc6e583a9cf0fe1ce11c,chotot,3.0,11000.0,0,2
 70.0,57863.0,2007.0,Hãng khác,Dòng khác,AT,Xăng,SUV / Cross over,Trong nước,Cũ,7.0,Hồ Chí Minh,0.0,1,a4c30182589f683ead53058f0daf5d04,chotot,18.0,3214.6111111111113,0,1
@@ -3946,7 +3946,7 @@ price_million,km,year,brand,model,transmission,fuel_type,body_type,origin,condit
 400.0,120143.0,2017.0,Toyota,Innova,MT,Xăng,Minivan (MPV),Trong nước,Cũ,8.0,Hồ Chí Minh,0.0,1,03b5435e8436ed162f15ed8ddd818590,chotot,8.0,15017.875,0,2
 535.0,80000.0,2021.0,Mazda,3,AT,Xăng,Hatchback,Trong nước,Cũ,5.0,Hà Nội,0.0,1,19536c87c9d2b536a41354f5662fa259,chotot,4.0,20000.0,0,2
 570.0,30000.0,2024.0,Toyota,1116,AT,Xăng,SUV / Cross over,Trong nước,Cũ,7.0,Quảng Nam,0.0,1,e2b36e827c20d15e8e92904fa3c2ad8a,chotot,1.0,30000.0,0,3
-261.0,0.0,2024.0,VinFast,VF3,AT,Điện,Coupe (2 cửa),Trong nước,Cũ,4.0,Hồ Chí Minh,0.0,1,nan,chotot,1.0,0.0,0,1
+261.0,0.0,2024.0,VinFast,VF3,AT,Điện,Coupe (2 cửa),Trong nước,Cũ,4.0,Hồ Chí Minh,0.0,1,,chotot,1.0,0.0,0,1
 210.0,12500.0,2013.0,Toyota,Dòng khác,MT,Xăng,Sedan,Trong nước,Cũ,5.0,Phú Thọ,0.0,1,5bf0e408bc0698352b1be695a0d433c3,chotot,12.0,1041.6666666666667,0,1
 325.0,0.0,2024.0,MG,NewMG5,MT,Xăng,Sedan,Nhập khẩu,Mới,5.0,Hà Nội,0.0,1,9deef5fd5362a04b89555339470dc1ac,chotot,1.0,0.0,0,1
 340.0,80000.0,2019.0,Suzuki,Ciaz,AT,Xăng,Sedan,Nhập khẩu,Cũ,5.0,Quảng Bình,0.0,1,467a383bbf46e6904bba67a0516c8125,chotot,6.0,13333.333333333334,0,2
@@ -3964,7 +3964,7 @@ price_million,km,year,brand,model,transmission,fuel_type,body_type,origin,condit
 160.0,103651.0,2008.0,Chevrolet,Captiva,AT,Xăng,SUV / Cross over,Trong nước,Cũ,7.0,Hồ Chí Minh,0.0,1,9ab4e7e2f7e48fb9126c6d7ea9ab3f84,chotot,17.0,6097.117647058823,0,1
 95.0,400000.0,2013.0,Suzuki,Super Carry Van,MT,Xăng,Kiểu dáng khác,Nhập khẩu,Cũ,2.0,Đà Nẵng,0.0,1,5b724dd84bba78c10c8d513489093f74,chotot,12.0,33333.333333333336,0,3
 93.0,9999.0,2009.0,Daewoo,Lacetti,MT,Xăng,Sedan,Nhập khẩu,Cũ,5.0,Bình Định,0.0,1,c79ac652c360dc446602f3cb99e10099,chotot,16.0,624.9375,0,1
-330.0,100000.0,2016.0,Chevrolet,Trax,AT,Xăng,SUV / Cross over,Trong nước,Cũ,5.0,Hồ Chí Minh,0.0,1,nan,chotot,9.0,11111.111111111111,0,2
+330.0,100000.0,2016.0,Chevrolet,Trax,AT,Xăng,SUV / Cross over,Trong nước,Cũ,5.0,Hồ Chí Minh,0.0,1,,chotot,9.0,11111.111111111111,0,2
 200.0,13.0,2019.0,Mitsubishi,Attrage,MT,Xăng,Sedan,Nhập khẩu,Cũ,5.0,Hà Nội,0.0,1,11d3ffaae04b69777dc54a5d5b156484,chotot,6.0,2.1666666666666665,0,1
 205.0,380000.0,2016.0,Toyota,Innova,MT,Xăng,Minivan (MPV),Trong nước,Cũ,8.0,Hà Nội,0.0,1,73551cf788ef862ea72080c727b2120c,chotot,9.0,42222.22222222222,0,3
 420.0,70000.0,2020.0,Suzuki,XL 7,AT,Xăng,SUV / Cross over,Trong nước,Cũ,7.0,Quảng Bình,0.0,1,275ee839d9876af66d6f59a24a528075,chotot,5.0,14000.0,0,2
@@ -3991,11 +3991,11 @@ price_million,km,year,brand,model,transmission,fuel_type,body_type,origin,condit
 405.0,400000.0,2019.0,Ford,Transit,MT,Dầu,Kiểu dáng khác,Trong nước,Cũ,16.0,Hồ Chí Minh,0.0,1,ad577bddd463cfc8702c8ea70cf89fa7,chotot,6.0,66666.66666666667,0,3
 675.0,27000.0,2022.0,Honda,Civic,AT,Xăng,Sedan,Nhập khẩu,Cũ,5.0,Bình Dương,0.0,1,c18cd5cc79eec650fa6b57763d76a036,chotot,3.0,9000.0,0,1
 285.0,75000.0,2019.0,Hyundai,Accent,MT,Xăng,Sedan,Trong nước,Cũ,5.0,Quảng Nam,0.0,1,0c0b4fc1463f54361c43e7dc0b2cef54,chotot,6.0,12500.0,0,2
-707.0,0.0,2025.0,Ford,Ranger,MT,Dầu,Pick-up (bán tải),Trong nước,Mới,5.0,Hồ Chí Minh,0.0,1,nan,chotot,0.0,0.0,0,1
+707.0,0.0,2025.0,Ford,Ranger,MT,Dầu,Pick-up (bán tải),Trong nước,Mới,5.0,Hồ Chí Minh,0.0,1,,chotot,0.0,0.0,0,1
 780.0,86000.0,2023.0,Hãng khác,Dòng khác,MT,Dầu,Kiểu dáng khác,Trong nước,Cũ,5.0,Hồ Chí Minh,0.0,1,7bf0df74111226704673160065e8e7a7,chotot,2.0,43000.0,0,3
 690.0,110000.0,2018.0,Honda,CR V,AT,Xăng,SUV / Cross over,Trong nước,Cũ,7.0,Hà Nội,0.0,1,f318da6aa20bcbd1dfd2f01a1a5b44af,chotot,7.0,15714.285714285714,0,2
 65.0,29000.0,2003.0,Ford,Mondeo,AT,Xăng,Sedan,Nhập khẩu,Cũ,5.0,Hà Nội,0.0,1,ef2ddfecfe98a7b7d5c4e7903da466d6,chotot,22.0,1318.1818181818182,0,1
-590.0,72000.0,2018.0,Chevrolet,Trailblazer,AT,Dầu,SUV / Cross over,Nhập khẩu,Cũ,7.0,Đà Nẵng,0.0,1,nan,chotot,7.0,10285.714285714286,0,2
+590.0,72000.0,2018.0,Chevrolet,Trailblazer,AT,Dầu,SUV / Cross over,Nhập khẩu,Cũ,7.0,Đà Nẵng,0.0,1,,chotot,7.0,10285.714285714286,0,2
 936.0,32989.0,2023.0,VinFast,VF8,AT,Điện,SUV / Cross over,Trong nước,Cũ,5.0,Hà Nội,0.0,1,55dd63bd496532e46fc5aad38c30a018,chotot,2.0,16494.5,0,2
 1035.0,46000.0,2022.0,Ford,Everest,AT,Dầu,SUV / Cross over,Nhập khẩu,Cũ,7.0,Hồ Chí Minh,0.0,1,df6d0621d0c545ca09cb0f057d40272b,chotot,3.0,15333.333333333334,0,2
 85.0,88000.0,2014.0,Chevrolet,Spark,MT,Xăng,Hatchback,Trong nước,Cũ,5.0,Hồ Chí Minh,0.0,1,a0529a988cedbdf5be718f9058407133,chotot,11.0,8000.0,0,1
@@ -4007,7 +4007,7 @@ price_million,km,year,brand,model,transmission,fuel_type,body_type,origin,condit
 460.0,56000.0,2019.0,Mazda,3,AT,Xăng,Hatchback,Trong nước,Cũ,5.0,Hà Nội,0.0,1,1f99bd433818a63248749be078111304,chotot,6.0,9333.333333333334,0,1
 270.54,0.0,2025.0,VinFast,VF3,AT,Điện,Hatchback,Trong nước,Mới,4.0,Hồ Chí Minh,0.0,1,0b7a0284e46a9ca0f53c7e53e3f6333f,chotot,0.0,0.0,0,1
 92.0,30000.0,2004.0,Ford,Laser,AT,Xăng,Sedan,Trong nước,Cũ,5.0,Hòa Bình,0.0,1,24cb04b1dc32d8d154ccbaf38f9f75c9,chotot,21.0,1428.5714285714287,0,1
-704.0,0.0,2025.0,VinFast,Limo Green,AT,Điện,SUV / Cross over,Trong nước,Cũ,7.0,Hà Nội,0.0,1,nan,chotot,0.0,0.0,0,1
+704.0,0.0,2025.0,VinFast,Limo Green,AT,Điện,SUV / Cross over,Trong nước,Cũ,7.0,Hà Nội,0.0,1,,chotot,0.0,0.0,0,1
 165.0,250000.0,2006.0,Toyota,Innova,MT,Xăng,Minivan (MPV),Trong nước,Cũ,8.0,Hà Nội,0.0,1,e259484dd798e716ffb7aa6b3633afb4,chotot,19.0,13157.894736842105,0,2
 780.0,68000.0,2019.0,Mercedes Benz,C Class,AT,Xăng,Sedan,Trong nước,Cũ,5.0,Cần Thơ,0.0,1,c3e8332a6342eded2266b4d4f66d506c,chotot,6.0,11333.333333333334,1,2
 577.76,0.0,2025.0,Geely,Coolray,AT,Xăng,SUV / Cross over,Nhập khẩu,Mới,5.0,Hồ Chí Minh,0.0,1,a5d27fdfb8c74eefdcabde16e03979f1,chotot,0.0,0.0,0,1
@@ -4085,7 +4085,7 @@ price_million,km,year,brand,model,transmission,fuel_type,body_type,origin,condit
 540.0,92000.0,2020.0,Mazda,6,AT,Xăng,Sedan,Trong nước,Cũ,5.0,Hà Nội,0.0,1,37e7bbc03769a2f1e021d9557e947147,chotot,5.0,18400.0,0,2
 315.0,176000.0,2016.0,Isuzu,Dòng khác,MT,Dầu,Kiểu dáng khác,Trong nước,Cũ,5.0,Hồ Chí Minh,0.0,1,b1c794e82cb6dcbbd38d0dd12d76a186,chotot,9.0,19555.555555555555,0,2
 450.0,200000.0,2019.0,Ford,Transit,MT,Dầu,Van,Trong nước,Cũ,16.0,Hồ Chí Minh,0.0,1,338c65b8142733c308be5e2473a2a0b8,chotot,6.0,33333.333333333336,0,3
-1659.0,0.0,2023.0,BMW,5 Series,AT,Xăng,Sedan,Nhập khẩu,Mới,5.0,Hồ Chí Minh,0.0,1,nan,chotot,2.0,0.0,1,1
+1659.0,0.0,2023.0,BMW,5 Series,AT,Xăng,Sedan,Nhập khẩu,Mới,5.0,Hồ Chí Minh,0.0,1,,chotot,2.0,0.0,1,1
 638.0,0.0,2025.0,Toyota,Veloz Cross,AT,Xăng,SUV / Cross over,Nhập khẩu,Cũ,7.0,Bình Dương,0.0,1,b8ae527bcba3fb115b2e6da61257e50b,chotot,0.0,0.0,0,1
 132.0,297800.0,2007.0,Hyundai,Starex,MT,Dầu,Van,Nhập khẩu,Cũ,6.0,Hồ Chí Minh,0.0,1,2bc043630ee65d161f2c29a608bd4420,chotot,18.0,16544.444444444445,0,2
 295.0,71000.0,2018.0,Toyota,Vios,MT,Xăng,Sedan,Trong nước,Cũ,5.0,Bình Dương,0.0,1,1a0afbc1e85232a6c89ec06e1601090b,chotot,7.0,10142.857142857143,0,2
@@ -4132,9 +4132,9 @@ price_million,km,year,brand,model,transmission,fuel_type,body_type,origin,condit
 350.0,40000.0,2018.0,Toyota,Vios,AT,Xăng,Sedan,Trong nước,Cũ,5.0,Hồ Chí Minh,0.0,1,619b621afd12a2e6d749cedfead72930,chotot,7.0,5714.285714285715,0,1
 350.0,220000.0,2016.0,Ford,Transit,MT,Dầu,Van,Trong nước,Cũ,16.0,Đắk Lắk,0.0,1,2d5e622e167dac5945b8784b20dd7bb3,chotot,9.0,24444.444444444445,0,3
 165.0,1234.0,2005.0,Mazda,6,AT,Xăng,Sedan,Trong nước,Cũ,5.0,Bắc Ninh,0.0,1,de827f9ee9a19f5bbd1eb52146681150,chotot,20.0,61.7,0,1
-120.0,244636.0,2004.0,Hyundai,Starex,MT,Dầu,Van,Nhập khẩu,Cũ,7.0,Hồ Chí Minh,0.0,1,nan,chotot,21.0,11649.333333333334,0,2
+120.0,244636.0,2004.0,Hyundai,Starex,MT,Dầu,Van,Nhập khẩu,Cũ,7.0,Hồ Chí Minh,0.0,1,,chotot,21.0,11649.333333333334,0,2
 549.0,120000.0,2021.0,VinFast,Lux SA2.0,AT,Xăng,SUV / Cross over,Trong nước,Cũ,7.0,Hà Nội,0.0,1,a75c801c7b4e6b6b3c2338417dab009d,chotot,4.0,30000.0,0,3
-130.0,300718.0,2007.0,Hyundai,Starex,MT,Dầu,Van,Nhập khẩu,Cũ,6.0,Hồ Chí Minh,0.0,1,nan,chotot,18.0,16706.555555555555,0,2
+130.0,300718.0,2007.0,Hyundai,Starex,MT,Dầu,Van,Nhập khẩu,Cũ,6.0,Hồ Chí Minh,0.0,1,,chotot,18.0,16706.555555555555,0,2
 320.0,36000.0,2021.0,Kia,Soluto,MT,Xăng,Sedan,Trong nước,Cũ,5.0,Bình Dương,0.0,1,3e59fff5b93f011a43e76ae9dad5da58,chotot,4.0,9000.0,0,1
 159.159159,71000.0,2014.0,Hyundai,Grand i10,AT,Xăng,Hatchback,Nhập khẩu,Cũ,5.0,Quảng Bình,0.0,1,941991c4d28ff1ee22f1d27529f25a95,chotot,11.0,6454.545454545455,0,1
 899.999999,0.0,2024.0,Hyundai,Custin,AT,Xăng,SUV / Cross over,Trong nước,Cũ,7.0,Hồ Chí Minh,0.0,1,c9f0277cb20df84f267af782c6f105f8,chotot,1.0,0.0,0,1
@@ -4171,7 +4171,7 @@ price_million,km,year,brand,model,transmission,fuel_type,body_type,origin,condit
 70.0,70000.0,2001.0,Ford,Laser,MT,Xăng,Sedan,Trong nước,Cũ,5.0,Hồ Chí Minh,0.0,1,9f7f0e1a691c54bc25032c2d09fdc285,chotot,24.0,2916.6666666666665,0,1
 570.0,125000.0,2010.0,Toyota,Sienna,AT,Xăng,SUV / Cross over,Nhập khẩu,Cũ,7.0,Đồng Nai,0.0,1,a9676d163c1bed214bddf75f13061db0,chotot,15.0,8333.333333333334,0,1
 60.0,123456.0,2009.0,Chevrolet,Spark,MT,Xăng,Hatchback,Nhập khẩu,Cũ,5.0,Bà Rịa,0.0,1,32fffc627abf33cbc93068aa95fccd1c,chotot,16.0,7716.0,0,1
-252.0,0.0,2025.0,Hãng khác,Dòng khác,MT,Xăng,Kiểu dáng khác,Trong nước,Mới,2.0,Thanh Hóa,0.0,1,nan,chotot,0.0,0.0,0,1
+252.0,0.0,2025.0,Hãng khác,Dòng khác,MT,Xăng,Kiểu dáng khác,Trong nước,Mới,2.0,Thanh Hóa,0.0,1,,chotot,0.0,0.0,0,1
 1470.0,0.0,2025.0,Hyundai,County,MT,Dầu,Kiểu dáng khác,Trong nước,Mới,5.0,Hà Nội,0.0,1,4453754ab99a0f7cc02d0aaa7c9cb4e9,chotot,0.0,0.0,0,1
 105.0,110000.0,2011.0,Daewoo,Gentra,MT,Xăng,Sedan,Trong nước,Cũ,5.0,Đà Nẵng,0.0,1,9855a61e8cb267026d2c711c153b201c,chotot,14.0,7857.142857142857,0,1
 330.0,95000.0,2014.0,Peugeot,3008,AT,Xăng,SUV / Cross over,Nhập khẩu,Cũ,5.0,Đà Nẵng,0.0,1,a30c0fae4eef538d0823acef405530ee,chotot,11.0,8636.363636363636,0,1
@@ -4186,8 +4186,8 @@ price_million,km,year,brand,model,transmission,fuel_type,body_type,origin,condit
 315.0,23000.0,2021.0,VinFast,Fadil,AT,Xăng,Hatchback,Nhập khẩu,Cũ,5.0,Hà Nội,0.0,1,9f2de303cfbc4345368b7ec538e0a62d,chotot,4.0,5750.0,0,1
 450.0,144122.0,2015.0,Toyota,Fortuner,AT,Xăng,SUV / Cross over,Trong nước,Cũ,7.0,Hồ Chí Minh,0.0,1,69def7d93af2827d139823635f08143a,chotot,10.0,14412.2,0,2
 450.0,144122.0,2015.0,Toyota,Fortuner,AT,Xăng,SUV / Cross over,Trong nước,Cũ,7.0,Hồ Chí Minh,0.0,1,5413101b142256621149f1c9874367d0,chotot,10.0,14412.2,0,2
-599.0,0.0,2025.0,Skoda,Kushaq,AT,Xăng,SUV / Cross over,Nhập khẩu,Mới,5.0,Hồ Chí Minh,0.0,1,nan,chotot,0.0,0.0,0,1
-520.0,55000.0,2021.0,Gaz,Gazele,MT,Dầu,Van,Nhập khẩu,Cũ,7.0,Hồ Chí Minh,0.0,1,nan,chotot,4.0,13750.0,0,2
+599.0,0.0,2025.0,Skoda,Kushaq,AT,Xăng,SUV / Cross over,Nhập khẩu,Mới,5.0,Hồ Chí Minh,0.0,1,,chotot,0.0,0.0,0,1
+520.0,55000.0,2021.0,Gaz,Gazele,MT,Dầu,Van,Nhập khẩu,Cũ,7.0,Hồ Chí Minh,0.0,1,,chotot,4.0,13750.0,0,2
 350.0,30000.0,2020.0,Kia,Soluto,AT,Xăng,Sedan,Nhập khẩu,Cũ,5.0,Đà Nẵng,0.0,1,ccebefe5fc37b96fd2a6c8b43713182b,chotot,5.0,6000.0,0,1
 590.0,35000.0,2022.0,Hãng khác,Dòng khác,AT,Xăng,Hatchback,Nhập khẩu,Cũ,5.0,Hồ Chí Minh,0.0,1,29526281ae091472a430083035c42e7a,chotot,3.0,11666.666666666666,0,2
 860.0,54779.0,2023.0,VinFast,VF8 Lux,AT,Điện,SUV / Cross over,Trong nước,Cũ,5.0,Cần Thơ,0.0,1,b9ab3c5f66d93485d09d2b844781109e,chotot,2.0,27389.5,0,3
@@ -4272,16 +4272,16 @@ price_million,km,year,brand,model,transmission,fuel_type,body_type,origin,condit
 425.0,160000.0,2019.0,Isuzu,Mu X,MT,Dầu,SUV / Cross over,Nhập khẩu,Cũ,7.0,Quảng Nam,0.0,1,2ff2762eebed4b514bb903dc94987365,chotot,6.0,26666.666666666668,0,3
 432.0,30000.0,2021.0,Hyundai,Accent,AT,Xăng,Sedan,Trong nước,Cũ,5.0,Hồ Chí Minh,0.0,1,7accd5f9bfe3e8750272c331d13885f5,chotot,4.0,7500.0,0,1
 1550.0,6770.0,2022.0,Mercedes Benz,C Class,AT,Xăng,Sedan,Trong nước,Cũ,2.0,Hồ Chí Minh,0.0,1,4509de9c8e65a908fa64d7325db5506d,chotot,3.0,2256.6666666666665,1,1
-117.0,239000.0,2004.0,Toyota,Corolla Altis,MT,Xăng,Sedan,Trong nước,Cũ,5.0,Long An,0.0,1,nan,chotot,21.0,11380.952380952382,0,2
+117.0,239000.0,2004.0,Toyota,Corolla Altis,MT,Xăng,Sedan,Trong nước,Cũ,5.0,Long An,0.0,1,,chotot,21.0,11380.952380952382,0,2
 400.0,166000.0,2020.0,Suzuki,APV,AT,Xăng,Minivan (MPV),Nhập khẩu,Cũ,7.0,Đồng Nai,0.0,1,db7bc65866bdaaae8834b6e258e2cfdf,chotot,5.0,33200.0,0,3
 405.0,74000.0,2018.0,Ford,EcoSport,AT,Xăng,SUV / Cross over,Trong nước,Cũ,5.0,Hồ Chí Minh,0.0,1,66b4b17ce59ddeedccb58a50d2970140,chotot,7.0,10571.42857142857,0,2
 1200.0,60000.0,2019.0,Mercedes Benz,GLC,AT,Xăng,SUV / Cross over,Nhập khẩu,Cũ,5.0,Hồ Chí Minh,0.0,1,715b10dcc6800a82d89305f958dd0c7f,chotot,6.0,10000.0,1,2
 190.0,12000.0,2017.0,Kia,Morning,AT,Xăng,Hatchback,Trong nước,Cũ,5.0,Hà Nội,0.0,1,6aae56774718868465022351f09d60cd,chotot,8.0,1500.0,0,1
 160.0,73000.0,2014.0,Chevrolet,Spark,AT,Xăng,Kiểu dáng khác,Nhập khẩu,Cũ,5.0,Hồ Chí Minh,0.0,1,ec5ca118f469852746d609da3c956374,chotot,11.0,6636.363636363636,0,1
 150.0,115000.0,2017.0,Chevrolet,Spark,MT,Xăng,Hatchback,Trong nước,Cũ,5.0,Hồ Chí Minh,0.0,1,25bc52832dd2af84e0d6abd4b56803e1,chotot,8.0,14375.0,0,2
-725.0,63000.0,2019.0,Honda,CR V,AT,Xăng,SUV / Cross over,Nhập khẩu,Cũ,7.0,Hồ Chí Minh,0.0,1,nan,chotot,6.0,10500.0,0,2
+725.0,63000.0,2019.0,Honda,CR V,AT,Xăng,SUV / Cross over,Nhập khẩu,Cũ,7.0,Hồ Chí Minh,0.0,1,,chotot,6.0,10500.0,0,2
 800.0,68000.0,2019.0,Hyundai,Santa Fe,AT,Dầu,SUV / Cross over,Trong nước,Cũ,7.0,Vĩnh Phúc,0.0,1,5ce0a647cb5fd2a4241513ac6eb3577f,chotot,6.0,11333.333333333334,0,2
-380.0,100000.0,2015.0,Hãng khác,Dòng khác,MT,Dầu,Kiểu dáng khác,Nhập khẩu,Cũ,2.0,Hồ Chí Minh,0.0,1,nan,chotot,10.0,10000.0,0,2
+380.0,100000.0,2015.0,Hãng khác,Dòng khác,MT,Dầu,Kiểu dáng khác,Nhập khẩu,Cũ,2.0,Hồ Chí Minh,0.0,1,,chotot,10.0,10000.0,0,2
 98.0,223928.0,2008.0,Ford,Focus,MT,Xăng,Sedan,Trong nước,Cũ,5.0,Đắk Lắk,0.0,1,a64640b08661fbb9b27f6ca0b9626426,chotot,17.0,13172.235294117647,0,2
 530.0,59000.0,2019.0,Toyota,Corolla Altis,AT,Xăng,Sedan,Trong nước,Cũ,5.0,Hồ Chí Minh,0.0,1,7570dbcd2b80dde0459f4c7acebcb202,chotot,6.0,9833.333333333334,0,1
 880.0,7800.0,2023.0,Ford,Ranger,AT,Dầu,Pick-up (bán tải),Nhập khẩu,Cũ,5.0,Hồ Chí Minh,0.0,1,366f2e977f5d5d1a86ad0f7afc99f561,chotot,2.0,3900.0,0,1
@@ -4373,9 +4373,9 @@ price_million,km,year,brand,model,transmission,fuel_type,body_type,origin,condit
 485.1,1.0,2025.0,Hãng khác,Dòng khác,AT,Xăng,SUV / Cross over,Nhập khẩu,Cũ,5.0,Hồ Chí Minh,0.0,1,289e6c6799cafd312d059ed0e7556c1b,chotot,0.0,0.0,0,1
 425.0,48300.0,2014.0,Mazda,CX 5,AT,Xăng,SUV / Cross over,Trong nước,Cũ,5.0,Đồng Nai,0.0,1,4d4dbd7db54056b01bded97b4f557d4c,chotot,11.0,4390.909090909091,0,1
 785.0,78000.0,2019.0,Toyota,Fortuner,AT,Dầu,SUV / Cross over,Trong nước,Cũ,7.0,Hồ Chí Minh,0.0,1,cda943e842f6ae63267188d4d493d62a,chotot,6.0,13000.0,0,2
-680.0,70000.0,2021.0,Mitsubishi,Outlander,AT,Xăng,SUV / Cross over,Trong nước,Cũ,7.0,Hà Nội,0.0,1,nan,chotot,4.0,17500.0,0,2
+680.0,70000.0,2021.0,Mitsubishi,Outlander,AT,Xăng,SUV / Cross over,Trong nước,Cũ,7.0,Hà Nội,0.0,1,,chotot,4.0,17500.0,0,2
 250.0,10000.0,2016.0,Ford,Fiesta,AT,Xăng,Hatchback,Trong nước,Cũ,5.0,Đà Nẵng,0.0,1,2e0470969fb6f7ae8ee6342b1e51ac00,chotot,9.0,1111.111111111111,0,1
-1247.0,0.0,2024.0,Kia,Sorento,AT,Hybrid,SUV / Cross over,Trong nước,Mới,7.0,Hồ Chí Minh,0.0,1,nan,chotot,1.0,0.0,0,1
+1247.0,0.0,2024.0,Kia,Sorento,AT,Hybrid,SUV / Cross over,Trong nước,Mới,7.0,Hồ Chí Minh,0.0,1,,chotot,1.0,0.0,0,1
 450.0,0.0,2024.0,MG,MG5,AT,Xăng,Sedan,Nhập khẩu,Mới,5.0,Hà Nội,0.0,1,29cda9d5db1d8bb79e1b30ac1debdadc,chotot,1.0,0.0,0,1
 795.0,120000.0,2010.0,Toyota,Land Cruiser Prado,AT,Xăng,SUV / Cross over,Nhập khẩu,Cũ,7.0,Hà Nội,0.0,1,dc8a009ab164fa38b50a90656cd54580,chotot,15.0,8000.0,0,1
 70.0,0.0,2004.0,Hyundai,Starex,MT,Dầu,Van,Trong nước,Cũ,7.0,Hồ Chí Minh,0.0,1,7c2703ec0773d4c6b8e5266fc790115b,chotot,21.0,0.0,0,1
@@ -4389,7 +4389,7 @@ price_million,km,year,brand,model,transmission,fuel_type,body_type,origin,condit
 750.0,270000.0,2017.0,Toyota,Fortuner,MT,Dầu,SUV / Cross over,Nhập khẩu,Cũ,7.0,Hồ Chí Minh,0.0,1,e5dfc0f96f4ceffbe46c7a84ca9fe5b0,chotot,8.0,33750.0,0,3
 650.0,56000.0,2022.0,Toyota,Corolla Cross,AT,Xăng,SUV / Cross over,Nhập khẩu,Cũ,5.0,Hồ Chí Minh,0.0,1,20a7114e016fbd435e511946496024ee,chotot,3.0,18666.666666666668,0,2
 345.0,128808.0,2008.0,Dodge,Journey,AT,Xăng,Kiểu dáng khác,Trong nước,Cũ,7.0,Hồ Chí Minh,0.0,1,3a3bae10f85b2aaccd2441932dab4ea7,chotot,17.0,7576.941176470588,0,1
-529.0,0.0,2025.0,VinFast,VF5,AT,Điện,SUV / Cross over,Trong nước,Mới,5.0,Hồ Chí Minh,0.0,1,nan,chotot,0.0,0.0,0,1
+529.0,0.0,2025.0,VinFast,VF5,AT,Điện,SUV / Cross over,Trong nước,Mới,5.0,Hồ Chí Minh,0.0,1,,chotot,0.0,0.0,0,1
 78.0,0.0,2007.0,Daewoo,Gentra,MT,Xăng,Sedan,Trong nước,Cũ,5.0,Gia Lai,0.0,1,9507d82797b27e3060ba4823d7811f0a,chotot,18.0,0.0,0,1
 250.0,95000.0,2009.0,Toyota,Corolla Altis,AT,Xăng,Sedan,Nhập khẩu,Cũ,4.0,Đà Nẵng,0.0,1,380617f4e37b3990592cd04a602acc60,chotot,16.0,5937.5,0,1
 590.0,0.0,2024.0,Mitsubishi,Xpander,AT,Xăng,SUV / Cross over,Trong nước,Cũ,7.0,Quảng Nam,0.0,1,53d095fa59dfa9299c1b9e0ab2beb22d,chotot,1.0,0.0,0,1
@@ -4408,7 +4408,7 @@ price_million,km,year,brand,model,transmission,fuel_type,body_type,origin,condit
 350.0,300000.0,2018.0,Ford,Transit,MT,Dầu,Van,Trong nước,Cũ,9.0,Hà Nội,0.0,1,546dd6b5df152c5395e869aef0644efb,chotot,7.0,42857.142857142855,0,3
 300.0,40000.0,2024.0,Hãng khác,Dòng khác,MT,Xăng,Kiểu dáng khác,Trong nước,Cũ,5.0,Đồng Nai,0.0,1,37d86c1e38368bc9ebee4a5e7ba6dca9,chotot,1.0,40000.0,0,3
 385.0,120000.0,2022.0,MG,MG5,AT,Xăng,Sedan,Nhập khẩu,Cũ,5.0,Hồ Chí Minh,0.0,1,5faa110f784f86c8ee83561e5b7d57ce,chotot,3.0,40000.0,0,3
-899.0,0.0,2025.0,Chery,Jaecoo 7,AT,Hybrid,SUV / Cross over,Nhập khẩu,Mới,7.0,Hồ Chí Minh,0.0,1,nan,chotot,0.0,0.0,0,1
+899.0,0.0,2025.0,Chery,Jaecoo 7,AT,Hybrid,SUV / Cross over,Nhập khẩu,Mới,7.0,Hồ Chí Minh,0.0,1,,chotot,0.0,0.0,0,1
 240.0,152400.0,2014.0,Nissan,Sunny,AT,Xăng,Sedan,Trong nước,Cũ,5.0,Hồ Chí Minh,0.0,1,73420ee29b82a541ca652868f2104576,chotot,11.0,13854.545454545454,0,2
 780.0,25000.0,2018.0,Mercedes Benz,C Class,AT,Xăng,Sedan,Nhập khẩu,Cũ,5.0,Đà Nẵng,0.0,1,c03eda18110ce3694ca428ae46313f75,chotot,7.0,3571.4285714285716,1,1
 160.0,500000.0,2019.0,Suzuki,Super Carry Van,MT,Xăng,Van,Nhập khẩu,Cũ,2.0,Đắk Lắk,0.0,1,8cc9efb1b442740a4481fec5ba67cfe1,chotot,6.0,83333.33333333333,0,3
@@ -4422,7 +4422,7 @@ price_million,km,year,brand,model,transmission,fuel_type,body_type,origin,condit
 280.0,18.0,2010.0,Ford,Everest,AT,Dầu,SUV / Cross over,Trong nước,Cũ,8.0,Hồ Chí Minh,0.0,1,e557732812a813f1d53acca8262632e9,chotot,15.0,1.2,0,1
 55.0,200000.0,2004.0,Kia,Spectra,MT,Xăng,Sedan,Trong nước,Cũ,5.0,An Giang,0.0,1,6c172571e0dddef0858964427978dd2c,chotot,21.0,9523.809523809523,0,1
 839.0,72000.0,2016.0,Mercedes Benz,CLA Class,AT,Xăng,Sedan,Nhập khẩu,Cũ,5.0,Hồ Chí Minh,0.0,1,172b23b6566040d52c6b7e903fea4665,chotot,9.0,8000.0,1,1
-475.0,53000.0,2023.0,Mitsubishi,Xpander,AT,Xăng,SUV / Cross over,Nhập khẩu,Cũ,7.0,Hà Nội,0.0,1,nan,chotot,2.0,26500.0,0,3
+475.0,53000.0,2023.0,Mitsubishi,Xpander,AT,Xăng,SUV / Cross over,Nhập khẩu,Cũ,7.0,Hà Nội,0.0,1,,chotot,2.0,26500.0,0,3
 430.0,402393.0,2013.0,Toyota,Fortuner,MT,Dầu,SUV / Cross over,Trong nước,Cũ,7.0,An Giang,0.0,1,95571323a81187aaedebad4d2cd1f277,chotot,12.0,33532.75,0,3
 439.0,169000.0,2022.0,Hyundai,Stargazer,AT,Xăng,Minivan (MPV),Nhập khẩu,Cũ,7.0,An Giang,0.0,1,dc14e6c4e3721ced63ceac972befe12f,chotot,3.0,56333.333333333336,0,3
 150.0,150000.0,2004.0,Suzuki,Vitara,MT,Xăng,Sedan,Trong nước,Cũ,5.0,Đắk Lắk,0.0,1,8edb8de1762e7e59eab308b8a3766273,chotot,21.0,7142.857142857143,0,1
@@ -4512,7 +4512,7 @@ price_million,km,year,brand,model,transmission,fuel_type,body_type,origin,condit
 200.0,12000.0,2016.0,Toyota,Vios,MT,Xăng,Sedan,Nhập khẩu,Cũ,4.0,Hà Nội,0.0,1,d9d6d0845cefa6477d0ae333d25b8790,chotot,9.0,1333.3333333333333,0,1
 340.0,25000.0,2021.0,Toyota,Wigo,AT,Xăng,Sedan,Nhập khẩu,Cũ,5.0,Hồ Chí Minh,0.0,1,4ca526855b6e77c3dd945cc5136e2080,chotot,4.0,6250.0,0,1
 325.0,120000.0,2021.0,Hyundai,Verna,MT,Xăng,Sedan,Nhập khẩu,Cũ,5.0,Quảng Nam,0.0,1,aec8853f24704a5989a319ce1f63e9d0,chotot,4.0,30000.0,0,3
-639.0,70000.0,2022.0,Toyota,Corolla Cross,AT,Xăng,SUV / Cross over,Nhập khẩu,Cũ,5.0,Hồ Chí Minh,0.0,1,nan,chotot,3.0,23333.333333333332,0,3
+639.0,70000.0,2022.0,Toyota,Corolla Cross,AT,Xăng,SUV / Cross over,Nhập khẩu,Cũ,5.0,Hồ Chí Minh,0.0,1,,chotot,3.0,23333.333333333332,0,3
 935.0,3007.0,2025.0,Toyota,Corolla Cross,AT,Hybrid,SUV / Cross over,Nhập khẩu,Cũ,5.0,Hà Nội,0.0,1,73e2921d45d5a337ea51b5048f22c0e2,chotot,0.0,0.0,0,1
 609.0,109000.0,2019.0,Hyundai,Tucson,AT,Xăng,SUV / Cross over,Trong nước,Cũ,5.0,Thanh Hóa,0.0,1,03b0111b56fdb5a77ab2b9181565a998,chotot,6.0,18166.666666666668,0,2
 65.0,172000.0,2008.0,Daewoo,Lacetti,MT,Xăng,Sedan,Trong nước,Cũ,5.0,Cần Thơ,0.0,1,ed2c9ff6121a823cf6597adc48794290,chotot,17.0,10117.64705882353,0,2

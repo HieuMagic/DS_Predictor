@@ -16,6 +16,7 @@ seaborn
 notebook
 jupyterlab
 IPython
+statsmodels
 
 # other
 unidecode
