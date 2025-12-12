@@ -1,7 +1,6 @@
 # Web Scraping & Data Collection
 requests
 playwright
-scrapy
 lxml
 trafilatura
 beautifulsoup4
@@ -21,3 +20,7 @@ statsmodels
 # other
 unidecode
 missingno
+
+# model
+lightgbm
+catboost
