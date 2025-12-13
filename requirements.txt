@@ -16,6 +16,7 @@ notebook
 jupyterlab
 IPython
 statsmodels
+shap
 
 # other
 unidecode
